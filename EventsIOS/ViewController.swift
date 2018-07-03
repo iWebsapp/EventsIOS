@@ -9,7 +9,6 @@
 import UIKit
 import Crashlytics
 
-
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
