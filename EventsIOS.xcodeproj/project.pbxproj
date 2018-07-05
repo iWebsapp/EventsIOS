@@ -9,10 +9,18 @@
 /* Begin PBXBuildFile section */
 		75D0C115BA755D88F5C5F042 /* Pods_EventsIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5571407C61E5CD71AEF74A /* Pods_EventsIOS.framework */; };
 		DE4403D220E9FE61002606C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4403D120E9FE61002606C4 /* AppDelegate.swift */; };
-		DE4403D420E9FE61002606C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4403D320E9FE61002606C4 /* ViewController.swift */; };
+		DE4403D420E9FE61002606C4 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4403D320E9FE61002606C4 /* LoginController.swift */; };
 		DE4403D720E9FE61002606C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4403D520E9FE61002606C4 /* Main.storyboard */; };
 		DE4403D920E9FE65002606C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4403D820E9FE65002606C4 /* Assets.xcassets */; };
 		DE4403DC20E9FE65002606C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4403DA20E9FE65002606C4 /* LaunchScreen.storyboard */; };
+		DEAB3CA920ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CA820ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift */; };
+		DEAB3CAB20ED2A45009D30E8 /* RegisterUserPromotionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CAA20ED2A45009D30E8 /* RegisterUserPromotionsController.swift */; };
+		DEAB3CAD20ED2A53009D30E8 /* RegisterUserMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CAC20ED2A53009D30E8 /* RegisterUserMenuController.swift */; };
+		DEAB3CAF20ED2A6C009D30E8 /* RegisterUserBuyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CAE20ED2A6C009D30E8 /* RegisterUserBuyController.swift */; };
+		DEAB3CB120ED2A91009D30E8 /* RegisterUserAnswersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CB020ED2A91009D30E8 /* RegisterUserAnswersController.swift */; };
+		DEAB3CB320ED2AD6009D30E8 /* RegisterUserGuaranteedTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CB220ED2AD6009D30E8 /* RegisterUserGuaranteedTableController.swift */; };
+		DEAB3CB620ED2B08009D30E8 /* RegisterUserAskDrinkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CB520ED2B08009D30E8 /* RegisterUserAskDrinkController.swift */; };
+		DEAB3CB820ED4EE4009D30E8 /* RegistrerUserEmailAndPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CB720ED4EE4009D30E8 /* RegistrerUserEmailAndPasswordController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +29,19 @@
 		799E4A944D0D180A48E5833E /* Pods-EventsIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventsIOS/Pods-EventsIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DE4403CE20E9FE61002606C4 /* EventsIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventsIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE4403D120E9FE61002606C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE4403D320E9FE61002606C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE4403D320E9FE61002606C4 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		DE4403D620E9FE61002606C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE4403D820E9FE65002606C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE4403DB20E9FE65002606C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE4403DD20E9FE65002606C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEAB3CA820ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserNumberPlacesController.swift; sourceTree = "<group>"; };
+		DEAB3CAA20ED2A45009D30E8 /* RegisterUserPromotionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserPromotionsController.swift; sourceTree = "<group>"; };
+		DEAB3CAC20ED2A53009D30E8 /* RegisterUserMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserMenuController.swift; sourceTree = "<group>"; };
+		DEAB3CAE20ED2A6C009D30E8 /* RegisterUserBuyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserBuyController.swift; sourceTree = "<group>"; };
+		DEAB3CB020ED2A91009D30E8 /* RegisterUserAnswersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserAnswersController.swift; sourceTree = "<group>"; };
+		DEAB3CB220ED2AD6009D30E8 /* RegisterUserGuaranteedTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserGuaranteedTableController.swift; sourceTree = "<group>"; };
+		DEAB3CB520ED2B08009D30E8 /* RegisterUserAskDrinkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserAskDrinkController.swift; sourceTree = "<group>"; };
+		DEAB3CB720ED4EE4009D30E8 /* RegistrerUserEmailAndPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrerUserEmailAndPasswordController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,14 +85,38 @@
 		DE4403D020E9FE61002606C4 /* EventsIOS */ = {
 			isa = PBXGroup;
 			children = (
-				DE4403D120E9FE61002606C4 /* AppDelegate.swift */,
-				DE4403D320E9FE61002606C4 /* ViewController.swift */,
+				DEAB3CA620ED29AD009D30E8 /* RegisterUser */,
+				DEAB3CA720ED29C1009D30E8 /* Login */,
 				DE4403D520E9FE61002606C4 /* Main.storyboard */,
+				DE4403D120E9FE61002606C4 /* AppDelegate.swift */,
 				DE4403D820E9FE65002606C4 /* Assets.xcassets */,
 				DE4403DA20E9FE65002606C4 /* LaunchScreen.storyboard */,
 				DE4403DD20E9FE65002606C4 /* Info.plist */,
 			);
 			path = EventsIOS;
+			sourceTree = "<group>";
+		};
+		DEAB3CA620ED29AD009D30E8 /* RegisterUser */ = {
+			isa = PBXGroup;
+			children = (
+				DEAB3CA820ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift */,
+				DEAB3CAA20ED2A45009D30E8 /* RegisterUserPromotionsController.swift */,
+				DEAB3CAC20ED2A53009D30E8 /* RegisterUserMenuController.swift */,
+				DEAB3CAE20ED2A6C009D30E8 /* RegisterUserBuyController.swift */,
+				DEAB3CB020ED2A91009D30E8 /* RegisterUserAnswersController.swift */,
+				DEAB3CB220ED2AD6009D30E8 /* RegisterUserGuaranteedTableController.swift */,
+				DEAB3CB520ED2B08009D30E8 /* RegisterUserAskDrinkController.swift */,
+				DEAB3CB720ED4EE4009D30E8 /* RegistrerUserEmailAndPasswordController.swift */,
+			);
+			path = RegisterUser;
+			sourceTree = "<group>";
+		};
+		DEAB3CA720ED29C1009D30E8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DE4403D320E9FE61002606C4 /* LoginController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		E076AE8F5DB7C8CAED16B2CA /* Pods */ = {
@@ -222,8 +262,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE4403D420E9FE61002606C4 /* ViewController.swift in Sources */,
+				DEAB3CB820ED4EE4009D30E8 /* RegistrerUserEmailAndPasswordController.swift in Sources */,
+				DEAB3CAF20ED2A6C009D30E8 /* RegisterUserBuyController.swift in Sources */,
+				DEAB3CAD20ED2A53009D30E8 /* RegisterUserMenuController.swift in Sources */,
+				DE4403D420E9FE61002606C4 /* LoginController.swift in Sources */,
+				DEAB3CA920ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift in Sources */,
+				DEAB3CB120ED2A91009D30E8 /* RegisterUserAnswersController.swift in Sources */,
 				DE4403D220E9FE61002606C4 /* AppDelegate.swift in Sources */,
+				DEAB3CB320ED2AD6009D30E8 /* RegisterUserGuaranteedTableController.swift in Sources */,
+				DEAB3CB620ED2B08009D30E8 /* RegisterUserAskDrinkController.swift in Sources */,
+				DEAB3CAB20ED2A45009D30E8 /* RegisterUserPromotionsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +420,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = Y99AD5GLT5;
 				INFOPLIST_FILE = EventsIOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,7 +440,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y99AD5GLT5;
 				INFOPLIST_FILE = EventsIOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

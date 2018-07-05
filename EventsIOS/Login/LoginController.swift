@@ -9,7 +9,7 @@
 import UIKit
 import Crashlytics
 
-class ViewController: UIViewController {
+class LoginController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +23,10 @@ class ViewController: UIViewController {
 
     @IBAction func crasher(_ sender: UIButton) {
         Crashlytics.sharedInstance().crash()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
 }
