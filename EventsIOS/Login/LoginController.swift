@@ -11,6 +11,11 @@ import Crashlytics
 
 class LoginController: UIViewController {
 
+    
+    @IBOutlet weak var txtEmail: UITextField!
+    @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var listenerLogin: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

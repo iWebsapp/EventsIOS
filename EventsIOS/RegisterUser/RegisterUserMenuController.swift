@@ -10,15 +10,53 @@ import UIKit
 
 class RegisterUserMenuController: UIViewController {
 
+    @IBOutlet weak var listenerLike: UIButton!
+    @IBOutlet weak var listenerDisklike: UIButton!
+    @IBOutlet weak var listenerNext: UIButton!
+    var conta = 0
+    var contador = 0
+    let like = UIImage(named: "like")
+    let selectlike = UIImage(named: "selectedLike")
+    let disklike = UIImage(named: "dislike")
+    let selectdisklike = UIImage(named: "selectedDiskLike")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        listenerLike.setImage(like, for: .normal)
+        listenerDisklike.setImage(disklike, for: .normal)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func changeLike(_ sender: UIButton) {
+        contador = 0
+        listenerDisklike.setImage(disklike, for: .normal)
+        if conta == 0 {
+            listenerLike.setImage(selectlike, for: .normal)
+            conta = 1
+        } else {
+            if conta == 1 {
+                listenerLike.setImage(like, for: .normal)
+                conta = 0
+            }
+        }
+    }
+    
+    @IBAction func changeDislike(_ sender: UIButton) {
+        conta = 0
+        listenerLike.setImage(like, for: .normal)
+        if contador == 0 {
+            listenerDisklike.setImage(selectdisklike, for: .normal)
+            contador = 1
+        } else {
+            if contador == 1 {
+                listenerDisklike.setImage(disklike, for: .normal)
+                contador = 0
+            }
+        }
     }
     
     @IBAction func behind(_ sender: UIButton) {
@@ -28,6 +66,16 @@ class RegisterUserMenuController: UIViewController {
     @IBAction func doubts(_ sender: UIButton) {
         let doubts = storyboard?.instantiateViewController(withIdentifier: "RegisterUserAnswers") as! RegisterUserAnswersController
         self.present(doubts, animated: true, completion: nil)
+    }
+    
+    @IBAction func btnSave(_ sender: UIButton) {
+        if conta == 1 {
+            self.performSegue(withIdentifier: "goYesMenu", sender: self)
+        } else {
+            if contador == 1 {
+                self.performSegue(withIdentifier: "goNoMenu", sender: self)
+            }
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
