@@ -12,8 +12,6 @@ class InfoEvenController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.clear
-        self.view.isOpaque = false
         // Do any additional setup after loading the view.
     }
 

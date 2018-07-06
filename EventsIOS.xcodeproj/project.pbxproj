@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		75D0C115BA755D88F5C5F042 /* Pods_EventsIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5571407C61E5CD71AEF74A /* Pods_EventsIOS.framework */; };
+		DE209CEC20F009210042AC87 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE209CEB20F009210042AC87 /* DesignableButton.swift */; };
+		DE209CEE20F009F60042AC87 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE209CED20F009F60042AC87 /* DesignableTextField.swift */; };
 		DE4403D220E9FE61002606C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4403D120E9FE61002606C4 /* AppDelegate.swift */; };
 		DE4403D420E9FE61002606C4 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4403D320E9FE61002606C4 /* LoginController.swift */; };
 		DE4403D720E9FE61002606C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4403D520E9FE61002606C4 /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 		5E5571407C61E5CD71AEF74A /* Pods_EventsIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventsIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		761F37E3749DD414C245D3D8 /* Pods-EventsIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventsIOS/Pods-EventsIOS.release.xcconfig"; sourceTree = "<group>"; };
 		799E4A944D0D180A48E5833E /* Pods-EventsIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventsIOS/Pods-EventsIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		DE209CEB20F009210042AC87 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		DE209CED20F009F60042AC87 /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
 		DE4403CE20E9FE61002606C4 /* EventsIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventsIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE4403D120E9FE61002606C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE4403D320E9FE61002606C4 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -88,6 +92,54 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DE209CE520F002A60042AC87 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DECD374620EEBBEA0074AB19 /* NotificationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE209CE620F002B70042AC87 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DECD374320EEBBC70074AB19 /* EventController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE209CE720F002C70042AC87 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DECD374020EEBBA60074AB19 /* MapController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE209CE820F002D90042AC87 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DEE8025320EEF41900ABAFEF /* InfoEvenController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE209CE920F002F60042AC87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DECD374820EED2750074AB19 /* InvitationCard.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE209CEA20F003030042AC87 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DECD373D20EEBB770074AB19 /* ProfileUserController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		DE4403C520E9FE61002606C4 = {
 			isa = PBXGroup;
 			children = (
@@ -115,9 +167,9 @@
 				DE4403D520E9FE61002606C4 /* Main.storyboard */,
 				DECD373420EDEFB40074AB19 /* User.storyboard */,
 				DECD373620EDF2E70074AB19 /* Employees.storyboard */,
+				DE4403DA20E9FE65002606C4 /* LaunchScreen.storyboard */,
 				DE4403D120E9FE61002606C4 /* AppDelegate.swift */,
 				DE4403D820E9FE65002606C4 /* Assets.xcassets */,
-				DE4403DA20E9FE65002606C4 /* LaunchScreen.storyboard */,
 				DE4403DD20E9FE65002606C4 /* Info.plist */,
 			);
 			path = EventsIOS;
@@ -151,6 +203,7 @@
 		DECD373920EEB9EE0074AB19 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				DEE8025220EEF3F300ABAFEF /* InfoEvent */,
 				DECD374520EEBBDB0074AB19 /* Notification */,
 				DECD374220EEBBB70074AB19 /* Event */,
 				DECD373F20EEBB8D0074AB19 /* Map */,
@@ -185,7 +238,7 @@
 		DECD373C20EEBB130074AB19 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				DECD373D20EEBB770074AB19 /* ProfileUserController.swift */,
+				DE209CEA20F003030042AC87 /* Controller */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -193,9 +246,8 @@
 		DECD373F20EEBB8D0074AB19 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				DEE8025220EEF3F300ABAFEF /* InfoEvent */,
-				DECD374020EEBBA60074AB19 /* MapController.swift */,
-				DECD374820EED2750074AB19 /* InvitationCard.swift */,
+				DE209CE920F002F60042AC87 /* View */,
+				DE209CE720F002C70042AC87 /* Controller */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -203,7 +255,7 @@
 		DECD374220EEBBB70074AB19 /* Event */ = {
 			isa = PBXGroup;
 			children = (
-				DECD374320EEBBC70074AB19 /* EventController.swift */,
+				DE209CE620F002B70042AC87 /* Controller */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -211,7 +263,7 @@
 		DECD374520EEBBDB0074AB19 /* Notification */ = {
 			isa = PBXGroup;
 			children = (
-				DECD374620EEBBEA0074AB19 /* NotificationController.swift */,
+				DE209CE520F002A60042AC87 /* Controller */,
 			);
 			path = Notification;
 			sourceTree = "<group>";
@@ -223,6 +275,8 @@
 				DECD374D20EEE0BE0074AB19 /* LocationManagerExt.swift */,
 				DEE8025520EEFB0200ABAFEF /* DesignableGradient.swift */,
 				DEE8025720EF012F00ABAFEF /* DesignableImage.swift */,
+				DE209CEB20F009210042AC87 /* DesignableButton.swift */,
+				DE209CED20F009F60042AC87 /* DesignableTextField.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -230,7 +284,7 @@
 		DEE8025220EEF3F300ABAFEF /* InfoEvent */ = {
 			isa = PBXGroup;
 			children = (
-				DEE8025320EEF41900ABAFEF /* InfoEvenController.swift */,
+				DE209CE820F002D90042AC87 /* Controller */,
 			);
 			path = InfoEvent;
 			sourceTree = "<group>";
@@ -382,6 +436,7 @@
 			files = (
 				DEE8025620EEFB0200ABAFEF /* DesignableGradient.swift in Sources */,
 				DEE8025820EF012F00ABAFEF /* DesignableImage.swift in Sources */,
+				DE209CEC20F009210042AC87 /* DesignableButton.swift in Sources */,
 				DEAB3CB820ED4EE4009D30E8 /* RegistrerUserEmailAndPasswordController.swift in Sources */,
 				DEE8025420EEF41900ABAFEF /* InfoEvenController.swift in Sources */,
 				DECD373E20EEBB770074AB19 /* ProfileUserController.swift in Sources */,
@@ -394,6 +449,7 @@
 				DE4403D420E9FE61002606C4 /* LoginController.swift in Sources */,
 				DEAB3CA920ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift in Sources */,
 				DEAB3CB120ED2A91009D30E8 /* RegisterUserAnswersController.swift in Sources */,
+				DE209CEE20F009F60042AC87 /* DesignableTextField.swift in Sources */,
 				DECD374920EED2750074AB19 /* InvitationCard.swift in Sources */,
 				DE4403D220E9FE61002606C4 /* AppDelegate.swift in Sources */,
 				DECD374720EEBBEA0074AB19 /* NotificationController.swift in Sources */,
@@ -548,7 +604,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = Y99AD5GLT5;
 				INFOPLIST_FILE = EventsIOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -568,7 +624,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y99AD5GLT5;
 				INFOPLIST_FILE = EventsIOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
