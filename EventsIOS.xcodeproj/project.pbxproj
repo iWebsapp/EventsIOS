@@ -21,6 +21,18 @@
 		DEAB3CB320ED2AD6009D30E8 /* RegisterUserGuaranteedTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CB220ED2AD6009D30E8 /* RegisterUserGuaranteedTableController.swift */; };
 		DEAB3CB620ED2B08009D30E8 /* RegisterUserAskDrinkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CB520ED2B08009D30E8 /* RegisterUserAskDrinkController.swift */; };
 		DEAB3CB820ED4EE4009D30E8 /* RegistrerUserEmailAndPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CB720ED4EE4009D30E8 /* RegistrerUserEmailAndPasswordController.swift */; };
+		DECD373520EDEFB40074AB19 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DECD373420EDEFB40074AB19 /* User.storyboard */; };
+		DECD373720EDF2E70074AB19 /* Employees.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DECD373620EDF2E70074AB19 /* Employees.storyboard */; };
+		DECD373E20EEBB770074AB19 /* ProfileUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD373D20EEBB770074AB19 /* ProfileUserController.swift */; };
+		DECD374120EEBBA60074AB19 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD374020EEBBA60074AB19 /* MapController.swift */; };
+		DECD374420EEBBC70074AB19 /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD374320EEBBC70074AB19 /* EventController.swift */; };
+		DECD374720EEBBEA0074AB19 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD374620EEBBEA0074AB19 /* NotificationController.swift */; };
+		DECD374920EED2750074AB19 /* InvitationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD374820EED2750074AB19 /* InvitationCard.swift */; };
+		DECD374C20EED9320074AB19 /* MapControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD374B20EED9320074AB19 /* MapControllerExt.swift */; };
+		DECD374E20EEE0BE0074AB19 /* LocationManagerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD374D20EEE0BE0074AB19 /* LocationManagerExt.swift */; };
+		DEE8025420EEF41900ABAFEF /* InfoEvenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8025320EEF41900ABAFEF /* InfoEvenController.swift */; };
+		DEE8025620EEFB0200ABAFEF /* DesignableGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8025520EEFB0200ABAFEF /* DesignableGradient.swift */; };
+		DEE8025820EF012F00ABAFEF /* DesignableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8025720EF012F00ABAFEF /* DesignableImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +54,18 @@
 		DEAB3CB220ED2AD6009D30E8 /* RegisterUserGuaranteedTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserGuaranteedTableController.swift; sourceTree = "<group>"; };
 		DEAB3CB520ED2B08009D30E8 /* RegisterUserAskDrinkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserAskDrinkController.swift; sourceTree = "<group>"; };
 		DEAB3CB720ED4EE4009D30E8 /* RegistrerUserEmailAndPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrerUserEmailAndPasswordController.swift; sourceTree = "<group>"; };
+		DECD373420EDEFB40074AB19 /* User.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
+		DECD373620EDF2E70074AB19 /* Employees.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Employees.storyboard; sourceTree = "<group>"; };
+		DECD373D20EEBB770074AB19 /* ProfileUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserController.swift; sourceTree = "<group>"; };
+		DECD374020EEBBA60074AB19 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		DECD374320EEBBC70074AB19 /* EventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
+		DECD374620EEBBEA0074AB19 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		DECD374820EED2750074AB19 /* InvitationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationCard.swift; sourceTree = "<group>"; };
+		DECD374B20EED9320074AB19 /* MapControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapControllerExt.swift; sourceTree = "<group>"; };
+		DECD374D20EEE0BE0074AB19 /* LocationManagerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerExt.swift; sourceTree = "<group>"; };
+		DEE8025320EEF41900ABAFEF /* InfoEvenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoEvenController.swift; sourceTree = "<group>"; };
+		DEE8025520EEFB0200ABAFEF /* DesignableGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableGradient.swift; sourceTree = "<group>"; };
+		DEE8025720EF012F00ABAFEF /* DesignableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +109,12 @@
 		DE4403D020E9FE61002606C4 /* EventsIOS */ = {
 			isa = PBXGroup;
 			children = (
-				DEAB3CA620ED29AD009D30E8 /* RegisterUser */,
-				DEAB3CA720ED29C1009D30E8 /* Login */,
+				DECD374A20EED9210074AB19 /* Extensions */,
+				DECD373920EEB9EE0074AB19 /* User */,
+				DEAB3CA620ED29AD009D30E8 /* Main */,
 				DE4403D520E9FE61002606C4 /* Main.storyboard */,
+				DECD373420EDEFB40074AB19 /* User.storyboard */,
+				DECD373620EDF2E70074AB19 /* Employees.storyboard */,
 				DE4403D120E9FE61002606C4 /* AppDelegate.swift */,
 				DE4403D820E9FE65002606C4 /* Assets.xcassets */,
 				DE4403DA20E9FE65002606C4 /* LaunchScreen.storyboard */,
@@ -96,7 +123,51 @@
 			path = EventsIOS;
 			sourceTree = "<group>";
 		};
-		DEAB3CA620ED29AD009D30E8 /* RegisterUser */ = {
+		DEAB3CA620ED29AD009D30E8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DEAB3CA720ED29C1009D30E8 /* Login */,
+				DECD373820EEB9CD0074AB19 /* Register */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DEAB3CA720ED29C1009D30E8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DECD373A20EEBA070074AB19 /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DECD373820EEB9CD0074AB19 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				DECD373B20EEBA140074AB19 /* Controller */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		DECD373920EEB9EE0074AB19 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				DECD374520EEBBDB0074AB19 /* Notification */,
+				DECD374220EEBBB70074AB19 /* Event */,
+				DECD373F20EEBB8D0074AB19 /* Map */,
+				DECD373C20EEBB130074AB19 /* Profile */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		DECD373A20EEBA070074AB19 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE4403D320E9FE61002606C4 /* LoginController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DECD373B20EEBA140074AB19 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				DEAB3CA820ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift */,
@@ -108,15 +179,60 @@
 				DEAB3CB520ED2B08009D30E8 /* RegisterUserAskDrinkController.swift */,
 				DEAB3CB720ED4EE4009D30E8 /* RegistrerUserEmailAndPasswordController.swift */,
 			);
-			path = RegisterUser;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		DEAB3CA720ED29C1009D30E8 /* Login */ = {
+		DECD373C20EEBB130074AB19 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				DE4403D320E9FE61002606C4 /* LoginController.swift */,
+				DECD373D20EEBB770074AB19 /* ProfileUserController.swift */,
 			);
-			path = Login;
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		DECD373F20EEBB8D0074AB19 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				DEE8025220EEF3F300ABAFEF /* InfoEvent */,
+				DECD374020EEBBA60074AB19 /* MapController.swift */,
+				DECD374820EED2750074AB19 /* InvitationCard.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		DECD374220EEBBB70074AB19 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				DECD374320EEBBC70074AB19 /* EventController.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		DECD374520EEBBDB0074AB19 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				DECD374620EEBBEA0074AB19 /* NotificationController.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		DECD374A20EED9210074AB19 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DECD374B20EED9320074AB19 /* MapControllerExt.swift */,
+				DECD374D20EEE0BE0074AB19 /* LocationManagerExt.swift */,
+				DEE8025520EEFB0200ABAFEF /* DesignableGradient.swift */,
+				DEE8025720EF012F00ABAFEF /* DesignableImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DEE8025220EEF3F300ABAFEF /* InfoEvent */ = {
+			isa = PBXGroup;
+			children = (
+				DEE8025320EEF41900ABAFEF /* InfoEvenController.swift */,
+			);
+			path = InfoEvent;
 			sourceTree = "<group>";
 		};
 		E076AE8F5DB7C8CAED16B2CA /* Pods */ = {
@@ -190,8 +306,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE4403DC20E9FE65002606C4 /* LaunchScreen.storyboard in Resources */,
+				DECD373520EDEFB40074AB19 /* User.storyboard in Resources */,
 				DE4403D920E9FE65002606C4 /* Assets.xcassets in Resources */,
 				DE4403D720E9FE61002606C4 /* Main.storyboard in Resources */,
+				DECD373720EDF2E70074AB19 /* Employees.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,13 +380,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEE8025620EEFB0200ABAFEF /* DesignableGradient.swift in Sources */,
+				DEE8025820EF012F00ABAFEF /* DesignableImage.swift in Sources */,
 				DEAB3CB820ED4EE4009D30E8 /* RegistrerUserEmailAndPasswordController.swift in Sources */,
+				DEE8025420EEF41900ABAFEF /* InfoEvenController.swift in Sources */,
+				DECD373E20EEBB770074AB19 /* ProfileUserController.swift in Sources */,
 				DEAB3CAF20ED2A6C009D30E8 /* RegisterUserBuyController.swift in Sources */,
+				DECD374E20EEE0BE0074AB19 /* LocationManagerExt.swift in Sources */,
 				DEAB3CAD20ED2A53009D30E8 /* RegisterUserMenuController.swift in Sources */,
+				DECD374420EEBBC70074AB19 /* EventController.swift in Sources */,
+				DECD374C20EED9320074AB19 /* MapControllerExt.swift in Sources */,
+				DECD374120EEBBA60074AB19 /* MapController.swift in Sources */,
 				DE4403D420E9FE61002606C4 /* LoginController.swift in Sources */,
 				DEAB3CA920ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift in Sources */,
 				DEAB3CB120ED2A91009D30E8 /* RegisterUserAnswersController.swift in Sources */,
+				DECD374920EED2750074AB19 /* InvitationCard.swift in Sources */,
 				DE4403D220E9FE61002606C4 /* AppDelegate.swift in Sources */,
+				DECD374720EEBBEA0074AB19 /* NotificationController.swift in Sources */,
 				DEAB3CB320ED2AD6009D30E8 /* RegisterUserGuaranteedTableController.swift in Sources */,
 				DEAB3CB620ED2B08009D30E8 /* RegisterUserAskDrinkController.swift in Sources */,
 				DEAB3CAB20ED2A45009D30E8 /* RegisterUserPromotionsController.swift in Sources */,
@@ -420,7 +548,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = Y99AD5GLT5;
 				INFOPLIST_FILE = EventsIOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,7 +568,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y99AD5GLT5;
 				INFOPLIST_FILE = EventsIOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
