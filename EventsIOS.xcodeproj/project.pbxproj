@@ -10,6 +10,11 @@
 		75D0C115BA755D88F5C5F042 /* Pods_EventsIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5571407C61E5CD71AEF74A /* Pods_EventsIOS.framework */; };
 		DE209CEC20F009210042AC87 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE209CEB20F009210042AC87 /* DesignableButton.swift */; };
 		DE209CEE20F009F60042AC87 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE209CED20F009F60042AC87 /* DesignableTextField.swift */; };
+		DE2B13D820F1627D00870BE9 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B13D720F1627D00870BE9 /* NotificationModel.swift */; };
+		DE2B13DA20F1629800870BE9 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B13D920F1629800870BE9 /* NotificationViewModel.swift */; };
+		DE2B13DD20F1630B00870BE9 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B13DC20F1630B00870BE9 /* Notification.swift */; };
+		DE2B13DF20F163DA00870BE9 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B13DE20F163DA00870BE9 /* NotificationCell.swift */; };
+		DE2B13E120F1666400870BE9 /* NotificationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B13E020F1666400870BE9 /* NotificationListViewModel.swift */; };
 		DE4403D220E9FE61002606C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4403D120E9FE61002606C4 /* AppDelegate.swift */; };
 		DE4403D420E9FE61002606C4 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4403D320E9FE61002606C4 /* LoginController.swift */; };
 		DE4403D720E9FE61002606C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4403D520E9FE61002606C4 /* Main.storyboard */; };
@@ -43,6 +48,11 @@
 		799E4A944D0D180A48E5833E /* Pods-EventsIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventsIOS/Pods-EventsIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DE209CEB20F009210042AC87 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 		DE209CED20F009F60042AC87 /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		DE2B13D720F1627D00870BE9 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
+		DE2B13D920F1629800870BE9 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
+		DE2B13DC20F1630B00870BE9 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		DE2B13DE20F163DA00870BE9 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		DE2B13E020F1666400870BE9 /* NotificationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListViewModel.swift; sourceTree = "<group>"; };
 		DE4403CE20E9FE61002606C4 /* EventsIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventsIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE4403D120E9FE61002606C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE4403D320E9FE61002606C4 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -140,6 +150,152 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		DE2B13C620F1617400870BE9 /* UserPromotions */ = {
+			isa = PBXGroup;
+			children = (
+				DE2B13D320F1622300870BE9 /* Controller */,
+			);
+			path = UserPromotions;
+			sourceTree = "<group>";
+		};
+		DE2B13C720F1617E00870BE9 /* UserMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DE2B13D220F1621200870BE9 /* Controller */,
+			);
+			path = UserMenu;
+			sourceTree = "<group>";
+		};
+		DE2B13C820F1618700870BE9 /* UserBuy */ = {
+			isa = PBXGroup;
+			children = (
+				DE2B13D120F161FE00870BE9 /* Controller */,
+			);
+			path = UserBuy;
+			sourceTree = "<group>";
+		};
+		DE2B13C920F1619000870BE9 /* UserAnswers */ = {
+			isa = PBXGroup;
+			children = (
+				DE2B13D020F161F300870BE9 /* Controller */,
+			);
+			path = UserAnswers;
+			sourceTree = "<group>";
+		};
+		DE2B13CA20F1619C00870BE9 /* UserGuaranteed */ = {
+			isa = PBXGroup;
+			children = (
+				DE2B13CF20F161E900870BE9 /* Controller */,
+			);
+			path = UserGuaranteed;
+			sourceTree = "<group>";
+		};
+		DE2B13CB20F161A500870BE9 /* UserAsk */ = {
+			isa = PBXGroup;
+			children = (
+				DE2B13CE20F161DD00870BE9 /* Controller */,
+			);
+			path = UserAsk;
+			sourceTree = "<group>";
+		};
+		DE2B13CC20F161B400870BE9 /* UserEmailAndPassword */ = {
+			isa = PBXGroup;
+			children = (
+				DE2B13CD20F161BB00870BE9 /* Controller */,
+			);
+			path = UserEmailAndPassword;
+			sourceTree = "<group>";
+		};
+		DE2B13CD20F161BB00870BE9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DEAB3CB720ED4EE4009D30E8 /* RegistrerUserEmailAndPasswordController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE2B13CE20F161DD00870BE9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DEAB3CB520ED2B08009D30E8 /* RegisterUserAskDrinkController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE2B13CF20F161E900870BE9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DEAB3CB220ED2AD6009D30E8 /* RegisterUserGuaranteedTableController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE2B13D020F161F300870BE9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DEAB3CB020ED2A91009D30E8 /* RegisterUserAnswersController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE2B13D120F161FE00870BE9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DEAB3CAE20ED2A6C009D30E8 /* RegisterUserBuyController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE2B13D220F1621200870BE9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DEAB3CAC20ED2A53009D30E8 /* RegisterUserMenuController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE2B13D320F1622300870BE9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DEAB3CAA20ED2A45009D30E8 /* RegisterUserPromotionsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE2B13D420F1622C00870BE9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DEAB3CA820ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE2B13D520F1625E00870BE9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE2B13D920F1629800870BE9 /* NotificationViewModel.swift */,
+				DE2B13E020F1666400870BE9 /* NotificationListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE2B13D620F1626700870BE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE2B13D720F1627D00870BE9 /* NotificationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE2B13DB20F162FC00870BE9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE2B13DC20F1630B00870BE9 /* Notification.swift */,
+				DE2B13DE20F163DA00870BE9 /* NotificationCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DE4403C520E9FE61002606C4 = {
 			isa = PBXGroup;
 			children = (
@@ -203,7 +359,14 @@
 		DECD373820EEB9CD0074AB19 /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				DECD373B20EEBA140074AB19 /* Controller */,
+				DE2B13CC20F161B400870BE9 /* UserEmailAndPassword */,
+				DE2B13CB20F161A500870BE9 /* UserAsk */,
+				DE2B13CA20F1619C00870BE9 /* UserGuaranteed */,
+				DE2B13C920F1619000870BE9 /* UserAnswers */,
+				DE2B13C820F1618700870BE9 /* UserBuy */,
+				DE2B13C720F1617E00870BE9 /* UserMenu */,
+				DE2B13C620F1617400870BE9 /* UserPromotions */,
+				DECD373B20EEBA140074AB19 /* NumberPlaces */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -228,19 +391,12 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		DECD373B20EEBA140074AB19 /* Controller */ = {
+		DECD373B20EEBA140074AB19 /* NumberPlaces */ = {
 			isa = PBXGroup;
 			children = (
-				DEAB3CA820ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift */,
-				DEAB3CAA20ED2A45009D30E8 /* RegisterUserPromotionsController.swift */,
-				DEAB3CAC20ED2A53009D30E8 /* RegisterUserMenuController.swift */,
-				DEAB3CAE20ED2A6C009D30E8 /* RegisterUserBuyController.swift */,
-				DEAB3CB020ED2A91009D30E8 /* RegisterUserAnswersController.swift */,
-				DEAB3CB220ED2AD6009D30E8 /* RegisterUserGuaranteedTableController.swift */,
-				DEAB3CB520ED2B08009D30E8 /* RegisterUserAskDrinkController.swift */,
-				DEAB3CB720ED4EE4009D30E8 /* RegistrerUserEmailAndPasswordController.swift */,
+				DE2B13D420F1622C00870BE9 /* Controller */,
 			);
-			path = Controller;
+			path = NumberPlaces;
 			sourceTree = "<group>";
 		};
 		DECD373C20EEBB130074AB19 /* Profile */ = {
@@ -271,6 +427,9 @@
 		DECD374520EEBBDB0074AB19 /* Notification */ = {
 			isa = PBXGroup;
 			children = (
+				DE2B13DB20F162FC00870BE9 /* View */,
+				DE2B13D620F1626700870BE9 /* Model */,
+				DE2B13D520F1625E00870BE9 /* ViewModel */,
 				DE209CE520F002A60042AC87 /* Controller */,
 			);
 			path = Notification;
@@ -446,6 +605,7 @@
 				DEE8025820EF012F00ABAFEF /* DesignableImage.swift in Sources */,
 				DE209CEC20F009210042AC87 /* DesignableButton.swift in Sources */,
 				DEAB3CB820ED4EE4009D30E8 /* RegistrerUserEmailAndPasswordController.swift in Sources */,
+				DE2B13DF20F163DA00870BE9 /* NotificationCell.swift in Sources */,
 				DEE8025420EEF41900ABAFEF /* InfoEvenController.swift in Sources */,
 				DECD373E20EEBB770074AB19 /* ProfileUserController.swift in Sources */,
 				DEAB3CAF20ED2A6C009D30E8 /* RegisterUserBuyController.swift in Sources */,
@@ -457,10 +617,14 @@
 				DE4403D420E9FE61002606C4 /* LoginController.swift in Sources */,
 				DEAB3CA920ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift in Sources */,
 				DEAB3CB120ED2A91009D30E8 /* RegisterUserAnswersController.swift in Sources */,
+				DE2B13D820F1627D00870BE9 /* NotificationModel.swift in Sources */,
+				DE2B13DD20F1630B00870BE9 /* Notification.swift in Sources */,
 				DE209CEE20F009F60042AC87 /* DesignableTextField.swift in Sources */,
+				DE2B13DA20F1629800870BE9 /* NotificationViewModel.swift in Sources */,
 				DECD374920EED2750074AB19 /* InvitationCard.swift in Sources */,
 				DE4403D220E9FE61002606C4 /* AppDelegate.swift in Sources */,
 				DECD374720EEBBEA0074AB19 /* NotificationController.swift in Sources */,
+				DE2B13E120F1666400870BE9 /* NotificationListViewModel.swift in Sources */,
 				DEAB3CB320ED2AD6009D30E8 /* RegisterUserGuaranteedTableController.swift in Sources */,
 				DEAB3CB620ED2B08009D30E8 /* RegisterUserAskDrinkController.swift in Sources */,
 				DEAB3CAB20ED2A45009D30E8 /* RegisterUserPromotionsController.swift in Sources */,
