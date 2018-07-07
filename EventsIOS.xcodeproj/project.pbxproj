@@ -164,15 +164,23 @@
 				DECD374A20EED9210074AB19 /* Extensions */,
 				DECD373920EEB9EE0074AB19 /* User */,
 				DEAB3CA620ED29AD009D30E8 /* Main */,
-				DE4403D520E9FE61002606C4 /* Main.storyboard */,
-				DECD373420EDEFB40074AB19 /* User.storyboard */,
-				DECD373620EDF2E70074AB19 /* Employees.storyboard */,
-				DE4403DA20E9FE65002606C4 /* LaunchScreen.storyboard */,
+				DE78A1A920F05CB4005A536E /* Storyboard */,
 				DE4403D120E9FE61002606C4 /* AppDelegate.swift */,
 				DE4403D820E9FE65002606C4 /* Assets.xcassets */,
 				DE4403DD20E9FE65002606C4 /* Info.plist */,
 			);
 			path = EventsIOS;
+			sourceTree = "<group>";
+		};
+		DE78A1A920F05CB4005A536E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DE4403D520E9FE61002606C4 /* Main.storyboard */,
+				DECD373420EDEFB40074AB19 /* User.storyboard */,
+				DECD373620EDF2E70074AB19 /* Employees.storyboard */,
+				DE4403DA20E9FE65002606C4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		DEAB3CA620ED29AD009D30E8 /* Main */ = {
@@ -604,7 +612,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = Y99AD5GLT5;
 				INFOPLIST_FILE = EventsIOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -624,7 +632,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y99AD5GLT5;
 				INFOPLIST_FILE = EventsIOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
