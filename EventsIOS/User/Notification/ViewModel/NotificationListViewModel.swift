@@ -21,7 +21,7 @@ class NotificationListViewModel {
     private func getAllNotificationsListViewModel(){
         let notification = self.dataNotification.getAllNotifications()
         self.notificationViewModel = notification.map{ notification in
-            return NotificationViewModel(notifi: notification)
+            return NotificationViewModel(data: notification)
         }
     }
     

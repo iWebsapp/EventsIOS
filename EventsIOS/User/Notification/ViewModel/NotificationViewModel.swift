@@ -15,11 +15,11 @@ class NotificationViewModel{
     public var user: String
     public var description: String
     
-    init(notifi: Notification) {
-        self.avatar = notifi.avatar
-        self.date = notifi.date
-        self.user = notifi.user
-        self.description = notifi.description
+    init(data: Notification) {
+        self.avatar = data.avatar
+        self.date = data.date
+        self.user = data.user
+        self.description = data.description
     }
     
 }

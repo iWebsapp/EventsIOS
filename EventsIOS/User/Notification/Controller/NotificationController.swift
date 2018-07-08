@@ -10,19 +10,19 @@ import UIKit
 
 class NotificationController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var table: UITableView!
     private var notificationListViewModel: NotificationListViewModel!
-    private var notificationModel: NotificationModel!
+    private var notificationData: NotificationModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        tableView.delegate = self
-        tableView.dataSource = self
-        self.notificationModel = NotificationModel()
-        self.notificationListViewModel = NotificationListViewModel(data: self.notificationModel)
+        table.delegate = self
+        table.dataSource = self
+        self.notificationData = NotificationModel()
+        self.notificationListViewModel = NotificationListViewModel(data: self.notificationData)
         DispatchQueue.main.async {
-            self.tableView.reloadData()
+            self.table.reloadData()
         }
     }
 
@@ -37,7 +37,7 @@ class NotificationController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return self.notificationListViewModel.notificationViewModel.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
