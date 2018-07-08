@@ -11,7 +11,7 @@ import Foundation
 
 class EventModel {
     
-    private var events: [Event] = [Event]()
+    public var events: [Event] = [Event]()
     
     public func getAllEvents() -> [Event] {
         events.append( Event(name: "La fiesta de luis", date: "27/03/18", avatar: "2.jpg"))

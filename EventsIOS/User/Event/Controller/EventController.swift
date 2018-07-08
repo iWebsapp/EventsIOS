@@ -8,23 +8,22 @@
 
 import UIKit
 
-class EventController: UIViewController {
+class EventController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    //UITableViewDelegate, UITableViewDataSource
     @IBOutlet weak var table: UITableView!
-    private var notificationListViewModel: EventListViewModel!
-    private var notificationData: EventModel!
+    private var eventListViewModel: EventListViewModel!
+    private var eventData: EventModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-//        table.delegate = self
-//        table.dataSource = self
-//        self.notificationData = EventModel()
-//        self.notificationListViewModel = EventListViewModel(eventModel: self.notificationData)
-//        DispatchQueue.main.async {
-//            self.table.reloadData()
-//        }
+         // Do any additional setup after loading the view.
+        table.delegate = self
+        table.dataSource = self
+        self.eventData = EventModel()
+        self.eventListViewModel = EventListViewModel(eventModel: self.eventData)
+        DispatchQueue.main.async {
+            self.table.reloadData()
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -32,23 +31,21 @@ class EventController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.eventListViewModel.eventViewModel.count
+    }
     
-//    func numberOfSections(in tableView: UITableView) -> Int {
-//        return 1
-//    }
-//
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return self.notificationListViewModel.eventViewModel.count
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NotificationCell
-//        let notification = self.notificationListViewModel.eventViewModel[indexPath.row]
-//        cell.txtDate.text = "\(notification.date)"
-//        cell.txtDescription.text = "\(notification.name)"
-//        return cell
-//    }
-    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! EventCell
+        let event = self.eventListViewModel.eventViewModel[indexPath.row]
+        cell.txtName.text = event.name
+        cell.txtDate.text = event.date
+        return cell
+    }
     /*
      // MARK: - Navigation
      
@@ -60,4 +57,3 @@ class EventController: UIViewController {
      */
     
 }
-
