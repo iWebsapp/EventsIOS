@@ -32,7 +32,7 @@ extension MapController: MKMapViewDelegate{
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         //let location = view.annotation as! InvitationCard
         //let lauchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
-        self.performSegue(withIdentifier: "goMoreInfo", sender: self )
+        self.performSegue(withIdentifier: "goMoreInfoMap", sender: self )
         
         //location.mapItem().openInMaps(launchOptions: lauchOptions)
     }

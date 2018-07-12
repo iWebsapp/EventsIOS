@@ -46,6 +46,11 @@ class EventController: UIViewController, UITableViewDelegate, UITableViewDataSou
         cell.txtDate.text = event.date
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goProfileEventFromUser", sender: self )
+    }
+    
     /*
      // MARK: - Navigation
      
