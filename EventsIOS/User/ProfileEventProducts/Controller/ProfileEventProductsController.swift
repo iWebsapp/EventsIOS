@@ -8,50 +8,28 @@
 
 import UIKit
 
-class ProfileEventProductsController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
+class ProfileEventProductsController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     
     private var products: [ProductsEvent] = [ProductsEvent]()
-    private var newProducts: [ProductsEvent] = [ProductsEvent]()
     @IBOutlet weak var table: UITableView!
-    @IBOutlet weak var collectionProduct: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         table.delegate = self
         table.dataSource = self
-        collectionProduct.delegate = self
-        collectionProduct.dataSource = self
         
         products.append( ProductsEvent(name: "Enchiladas Vips", image: "food-enchiladas", categorie: "1", price: "27.00", description: ""))
         products.append( ProductsEvent(name: "El Tradicional Guacamole", image: "food-huacamole", categorie: "3", price: "15.00", description: ""))
         products.append( ProductsEvent(name: "Sopa de Tortilla", image: "food-sopa-tortila", categorie: "4", price: "157.00", description: ""))
         products.append( ProductsEvent(name: "Pechuga con Mole Poblano", image: "food-mole", categorie: "1", price: "27.00", description: ""))
         products.append( ProductsEvent(name: "Tacos Dorados de Pollo", image: "food-tacos", categorie: "2", price: "127.00", description: ""))
-        
-        newProducts.append( ProductsEvent(name: "Volcán de chocolate", image: "food-volcan", categorie: "1", price: "27.00", description: ""))
-        newProducts.append( ProductsEvent(name: "Nuggets de Pollo", image: "food-nuggets", categorie: "2", price: "127.00", description: ""))
-        newProducts.append( ProductsEvent(name: "Enchiladas en Salsa Manchamantel", image: "food-manchamantel", categorie: "2", price: "127.00", description: ""))
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    //collectionview
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return newProducts.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionProduct.dequeueReusableCell(withReuseIdentifier: "collection", for: indexPath) as! ProcutsEventCollection
-        let newProduct = newProducts[indexPath.item]
-        cell.txtNewProductEventTitle.text = newProduct.name
-        cell.txtNewProductEventPrice.text = newProduct.price
-        cell.txtNewProductEventPicture.image = UIImage(named: newProduct.image)
-        return cell
     }
     
     //tableview
