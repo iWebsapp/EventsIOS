@@ -27,6 +27,11 @@
 		DE4403D720E9FE61002606C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4403D520E9FE61002606C4 /* Main.storyboard */; };
 		DE4403D920E9FE65002606C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4403D820E9FE65002606C4 /* Assets.xcassets */; };
 		DE4403DC20E9FE65002606C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4403DA20E9FE65002606C4 /* LaunchScreen.storyboard */; };
+		DE5EFF1120FDC66700C9B7C8 /* PrivacyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFF1020FDC66700C9B7C8 /* PrivacyController.swift */; };
+		DE5EFF1520FDC6AD00C9B7C8 /* ReportProblemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFF1420FDC6AD00C9B7C8 /* ReportProblemsController.swift */; };
+		DE5EFF1920FDC6EB00C9B7C8 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFF1820FDC6EB00C9B7C8 /* AboutController.swift */; };
+		DE5EFF1D20FDC72400C9B7C8 /* HelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFF1C20FDC72400C9B7C8 /* HelpController.swift */; };
+		DE5EFF2120FDC76600C9B7C8 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFF2020FDC76600C9B7C8 /* SettingsController.swift */; };
 		DE724C8A20F18C4C002504C6 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE724C8920F18C4C002504C6 /* Event.swift */; };
 		DE724C8C20F18C5C002504C6 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE724C8B20F18C5B002504C6 /* EventCell.swift */; };
 		DE724C9020F18CA8002504C6 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE724C8F20F18CA8002504C6 /* EventModel.swift */; };
@@ -93,6 +98,11 @@
 		DE4403D820E9FE65002606C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE4403DB20E9FE65002606C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE4403DD20E9FE65002606C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE5EFF1020FDC66700C9B7C8 /* PrivacyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyController.swift; sourceTree = "<group>"; };
+		DE5EFF1420FDC6AD00C9B7C8 /* ReportProblemsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportProblemsController.swift; sourceTree = "<group>"; };
+		DE5EFF1820FDC6EB00C9B7C8 /* AboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
+		DE5EFF1C20FDC72400C9B7C8 /* HelpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpController.swift; sourceTree = "<group>"; };
+		DE5EFF2020FDC76600C9B7C8 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		DE724C8920F18C4C002504C6 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		DE724C8B20F18C5B002504C6 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		DE724C8F20F18CA8002504C6 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
@@ -173,47 +183,47 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		DE1F1D2320F5EBBD00503134 /* ProfileEventInformation */ = {
+		DE1F1D2320F5EBBD00503134 /* EventInformation */ = {
 			isa = PBXGroup;
 			children = (
 				DE1F1D3020F5EC4400503134 /* Controller */,
 			);
-			path = ProfileEventInformation;
+			path = EventInformation;
 			sourceTree = "<group>";
 		};
-		DE1F1D2420F5EBD500503134 /* ProfileEventComments */ = {
+		DE1F1D2420F5EBD500503134 /* EventComments */ = {
 			isa = PBXGroup;
 			children = (
 				DE1F1D3120F5EC4E00503134 /* Controller */,
 			);
-			path = ProfileEventComments;
+			path = EventComments;
 			sourceTree = "<group>";
 		};
-		DE1F1D2520F5EBEC00503134 /* ProfileEventCoupons */ = {
+		DE1F1D2520F5EBEC00503134 /* EventCoupons */ = {
 			isa = PBXGroup;
 			children = (
 				DE8C4A0020F72E8B009C5F39 /* View */,
 				DE1F1D3220F5EC5500503134 /* Controller */,
 			);
-			path = ProfileEventCoupons;
+			path = EventCoupons;
 			sourceTree = "<group>";
 		};
-		DE1F1D2620F5EBF500503134 /* ProfileEventPromotions */ = {
+		DE1F1D2620F5EBF500503134 /* EventPromotions */ = {
 			isa = PBXGroup;
 			children = (
 				DE8C49F920F724B0009C5F39 /* View */,
 				DE1F1D3320F5EC5D00503134 /* Controller */,
 			);
-			path = ProfileEventPromotions;
+			path = EventPromotions;
 			sourceTree = "<group>";
 		};
-		DE1F1D2720F5EC0200503134 /* ProfileEventProducts */ = {
+		DE1F1D2720F5EC0200503134 /* EventProducts */ = {
 			isa = PBXGroup;
 			children = (
 				DE1F1D3520F6DC8100503134 /* View */,
 				DE1F1D3420F5EC6600503134 /* Controller */,
 			);
-			path = ProfileEventProducts;
+			path = EventProducts;
 			sourceTree = "<group>";
 		};
 		DE1F1D3020F5EC4400503134 /* Controller */ = {
@@ -493,6 +503,86 @@
 			path = EventsIOS;
 			sourceTree = "<group>";
 		};
+		DE5EFF0E20FDC64500C9B7C8 /* Privacy */ = {
+			isa = PBXGroup;
+			children = (
+				DE5EFF0F20FDC64F00C9B7C8 /* Controller */,
+			);
+			path = Privacy;
+			sourceTree = "<group>";
+		};
+		DE5EFF0F20FDC64F00C9B7C8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE5EFF1020FDC66700C9B7C8 /* PrivacyController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE5EFF1220FDC68C00C9B7C8 /* ReportProblems */ = {
+			isa = PBXGroup;
+			children = (
+				DE5EFF1320FDC69700C9B7C8 /* Controller */,
+			);
+			path = ReportProblems;
+			sourceTree = "<group>";
+		};
+		DE5EFF1320FDC69700C9B7C8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE5EFF1420FDC6AD00C9B7C8 /* ReportProblemsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE5EFF1620FDC6D000C9B7C8 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				DE5EFF1720FDC6D700C9B7C8 /* Controller */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		DE5EFF1720FDC6D700C9B7C8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE5EFF1820FDC6EB00C9B7C8 /* AboutController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE5EFF1A20FDC70A00C9B7C8 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				DE5EFF1B20FDC70F00C9B7C8 /* Controller */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		DE5EFF1B20FDC70F00C9B7C8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE5EFF1C20FDC72400C9B7C8 /* HelpController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE5EFF1E20FDC73B00C9B7C8 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DE5EFF1F20FDC74E00C9B7C8 /* Controller */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		DE5EFF1F20FDC74E00C9B7C8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE5EFF2020FDC76600C9B7C8 /* SettingsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		DE724C8820F18C32002504C6 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -583,19 +673,24 @@
 		DECD373920EEB9EE0074AB19 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				DE5EFF1E20FDC73B00C9B7C8 /* Settings */,
+				DE5EFF1A20FDC70A00C9B7C8 /* Help */,
+				DE5EFF1620FDC6D000C9B7C8 /* About */,
+				DE5EFF1220FDC68C00C9B7C8 /* ReportProblems */,
+				DE5EFF0E20FDC64500C9B7C8 /* Privacy */,
 				DEDB8E3120FC7B02001E90EA /* NewEvent */,
 				DEDB8E2B20FC78CD001E90EA /* MyEvent */,
-				DE1F1D2720F5EC0200503134 /* ProfileEventProducts */,
-				DE1F1D2620F5EBF500503134 /* ProfileEventPromotions */,
-				DE1F1D2520F5EBEC00503134 /* ProfileEventCoupons */,
-				DE1F1D2420F5EBD500503134 /* ProfileEventComments */,
-				DE1F1D2320F5EBBD00503134 /* ProfileEventInformation */,
+				DE1F1D2720F5EC0200503134 /* EventProducts */,
+				DE1F1D2620F5EBF500503134 /* EventPromotions */,
+				DE1F1D2520F5EBEC00503134 /* EventCoupons */,
+				DE1F1D2420F5EBD500503134 /* EventComments */,
+				DE1F1D2320F5EBBD00503134 /* EventInformation */,
 				DE0FBA1720F2DED900921DEC /* ProfileEvent */,
 				DEE8025220EEF3F300ABAFEF /* InfoEvent */,
 				DECD374520EEBBDB0074AB19 /* Notification */,
 				DECD374220EEBBB70074AB19 /* Event */,
 				DECD373F20EEBB8D0074AB19 /* Map */,
-				DECD373C20EEBB130074AB19 /* Profile */,
+				DECD373C20EEBB130074AB19 /* ProfileUser */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -616,12 +711,12 @@
 			path = NumberPlaces;
 			sourceTree = "<group>";
 		};
-		DECD373C20EEBB130074AB19 /* Profile */ = {
+		DECD373C20EEBB130074AB19 /* ProfileUser */ = {
 			isa = PBXGroup;
 			children = (
 				DE209CEA20F003030042AC87 /* Controller */,
 			);
-			path = Profile;
+			path = ProfileUser;
 			sourceTree = "<group>";
 		};
 		DECD373F20EEBB8D0074AB19 /* Map */ = {
@@ -894,6 +989,7 @@
 				DEAB3CAF20ED2A6C009D30E8 /* RegisterUserBuyController.swift in Sources */,
 				DEF926F920F5247900621ED0 /* ProfileEventCell.swift in Sources */,
 				DECD374E20EEE0BE0074AB19 /* LocationManagerExt.swift in Sources */,
+				DE5EFF2120FDC76600C9B7C8 /* SettingsController.swift in Sources */,
 				DEAB3CAD20ED2A53009D30E8 /* RegisterUserMenuController.swift in Sources */,
 				DECD374420EEBBC70074AB19 /* EventController.swift in Sources */,
 				DEF926F020F5242D00621ED0 /* ProfileEventModel.swift in Sources */,
@@ -905,6 +1001,7 @@
 				DEAB3CA920ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift in Sources */,
 				DE8C49FB20F724CD009C5F39 /* PromotionsEventCell.swift in Sources */,
 				DEF926F720F5246200621ED0 /* ProfileEvent.swift in Sources */,
+				DE5EFF1D20FDC72400C9B7C8 /* HelpController.swift in Sources */,
 				DE1F1D2220F5EBB100503134 /* ProfileEventInformationController.swift in Sources */,
 				DEAB3CB120ED2A91009D30E8 /* RegisterUserAnswersController.swift in Sources */,
 				DE0FBA1920F2DF2600921DEC /* ProfileEventController.swift in Sources */,
@@ -924,14 +1021,17 @@
 				DE4403D220E9FE61002606C4 /* AppDelegate.swift in Sources */,
 				DE724C8C20F18C5C002504C6 /* EventCell.swift in Sources */,
 				DECD374720EEBBEA0074AB19 /* NotificationController.swift in Sources */,
+				DE5EFF1120FDC66700C9B7C8 /* PrivacyController.swift in Sources */,
 				DE1F1D2F20F5EC3A00503134 /* ProfileEventCommentsController.swift in Sources */,
 				DE2B13E120F1666400870BE9 /* NotificationListViewModel.swift in Sources */,
+				DE5EFF1920FDC6EB00C9B7C8 /* AboutController.swift in Sources */,
 				DE1F1D3920F6DE1F00503134 /* ProductsEvent.swift in Sources */,
 				DE8C4A0220F72EB1009C5F39 /* ProfileEventCouponsCell.swift in Sources */,
 				DEAB3CB320ED2AD6009D30E8 /* RegisterUserGuaranteedTableController.swift in Sources */,
 				DEAB3CB620ED2B08009D30E8 /* RegisterUserAskDrinkController.swift in Sources */,
 				DE724C9420F18CCA002504C6 /* EventListViewModel.swift in Sources */,
 				DE724C9020F18CA8002504C6 /* EventModel.swift in Sources */,
+				DE5EFF1520FDC6AD00C9B7C8 /* ReportProblemsController.swift in Sources */,
 				DEAB3CAB20ED2A45009D30E8 /* RegisterUserPromotionsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

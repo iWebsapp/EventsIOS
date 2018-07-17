@@ -40,7 +40,7 @@ class ProfileEventController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as!ProfileEventCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ProfileEventCell
         let notification = self.notificationListViewModel.profileEventViewModel[indexPath.row]
         cell.icon.image = UIImage(named: notification.icon)
         cell.txtTitle?.text = notification.title!

@@ -1,18 +1,17 @@
 //
-//  NewEventController.swift
+//  PrivacyController.swift
 //  EventsIOS
 //
-//  Created by Luis Castillo on 16/07/18.
+//  Created by Luis Castillo on 17/07/18.
 //  Copyright © 2018 Luis Castillo. All rights reserved.
 //
 
 import UIKit
 
-class NewEventController: UIViewController {
+class PrivacyController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -24,7 +23,7 @@ class NewEventController: UIViewController {
     @IBAction func behind(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
-    
+
     /*
     // MARK: - Navigation
 

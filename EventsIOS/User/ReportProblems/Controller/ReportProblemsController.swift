@@ -1,14 +1,14 @@
 //
-//  ProfileUserController.swift
+//  ReportProblemsController.swift
 //  EventsIOS
 //
-//  Created by Luis Castillo on 05/07/18.
+//  Created by Luis Castillo on 17/07/18.
 //  Copyright © 2018 Luis Castillo. All rights reserved.
 //
 
 import UIKit
 
-class ProfileUserController: UIViewController {
+class ReportProblemsController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,10 @@ class ProfileUserController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func behind(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
