@@ -44,6 +44,7 @@
 		DE8C49FD20F724DB009C5F39 /* PromotionsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C49FC20F724DB009C5F39 /* PromotionsEvent.swift */; };
 		DE8C49FF20F724F1009C5F39 /* ProductsEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C49FE20F724F1009C5F39 /* ProductsEventModel.swift */; };
 		DE8C4A0220F72EB1009C5F39 /* ProfileEventCouponsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C4A0120F72EB1009C5F39 /* ProfileEventCouponsCell.swift */; };
+		DEAB1CFA20FF01AD00436CC1 /* ShoppingCartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB1CF920FF01AD00436CC1 /* ShoppingCartController.swift */; };
 		DEAB3CA920ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CA820ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift */; };
 		DEAB3CAB20ED2A45009D30E8 /* RegisterUserPromotionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CAA20ED2A45009D30E8 /* RegisterUserPromotionsController.swift */; };
 		DEAB3CAD20ED2A53009D30E8 /* RegisterUserMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CAC20ED2A53009D30E8 /* RegisterUserMenuController.swift */; };
@@ -118,6 +119,7 @@
 		DE8C49FC20F724DB009C5F39 /* PromotionsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionsEvent.swift; sourceTree = "<group>"; };
 		DE8C49FE20F724F1009C5F39 /* ProductsEventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsEventModel.swift; sourceTree = "<group>"; };
 		DE8C4A0120F72EB1009C5F39 /* ProfileEventCouponsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEventCouponsCell.swift; sourceTree = "<group>"; };
+		DEAB1CF920FF01AD00436CC1 /* ShoppingCartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartController.swift; sourceTree = "<group>"; };
 		DEAB3CA820ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserNumberPlacesController.swift; sourceTree = "<group>"; };
 		DEAB3CAA20ED2A45009D30E8 /* RegisterUserPromotionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserPromotionsController.swift; sourceTree = "<group>"; };
 		DEAB3CAC20ED2A53009D30E8 /* RegisterUserMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserMenuController.swift; sourceTree = "<group>"; };
@@ -645,6 +647,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DEAB1CF720FF018500436CC1 /* ShoppingCart */ = {
+			isa = PBXGroup;
+			children = (
+				DEAB1CF820FF019400436CC1 /* Controller */,
+			);
+			path = ShoppingCart;
+			sourceTree = "<group>";
+		};
+		DEAB1CF820FF019400436CC1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DEAB1CF920FF01AD00436CC1 /* ShoppingCartController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		DEAB3CA620ED29AD009D30E8 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -680,6 +698,7 @@
 		DECD373920EEB9EE0074AB19 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				DEAB1CF720FF018500436CC1 /* ShoppingCart */,
 				DECFD75F20FEDBF9003812DD /* MyCoupons */,
 				DE5EFF1E20FDC73B00C9B7C8 /* Settings */,
 				DE5EFF1A20FDC70A00C9B7C8 /* Help */,
@@ -1050,6 +1069,7 @@
 				DEDB8E3420FC7B2B001E90EA /* NewEventController.swift in Sources */,
 				DE2B13DD20F1630B00870BE9 /* Notification.swift in Sources */,
 				DE1F1D2920F5EC1400503134 /* ProfileEventProductsController.swift in Sources */,
+				DEAB1CFA20FF01AD00436CC1 /* ShoppingCartController.swift in Sources */,
 				DE209CEE20F009F60042AC87 /* DesignableTextField.swift in Sources */,
 				DE8C49F620F6FC42009C5F39 /* ProfileEventProductsCell.swift in Sources */,
 				DECFD76320FEDC1B003812DD /* MyCouponsController.swift in Sources */,

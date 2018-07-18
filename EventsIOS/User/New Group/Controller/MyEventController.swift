@@ -51,6 +51,10 @@ class MyEventController: UIViewController, UITableViewDelegate, UITableViewDataS
         performSegue(withIdentifier: "goProfileEventFromUser", sender: self )
     }
     
+    @IBAction func behind(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     /*
      // MARK: - Navigation
      

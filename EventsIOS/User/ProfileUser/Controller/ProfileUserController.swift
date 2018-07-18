@@ -18,7 +18,8 @@ class ProfileUserController: UIViewController, UITableViewDataSource, UITableVie
         table.dataSource = self
         table.delegate = self
         itemsProfile.append( ProfileEvent(icon: "icon-settings", title: "Configuración") )
-        itemsProfile.append( ProfileEvent(icon: "icon-about", title: "Quiénes somos") )
+        itemsProfile.append( ProfileEvent(icon: "menu-events", title: "Mis Eventos") )
+        itemsProfile.append( ProfileEvent(icon: "icon-info", title: "Quiénes somos") )
         itemsProfile.append( ProfileEvent(icon: "icon-report", title: "Reportar un problema") )
         itemsProfile.append( ProfileEvent(icon: "icon-help", title: "Servicio de ayuda") )
         itemsProfile.append( ProfileEvent(icon: "icon-conditions", title: "Privacidad y condiciones") )
@@ -48,16 +49,18 @@ class ProfileUserController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch indexPath.row {
-        case 0:
+        switch itemsProfile[indexPath.row].title {
+        case "Configuración":
             performSegue(withIdentifier: "goSettings", sender: self )
-        case 1:
+        case "Mis Eventos":
+            performSegue(withIdentifier: "goMyEvents", sender: self )
+        case "Quiénes somos":
             performSegue(withIdentifier: "goAbout", sender: self )
-        case 2:
+        case "Reportar un problema":
             performSegue(withIdentifier: "goReportProblem", sender: self )
-        case 3:
+        case "Servicio de ayuda":
             performSegue(withIdentifier: "goHelp", sender: self )
-        case 4:
+        case "Privacidad y condiciones":
             performSegue(withIdentifier: "goPrivacy", sender: self )
         default:
             performSegue(withIdentifier: "goLogout", sender: self )
