@@ -1,15 +1,15 @@
 //
-//  ProfileEventCouponsController.swift
+//  MyCouponsController.swift
 //  EventsIOS
 //
-//  Created by Luis Castillo on 11/07/18.
+//  Created by Luis Castillo on 17/07/18.
 //  Copyright © 2018 Luis Castillo. All rights reserved.
 //
 
 import UIKit
 
-class ProfileEventCouponsController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-    
+class MyCouponsController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+
     @IBOutlet weak var collectionCoupons: UICollectionView!
     private var coupons: [MyCoupons] = [MyCoupons]()
     
@@ -22,7 +22,7 @@ class ProfileEventCouponsController: UIViewController, UICollectionViewDelegate,
         coupons.append( MyCoupons(image: "food-manchamantel", title: "Lunes de Helado", expiration: "19/11/18", description: "Llevate un helado de sabor chocolate con un 10% de descuento"))
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -41,10 +41,7 @@ class ProfileEventCouponsController: UIViewController, UICollectionViewDelegate,
         cell.image.image = UIImage(named: coupon.image)
         return cell
     }
-    
-    @IBAction func behind(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
-    }
+
     /*
     // MARK: - Navigation
 
