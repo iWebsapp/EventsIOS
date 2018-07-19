@@ -11,14 +11,22 @@ import UIKit
 class ReportProblemsController: UIViewController {
 
     @IBOutlet weak var listenerTitle: UILabel!
+    @IBOutlet weak var listenerButtonAddImage: UIButton!
     @IBOutlet weak var primaryView: DesignableGradient!
     @IBOutlet weak var secundaryView: DesignableGradient!
+    @IBOutlet weak var txtMessage: UITextField!
+    @IBOutlet weak var listenerInfo: UILabel!
+    private var state = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         primaryView.isHidden = false
         secundaryView.isHidden = true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     @IBAction func behind(_ sender: UIButton) {
@@ -28,6 +36,19 @@ class ReportProblemsController: UIViewController {
     @IBAction func noWork(_ sender: UIButton) {
         primaryView.isHidden = true
         secundaryView.isHidden = false
+        if sender.tag == 0 {
+            listenerTitle.text = "Reportar"
+            txtMessage.placeholder = "Agrega una explicación"
+            listenerInfo.isHidden = false
+            listenerButtonAddImage.isHidden = false
+            state = 0
+        } else {
+            listenerTitle.text = "Comentarios"
+            txtMessage.placeholder = "¿Cómo podemos mejorar?"
+            listenerInfo.isHidden = true
+            listenerButtonAddImage.isHidden = true
+            state = 1
+        }
     }
     
     @IBAction func close(_ sender: UIButton) {
@@ -45,10 +66,7 @@ class ReportProblemsController: UIViewController {
         primaryView.isHidden = false
         secundaryView.isHidden = true
     }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
+
     
     /*
     // MARK: - Navigation

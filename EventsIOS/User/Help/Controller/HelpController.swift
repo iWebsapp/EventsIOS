@@ -44,10 +44,14 @@ class HelpController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HelpCell
+            cell.listenerView.topColor = UIColor(red:0.90, green:0.90, blue:0.90, alpha:1.0)
+            cell.listenerView.bottomColor = UIColor(red:1.00, green:1.00, blue:1.00, alpha:1.0)
             cell.txtQuestion?.text = questions[indexPath.section].question
             return cell
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HelpCell
+            cell.listenerView.topColor = UIColor(red:0.90, green:0.37, blue:0.40, alpha:1.0)
+            cell.listenerView.bottomColor = UIColor(red:1.04, green:0.25, blue:0.28, alpha:1.0)
             cell.txtQuestion?.text = questions[indexPath.section].answer[indexPath.row - 1]
             return cell
         }
