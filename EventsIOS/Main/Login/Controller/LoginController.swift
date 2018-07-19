@@ -7,9 +7,8 @@
 //
 
 import UIKit
-import Crashlytics
 
-class LoginController: UIViewController {
+class LoginController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
@@ -17,16 +16,14 @@ class LoginController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        txtEmail.delegate = self
+        txtPassword.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-
-    @IBAction func crasher(_ sender: UIButton) {
-        Crashlytics.sharedInstance().crash()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

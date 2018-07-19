@@ -8,12 +8,20 @@
 
 import UIKit
 
-class HelpController: UIViewController {
+class HelpController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var table: UITableView!
+    private var questions: [Help] = [Help]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        table.delegate = self
+        table.dataSource = self
+        questions.append( Help(open: false, question: "Como suena el panda show?", answer: ["A toda maquina baboso!!!"]))
+        questions.append( Help(open: false, question: "Por que el rott es feo?", answer: ["Por que se parece a jim"]))
+        questions.append( Help(open: false, question: "Por que amo al rott?", answer: ["Por que es un bb hermoso y concentido"]))
+        questions.append( Help(open: false, question: "Por que jim no me pela?", answer: ["Por que es una bb fea y nojona"]))
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,8 +29,50 @@ class HelpController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return questions.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if questions[section].open == true {
+            return questions[section].answer.count + 1
+        }else{
+            return 1
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HelpCell
+            cell.txtQuestion?.text = questions[indexPath.section].question
+            return cell
+        }else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HelpCell
+            cell.txtQuestion?.text = questions[indexPath.section].answer[indexPath.row - 1]
+            return cell
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0{
+            if questions[indexPath.section].open == true {
+                questions[indexPath.section].open = false
+                let secciones = IndexSet.init(integer: indexPath.section)
+                table.reloadSections(secciones, with: .fade)
+            }else{
+                questions[indexPath.section].open = true
+                let secciones = IndexSet.init(integer: indexPath.section)
+                table.reloadSections(secciones, with: .fade)
+            }
+        }
+    }
+    
     @IBAction func behind(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     /*

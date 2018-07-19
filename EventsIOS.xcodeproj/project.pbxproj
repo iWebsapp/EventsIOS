@@ -33,6 +33,9 @@
 		DE5EFF1D20FDC72400C9B7C8 /* HelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFF1C20FDC72400C9B7C8 /* HelpController.swift */; };
 		DE5EFF2120FDC76600C9B7C8 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFF2020FDC76600C9B7C8 /* SettingsController.swift */; };
 		DE5EFF2320FDCBA900C9B7C8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5EFF2220FDCBA900C9B7C8 /* MapKit.framework */; };
+		DE664AF3210011080011E949 /* HelpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE664AF2210011080011E949 /* HelpCell.swift */; };
+		DE664AF5210011180011E949 /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE664AF4210011180011E949 /* Help.swift */; };
+		DE664AF921004A460011E949 /* MyCreditCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE664AF821004A460011E949 /* MyCreditCardController.swift */; };
 		DE724C8A20F18C4C002504C6 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE724C8920F18C4C002504C6 /* Event.swift */; };
 		DE724C8C20F18C5C002504C6 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE724C8B20F18C5B002504C6 /* EventCell.swift */; };
 		DE724C9020F18CA8002504C6 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE724C8F20F18CA8002504C6 /* EventModel.swift */; };
@@ -108,6 +111,9 @@
 		DE5EFF1C20FDC72400C9B7C8 /* HelpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpController.swift; sourceTree = "<group>"; };
 		DE5EFF2020FDC76600C9B7C8 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		DE5EFF2220FDCBA900C9B7C8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DE664AF2210011080011E949 /* HelpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCell.swift; sourceTree = "<group>"; };
+		DE664AF4210011180011E949 /* Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
+		DE664AF821004A460011E949 /* MyCreditCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCreditCardController.swift; sourceTree = "<group>"; };
 		DE724C8920F18C4C002504C6 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		DE724C8B20F18C5B002504C6 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		DE724C8F20F18CA8002504C6 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
@@ -564,6 +570,7 @@
 		DE5EFF1A20FDC70A00C9B7C8 /* Help */ = {
 			isa = PBXGroup;
 			children = (
+				DE664AF1210010EA0011E949 /* View */,
 				DE5EFF1B20FDC70F00C9B7C8 /* Controller */,
 			);
 			path = Help;
@@ -589,6 +596,31 @@
 			isa = PBXGroup;
 			children = (
 				DE5EFF2020FDC76600C9B7C8 /* SettingsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE664AF1210010EA0011E949 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE664AF2210011080011E949 /* HelpCell.swift */,
+				DE664AF4210011180011E949 /* Help.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE664AF621004A240011E949 /* MyCreditCard */ = {
+			isa = PBXGroup;
+			children = (
+				DE664AF721004A320011E949 /* Controller */,
+			);
+			path = MyCreditCard;
+			sourceTree = "<group>";
+		};
+		DE664AF721004A320011E949 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE664AF821004A460011E949 /* MyCreditCardController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -698,6 +730,7 @@
 		DECD373920EEB9EE0074AB19 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				DE664AF621004A240011E949 /* MyCreditCard */,
 				DEAB1CF720FF018500436CC1 /* ShoppingCart */,
 				DECFD75F20FEDBF9003812DD /* MyCoupons */,
 				DE5EFF1E20FDC73B00C9B7C8 /* Settings */,
@@ -1069,6 +1102,7 @@
 				DEDB8E3420FC7B2B001E90EA /* NewEventController.swift in Sources */,
 				DE2B13DD20F1630B00870BE9 /* Notification.swift in Sources */,
 				DE1F1D2920F5EC1400503134 /* ProfileEventProductsController.swift in Sources */,
+				DE664AF3210011080011E949 /* HelpCell.swift in Sources */,
 				DEAB1CFA20FF01AD00436CC1 /* ShoppingCartController.swift in Sources */,
 				DE209CEE20F009F60042AC87 /* DesignableTextField.swift in Sources */,
 				DE8C49F620F6FC42009C5F39 /* ProfileEventProductsCell.swift in Sources */,
@@ -1086,8 +1120,10 @@
 				DE2B13E120F1666400870BE9 /* NotificationListViewModel.swift in Sources */,
 				DE5EFF1920FDC6EB00C9B7C8 /* AboutController.swift in Sources */,
 				DE1F1D3920F6DE1F00503134 /* ProductsEvent.swift in Sources */,
+				DE664AF921004A460011E949 /* MyCreditCardController.swift in Sources */,
 				DE8C4A0220F72EB1009C5F39 /* ProfileEventCouponsCell.swift in Sources */,
 				DEAB3CB320ED2AD6009D30E8 /* RegisterUserGuaranteedTableController.swift in Sources */,
+				DE664AF5210011180011E949 /* Help.swift in Sources */,
 				DEAB3CB620ED2B08009D30E8 /* RegisterUserAskDrinkController.swift in Sources */,
 				DE724C9420F18CCA002504C6 /* EventListViewModel.swift in Sources */,
 				DECFD76820FEDECD003812DD /* MyCouponsCell.swift in Sources */,
@@ -1242,7 +1278,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = Y99AD5GLT5;
 				INFOPLIST_FILE = EventsIOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1262,7 +1298,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y99AD5GLT5;
 				INFOPLIST_FILE = EventsIOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
