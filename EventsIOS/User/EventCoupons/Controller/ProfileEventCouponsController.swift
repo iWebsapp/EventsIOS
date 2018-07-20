@@ -35,6 +35,7 @@ class ProfileEventCouponsController: UIViewController, UICollectionViewDelegate,
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionCoupons.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MyCouponsCell
         let coupon = coupons[indexPath.item]
+        cell.txtTitleBusiness.text = coupon.business
         cell.txtDescription.text = coupon.description
         cell.txtExpiration.text = coupon.expiration
         cell.txtTitle.text = coupon.title

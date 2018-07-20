@@ -14,6 +14,6 @@ class MyCouponsCell: UICollectionViewCell {
     @IBOutlet weak var txtTitle: UILabel!
     @IBOutlet weak var txtExpiration: UILabel!
     @IBOutlet weak var txtDescription: UILabel!
-    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var image: DesignableImage!
 
 }
