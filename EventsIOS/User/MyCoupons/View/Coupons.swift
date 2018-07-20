@@ -8,18 +8,20 @@
 
 import Foundation
 
-class MyCoupons {
+class Coupons {
     
     public var image: String
     public var title: String
     public var expiration: String
     public var description: String
+    public var business: String
     
-    init(image: String, title: String, expiration: String, description: String){
+    init(image: String, title: String, expiration: String, description: String, business: String){
         self.image = image
         self.title = title
         self.expiration = expiration
         self.description = description
+        self.business = business
     }
     
 }

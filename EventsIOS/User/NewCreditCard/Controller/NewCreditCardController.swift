@@ -1,14 +1,14 @@
 //
-//  MyCreditCardController.swift
+//  NewCreditCardController.swift
 //  EventsIOS
 //
-//  Created by Luis Castillo on 18/07/18.
+//  Created by Luis Castillo on 19/07/18.
 //  Copyright © 2018 Luis Castillo. All rights reserved.
 //
 
 import UIKit
 
-class MyCreditCardController: UIViewController {
+class NewCreditCardController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,9 +22,14 @@ class MyCreditCardController: UIViewController {
     }
     
     @IBAction func behind(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+
     /*
     // MARK: - Navigation
 

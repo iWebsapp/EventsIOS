@@ -17,5 +17,26 @@ import UIKit
         }
     }
     
+    @IBInspectable var borderWidth: CGFloat = 0.0 {
+        didSet{
+            self.layer.borderWidth = borderWidth
+        }
+    }
+    
+    @IBInspectable var borderColor: UIColor = UIColor.clear {
+        didSet{
+            self.layer.borderColor = borderColor.cgColor
+        }
+    }
+    
+    @IBInspectable var placeHolderColor: UIColor? {
+        get {
+            return self.placeHolderColor
+        }
+        set {
+            self.attributedPlaceholder = NSAttributedString(string:self.placeholder != nil ? self.placeholder! : "", attributes:[NSAttributedStringKey.foregroundColor: newValue!])
+        }
+    }
+    
 }
 

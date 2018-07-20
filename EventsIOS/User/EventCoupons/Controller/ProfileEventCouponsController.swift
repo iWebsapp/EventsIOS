@@ -11,15 +11,15 @@ import UIKit
 class ProfileEventCouponsController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var collectionCoupons: UICollectionView!
-    private var coupons: [MyCoupons] = [MyCoupons]()
+    private var coupons: [Coupons] = [Coupons]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionCoupons.delegate = self
         collectionCoupons.dataSource = self
-        coupons.append( MyCoupons(image: "food-enchiladas", title: "2X1 Lasaña", expiration: "27/07/18", description: "En la compra de una laseña grande, te llevas la segunda gratis"))
-        coupons.append( MyCoupons(image: "food-huacamole", title: "Refresco pareja", expiration: "15/08/18", description: "Si llevas a un acompañante te regalamos otra bedida"))
-        coupons.append( MyCoupons(image: "food-manchamantel", title: "Lunes de Helado", expiration: "19/11/18", description: "Llevate un helado de sabor chocolate con un 10% de descuento"))
+        coupons.append( Coupons(image: "food-enchiladas", title: "2X1 Lasaña", expiration: "27/07/18", description: "En la compra de una laseña grande, te llevas la segunda gratis", business: "CocaCola"))
+        coupons.append( Coupons(image: "food-huacamole", title: "Refresco pareja", expiration: "15/08/18", description: "Si llevas a un acompañante te regalamos otra bedida", business: "CocaCola"))
+        coupons.append( Coupons(image: "food-manchamantel", title: "Lunes de Helado", expiration: "19/11/18", description: "Llevate un helado de sabor chocolate con un 10% de descuento", business: "CocaCola"))
         // Do any additional setup after loading the view.
     }
 
