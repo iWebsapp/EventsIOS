@@ -20,11 +20,11 @@ class ProfileEventProductsController: UIViewController, UITableViewDelegate, UIT
         table.delegate = self
         table.dataSource = self
         
-        products.append( ProductsEvent(name: "Enchiladas Vips", image: "food-enchiladas", categorie: "1", price: "27.00", description: ""))
-        products.append( ProductsEvent(name: "El Tradicional Guacamole", image: "food-huacamole", categorie: "3", price: "15.00", description: ""))
-        products.append( ProductsEvent(name: "Sopa de Tortilla", image: "food-sopa-tortila", categorie: "4", price: "157.00", description: ""))
-        products.append( ProductsEvent(name: "Pechuga con Mole Poblano", image: "food-mole", categorie: "1", price: "27.00", description: ""))
-        products.append( ProductsEvent(name: "Tacos Dorados de Pollo", image: "food-tacos", categorie: "2", price: "127.00", description: ""))
+        products.append( ProductsEvent(name: "Enchiladas Vips", image: "food-enchiladas", price: "27.00", description: ""))
+        products.append( ProductsEvent(name: "El Tradicional Guacamole", image: "food-huacamole",  price: "15.00", description: ""))
+        products.append( ProductsEvent(name: "Sopa de Tortilla", image: "food-sopa-tortila", price: "157.00", description: ""))
+        products.append( ProductsEvent(name: "Pechuga con Mole Poblano", image: "food-mole", price: "27.00", description: ""))
+        products.append( ProductsEvent(name: "Tacos Dorados de Pollo", image: "food-tacos", price: "127.00", description: ""))
     }
     
     override func didReceiveMemoryWarning() {
@@ -46,11 +46,13 @@ class ProfileEventProductsController: UIViewController, UITableViewDelegate, UIT
         let product = products[indexPath.row]
         cell.pictureProduct.image = UIImage(named: product.image)
         cell.txtTitleProduct.text = product.name
-        cell.txtCategorieProduct.text = "" //product.categorie
         cell.txtPriceProduct.text = product.price
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goInfoProduct", sender: self)
+    }
     
     @IBAction func behind(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)

@@ -12,14 +12,12 @@ class ProductsEvent {
     
     public var name: String
     public var image: String
-    public var categorie: String
     public var price: String
     public var description: String
     
-    init(name: String, image: String, categorie: String, price: String, description: String){
+    init(name: String, image: String, price: String, description: String){
         self.name = name
         self.image = image
-        self.categorie = categorie
         self.price = price
         self.description = description
     }

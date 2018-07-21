@@ -46,6 +46,10 @@ class ProfileEventPromotionsController: UIViewController, UITableViewDataSource,
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goInfoProduct", sender: self)
+    }
+    
     @IBAction func behind(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
