@@ -13,6 +13,7 @@ class EventCell: UITableViewCell {
     @IBOutlet weak var avatar: DesignableImage!
     @IBOutlet weak var txtName: UILabel!
     @IBOutlet weak var txtDate: UILabel!
+    @IBOutlet weak var cardView: DesignableGradient!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -47,6 +47,10 @@ class MyCreditsCardsController: UIViewController, UICollectionViewDelegate, UICo
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goInfoCard", sender: self)
+    }
+    
     @IBAction func behind(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
