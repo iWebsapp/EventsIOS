@@ -22,6 +22,7 @@ class ProfileEventCommentsController: UIViewController, UITableViewDelegate, UIT
         listComents.append( Comments(comment: "Mensaje 2", user: "Mireyitha Jim", date: "15/03/18", avatar: "avatar") )
         listComents.append( Comments(comment: "Mensaje 3", user: "Rott Castillo", date: "10/03/18", avatar: "avatar") )
         listComents.append( Comments(comment: "Mensaje 4", user: "Suly Castillo", date: "19/10/18", avatar: "avatar") )
+        listComents.append( Comments(comment: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.", user: "Suly Castillo", date: "19/10/18", avatar: "avatar") )
     }
 
     override func didReceiveMemoryWarning() {
