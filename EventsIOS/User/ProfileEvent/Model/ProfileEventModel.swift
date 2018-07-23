@@ -18,6 +18,7 @@ class ProfileEventModel{
         itemsProfile.append( ProfileEvent(icon: "icon-coupons", title: "Cupones") )
         itemsProfile.append( ProfileEvent(icon: "icon-promotions", title: "Promociones") )
         itemsProfile.append( ProfileEvent(icon: "icon-products", title: "Productos") )
+        itemsProfile.append( ProfileEvent(icon: "icon-table-food", title: "Mesa garantizada") )
         return itemsProfile
     }
     

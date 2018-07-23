@@ -10,16 +10,42 @@ import UIKit
 
 class ProfileEventInformationController: UIViewController {
 
+    @IBOutlet weak var scheduleView: UIView!
+    @IBOutlet weak var contactView: UIView!
+    @IBOutlet weak var addressView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        scheduleView.alpha = 1
+        contactView.alpha = 0
+        addressView.alpha = 0
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func segmentedMenuCustom(_ sender: CustomSegmentedControl) {
+        let seleced = sender.selectedSegmentIndex
+        if seleced == 0 {
+            scheduleView.alpha = 1
+            contactView.alpha = 0
+            addressView.alpha = 0
+        }
+        if seleced == 1 {
+            scheduleView.alpha = 0
+            contactView.alpha = 1
+            addressView.alpha = 0
+        }
+        if seleced == 2 {
+            scheduleView.alpha = 0
+            contactView.alpha = 0
+            addressView.alpha = 1
+        }
+    }
+    
     
     @IBAction func behind(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)

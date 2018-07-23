@@ -57,8 +57,10 @@ class ProfileEventController: UIViewController, UITableViewDelegate, UITableView
             performSegue(withIdentifier: "goCouponsEventProfile", sender: self )
         case 3:
             performSegue(withIdentifier: "goPromotionsEventProfile", sender: self )
-        default:
+        case 4:
             performSegue(withIdentifier: "goProductsEventProfile", sender: self )
+        default:
+            performSegue(withIdentifier: "goGuaranteedTable", sender: self )
         }
     }
 

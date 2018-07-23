@@ -24,6 +24,8 @@
 		DE2B13DD20F1630B00870BE9 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B13DC20F1630B00870BE9 /* Notification.swift */; };
 		DE2B13DF20F163DA00870BE9 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B13DE20F163DA00870BE9 /* NotificationCell.swift */; };
 		DE2B13E120F1666400870BE9 /* NotificationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B13E020F1666400870BE9 /* NotificationListViewModel.swift */; };
+		DE2F6854210564A200898DF0 /* GuaranteedTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F6853210564A200898DF0 /* GuaranteedTableController.swift */; };
+		DE3E0C3B2105817600F066F9 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3E0C3A2105817600F066F9 /* CustomSegmentedControl.swift */; };
 		DE4403D220E9FE61002606C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4403D120E9FE61002606C4 /* AppDelegate.swift */; };
 		DE4403D420E9FE61002606C4 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4403D320E9FE61002606C4 /* LoginController.swift */; };
 		DE4403D720E9FE61002606C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4403D520E9FE61002606C4 /* Main.storyboard */; };
@@ -114,6 +116,8 @@
 		DE2B13DC20F1630B00870BE9 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		DE2B13DE20F163DA00870BE9 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		DE2B13E020F1666400870BE9 /* NotificationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListViewModel.swift; sourceTree = "<group>"; };
+		DE2F6853210564A200898DF0 /* GuaranteedTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuaranteedTableController.swift; sourceTree = "<group>"; };
+		DE3E0C3A2105817600F066F9 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 		DE4403CE20E9FE61002606C4 /* EventsIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventsIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE4403D120E9FE61002606C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE4403D320E9FE61002606C4 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -525,6 +529,31 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DE2F68512105648300898DF0 /* GuaranteedTable */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E0C392105814C00F066F9 /* View */,
+				DE2F68522105648F00898DF0 /* Controller */,
+			);
+			path = GuaranteedTable;
+			sourceTree = "<group>";
+		};
+		DE2F68522105648F00898DF0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE2F6853210564A200898DF0 /* GuaranteedTableController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE3E0C392105814C00F066F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E0C3A2105817600F066F9 /* CustomSegmentedControl.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DE4403C520E9FE61002606C4 = {
 			isa = PBXGroup;
 			children = (
@@ -917,6 +946,7 @@
 		DECD373920EEB9EE0074AB19 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				DE2F68512105648300898DF0 /* GuaranteedTable */,
 				DE9A2054210460E900372BFA /* InfoCoupons */,
 				DEB4E8792103EF2900B67A00 /* InfoPeoduct */,
 				DE8255632102C7E000582D20 /* Products */,
@@ -1287,6 +1317,7 @@
 				DECD374120EEBBA60074AB19 /* MapController.swift in Sources */,
 				DE4403D420E9FE61002606C4 /* LoginController.swift in Sources */,
 				DEAB3CA920ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift in Sources */,
+				DE2F6854210564A200898DF0 /* GuaranteedTableController.swift in Sources */,
 				DE82555B2102AD7600582D20 /* InfoCardController.swift in Sources */,
 				DE8C49FB20F724CD009C5F39 /* PromotionsEventCell.swift in Sources */,
 				DEF926F720F5246200621ED0 /* ProfileEvent.swift in Sources */,
@@ -1322,6 +1353,7 @@
 				DE2B13E120F1666400870BE9 /* NotificationListViewModel.swift in Sources */,
 				DEBF06E52101803900ABC3C2 /* MyCreditsCardsCell.swift in Sources */,
 				DE9A20572104610F00372BFA /* InfoCouponsController.swift in Sources */,
+				DE3E0C3B2105817600F066F9 /* CustomSegmentedControl.swift in Sources */,
 				DE5EFF1920FDC6EB00C9B7C8 /* AboutController.swift in Sources */,
 				DE1F1D3920F6DE1F00503134 /* ProductsEvent.swift in Sources */,
 				DE1781022102FDD9005105F2 /* Comments.swift in Sources */,
@@ -1486,7 +1518,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = Y99AD5GLT5;
 				INFOPLIST_FILE = EventsIOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1506,7 +1538,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y99AD5GLT5;
 				INFOPLIST_FILE = EventsIOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
