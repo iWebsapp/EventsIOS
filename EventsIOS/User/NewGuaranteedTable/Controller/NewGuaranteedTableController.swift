@@ -1,15 +1,15 @@
 //
-//  GuaranteedTableController.swift
+//  NewGuaranteedTableController.swift
 //  EventsIOS
 //
-//  Created by Luis Castillo on 22/07/18.
+//  Created by Luis Castillo on 23/07/18.
 //  Copyright © 2018 Luis Castillo. All rights reserved.
 //
 
 import UIKit
 
-class GuaranteedTableController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+class NewGuaranteedTableController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     @IBOutlet weak var table: UITableView!
     private var listGuaranted: [GuaranteedTable] = [GuaranteedTable]()
     
@@ -21,6 +21,9 @@ class GuaranteedTableController: UIViewController, UITableViewDelegate, UITableV
         listGuaranted.append( GuaranteedTable(icon: "icon-coupons", title: "Area de fumadores"))
         listGuaranted.append( GuaranteedTable(icon: "icon-coupons", title: "Barra"))
         listGuaranted.append( GuaranteedTable(icon: "icon-coupons", title: "Mesa"))
+        listGuaranted.append( GuaranteedTable(icon: "icon-coupons", title: "Cerca de una ventana"))
+        listGuaranted.append( GuaranteedTable(icon: "icon-coupons", title: "Cerca de la cocina"))
+        listGuaranted.append( GuaranteedTable(icon: "icon-coupons", title: "Cerca de la salida"))
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,20 +40,23 @@ class GuaranteedTableController: UIViewController, UITableViewDelegate, UITableV
         let guadanted = listGuaranted[indexPath.row]
         cell.txtIcon.image = UIImage(named: guadanted.icon)
         cell.txtTitle.text = guadanted.title
+        cell.txtSelected.image = UIImage(named: "icon-check")
+        cell.txtSelected.isHidden = true
         return cell
     }
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedCell:NewGuaranteedTableCell = tableView.cellForRow(at: indexPath) as! NewGuaranteedTableCell
+        selectedCell.txtSelected.isHidden = false
+    }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let selectedCell:NewGuaranteedTableCell = tableView.cellForRow(at: indexPath) as! NewGuaranteedTableCell
+        selectedCell.txtSelected.isHidden = true
+    }
+    
     @IBAction func behind(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -72,6 +72,10 @@
 		DEBF06E321016DE900ABC3C2 /* NewCreditCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBF06E221016DE900ABC3C2 /* NewCreditCardController.swift */; };
 		DEBF06E52101803900ABC3C2 /* MyCreditsCardsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBF06E42101803900ABC3C2 /* MyCreditsCardsCell.swift */; };
 		DEBF06E82101941800ABC3C2 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBF06E72101941800ABC3C2 /* CreditCard.swift */; };
+		DEC1B4FD21067C80003F5523 /* NumOfPersonTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1B4FC21067C80003F5523 /* NumOfPersonTableController.swift */; };
+		DEC1B50121067CD4003F5523 /* NewGuaranteedTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1B50021067CD4003F5523 /* NewGuaranteedTableController.swift */; };
+		DEC1B50421067E5C003F5523 /* NewGuaranteedTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1B50321067E5C003F5523 /* NewGuaranteedTableCell.swift */; };
+		DEC1B50621067E71003F5523 /* GuaranteedTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1B50521067E71003F5523 /* GuaranteedTable.swift */; };
 		DECD373520EDEFB40074AB19 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DECD373420EDEFB40074AB19 /* User.storyboard */; };
 		DECD373720EDF2E70074AB19 /* Employees.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DECD373620EDF2E70074AB19 /* Employees.storyboard */; };
 		DECD373E20EEBB770074AB19 /* ProfileUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD373D20EEBB770074AB19 /* ProfileUserController.swift */; };
@@ -166,6 +170,10 @@
 		DEBF06E221016DE900ABC3C2 /* NewCreditCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCreditCardController.swift; sourceTree = "<group>"; };
 		DEBF06E42101803900ABC3C2 /* MyCreditsCardsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCreditsCardsCell.swift; sourceTree = "<group>"; };
 		DEBF06E72101941800ABC3C2 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		DEC1B4FC21067C80003F5523 /* NumOfPersonTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumOfPersonTableController.swift; sourceTree = "<group>"; };
+		DEC1B50021067CD4003F5523 /* NewGuaranteedTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGuaranteedTableController.swift; sourceTree = "<group>"; };
+		DEC1B50321067E5C003F5523 /* NewGuaranteedTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGuaranteedTableCell.swift; sourceTree = "<group>"; };
+		DEC1B50521067E71003F5523 /* GuaranteedTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuaranteedTable.swift; sourceTree = "<group>"; };
 		DECD373420EDEFB40074AB19 /* User.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
 		DECD373620EDF2E70074AB19 /* Employees.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Employees.storyboard; sourceTree = "<group>"; };
 		DECD373D20EEBB770074AB19 /* ProfileUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserController.swift; sourceTree = "<group>"; };
@@ -532,7 +540,6 @@
 		DE2F68512105648300898DF0 /* GuaranteedTable */ = {
 			isa = PBXGroup;
 			children = (
-				DE3E0C392105814C00F066F9 /* View */,
 				DE2F68522105648F00898DF0 /* Controller */,
 			);
 			path = GuaranteedTable;
@@ -544,14 +551,6 @@
 				DE2F6853210564A200898DF0 /* GuaranteedTableController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		DE3E0C392105814C00F066F9 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				DE3E0C3A2105817600F066F9 /* CustomSegmentedControl.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		DE4403C520E9FE61002606C4 = {
@@ -928,6 +927,48 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DEC1B4FA21067C48003F5523 /* NumOfPersonTable */ = {
+			isa = PBXGroup;
+			children = (
+				DEC1B4FB21067C5C003F5523 /* Controller */,
+			);
+			path = NumOfPersonTable;
+			sourceTree = "<group>";
+		};
+		DEC1B4FB21067C5C003F5523 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DEC1B4FC21067C80003F5523 /* NumOfPersonTableController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DEC1B4FE21067C97003F5523 /* NewGuaranteedTable */ = {
+			isa = PBXGroup;
+			children = (
+				DEC1B50221067E45003F5523 /* View */,
+				DEC1B4FF21067CC5003F5523 /* Controller */,
+			);
+			path = NewGuaranteedTable;
+			sourceTree = "<group>";
+		};
+		DEC1B4FF21067CC5003F5523 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DEC1B50021067CD4003F5523 /* NewGuaranteedTableController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DEC1B50221067E45003F5523 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEC1B50321067E5C003F5523 /* NewGuaranteedTableCell.swift */,
+				DEC1B50521067E71003F5523 /* GuaranteedTable.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DECD373820EEB9CD0074AB19 /* Register */ = {
 			isa = PBXGroup;
 			children = (
@@ -946,6 +987,8 @@
 		DECD373920EEB9EE0074AB19 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				DEC1B4FE21067C97003F5523 /* NewGuaranteedTable */,
+				DEC1B4FA21067C48003F5523 /* NumOfPersonTable */,
 				DE2F68512105648300898DF0 /* GuaranteedTable */,
 				DE9A2054210460E900372BFA /* InfoCoupons */,
 				DEB4E8792103EF2900B67A00 /* InfoPeoduct */,
@@ -1043,6 +1086,7 @@
 				DEE8025720EF012F00ABAFEF /* DesignableImage.swift */,
 				DE209CEB20F009210042AC87 /* DesignableButton.swift */,
 				DE209CED20F009F60042AC87 /* DesignableTextField.swift */,
+				DE3E0C3A2105817600F066F9 /* CustomSegmentedControl.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1324,9 +1368,11 @@
 				DE5EFF1D20FDC72400C9B7C8 /* HelpController.swift in Sources */,
 				DE1F1D2220F5EBB100503134 /* ProfileEventInformationController.swift in Sources */,
 				DEAB3CB120ED2A91009D30E8 /* RegisterUserAnswersController.swift in Sources */,
+				DEC1B50421067E5C003F5523 /* NewGuaranteedTableCell.swift in Sources */,
 				DE0FBA1920F2DF2600921DEC /* ProfileEventController.swift in Sources */,
 				DE2B13D820F1627D00870BE9 /* NotificationModel.swift in Sources */,
 				DE1F1D2D20F5EC2E00503134 /* ProfileEventCouponsController.swift in Sources */,
+				DEC1B50121067CD4003F5523 /* NewGuaranteedTableController.swift in Sources */,
 				DEDB8E3020FC79FC001E90EA /* MyEventController.swift in Sources */,
 				DEDB8E3420FC7B2B001E90EA /* NewEventController.swift in Sources */,
 				DE2B13DD20F1630B00870BE9 /* Notification.swift in Sources */,
@@ -1336,6 +1382,7 @@
 				DE209CEE20F009F60042AC87 /* DesignableTextField.swift in Sources */,
 				DE8C49F620F6FC42009C5F39 /* ProfileEventProductsCell.swift in Sources */,
 				DEB4E87F2103EFD000B67A00 /* InfoPeoduct.swift in Sources */,
+				DEC1B4FD21067C80003F5523 /* NumOfPersonTableController.swift in Sources */,
 				DECFD76320FEDC1B003812DD /* MyCouponsController.swift in Sources */,
 				DE2B13DA20F1629800870BE9 /* NotificationViewModel.swift in Sources */,
 				DE8C49FD20F724DB009C5F39 /* PromotionsEvent.swift in Sources */,
@@ -1343,6 +1390,7 @@
 				DECD374920EED2750074AB19 /* InvitationCard.swift in Sources */,
 				DE8C49FF20F724F1009C5F39 /* ProductsEventModel.swift in Sources */,
 				DE4403D220E9FE61002606C4 /* AppDelegate.swift in Sources */,
+				DEC1B50621067E71003F5523 /* GuaranteedTable.swift in Sources */,
 				DE724C8C20F18C5C002504C6 /* EventCell.swift in Sources */,
 				DE8255662102C7FD00582D20 /* Products.swift in Sources */,
 				DECD374720EEBBEA0074AB19 /* NotificationController.swift in Sources */,
@@ -1518,7 +1566,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = Y99AD5GLT5;
 				INFOPLIST_FILE = EventsIOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1538,7 +1586,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y99AD5GLT5;
 				INFOPLIST_FILE = EventsIOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
