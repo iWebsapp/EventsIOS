@@ -2346,6 +2346,18 @@
                                     <segue destination="bQP-gm-4MW" kind="embed" id="Ect-5F-SWH"/>
                                 </connections>
                             </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppF-CW-rD5" userLabel="map">
+                                <rect key="frame" x="15" y="32" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="5Pe-7P-4ef"/>
+                                    <constraint firstAttribute="height" constant="40" id="fFW-Jz-AwI"/>
+                                </constraints>
+                                <state key="normal" image="menu-map-white"/>
+                                <connections>
+                                    <action selector="MapButton:" destination="ENx-Gy-Hap" eventType="touchUpInside" id="tEV-0k-BCv"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tf2-et-teT" userLabel="new">
                                 <rect key="frame" x="265" y="32" width="40" height="40"/>
                                 <constraints>
@@ -2354,7 +2366,7 @@
                                 </constraints>
                                 <state key="normal" image="icon-add"/>
                                 <connections>
-                                    <action selector="newEvent:" destination="ENx-Gy-Hap" eventType="touchUpInside" id="Kdj-5F-c4e"/>
+                                    <action selector="newButton:" destination="ENx-Gy-Hap" eventType="touchUpInside" id="mSd-UF-xq0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dci-3Y-Ras" userLabel="list">
@@ -2365,7 +2377,7 @@
                                 </constraints>
                                 <state key="normal" image="icon-list"/>
                                 <connections>
-                                    <action selector="listEvent:" destination="ENx-Gy-Hap" eventType="touchUpInside" id="mm8-ra-pYV"/>
+                                    <action selector="listButton:" destination="ENx-Gy-Hap" eventType="touchUpInside" id="INV-F3-MGh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2387,14 +2399,17 @@
                             <constraint firstItem="zUh-dZ-eu3" firstAttribute="trailing" secondItem="OvX-mW-BNb" secondAttribute="trailing" id="cvA-pn-EEI"/>
                             <constraint firstItem="dci-3Y-Ras" firstAttribute="top" secondItem="OvX-mW-BNb" secondAttribute="top" constant="12" id="jhJ-Tx-mht"/>
                             <constraint firstItem="3li-to-njh" firstAttribute="leading" secondItem="OvX-mW-BNb" secondAttribute="leading" id="qqO-jj-zrE"/>
+                            <constraint firstItem="ppF-CW-rD5" firstAttribute="leading" secondItem="OvX-mW-BNb" secondAttribute="leading" constant="15" id="s0Y-uJ-Gpb"/>
+                            <constraint firstItem="ppF-CW-rD5" firstAttribute="top" secondItem="OvX-mW-BNb" secondAttribute="top" constant="12" id="vP8-fB-VkG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OvX-mW-BNb"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Lugares" image="menu-map" id="Pb6-3V-NeS"/>
                     <connections>
                         <outlet property="listView" destination="j3K-lq-OzH" id="Sna-4B-Jik"/>
-                        <outlet property="listenerList" destination="dci-3Y-Ras" id="j4T-jv-0Uu"/>
-                        <outlet property="listenerNew" destination="tf2-et-teT" id="gFv-gW-edB"/>
+                        <outlet property="listenerListButton" destination="dci-3Y-Ras" id="5bZ-2l-kW3"/>
+                        <outlet property="listenerMapButton" destination="ppF-CW-rD5" id="ONr-2D-A5d"/>
+                        <outlet property="listenerNewButton" destination="tf2-et-teT" id="gMr-cG-0fB"/>
                         <outlet property="map" destination="Mwo-xy-G4W" id="nKF-Q5-h7a"/>
                         <outlet property="mapView" destination="3li-to-njh" id="uBR-RE-ndB"/>
                         <outlet property="newView" destination="zUh-dZ-eu3" id="I9x-ex-p7V"/>
@@ -6774,6 +6789,7 @@
         <image name="menu-events" width="33" height="33"/>
         <image name="menu-events-strong" width="33" height="33"/>
         <image name="menu-map" width="33" height="33"/>
+        <image name="menu-map-white" width="32" height="32"/>
         <image name="menu-notifications" width="33" height="33"/>
         <image name="menu-profile" width="33" height="33"/>
         <image name="wallpeper" width="240" height="493"/>
