@@ -25,6 +25,7 @@
 		DE2B13DF20F163DA00870BE9 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B13DE20F163DA00870BE9 /* NotificationCell.swift */; };
 		DE2B13E120F1666400870BE9 /* NotificationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B13E020F1666400870BE9 /* NotificationListViewModel.swift */; };
 		DE2F6854210564A200898DF0 /* GuaranteedTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F6853210564A200898DF0 /* GuaranteedTableController.swift */; };
+		DE39885E2106E62A00590BF1 /* LayoutPlacesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE39885D2106E62900590BF1 /* LayoutPlacesController.swift */; };
 		DE3E0C3B2105817600F066F9 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3E0C3A2105817600F066F9 /* CustomSegmentedControl.swift */; };
 		DE4403D220E9FE61002606C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4403D120E9FE61002606C4 /* AppDelegate.swift */; };
 		DE4403D420E9FE61002606C4 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4403D320E9FE61002606C4 /* LoginController.swift */; };
@@ -121,6 +122,7 @@
 		DE2B13DE20F163DA00870BE9 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		DE2B13E020F1666400870BE9 /* NotificationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListViewModel.swift; sourceTree = "<group>"; };
 		DE2F6853210564A200898DF0 /* GuaranteedTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuaranteedTableController.swift; sourceTree = "<group>"; };
+		DE39885D2106E62900590BF1 /* LayoutPlacesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutPlacesController.swift; sourceTree = "<group>"; };
 		DE3E0C3A2105817600F066F9 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 		DE4403CE20E9FE61002606C4 /* EventsIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventsIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE4403D120E9FE61002606C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -549,6 +551,22 @@
 			isa = PBXGroup;
 			children = (
 				DE2F6853210564A200898DF0 /* GuaranteedTableController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE39885B2106E5F000590BF1 /* LayoutPlaces */ = {
+			isa = PBXGroup;
+			children = (
+				DE39885C2106E61200590BF1 /* Controller */,
+			);
+			path = LayoutPlaces;
+			sourceTree = "<group>";
+		};
+		DE39885C2106E61200590BF1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE39885D2106E62900590BF1 /* LayoutPlacesController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -987,6 +1005,7 @@
 		DECD373920EEB9EE0074AB19 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				DE39885B2106E5F000590BF1 /* LayoutPlaces */,
 				DEC1B4FE21067C97003F5523 /* NewGuaranteedTable */,
 				DEC1B4FA21067C48003F5523 /* NumOfPersonTable */,
 				DE2F68512105648300898DF0 /* GuaranteedTable */,
@@ -1346,6 +1365,7 @@
 				DE8255622102BFE300582D20 /* InfoCardShoppingController.swift in Sources */,
 				DE8C49F820F70B89009C5F39 /* ProcutsEventCollection.swift in Sources */,
 				DEF926F320F5244500621ED0 /* ProfileEventViewModel.swift in Sources */,
+				DE39885E2106E62A00590BF1 /* LayoutPlacesController.swift in Sources */,
 				DEE8025420EEF41900ABAFEF /* InfoEvenController.swift in Sources */,
 				DECD373E20EEBB770074AB19 /* ProfileUserController.swift in Sources */,
 				DEAB3CAF20ED2A6C009D30E8 /* RegisterUserBuyController.swift in Sources */,
