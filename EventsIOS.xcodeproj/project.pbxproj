@@ -49,6 +49,8 @@
 		DE724C9020F18CA8002504C6 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE724C8F20F18CA8002504C6 /* EventModel.swift */; };
 		DE724C9220F18CBA002504C6 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE724C9120F18CBA002504C6 /* EventViewModel.swift */; };
 		DE724C9420F18CCA002504C6 /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE724C9320F18CCA002504C6 /* EventListViewModel.swift */; };
+		DE7D3298210A77C4001F7CD2 /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D3297210A77C4001F7CD2 /* Themes.swift */; };
+		DE7D329A210A7AC8001F7CD2 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE7D3299210A7AC8001F7CD2 /* Colors.xcassets */; };
 		DE82555721028D2800582D20 /* NewCommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE82555621028D2800582D20 /* NewCommentController.swift */; };
 		DE82555B2102AD7600582D20 /* InfoCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE82555A2102AD7600582D20 /* InfoCardController.swift */; };
 		DE8255622102BFE300582D20 /* InfoCardShoppingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8255612102BFE200582D20 /* InfoCardShoppingController.swift */; };
@@ -152,6 +154,8 @@
 		DE724C8F20F18CA8002504C6 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
 		DE724C9120F18CBA002504C6 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 		DE724C9320F18CCA002504C6 /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
+		DE7D3297210A77C4001F7CD2 /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
+		DE7D3299210A7AC8001F7CD2 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		DE82555621028D2800582D20 /* NewCommentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCommentController.swift; sourceTree = "<group>"; };
 		DE82555A2102AD7600582D20 /* InfoCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCardController.swift; sourceTree = "<group>"; };
 		DE8255612102BFE200582D20 /* InfoCardShoppingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCardShoppingController.swift; sourceTree = "<group>"; };
@@ -615,6 +619,7 @@
 				DE78A1A920F05CB4005A536E /* Storyboard */,
 				DE4403D120E9FE61002606C4 /* AppDelegate.swift */,
 				DE4403D820E9FE65002606C4 /* Assets.xcassets */,
+				DE7D3299210A7AC8001F7CD2 /* Colors.xcassets */,
 				DE4403DD20E9FE65002606C4 /* Info.plist */,
 			);
 			path = EventsIOS;
@@ -1126,6 +1131,7 @@
 				DE209CED20F009F60042AC87 /* DesignableTextField.swift */,
 				DE3E0C3A2105817600F066F9 /* CustomSegmentedControl.swift */,
 				DE645CBF21097FB100999A95 /* UIViewControllerExt.swift */,
+				DE7D3297210A77C4001F7CD2 /* Themes.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1317,6 +1323,7 @@
 				DE4403DC20E9FE65002606C4 /* LaunchScreen.storyboard in Resources */,
 				DECD373520EDEFB40074AB19 /* User.storyboard in Resources */,
 				DE4403D920E9FE65002606C4 /* Assets.xcassets in Resources */,
+				DE7D329A210A7AC8001F7CD2 /* Colors.xcassets in Resources */,
 				DE4403D720E9FE61002606C4 /* Main.storyboard in Resources */,
 				DECD373720EDF2E70074AB19 /* Employees.storyboard in Resources */,
 			);
@@ -1402,6 +1409,7 @@
 				DE8255622102BFE300582D20 /* InfoCardShoppingController.swift in Sources */,
 				DE8C49F820F70B89009C5F39 /* ProcutsEventCollection.swift in Sources */,
 				DEF926F320F5244500621ED0 /* ProfileEventViewModel.swift in Sources */,
+				DE7D3298210A77C4001F7CD2 /* Themes.swift in Sources */,
 				DE39885E2106E62A00590BF1 /* LayoutPlacesController.swift in Sources */,
 				DEE8025420EEF41900ABAFEF /* InfoEvenController.swift in Sources */,
 				DECD373E20EEBB770074AB19 /* ProfileUserController.swift in Sources */,
