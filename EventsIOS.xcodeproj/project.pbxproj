@@ -40,6 +40,7 @@
 		DE5EFF1D20FDC72400C9B7C8 /* HelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFF1C20FDC72400C9B7C8 /* HelpController.swift */; };
 		DE5EFF2120FDC76600C9B7C8 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFF2020FDC76600C9B7C8 /* SettingsController.swift */; };
 		DE5EFF2320FDCBA900C9B7C8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5EFF2220FDCBA900C9B7C8 /* MapKit.framework */; };
+		DE645CC021097FB100999A95 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645CBF21097FB100999A95 /* UIViewControllerExt.swift */; };
 		DE664AF3210011080011E949 /* HelpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE664AF2210011080011E949 /* HelpCell.swift */; };
 		DE664AF5210011180011E949 /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE664AF4210011180011E949 /* Help.swift */; };
 		DE664AF921004A460011E949 /* MyCreditCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE664AF821004A460011E949 /* MyCreditCardController.swift */; };
@@ -142,6 +143,7 @@
 		DE5EFF1C20FDC72400C9B7C8 /* HelpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpController.swift; sourceTree = "<group>"; };
 		DE5EFF2020FDC76600C9B7C8 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		DE5EFF2220FDCBA900C9B7C8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DE645CBF21097FB100999A95 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		DE664AF2210011080011E949 /* HelpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCell.swift; sourceTree = "<group>"; };
 		DE664AF4210011180011E949 /* Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
 		DE664AF821004A460011E949 /* MyCreditCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCreditCardController.swift; sourceTree = "<group>"; };
@@ -1123,6 +1125,7 @@
 				DE209CEB20F009210042AC87 /* DesignableButton.swift */,
 				DE209CED20F009F60042AC87 /* DesignableTextField.swift */,
 				DE3E0C3A2105817600F066F9 /* CustomSegmentedControl.swift */,
+				DE645CBF21097FB100999A95 /* UIViewControllerExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1461,6 +1464,7 @@
 				DE5EFF1920FDC6EB00C9B7C8 /* AboutController.swift in Sources */,
 				DE1F1D3920F6DE1F00503134 /* ProductsEvent.swift in Sources */,
 				DE1781022102FDD9005105F2 /* Comments.swift in Sources */,
+				DE645CC021097FB100999A95 /* UIViewControllerExt.swift in Sources */,
 				DE664AF921004A460011E949 /* MyCreditCardController.swift in Sources */,
 				DE8C4A0220F72EB1009C5F39 /* ProfileEventCouponsCell.swift in Sources */,
 				DE82555721028D2800582D20 /* NewCommentController.swift in Sources */,

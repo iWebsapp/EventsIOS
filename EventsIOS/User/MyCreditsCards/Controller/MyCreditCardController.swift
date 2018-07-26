@@ -44,6 +44,8 @@ class MyCreditsCardsController: UIViewController, UICollectionViewDelegate, UICo
         cell.txtFullName.text = card.fullname
         cell.txtMmaa.text = card.mmaa
         cell.txtLatest.text = lastNumber(numer: card.number)
+        cell.cartView.topColor = self.randomColor()
+        cell.cartView.bottomColor = self.randomColor()
         return cell
     }
     

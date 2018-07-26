@@ -15,5 +15,6 @@ class MyCouponsCell: UICollectionViewCell {
     @IBOutlet weak var txtExpiration: UILabel!
     @IBOutlet weak var txtDescription: UILabel!
     @IBOutlet weak var image: DesignableImage!
-
+    @IBOutlet weak var cartView: DesignableGradient!
+    
 }

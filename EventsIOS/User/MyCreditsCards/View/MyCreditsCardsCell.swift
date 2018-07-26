@@ -13,5 +13,6 @@ class MyCreditsCardsCell: UICollectionViewCell {
     @IBOutlet weak var txtLatest: UILabel!
     @IBOutlet weak var txtMmaa: UILabel!
     @IBOutlet weak var txtFullName: UILabel!
+    @IBOutlet weak var cartView: DesignableGradient!
     
 }

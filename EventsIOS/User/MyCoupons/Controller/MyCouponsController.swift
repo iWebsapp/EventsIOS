@@ -40,6 +40,8 @@ class MyCouponsController: UIViewController, UICollectionViewDelegate, UICollect
         cell.txtDescription.text = coupon.description
         cell.txtTitleBusiness.text = coupon.business
         cell.image.image = UIImage(named: coupon.image)
+        cell.cartView.topColor = self.randomColor()
+        cell.cartView.bottomColor = self.randomColor()
         return cell
     }
 

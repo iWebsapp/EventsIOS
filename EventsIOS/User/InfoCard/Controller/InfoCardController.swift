@@ -13,12 +13,17 @@ class InfoCardController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var table: UITableView!
     private var eventListViewModel: EventListViewModel!
     private var eventData: EventModel!
+    @IBOutlet weak var cartView: DesignableGradient!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         table.delegate = self
         table.dataSource = self
+        
+        cartView.topColor = self.randomColor()
+        cartView.bottomColor = self.randomColor()
+        
         self.eventData = EventModel()
         self.eventListViewModel = EventListViewModel(eventModel: self.eventData)
         DispatchQueue.main.async {
