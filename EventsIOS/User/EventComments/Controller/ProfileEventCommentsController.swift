@@ -11,6 +11,7 @@ import UIKit
 class ProfileEventCommentsController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var table: UITableView!
+    @IBOutlet weak var header: UIImageView!
     private var listComents: [Comments] = [Comments]()
     
     override func viewDidLoad() {
@@ -18,6 +19,10 @@ class ProfileEventCommentsController: UIViewController, UITableViewDelegate, UIT
         // Do any additional setup after loading the view.
         table.delegate = self
         table.dataSource = self
+        if Themes.isNight() {
+            header.image = Themes.headerEventNight
+            self.view.backgroundColor = Themes.backgroundNight
+        }
         listComents.append( Comments(comment: "Mensaje 1", user: "Luis Castillo", date: "27/03/18", avatar: "avatar") )
         listComents.append( Comments(comment: "Mensaje 2", user: "Mireyitha Jim", date: "15/03/18", avatar: "avatar") )
         listComents.append( Comments(comment: "Mensaje 3", user: "Rott Castillo", date: "10/03/18", avatar: "avatar") )

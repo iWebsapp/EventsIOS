@@ -12,8 +12,10 @@ import MapKit
 class MapController: UIViewController {
 
     @IBOutlet weak var map: MKMapView!
+    @IBOutlet weak var header: UIImageView!
     private let regionRadious: CLLocationDistance = 70
     private let locationManager = CLLocationManager()
+    @IBOutlet weak var listenerGeoLocalization: DesignableGradient!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,11 @@ class MapController: UIViewController {
         let samples = InvitationCard(title: "San Francisco", locationName: "Guerrero ST", coordinate: CLLocationCoordinate2D(latitude: 20.029438425927204, longitude: -98.77709448337555))
         map.addAnnotation(samples)
         map.delegate = self
+        if Themes.isNight() {
+            header.image = Themes.headerGobalNight
+            self.view.backgroundColor = Themes.backgroundNight
+            listenerGeoLocalization.topColor = Themes.buttomLocalizationColorNight!
+        }
         // Do any additional setup after loading the view.
     }
 

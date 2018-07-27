@@ -11,6 +11,7 @@ import UIKit
 class MyEventController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var table: UITableView!
+    @IBOutlet weak var header: UIImageView!
     private var eventListViewModel: EventListViewModel!
     private var eventData: EventModel!
     
@@ -19,6 +20,10 @@ class MyEventController: UIViewController, UITableViewDelegate, UITableViewDataS
          // Do any additional setup after loading the view.
         table.delegate = self
         table.dataSource = self
+        if Themes.isNight() {
+            header.image = Themes.headerGobalNight
+            self.view.backgroundColor = Themes.backgroundNight
+        }
         self.eventData = EventModel()
         self.eventListViewModel = EventListViewModel(eventModel: self.eventData)
         DispatchQueue.main.async {

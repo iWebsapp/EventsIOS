@@ -315,6 +315,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Carrito" image="icon-shopping" badgeValue="27" id="gV8-Ox-GVW"/>
                     <connections>
+                        <outlet property="header" destination="jxg-rL-lOm" id="uL3-cL-D9Q"/>
                         <outlet property="table" destination="MqS-WI-a95" id="4Id-iJ-wTX"/>
                     </connections>
                 </viewController>
@@ -622,7 +623,7 @@
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SAq-ZN-tle">
                                 <rect key="frame" x="27" y="151" width="266" height="266"/>
-                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="266" id="SUh-3r-S84"/>
                                     <constraint firstAttribute="height" constant="266" id="iyk-hk-g63"/>
@@ -647,6 +648,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kcv-R6-xHa"/>
                     </view>
+                    <connections>
+                        <outlet property="header" destination="MCV-k1-oma" id="ZXa-XF-6xw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Qq-M3-GOI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -933,7 +937,7 @@
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="K8S-8P-nKa">
                                 <rect key="frame" x="27" y="151" width="266" height="266"/>
-                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="266" id="751-Jf-0Ex"/>
                                     <constraint firstAttribute="width" constant="266" id="p5q-La-1uk"/>
@@ -958,6 +962,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5tJ-B9-jbJ"/>
                     </view>
+                    <connections>
+                        <outlet property="header" destination="wLa-3H-ysk" id="HHx-O9-Dft"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gdY-fN-99D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -996,7 +1003,7 @@
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mgK-wX-Ef7">
                                 <rect key="frame" x="0.0" y="195" width="320" height="373"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="79" id="YpR-y0-7Q0" customClass="HelpCell" customModule="EventsIOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="79"/>
@@ -1070,6 +1077,7 @@
                                                 </constraint>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="listenerView" destination="aea-gw-fE6" id="bIi-3C-kQk"/>
                                             <outlet property="txtQuestion" destination="t0N-zF-0OE" id="hiZ-aE-WqE"/>
@@ -1113,6 +1121,7 @@
                         <viewLayoutGuide key="safeArea" id="8oh-hK-QCA"/>
                     </view>
                     <connections>
+                        <outlet property="header" destination="UdJ-I5-v9G" id="wFo-W2-KJX"/>
                         <outlet property="table" destination="mgK-wX-Ef7" id="wZS-f4-cHZ"/>
                     </connections>
                 </viewController>
@@ -1647,6 +1656,7 @@
                         <outlet property="changeBirthday" destination="K6L-XY-KCw" id="pCy-O9-nJS"/>
                         <outlet property="changeEmail" destination="gfR-AX-i9z" id="Wlj-1X-iio"/>
                         <outlet property="changePassword" destination="2Q4-TR-LBJ" id="do0-uJ-OFP"/>
+                        <outlet property="header" destination="PuV-ry-Mzk" id="Lv5-7a-Os1"/>
                         <segue destination="OFR-uh-IMB" kind="show" identifier="goPayment" id="b57-3L-we0"/>
                     </connections>
                 </viewController>
@@ -1859,6 +1869,7 @@
                     </view>
                     <connections>
                         <outlet property="collection" destination="dzg-R1-fcA" id="fTb-Kj-d1z"/>
+                        <outlet property="header" destination="Cvf-bo-1Mn" id="KC6-il-Fbm"/>
                         <segue destination="Fb5-xw-xG7" kind="show" identifier="goInfoCard" id="hbp-RU-nMs"/>
                     </connections>
                 </viewController>
@@ -2281,7 +2292,7 @@
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dqZ-YB-qcU">
                                 <rect key="frame" x="0.0" y="252.5" width="320" height="315.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="90" id="Xdc-PG-G0d" customClass="EventCell" customModule="EventsIOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="90"/>
@@ -2378,6 +2389,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="QBm-Hr-dgw" secondAttribute="bottom" constant="10" id="mag-Oh-xnb"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="avatar" destination="CDc-i1-3r6" id="mvZ-Yl-6z2"/>
                                             <outlet property="txtDate" destination="iaA-af-V6h" id="J1M-UZ-0uM"/>
@@ -2410,6 +2422,7 @@
                     </view>
                     <connections>
                         <outlet property="cartView" destination="EKO-rU-Vxs" id="3MI-hG-ulf"/>
+                        <outlet property="header" destination="MJ0-WX-tcV" id="G1a-zp-tgu"/>
                         <outlet property="table" destination="dqZ-YB-qcU" id="uxX-If-qph"/>
                         <segue destination="xUO-fC-rSI" kind="show" identifier="goInfoShoppingCard" id="Qwn-XA-23W"/>
                     </connections>
@@ -2576,6 +2589,7 @@
                         <viewLayoutGuide key="safeArea" id="fBf-MI-F0s"/>
                     </view>
                     <connections>
+                        <outlet property="header" destination="gUG-UL-MjC" id="cOw-Us-IM8"/>
                         <outlet property="table" destination="l9Q-sx-NSa" id="K27-ec-cO2"/>
                     </connections>
                 </viewController>
@@ -3112,6 +3126,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Mis Eventos" image="menu-events" selectedImage="menu-events-strong" id="hj1-uG-DCW"/>
                     <connections>
+                        <outlet property="header" destination="UWK-nj-2oQ" id="Wjf-1Z-HDF"/>
                         <outlet property="table" destination="dBB-34-A3d" id="MH4-Md-Vpb"/>
                         <segue destination="h7c-pb-09f" kind="show" identifier="goProfileEventFromUser" id="Zif-km-PDA"/>
                     </connections>
@@ -3320,6 +3335,7 @@
                         <viewLayoutGuide key="safeArea" id="Dx2-hw-pjQ"/>
                     </view>
                     <connections>
+                        <outlet property="header" destination="WXL-GV-Qz1" id="SPj-8p-JTU"/>
                         <outlet property="table" destination="9q9-XN-Vjs" id="VgZ-2u-2NO"/>
                         <segue destination="yUD-SW-Hmq" kind="show" identifier="goInformationEventProfile" id="PYe-3i-bXW"/>
                         <segue destination="k5M-el-kwS" kind="show" identifier="goCommentsEventProfile" id="gPR-SJ-fZr"/>
@@ -3490,6 +3506,7 @@
                         <viewLayoutGuide key="safeArea" id="VHk-YG-evg"/>
                     </view>
                     <connections>
+                        <outlet property="header" destination="u1T-aW-lNN" id="ZbB-yd-kfu"/>
                         <outlet property="table" destination="gqn-NP-u8i" id="q1g-My-3IY"/>
                     </connections>
                 </viewController>
@@ -3618,6 +3635,7 @@
                     <connections>
                         <outlet property="addressView" destination="tPt-pd-Ymh" id="4zM-Wy-NXD"/>
                         <outlet property="contactView" destination="bgx-Gm-IpT" id="IC9-vj-qCe"/>
+                        <outlet property="header" destination="gts-r4-dRP" id="AMR-ph-haA"/>
                         <outlet property="scheduleView" destination="glq-EA-elr" id="32z-xO-cKK"/>
                     </connections>
                 </viewController>
@@ -3782,6 +3800,7 @@
                         <viewLayoutGuide key="safeArea" id="h0e-Wi-5Gk"/>
                     </view>
                     <connections>
+                        <outlet property="header" destination="fDZ-6X-1d6" id="w2Q-CZ-u9V"/>
                         <outlet property="table" destination="6Vk-7h-I9d" id="dEg-eo-vwu"/>
                         <segue destination="m3N-Eb-Fas" kind="show" identifier="goInfoProduct" id="AxU-Cw-FXq"/>
                     </connections>
@@ -3923,6 +3942,7 @@
                     </view>
                     <connections>
                         <outlet property="collection" destination="WRK-Wc-jjI" id="pej-Wu-JQf"/>
+                        <outlet property="header" destination="1ER-eh-4aH" id="SKK-se-CgG"/>
                         <outlet property="txtDescription" destination="2Hm-Iq-vJb" id="Xol-Sh-PcI"/>
                         <outlet property="txtTitle" destination="cdg-lG-WZk" id="dux-FS-VhC"/>
                     </connections>
@@ -4091,6 +4111,7 @@
                         <viewLayoutGuide key="safeArea" id="CKK-Rj-MJN"/>
                     </view>
                     <connections>
+                        <outlet property="header" destination="gVu-b6-1OU" id="Nrd-4v-rzf"/>
                         <outlet property="table" destination="Fj4-FW-xqB" id="6Db-dN-vU9"/>
                         <segue destination="m3N-Eb-Fas" kind="show" identifier="goInfoProduct" id="LhE-S6-VCj"/>
                     </connections>
@@ -4177,7 +4198,7 @@
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4S5-Ky-QY9">
                                 <rect key="frame" x="0.0" y="170" width="320" height="349"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="96" id="2ZZ-Lq-9Nc" customClass="EventCommentsCell" customModule="EventsIOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="96"/>
@@ -4314,6 +4335,7 @@
                         <viewLayoutGuide key="safeArea" id="88k-yM-dg2"/>
                     </view>
                     <connections>
+                        <outlet property="header" destination="evV-1i-Lqd" id="eqP-vS-4PK"/>
                         <outlet property="table" destination="4S5-Ky-QY9" id="BDv-xU-TwZ"/>
                     </connections>
                 </viewController>
@@ -4446,6 +4468,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PyL-4d-Ijc"/>
                     </view>
+                    <connections>
+                        <outlet property="header" destination="RP7-7I-CiW" id="TmK-Ea-MQn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qaq-bL-Fat" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -4953,6 +4978,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionCoupons" destination="RL8-tw-jhf" id="Y3g-Ig-up5"/>
+                        <outlet property="header" destination="j7L-Yn-d9h" id="YOf-Wk-dVn"/>
                         <segue destination="Pk8-NS-HoV" kind="presentation" identifier="goInfoCoupons" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="cpU-js-156"/>
                     </connections>
                 </viewController>
@@ -5106,6 +5132,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Alertas" image="menu-notifications" id="M5Y-Ke-ezw"/>
                     <connections>
+                        <outlet property="header" destination="TRE-jZ-aQd" id="Lsd-Yq-F8e"/>
                         <outlet property="table" destination="myV-Hx-5V3" id="UZO-TM-FPe"/>
                     </connections>
                 </viewController>
@@ -5333,6 +5360,7 @@
                     <tabBarItem key="tabBarItem" title="Mis Cupones" image="icon-coupons" id="GhR-kR-vIZ"/>
                     <connections>
                         <outlet property="collectionCoupons" destination="Qz4-4I-pyN" id="NEQ-qU-z4c"/>
+                        <outlet property="header" destination="v9T-OZ-o95" id="hWj-ja-aOG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TUA-Cg-s4C" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -5460,6 +5488,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
+                                            <outlet property="cardView" destination="hsZ-jd-XzA" id="TDD-5T-Ofs"/>
                                             <outlet property="icon" destination="hSY-ZX-B1C" id="rZv-ZL-20N"/>
                                             <outlet property="txtTitle" destination="3fS-Xe-h5a" id="63e-Wq-kIK"/>
                                         </connections>
@@ -5497,6 +5526,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Perfil" image="menu-profile" id="t2e-7r-cJc"/>
                     <connections>
+                        <outlet property="header" destination="oZe-qI-JnR" id="SUm-wI-hoS"/>
                         <outlet property="table" destination="8th-Uk-rVt" id="vsu-Ok-nm4"/>
                         <segue destination="dXa-Xb-tS7" kind="show" identifier="goLogout" id="nBq-bI-XKZ"/>
                         <segue destination="BoO-Ru-Ken" kind="show" identifier="goSettings" id="d6r-YQ-mYz"/>
@@ -6317,7 +6347,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="37h-hI-36I" firstAttribute="top" secondItem="BCa-PP-kbs" secondAttribute="top" id="DFa-yl-jOP"/>
                                     <constraint firstAttribute="height" constant="50" id="K1g-GC-aK4"/>
@@ -6465,7 +6495,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Ozj-Ej-2rj" secondAttribute="bottom" id="DkR-En-lMr"/>
                                     <constraint firstAttribute="bottom" secondItem="uLq-41-0Cx" secondAttribute="bottom" id="OIQ-U4-aZH"/>
@@ -6613,7 +6643,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="11s-FQ-HnT" secondAttribute="trailing" id="0JR-TQ-uPQ"/>
                                     <constraint firstItem="Yvu-pR-L50" firstAttribute="top" secondItem="BoQ-Fc-zo0" secondAttribute="top" id="AYy-4S-FDy"/>
@@ -6715,7 +6745,7 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="Blq-ts-9dY" secondAttribute="bottom" constant="5" id="Ka9-n7-mqZ"/>
                                             <constraint firstAttribute="height" constant="50" id="ZmS-8U-3O7"/>
@@ -6761,7 +6791,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="cda-Ej-sJR" secondAttribute="bottom" id="0At-b2-8Di"/>
                                     <constraint firstAttribute="height" constant="50" id="JHm-v7-Hvf"/>
@@ -6927,6 +6957,8 @@
                         <viewLayoutGuide key="safeArea" id="bS2-vA-10g"/>
                     </view>
                     <connections>
+                        <outlet property="header" destination="eLx-h8-qoQ" id="IzH-km-pG7"/>
+                        <outlet property="listenerGeoLocalization" destination="x4y-xf-FOu" id="bZ0-tQ-Dhg"/>
                         <outlet property="map" destination="Mwo-xy-G4W" id="aIn-KU-Hml"/>
                         <segue destination="73M-Ch-hoa" kind="presentation" identifier="goMoreInfoMap" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="VYb-v5-HOm"/>
                     </connections>
@@ -7043,6 +7075,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ud4-RP-4Bg"/>
                     </view>
+                    <connections>
+                        <outlet property="header" destination="Y24-Vb-rSJ" id="OWd-XE-3L4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10S-lb-x4A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -7286,6 +7321,8 @@
                         <viewLayoutGuide key="safeArea" id="bE9-qX-zQa"/>
                     </view>
                     <connections>
+                        <outlet property="header" destination="01I-Z6-unV" id="Ase-pV-qfH"/>
+                        <outlet property="listenerGeoLocalization" destination="9gR-sS-zXG" id="Ubq-Bm-GS3"/>
                         <outlet property="table" destination="HTX-xn-lFe" id="OO9-O5-e4f"/>
                         <segue destination="h7c-pb-09f" kind="show" identifier="goProfileEventFromListAllEvents" id="Wtn-y3-fk1"/>
                     </connections>

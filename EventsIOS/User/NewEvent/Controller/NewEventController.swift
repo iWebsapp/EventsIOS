@@ -10,10 +10,18 @@ import UIKit
 
 class NewEventController: UIViewController {
 
+    @IBOutlet weak var header: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        if Themes.isNight() {
+            header.image = Themes.headerGobalNight
+            self.view.backgroundColor = Themes.backgroundNight
+            self.tabBarController?.tabBar.barTintColor = Themes.backgroundNight
+            self.tabBarController?.tabBar.tintColor = Themes.tintColorNight
+            self.tabBarController?.tabBar.unselectedItemTintColor = Themes.unselectedColorNight
+        }
     }
 
     override func didReceiveMemoryWarning() {

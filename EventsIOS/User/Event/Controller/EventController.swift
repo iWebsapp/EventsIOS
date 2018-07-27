@@ -13,12 +13,19 @@ class EventController: UIViewController, UITableViewDelegate, UITableViewDataSou
     @IBOutlet weak var table: UITableView!
     private var eventListViewModel: EventListViewModel!
     private var eventData: EventModel!
+    @IBOutlet weak var header: UIImageView!
+    @IBOutlet weak var listenerGeoLocalization: DesignableGradient!
     
     override func viewDidLoad() {
         super.viewDidLoad()
          // Do any additional setup after loading the view.
         table.delegate = self
         table.dataSource = self
+        if Themes.isNight() {
+            header.image = Themes.headerGobalNight
+            self.view.backgroundColor = Themes.backgroundNight
+            listenerGeoLocalization.topColor = Themes.buttomLocalizationColorNight!
+        }
         self.eventData = EventModel()
         self.eventListViewModel = EventListViewModel(eventModel: self.eventData)
         DispatchQueue.main.async {

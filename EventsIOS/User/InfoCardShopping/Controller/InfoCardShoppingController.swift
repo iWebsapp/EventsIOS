@@ -11,6 +11,7 @@ import UIKit
 class InfoCardShoppingController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var table: UITableView!
+    @IBOutlet weak var header: UIImageView!
     private var lisShoping: [InfoCardShopping] = [InfoCardShopping]()
     
     override func viewDidLoad() {
@@ -18,6 +19,10 @@ class InfoCardShoppingController: UIViewController, UITableViewDelegate, UITable
         // Do any additional setup after loading the view.
         table.delegate = self
         table.dataSource = self
+        if Themes.isNight() {
+            header.image = Themes.headerGobalNight
+            self.view.backgroundColor = Themes.backgroundNight
+        }
         lisShoping.append( InfoCardShopping(name: "Fecha 1", picture: "food-mole", open: false, total: "$127.00 mxn",
         products: [Products(name: "Producto 1", picture: "food-mole", price: "120.00 mxn", description: "Descripcion 1"),
                    Products(name: "Producto 2", picture: "food-mole", price: "120.00 mxn", description: "Descripcion 2"),

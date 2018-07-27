@@ -12,6 +12,7 @@ class ProfileEventCell: UITableViewCell {
 
     @IBOutlet weak var icon: UIImageView!
     @IBOutlet weak var txtTitle: UILabel!
+    @IBOutlet weak var cardView: DesignableGradient!
     
     override func awakeFromNib() {
         super.awakeFromNib()

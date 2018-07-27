@@ -14,6 +14,7 @@ class SettingsController: UIViewController {
     @IBOutlet weak var cardPassword: UIStackView!
     @IBOutlet weak var cardBirthday: UIStackView!
     @IBOutlet weak var cardPayment: UIStackView!
+    @IBOutlet weak var header: UIImageView!
     
     @IBOutlet weak var changeEmail: UIView!
     @IBOutlet weak var changePassword: UIView!
@@ -31,6 +32,10 @@ class SettingsController: UIViewController {
         changePassword.isHidden = true
         changeBirthday.isHidden = true
         
+        if Themes.isNight() {
+            header.image = Themes.headerGobalNight
+            self.view.backgroundColor = Themes.backgroundNight
+        }
         
     }
 

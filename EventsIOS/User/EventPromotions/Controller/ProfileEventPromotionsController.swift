@@ -10,6 +10,7 @@ import UIKit
 
 class ProfileEventPromotionsController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var header: UIImageView!
     @IBOutlet weak var table: UITableView!
     private var promotions: [PromotionsEvent] = [PromotionsEvent]()
     
@@ -17,6 +18,10 @@ class ProfileEventPromotionsController: UIViewController, UITableViewDataSource,
         super.viewDidLoad()
         table.delegate = self
         table.dataSource = self
+        if Themes.isNight() {
+            header.image = Themes.headerEventNight
+            self.view.backgroundColor = Themes.backgroundNight
+        }
         promotions.append( PromotionsEvent(title: "El Tradicional Guacamole", description: "2x1", picture: "food-huacamole"))
         promotions.append( PromotionsEvent(title: "Sopa de Tortilla", description: "Refresco gratis", picture: "food-sopa-tortila"))
         promotions.append( PromotionsEvent(title: "Pechuga con Mole Poblano", description: "15% de descuento", picture: "food-mole"))

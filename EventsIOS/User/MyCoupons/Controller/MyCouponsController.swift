@@ -11,12 +11,20 @@ import UIKit
 class MyCouponsController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var collectionCoupons: UICollectionView!
+    @IBOutlet weak var header: UIImageView!
     private var coupons: [Coupons] = [Coupons]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionCoupons.delegate = self
         collectionCoupons.dataSource = self
+        if Themes.isNight() {
+            header.image = Themes.headerGobalNight
+            self.view.backgroundColor = Themes.backgroundNight
+            self.tabBarController?.tabBar.barTintColor = Themes.backgroundNight
+            self.tabBarController?.tabBar.tintColor = Themes.tintColorNight
+            self.tabBarController?.tabBar.unselectedItemTintColor = Themes.unselectedColorNight
+        }
         coupons.append( Coupons(image: "food-enchiladas", title: "2X1 Lasaña", expiration: "27/07/18", description: "En la compra de una laseña grande, te llevas la segunda gratis", business: "CocaCola"))
         coupons.append( Coupons(image: "food-huacamole", title: "Refresco pareja", expiration: "15/08/18", description: "Si llevas a un acompañante te regalamos otra bedida", business: "CocaCola"))
         coupons.append( Coupons(image: "food-manchamantel", title: "Lunes de Helado", expiration: "19/11/18", description: "Llevate un helado de sabor chocolate con un 10% de descuento", business: "CocaCola"))

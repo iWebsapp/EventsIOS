@@ -118,6 +118,7 @@
                         <barButtonItem key="backBarButtonItem" title="Inicio" id="yVY-LO-t8x"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="background" destination="nAh-IT-eSf" id="cSU-HQ-I9A"/>
                         <outlet property="listenerLogin" destination="3hf-gA-7Ci" id="xrg-Ex-3iw"/>
                         <outlet property="txtEmail" destination="WRH-u9-GeF" id="x4Z-NZ-3PV"/>
                         <outlet property="txtPassword" destination="5Zu-bW-ndV" id="jmJ-aD-BgI"/>

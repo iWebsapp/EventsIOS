@@ -10,7 +10,7 @@ import UIKit
 
 class ProfileEventProductsController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    
+    @IBOutlet weak var header: UIImageView!
     private var products: [ProductsEvent] = [ProductsEvent]()
     @IBOutlet weak var table: UITableView!
     
@@ -19,7 +19,10 @@ class ProfileEventProductsController: UIViewController, UITableViewDelegate, UIT
         // Do any additional setup after loading the view.
         table.delegate = self
         table.dataSource = self
-        
+        if Themes.isNight() {
+            header.image = Themes.headerEventNight
+            self.view.backgroundColor = Themes.backgroundNight
+        }
         products.append( ProductsEvent(name: "Enchiladas Vips", image: "food-enchiladas", price: "27.00", description: ""))
         products.append( ProductsEvent(name: "El Tradicional Guacamole", image: "food-huacamole",  price: "15.00", description: ""))
         products.append( ProductsEvent(name: "Sopa de Tortilla", image: "food-sopa-tortila", price: "157.00", description: ""))

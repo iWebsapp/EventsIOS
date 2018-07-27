@@ -12,12 +12,20 @@ class ShoppingCartController: UIViewController, UITableViewDelegate, UITableView
 
     @IBOutlet weak var table: UITableView!
     private var listArticleShopping: [Shopping] = [Shopping]()
+    @IBOutlet weak var header: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         table.delegate = self
         table.dataSource = self
+        if Themes.isNight() {
+            header.image = Themes.headerGobalNight
+            self.view.backgroundColor = Themes.backgroundNight
+            self.tabBarController?.tabBar.barTintColor = Themes.backgroundNight
+            self.tabBarController?.tabBar.tintColor = Themes.tintColorNight
+            self.tabBarController?.tabBar.unselectedItemTintColor = Themes.unselectedColorNight
+        }
         listArticleShopping.append( Shopping(picture: "food-enchiladas", name: "Este es el producto numero 1", pieces: "1"))
         listArticleShopping.append( Shopping(picture: "food-enchiladas", name: "Este es el producto numero 2", pieces: "1"))
         listArticleShopping.append( Shopping(picture: "food-enchiladas", name: "Este es el producto numero 3", pieces: "1"))

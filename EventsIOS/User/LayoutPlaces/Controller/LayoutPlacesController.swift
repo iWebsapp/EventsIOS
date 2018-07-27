@@ -27,6 +27,12 @@ class LayoutPlacesController: UIViewController {
         newView.alpha = 0
         listView.alpha = 0
         listenerMapButton.isHidden = true
+        if Themes.isNight() {
+            self.view.backgroundColor = Themes.backgroundNight
+            self.tabBarController?.tabBar.barTintColor = Themes.backgroundNight
+            self.tabBarController?.tabBar.tintColor = Themes.tintColorNight
+            self.tabBarController?.tabBar.unselectedItemTintColor = Themes.unselectedColorNight
+        }
     }
 
     override func didReceiveMemoryWarning() {

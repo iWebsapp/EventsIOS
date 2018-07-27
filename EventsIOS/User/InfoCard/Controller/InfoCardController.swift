@@ -14,12 +14,17 @@ class InfoCardController: UIViewController, UITableViewDelegate, UITableViewData
     private var eventListViewModel: EventListViewModel!
     private var eventData: EventModel!
     @IBOutlet weak var cartView: DesignableGradient!
+    @IBOutlet weak var header: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         table.delegate = self
         table.dataSource = self
+        if Themes.isNight() {
+            header.image = Themes.headerGobalNight
+            self.view.backgroundColor = Themes.backgroundNight
+        }
         
         cartView.topColor = self.randomColor()
         cartView.bottomColor = self.randomColor()

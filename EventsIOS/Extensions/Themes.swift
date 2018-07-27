@@ -10,25 +10,86 @@ import UIKit
 
 class Themes {
     
-    //themes day
-    static let headerGobalDay = UIImage(named: "header-2")
-    static let headerEventDay = UIImage(named: "headers")
-    static let backgroundLoginDay = UIImage(named: "wallpeper")
-    static let backgroundDay = UIColor(named: "backgroundDay")
-    static let tintColorDay = UIColor(named: "tintColorDay")
-    static let topBackgroundDay = UIColor(named: "topBackgroundDay")
-    static let bottomBackgroundDay = UIColor(named: "bottomBackgroundDay")
-    static let shadowBackgroundDay = UIColor(named: "shadowBackgroundDay")
-    
-    
-    //themes night
     static let headerGobalNight = UIImage(named: "headers-global-night")
     static let headerEventNight = UIImage(named: "headers-profile-night")
-    static let backgroundLoginNight = UIImage(named: "wallpeper")
-    static let backgroundNight = UIColor(named: "backgroundDay")
-    static let tintColorNight = UIColor(named: "tintColorDay")
-    static let topBackgroundNight = UIColor(named: "topBackgroundDay")
-    static let bottomBackgroundNight = UIColor(named: "bottomBackgroundDay")
-    static let shadowBackgroundNight = UIColor(named: "shadowBackgroundDay")
+    static let backgroundLoginNight = UIImage(named: "wallpaper-night")
+    
+    static let backgroundNight = UIColor(named: "backgroundNight")
+    static let tabbarNight = UIColor(named: "tabbarNight")
+    static let tintColorNight = UIColor(named: "tintColorNight")
+    static let unselectedColorNight = UIColor(named: "unselectedColorNight")
+    
+    static let buttomLocalizationColorNight = UIColor(named: "buttomLocalizationColorNight")
+    
+    static func isNight() ->Bool {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "H"
+        let dateString = formatter.string(from: Date())
+        let currentDate = dateString.components(separatedBy: " ")
+        
+        if currentDate.count == 1 {
+            
+            //print("24 horas")
+            switch currentDate[0] {
+                case "1":
+                    return true
+                case "2":
+                    return true
+                case "3":
+                    return true
+                case "4":
+                    return true
+                case "5":
+                    return true
+                case "6":
+                    return true
+                case "20":
+                    return true
+                case "21":
+                    return true
+                case "22":
+                    return true
+                case "23":
+                    return true
+                case "24":
+                    return true
+                default:
+                    return false
+            }
+
+        } else {
+            
+            //print("12 horas")
+            switch currentDate[0] {
+            case "1":
+                return true
+            case "2":
+                return true
+            case "3":
+                return true
+            case "4":
+                return true
+            case "5":
+                return true
+            case "6":
+                return true
+            case "8":
+                return true
+            case "9":
+                return true
+            case "10":
+                return true
+            case "11":
+                return true
+            case "12":
+                return true
+            default:
+                return false
+            }
+
+        }
+        
+
+    }
     
 }

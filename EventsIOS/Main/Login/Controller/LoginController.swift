@@ -13,11 +13,15 @@ class LoginController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var listenerLogin: UIButton!
+    @IBOutlet weak var background: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         txtEmail.delegate = self
         txtPassword.delegate = self
+        if Themes.isNight() {
+            background.image = Themes.backgroundLoginNight
+        } 
         // Do any additional setup after loading the view, typically from a nib.
     }
 

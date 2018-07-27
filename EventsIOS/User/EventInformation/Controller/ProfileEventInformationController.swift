@@ -10,6 +10,7 @@ import UIKit
 
 class ProfileEventInformationController: UIViewController {
 
+    @IBOutlet weak var header: UIImageView!
     @IBOutlet weak var scheduleView: UIView!
     @IBOutlet weak var contactView: UIView!
     @IBOutlet weak var addressView: UIView!
@@ -20,6 +21,10 @@ class ProfileEventInformationController: UIViewController {
         scheduleView.alpha = 1
         contactView.alpha = 0
         addressView.alpha = 0
+        if Themes.isNight() {
+            header.image = Themes.headerEventNight
+            self.view.backgroundColor = Themes.backgroundNight
+        }
     }
 
     override func didReceiveMemoryWarning() {

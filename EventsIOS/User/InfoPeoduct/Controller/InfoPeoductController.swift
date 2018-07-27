@@ -13,6 +13,7 @@ class InfoPeoductController: UIViewController, UICollectionViewDelegate, UIColle
     @IBOutlet weak var collection: UICollectionView!
     @IBOutlet weak var txtDescription: UILabel!
     @IBOutlet weak var txtTitle: UILabel!
+    @IBOutlet weak var header: UIImageView!
     private var listInfoProduct: InfoPeoduct!
     
     override func viewDidLoad() {
@@ -20,6 +21,10 @@ class InfoPeoductController: UIViewController, UICollectionViewDelegate, UIColle
         // Do any additional setup after loading the view.
         collection.delegate = self
         collection.dataSource = self
+        if Themes.isNight() {
+            header.image = Themes.headerEventNight
+            self.view.backgroundColor = Themes.backgroundNight
+        }
         listInfoProduct = InfoPeoduct(images: ["food-enchiladas", "food-huacamole", "food-manchamantel", "food-mole", "food-nuggets"], title: "Producto 1", description: "Este es el producto 1")
         txtTitle.text = listInfoProduct.title
         txtDescription.text = listInfoProduct.description

@@ -10,6 +10,7 @@ import UIKit
 
 class GuaranteedTableController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var header: UIImageView!
     @IBOutlet weak var table: UITableView!
     private var listGuaranted: [GuaranteedTable] = [GuaranteedTable]()
     
@@ -18,6 +19,10 @@ class GuaranteedTableController: UIViewController, UITableViewDelegate, UITableV
         // Do any additional setup after loading the view.
         table.delegate = self
         table.dataSource = self
+        if Themes.isNight() {
+            header.image = Themes.headerEventNight
+            self.view.backgroundColor = Themes.backgroundNight
+        }
         listGuaranted.append( GuaranteedTable(icon: "icon-coupons", title: "Area de fumadores"))
         listGuaranted.append( GuaranteedTable(icon: "icon-coupons", title: "Barra"))
         listGuaranted.append( GuaranteedTable(icon: "icon-coupons", title: "Mesa"))

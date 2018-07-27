@@ -11,12 +11,20 @@ import UIKit
 class ProfileUserController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var table: UITableView!
+    @IBOutlet weak var header: UIImageView!
     private var itemsProfile = [ProfileEvent]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         table.dataSource = self
         table.delegate = self
+        if Themes.isNight() {
+            header.image = Themes.headerGobalNight
+            self.view.backgroundColor = Themes.backgroundNight
+            self.tabBarController?.tabBar.barTintColor = Themes.backgroundNight
+            self.tabBarController?.tabBar.tintColor = Themes.tintColorNight
+            self.tabBarController?.tabBar.unselectedItemTintColor = Themes.unselectedColorNight
+        } 
         itemsProfile.append( ProfileEvent(icon: "icon-settings", title: "Configuración") )
         itemsProfile.append( ProfileEvent(icon: "menu-events", title: "Mis Eventos") )
         itemsProfile.append( ProfileEvent(icon: "icon-info", title: "Quiénes somos") )

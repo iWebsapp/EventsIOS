@@ -12,11 +12,16 @@ class MyCreditsCardsController: UIViewController, UICollectionViewDelegate, UICo
     
     @IBOutlet weak var collection: UICollectionView!
     private var credit: [CreditCard] = [CreditCard]()
+    @IBOutlet weak var header: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collection.delegate = self
         collection.dataSource = self
+        if Themes.isNight() {
+            header.image = Themes.headerGobalNight
+            self.view.backgroundColor = Themes.backgroundNight
+        }
         credit.append( CreditCard(number: "1234 4321 1111 2715", mmaa: "27/21", fullname: "Luis Manuel Castillo Zamorano"))
         credit.append( CreditCard(number: "1111 1234 4321 1527", mmaa: "27/21", fullname: "Ana Mireya Jimenez Perez"))
         credit.append( CreditCard(number: "2222 1111 4444 6067", mmaa: "27/21", fullname: "Dolores Imelda Zamorano Lugo"))
