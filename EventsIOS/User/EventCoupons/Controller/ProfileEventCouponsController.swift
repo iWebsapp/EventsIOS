@@ -12,20 +12,23 @@ class ProfileEventCouponsController: UIViewController, UICollectionViewDelegate,
     
     @IBOutlet weak var header: UIImageView!
     @IBOutlet weak var collectionCoupons: UICollectionView!
-    private var coupons: [Coupons] = [Coupons]()
+    private var eventCouponListViewModel: EventCouponsListViewModel!
+    private var eventCouponModel: EventCouponsModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view.
         collectionCoupons.delegate = self
         collectionCoupons.dataSource = self
         if Themes.isNight() {
             header.image = Themes.headerEventNight
             self.view.backgroundColor = Themes.backgroundNight
         }
-        coupons.append( Coupons(image: "food-enchiladas", title: "2X1 Lasaña", expiration: "27/07/18", description: "En la compra de una laseña grande, te llevas la segunda gratis", business: "CocaCola"))
-        coupons.append( Coupons(image: "food-huacamole", title: "Refresco pareja", expiration: "15/08/18", description: "Si llevas a un acompañante te regalamos otra bedida", business: "CocaCola"))
-        coupons.append( Coupons(image: "food-manchamantel", title: "Lunes de Helado", expiration: "19/11/18", description: "Llevate un helado de sabor chocolate con un 10% de descuento", business: "CocaCola"))
-        // Do any additional setup after loading the view.
+        self.eventCouponModel = EventCouponsModel()
+        self.eventCouponListViewModel = EventCouponsListViewModel(eventCoupons: self.eventCouponModel)
+        DispatchQueue.main.async {
+            self.collectionCoupons.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,12 +37,12 @@ class ProfileEventCouponsController: UIViewController, UICollectionViewDelegate,
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return coupons.count
+        return self.eventCouponListViewModel.eventCouponsViewModel.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionCoupons.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MyCouponsCell
-        let coupon = coupons[indexPath.item]
+        let coupon = self.eventCouponListViewModel.eventCouponsViewModel[indexPath.item]
         cell.txtTitleBusiness.text = coupon.business
         cell.txtDescription.text = coupon.description
         cell.txtExpiration.text = coupon.expiration
@@ -57,6 +60,7 @@ class ProfileEventCouponsController: UIViewController, UICollectionViewDelegate,
     @IBAction func behind(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
+    
     /*
     // MARK: - Navigation
 

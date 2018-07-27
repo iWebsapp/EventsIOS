@@ -19,6 +19,7 @@ class MapController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view.
         let initialLocation = CLLocation(latitude: 20.030275968647413, longitude: -98.77558698690915)
         zoomMapOn(location: initialLocation)
         let samples = InvitationCard(title: "San Francisco", locationName: "Guerrero ST", coordinate: CLLocationCoordinate2D(latitude: 20.029438425927204, longitude: -98.77709448337555))
@@ -29,7 +30,6 @@ class MapController: UIViewController {
             self.view.backgroundColor = Themes.backgroundNight
             listenerGeoLocalization.topColor = Themes.buttomLocalizationColorNight!
         }
-        // Do any additional setup after loading the view.
     }
 
     override func viewDidAppear(_ animated: Bool) {

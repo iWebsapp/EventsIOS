@@ -12,21 +12,24 @@ class ProfileEventPromotionsController: UIViewController, UITableViewDataSource,
 
     @IBOutlet weak var header: UIImageView!
     @IBOutlet weak var table: UITableView!
+    private var eventPromotionsListViewModel: EventPromotionsListViewModel!
+    private var eventPromotionsModel: EventPromotionsModel!
     private var promotions: [PromotionsEvent] = [PromotionsEvent]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view.
         table.delegate = self
         table.dataSource = self
         if Themes.isNight() {
             header.image = Themes.headerEventNight
             self.view.backgroundColor = Themes.backgroundNight
         }
-        promotions.append( PromotionsEvent(title: "El Tradicional Guacamole", description: "2x1", picture: "food-huacamole"))
-        promotions.append( PromotionsEvent(title: "Sopa de Tortilla", description: "Refresco gratis", picture: "food-sopa-tortila"))
-        promotions.append( PromotionsEvent(title: "Pechuga con Mole Poblano", description: "15% de descuento", picture: "food-mole"))
-        promotions.append( PromotionsEvent(title: "Tacos Dorados de Pollo", description: "Viernes al 2X1", picture: "food-tacos"))
-        // Do any additional setup after loading the view.
+        self.eventPromotionsModel = EventPromotionsModel()
+        self.eventPromotionsListViewModel = EventPromotionsListViewModel(eventPromotions: self.eventPromotionsModel)
+        DispatchQueue.main.async {
+            self.table.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,12 +42,12 @@ class ProfileEventPromotionsController: UIViewController, UITableViewDataSource,
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return promotions.count
+        return eventPromotionsListViewModel.eventPromotionsViewModel.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PromotionsEventCell
-        let promotion = promotions[indexPath.row]
+        let promotion = eventPromotionsListViewModel.eventPromotionsViewModel[indexPath.row]
         cell.titlePromotions.text = promotion.title
         cell.descriptionPromotions.text = promotion.description
         cell.picturePromotions.image = UIImage(named: promotion.picture)

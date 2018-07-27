@@ -13,10 +13,14 @@ class RegistrerUserEmailAndPasswordController: UIViewController {
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var listenerNext: UIButton!
+    @IBOutlet weak var header: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        if Themes.isNight() {
+            header.image = Themes.backgroundRegister
+        }
     }
 
     override func didReceiveMemoryWarning() {

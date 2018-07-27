@@ -12,7 +12,8 @@ class HelpController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var header: UIImageView!
-    private var questions: [Help] = [Help]()
+    private var helpListViewModel: HelpListViewModel!
+    private var helpModel: HelpModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,10 +24,11 @@ class HelpController: UIViewController, UITableViewDelegate, UITableViewDataSour
             header.image = Themes.headerGobalNight
             self.view.backgroundColor = Themes.backgroundNight
         }
-        questions.append( Help(open: false, question: "Como suena el panda show?", answer: ["Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. A toda maquina baboso!!!"]))
-        questions.append( Help(open: false, question: "Por que el rott es feo?", answer: ["Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Por que se parece a jim"]))
-        questions.append( Help(open: false, question: "Por que amo al rott?", answer: ["Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Por que es un bb hermoso y concentido"]))
-        questions.append( Help(open: false, question: "Por que jim no me pela?", answer: ["Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Por que es una bb fea y nojona"]))
+        self.helpModel = HelpModel()
+        self.helpListViewModel = HelpListViewModel(helpModel: self.helpModel)
+        DispatchQueue.main.async {
+            self.table.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,12 +37,12 @@ class HelpController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return questions.count
+        return self.helpListViewModel.helpViewModel.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if questions[section].open == true {
-            return questions[section].answer.count + 1
+        if self.helpListViewModel.helpViewModel[section].open == true {
+            return self.helpListViewModel.helpViewModel[section].answer.count + 1
         }else{
             return 1
         }
@@ -51,25 +53,25 @@ class HelpController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HelpCell
             cell.listenerView.topColor = UIColor(red:0.90, green:0.90, blue:0.90, alpha:1.0)
             cell.listenerView.bottomColor = UIColor(red:1.00, green:1.00, blue:1.00, alpha:1.0)
-            cell.txtQuestion?.text = questions[indexPath.section].question
+            cell.txtQuestion?.text = self.helpListViewModel.helpViewModel[indexPath.section].question
             return cell
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HelpCell
             cell.listenerView.topColor = UIColor(red:0.90, green:0.37, blue:0.40, alpha:1.0)
             cell.listenerView.bottomColor = UIColor(red:1.04, green:0.25, blue:0.28, alpha:1.0)
-            cell.txtQuestion?.text = questions[indexPath.section].answer[indexPath.row - 1]
+            cell.txtQuestion?.text = self.helpListViewModel.helpViewModel[indexPath.section].answer[indexPath.row - 1]
             return cell
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0{
-            if questions[indexPath.section].open == true {
-                questions[indexPath.section].open = false
+            if self.helpListViewModel.helpViewModel[indexPath.section].open == true {
+                self.helpListViewModel.helpViewModel[indexPath.section].open = false
                 let secciones = IndexSet.init(integer: indexPath.section)
                 table.reloadSections(secciones, with: .fade)
             }else{
-                questions[indexPath.section].open = true
+                self.helpListViewModel.helpViewModel[indexPath.section].open = true
                 let secciones = IndexSet.init(integer: indexPath.section)
                 table.reloadSections(secciones, with: .fade)
             }

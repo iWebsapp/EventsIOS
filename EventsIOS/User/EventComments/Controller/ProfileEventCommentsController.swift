@@ -13,6 +13,8 @@ class ProfileEventCommentsController: UIViewController, UITableViewDelegate, UIT
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var header: UIImageView!
     private var listComents: [Comments] = [Comments]()
+    private var eventCommensListViewModel: EventCommentsListViewModel!
+    private var eventCommentModel: EventCommentsModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,11 +25,11 @@ class ProfileEventCommentsController: UIViewController, UITableViewDelegate, UIT
             header.image = Themes.headerEventNight
             self.view.backgroundColor = Themes.backgroundNight
         }
-        listComents.append( Comments(comment: "Mensaje 1", user: "Luis Castillo", date: "27/03/18", avatar: "avatar") )
-        listComents.append( Comments(comment: "Mensaje 2", user: "Mireyitha Jim", date: "15/03/18", avatar: "avatar") )
-        listComents.append( Comments(comment: "Mensaje 3", user: "Rott Castillo", date: "10/03/18", avatar: "avatar") )
-        listComents.append( Comments(comment: "Mensaje 4", user: "Suly Castillo", date: "19/10/18", avatar: "avatar") )
-        listComents.append( Comments(comment: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.", user: "Suly Castillo", date: "19/10/18", avatar: "avatar") )
+        self.eventCommentModel = EventCommentsModel()
+        self.eventCommensListViewModel = EventCommentsListViewModel(commentModel: self.eventCommentModel)
+        DispatchQueue.main.async {
+            self.table.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,12 +42,12 @@ class ProfileEventCommentsController: UIViewController, UITableViewDelegate, UIT
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return listComents.count
+        return self.eventCommensListViewModel.eventCommentViewModel.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! EventCommentsCell
-        let comment = listComents[indexPath.row]
+        let comment = self.eventCommensListViewModel.eventCommentViewModel[indexPath.row]
         cell.avatar.image = UIImage(named: comment.avatar)
         cell.txtUserName.text = comment.user
         cell.txtComment.text = comment.comment

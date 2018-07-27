@@ -63,6 +63,24 @@
 		DE8C49FF20F724F1009C5F39 /* ProductsEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C49FE20F724F1009C5F39 /* ProductsEventModel.swift */; };
 		DE8C4A0220F72EB1009C5F39 /* ProfileEventCouponsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C4A0120F72EB1009C5F39 /* ProfileEventCouponsCell.swift */; };
 		DE9A20572104610F00372BFA /* InfoCouponsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9A20562104610F00372BFA /* InfoCouponsController.swift */; };
+		DE9CC4BC210AD8BD00F8FFEF /* ProfileUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4BB210AD8BD00F8FFEF /* ProfileUserModel.swift */; };
+		DE9CC4BE210AD99F00F8FFEF /* ProfileUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4BD210AD99F00F8FFEF /* ProfileUserViewModel.swift */; };
+		DE9CC4C0210AD9AB00F8FFEF /* ProfileUserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4BF210AD9AB00F8FFEF /* ProfileUserListViewModel.swift */; };
+		DE9CC4C4210AE83900F8FFEF /* EventCommentsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4C3210AE83900F8FFEF /* EventCommentsListViewModel.swift */; };
+		DE9CC4C6210AE84400F8FFEF /* EventCommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4C5210AE84400F8FFEF /* EventCommentsViewModel.swift */; };
+		DE9CC4C8210AE84D00F8FFEF /* EventCommentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4C7210AE84D00F8FFEF /* EventCommentsModel.swift */; };
+		DE9CC4CC210AED4800F8FFEF /* EventCouponsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4CB210AED4800F8FFEF /* EventCouponsModel.swift */; };
+		DE9CC4CE210AED5300F8FFEF /* EventCouponsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4CD210AED5300F8FFEF /* EventCouponsViewModel.swift */; };
+		DE9CC4D0210AED5E00F8FFEF /* EventCouponsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4CF210AED5E00F8FFEF /* EventCouponsListViewModel.swift */; };
+		DE9CC4D4210AF03700F8FFEF /* EventPromotionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4D3210AF03700F8FFEF /* EventPromotionsModel.swift */; };
+		DE9CC4D6210AF04E00F8FFEF /* EventPromotionsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4D5210AF04E00F8FFEF /* EventPromotionsListViewModel.swift */; };
+		DE9CC4D8210AF06A00F8FFEF /* EventPromotionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4D7210AF06A00F8FFEF /* EventPromotionsViewModel.swift */; };
+		DE9CC4DC210AF2EB00F8FFEF /* EventProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4DB210AF2EB00F8FFEF /* EventProductsViewModel.swift */; };
+		DE9CC4DE210AF2F800F8FFEF /* EventProductsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4DD210AF2F800F8FFEF /* EventProductsListViewModel.swift */; };
+		DE9CC4E0210AF30100F8FFEF /* EventProductsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4DF210AF30100F8FFEF /* EventProductsModel.swift */; };
+		DE9CC4E4210AF55700F8FFEF /* HelpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4E3210AF55700F8FFEF /* HelpModel.swift */; };
+		DE9CC4E6210AF56200F8FFEF /* HelpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4E5210AF56200F8FFEF /* HelpViewModel.swift */; };
+		DE9CC4E8210AF56F00F8FFEF /* HelpListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4E7210AF56F00F8FFEF /* HelpListViewModel.swift */; };
 		DEAB1CFA20FF01AD00436CC1 /* ShoppingCartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB1CF920FF01AD00436CC1 /* ShoppingCartController.swift */; };
 		DEAB3CA920ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CA820ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift */; };
 		DEAB3CAB20ED2A45009D30E8 /* RegisterUserPromotionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CAA20ED2A45009D30E8 /* RegisterUserPromotionsController.swift */; };
@@ -168,6 +186,24 @@
 		DE8C49FE20F724F1009C5F39 /* ProductsEventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsEventModel.swift; sourceTree = "<group>"; };
 		DE8C4A0120F72EB1009C5F39 /* ProfileEventCouponsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEventCouponsCell.swift; sourceTree = "<group>"; };
 		DE9A20562104610F00372BFA /* InfoCouponsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCouponsController.swift; sourceTree = "<group>"; };
+		DE9CC4BB210AD8BD00F8FFEF /* ProfileUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserModel.swift; sourceTree = "<group>"; };
+		DE9CC4BD210AD99F00F8FFEF /* ProfileUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserViewModel.swift; sourceTree = "<group>"; };
+		DE9CC4BF210AD9AB00F8FFEF /* ProfileUserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserListViewModel.swift; sourceTree = "<group>"; };
+		DE9CC4C3210AE83900F8FFEF /* EventCommentsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCommentsListViewModel.swift; sourceTree = "<group>"; };
+		DE9CC4C5210AE84400F8FFEF /* EventCommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCommentsViewModel.swift; sourceTree = "<group>"; };
+		DE9CC4C7210AE84D00F8FFEF /* EventCommentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCommentsModel.swift; sourceTree = "<group>"; };
+		DE9CC4CB210AED4800F8FFEF /* EventCouponsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCouponsModel.swift; sourceTree = "<group>"; };
+		DE9CC4CD210AED5300F8FFEF /* EventCouponsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCouponsViewModel.swift; sourceTree = "<group>"; };
+		DE9CC4CF210AED5E00F8FFEF /* EventCouponsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCouponsListViewModel.swift; sourceTree = "<group>"; };
+		DE9CC4D3210AF03700F8FFEF /* EventPromotionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPromotionsModel.swift; sourceTree = "<group>"; };
+		DE9CC4D5210AF04E00F8FFEF /* EventPromotionsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPromotionsListViewModel.swift; sourceTree = "<group>"; };
+		DE9CC4D7210AF06A00F8FFEF /* EventPromotionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPromotionsViewModel.swift; sourceTree = "<group>"; };
+		DE9CC4DB210AF2EB00F8FFEF /* EventProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventProductsViewModel.swift; sourceTree = "<group>"; };
+		DE9CC4DD210AF2F800F8FFEF /* EventProductsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventProductsListViewModel.swift; sourceTree = "<group>"; };
+		DE9CC4DF210AF30100F8FFEF /* EventProductsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventProductsModel.swift; sourceTree = "<group>"; };
+		DE9CC4E3210AF55700F8FFEF /* HelpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpModel.swift; sourceTree = "<group>"; };
+		DE9CC4E5210AF56200F8FFEF /* HelpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewModel.swift; sourceTree = "<group>"; };
+		DE9CC4E7210AF56F00F8FFEF /* HelpListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpListViewModel.swift; sourceTree = "<group>"; };
 		DEAB1CF920FF01AD00436CC1 /* ShoppingCartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartController.swift; sourceTree = "<group>"; };
 		DEAB3CA820ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserNumberPlacesController.swift; sourceTree = "<group>"; };
 		DEAB3CAA20ED2A45009D30E8 /* RegisterUserPromotionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserPromotionsController.swift; sourceTree = "<group>"; };
@@ -273,6 +309,8 @@
 		DE1F1D2420F5EBD500503134 /* EventComments */ = {
 			isa = PBXGroup;
 			children = (
+				DE9CC4C2210AE81700F8FFEF /* Model */,
+				DE9CC4C1210AE81000F8FFEF /* ViewModel */,
 				DE1780FE2102FDAE005105F2 /* View */,
 				DE1F1D3120F5EC4E00503134 /* Controller */,
 			);
@@ -282,6 +320,8 @@
 		DE1F1D2520F5EBEC00503134 /* EventCoupons */ = {
 			isa = PBXGroup;
 			children = (
+				DE9CC4CA210AED3400F8FFEF /* ViewModel */,
+				DE9CC4C9210AED2F00F8FFEF /* Model */,
 				DE8C4A0020F72E8B009C5F39 /* View */,
 				DE1F1D3220F5EC5500503134 /* Controller */,
 			);
@@ -291,6 +331,8 @@
 		DE1F1D2620F5EBF500503134 /* EventPromotions */ = {
 			isa = PBXGroup;
 			children = (
+				DE9CC4D2210AF02800F8FFEF /* ViewModel */,
+				DE9CC4D1210AF02000F8FFEF /* Model */,
 				DE8C49F920F724B0009C5F39 /* View */,
 				DE1F1D3320F5EC5D00503134 /* Controller */,
 			);
@@ -300,6 +342,8 @@
 		DE1F1D2720F5EC0200503134 /* EventProducts */ = {
 			isa = PBXGroup;
 			children = (
+				DE9CC4DA210AF2DA00F8FFEF /* ViewModel */,
+				DE9CC4D9210AF2D400F8FFEF /* Model */,
 				DE1F1D3520F6DC8100503134 /* View */,
 				DE1F1D3420F5EC6600503134 /* Controller */,
 			);
@@ -676,6 +720,8 @@
 		DE5EFF1A20FDC70A00C9B7C8 /* Help */ = {
 			isa = PBXGroup;
 			children = (
+				DE9CC4E2210AF54700F8FFEF /* ViewModel */,
+				DE9CC4E1210AF54100F8FFEF /* Model */,
 				DE664AF1210010EA0011E949 /* View */,
 				DE5EFF1B20FDC70F00C9B7C8 /* Controller */,
 			);
@@ -873,6 +919,115 @@
 				DE9A20562104610F00372BFA /* InfoCouponsController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE9CC4B8210AD87400F8FFEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE9CC4B9210AD87C00F8FFEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE9CC4BB210AD8BD00F8FFEF /* ProfileUserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE9CC4BA210AD88400F8FFEF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE9CC4BD210AD99F00F8FFEF /* ProfileUserViewModel.swift */,
+				DE9CC4BF210AD9AB00F8FFEF /* ProfileUserListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE9CC4C1210AE81000F8FFEF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE9CC4C3210AE83900F8FFEF /* EventCommentsListViewModel.swift */,
+				DE9CC4C5210AE84400F8FFEF /* EventCommentsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE9CC4C2210AE81700F8FFEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE9CC4C7210AE84D00F8FFEF /* EventCommentsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE9CC4C9210AED2F00F8FFEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE9CC4CB210AED4800F8FFEF /* EventCouponsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE9CC4CA210AED3400F8FFEF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE9CC4CD210AED5300F8FFEF /* EventCouponsViewModel.swift */,
+				DE9CC4CF210AED5E00F8FFEF /* EventCouponsListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE9CC4D1210AF02000F8FFEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE9CC4D3210AF03700F8FFEF /* EventPromotionsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE9CC4D2210AF02800F8FFEF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE9CC4D5210AF04E00F8FFEF /* EventPromotionsListViewModel.swift */,
+				DE9CC4D7210AF06A00F8FFEF /* EventPromotionsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE9CC4D9210AF2D400F8FFEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE9CC4DF210AF30100F8FFEF /* EventProductsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE9CC4DA210AF2DA00F8FFEF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE9CC4DB210AF2EB00F8FFEF /* EventProductsViewModel.swift */,
+				DE9CC4DD210AF2F800F8FFEF /* EventProductsListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE9CC4E1210AF54100F8FFEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE9CC4E3210AF55700F8FFEF /* HelpModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE9CC4E2210AF54700F8FFEF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE9CC4E5210AF56200F8FFEF /* HelpViewModel.swift */,
+				DE9CC4E7210AF56F00F8FFEF /* HelpListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		DEAB1CF720FF018500436CC1 /* ShoppingCart */ = {
@@ -1084,6 +1239,9 @@
 		DECD373C20EEBB130074AB19 /* ProfileUser */ = {
 			isa = PBXGroup;
 			children = (
+				DE9CC4BA210AD88400F8FFEF /* ViewModel */,
+				DE9CC4B9210AD87C00F8FFEF /* Model */,
+				DE9CC4B8210AD87400F8FFEF /* View */,
 				DE209CEA20F003030042AC87 /* Controller */,
 			);
 			path = ProfileUser;
@@ -1398,26 +1556,37 @@
 			files = (
 				DEE8025620EEFB0200ABAFEF /* DesignableGradient.swift in Sources */,
 				DEE8025820EF012F00ABAFEF /* DesignableImage.swift in Sources */,
+				DE9CC4C0210AD9AB00F8FFEF /* ProfileUserListViewModel.swift in Sources */,
 				DE1F1D2B20F5EC2100503134 /* ProfileEventPromotionsController.swift in Sources */,
+				DE9CC4BC210AD8BD00F8FFEF /* ProfileUserModel.swift in Sources */,
 				DE39EC2E21084B6B00670676 /* ShoppingCartCell.swift in Sources */,
 				DE724C9220F18CBA002504C6 /* EventViewModel.swift in Sources */,
+				DE9CC4DC210AF2EB00F8FFEF /* EventProductsViewModel.swift in Sources */,
 				DE209CEC20F009210042AC87 /* DesignableButton.swift in Sources */,
 				DEAB3CB820ED4EE4009D30E8 /* RegistrerUserEmailAndPasswordController.swift in Sources */,
 				DE2B13DF20F163DA00870BE9 /* NotificationCell.swift in Sources */,
 				DE8255692102C82A00582D20 /* InfoCardShopping.swift in Sources */,
 				DEBF06E82101941800ABC3C2 /* CreditCard.swift in Sources */,
+				DE9CC4C8210AE84D00F8FFEF /* EventCommentsModel.swift in Sources */,
 				DE8255622102BFE300582D20 /* InfoCardShoppingController.swift in Sources */,
 				DE8C49F820F70B89009C5F39 /* ProcutsEventCollection.swift in Sources */,
 				DEF926F320F5244500621ED0 /* ProfileEventViewModel.swift in Sources */,
 				DE7D3298210A77C4001F7CD2 /* Themes.swift in Sources */,
+				DE9CC4E4210AF55700F8FFEF /* HelpModel.swift in Sources */,
 				DE39885E2106E62A00590BF1 /* LayoutPlacesController.swift in Sources */,
 				DEE8025420EEF41900ABAFEF /* InfoEvenController.swift in Sources */,
+				DE9CC4BE210AD99F00F8FFEF /* ProfileUserViewModel.swift in Sources */,
 				DECD373E20EEBB770074AB19 /* ProfileUserController.swift in Sources */,
+				DE9CC4D6210AF04E00F8FFEF /* EventPromotionsListViewModel.swift in Sources */,
 				DEAB3CAF20ED2A6C009D30E8 /* RegisterUserBuyController.swift in Sources */,
 				DEF926F920F5247900621ED0 /* ProfileEventCell.swift in Sources */,
 				DECD374E20EEE0BE0074AB19 /* LocationManagerExt.swift in Sources */,
+				DE9CC4E8210AF56F00F8FFEF /* HelpListViewModel.swift in Sources */,
+				DE9CC4DE210AF2F800F8FFEF /* EventProductsListViewModel.swift in Sources */,
+				DE9CC4D0210AED5E00F8FFEF /* EventCouponsListViewModel.swift in Sources */,
 				DE5EFF2120FDC76600C9B7C8 /* SettingsController.swift in Sources */,
 				DECFD76620FEDEBC003812DD /* Coupons.swift in Sources */,
+				DE9CC4C6210AE84400F8FFEF /* EventCommentsViewModel.swift in Sources */,
 				DEAB3CAD20ED2A53009D30E8 /* RegisterUserMenuController.swift in Sources */,
 				DECD374420EEBBC70074AB19 /* EventController.swift in Sources */,
 				DEF926F020F5242D00621ED0 /* ProfileEventModel.swift in Sources */,
@@ -1433,7 +1602,9 @@
 				DEF926F720F5246200621ED0 /* ProfileEvent.swift in Sources */,
 				DE5EFF1D20FDC72400C9B7C8 /* HelpController.swift in Sources */,
 				DE1F1D2220F5EBB100503134 /* ProfileEventInformationController.swift in Sources */,
+				DE9CC4CC210AED4800F8FFEF /* EventCouponsModel.swift in Sources */,
 				DEAB3CB120ED2A91009D30E8 /* RegisterUserAnswersController.swift in Sources */,
+				DE9CC4E6210AF56200F8FFEF /* HelpViewModel.swift in Sources */,
 				DEC1B50421067E5C003F5523 /* NewGuaranteedTableCell.swift in Sources */,
 				DE0FBA1920F2DF2600921DEC /* ProfileEventController.swift in Sources */,
 				DE2B13D820F1627D00870BE9 /* NotificationModel.swift in Sources */,
@@ -1449,8 +1620,11 @@
 				DE8C49F620F6FC42009C5F39 /* ProfileEventProductsCell.swift in Sources */,
 				DEB4E87F2103EFD000B67A00 /* InfoPeoduct.swift in Sources */,
 				DEC1B4FD21067C80003F5523 /* NumOfPersonTableController.swift in Sources */,
+				DE9CC4C4210AE83900F8FFEF /* EventCommentsListViewModel.swift in Sources */,
 				DECFD76320FEDC1B003812DD /* MyCouponsController.swift in Sources */,
+				DE9CC4D4210AF03700F8FFEF /* EventPromotionsModel.swift in Sources */,
 				DE2B13DA20F1629800870BE9 /* NotificationViewModel.swift in Sources */,
+				DE9CC4D8210AF06A00F8FFEF /* EventPromotionsViewModel.swift in Sources */,
 				DE8C49FD20F724DB009C5F39 /* PromotionsEvent.swift in Sources */,
 				DEF926F520F5244C00621ED0 /* ProfileEventListViewModel.swift in Sources */,
 				DE39EC3021084C6D00670676 /* Shopping.swift in Sources */,
@@ -1464,6 +1638,7 @@
 				DE1781002102FDCD005105F2 /* EventCommentsCell.swift in Sources */,
 				DE5EFF1120FDC66700C9B7C8 /* PrivacyController.swift in Sources */,
 				DEB4E87C2103EF5100B67A00 /* InfoPeoductController.swift in Sources */,
+				DE9CC4CE210AED5300F8FFEF /* EventCouponsViewModel.swift in Sources */,
 				DE1F1D2F20F5EC3A00503134 /* ProfileEventCommentsController.swift in Sources */,
 				DE2B13E120F1666400870BE9 /* NotificationListViewModel.swift in Sources */,
 				DEBF06E52101803900ABC3C2 /* MyCreditsCardsCell.swift in Sources */,
@@ -1479,6 +1654,7 @@
 				DEAB3CB320ED2AD6009D30E8 /* RegisterUserGuaranteedTableController.swift in Sources */,
 				DE664AF5210011180011E949 /* Help.swift in Sources */,
 				DEAB3CB620ED2B08009D30E8 /* RegisterUserAskDrinkController.swift in Sources */,
+				DE9CC4E0210AF30100F8FFEF /* EventProductsModel.swift in Sources */,
 				DE724C9420F18CCA002504C6 /* EventListViewModel.swift in Sources */,
 				DECFD76820FEDECD003812DD /* MyCouponsCell.swift in Sources */,
 				DE724C9020F18CA8002504C6 /* EventModel.swift in Sources */,
