@@ -11,8 +11,9 @@ import UIKit
 class ShoppingCartController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var table: UITableView!
-    private var listArticleShopping: [Shopping] = [Shopping]()
     @IBOutlet weak var header: UIImageView!
+    private var shopingListViewModel: ShoppingCartListViewModel!
+    private var shopingModel: ShoppingCartModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,12 +27,11 @@ class ShoppingCartController: UIViewController, UITableViewDelegate, UITableView
             self.tabBarController?.tabBar.tintColor = Themes.tintColorNight
             self.tabBarController?.tabBar.unselectedItemTintColor = Themes.unselectedColorNight
         }
-        listArticleShopping.append( Shopping(picture: "food-enchiladas", name: "Este es el producto numero 1", pieces: "1"))
-        listArticleShopping.append( Shopping(picture: "food-enchiladas", name: "Este es el producto numero 2", pieces: "1"))
-        listArticleShopping.append( Shopping(picture: "food-enchiladas", name: "Este es el producto numero 3", pieces: "1"))
-        listArticleShopping.append( Shopping(picture: "food-enchiladas", name: "Este es el producto numero 4", pieces: "1"))
-        listArticleShopping.append( Shopping(picture: "food-enchiladas", name: "Este es el producto numero 5", pieces: "1"))
-        listArticleShopping.append( Shopping(picture: "food-enchiladas", name: "Este es el producto numero 6", pieces: "1"))
+        self.shopingModel = ShoppingCartModel()
+        self.shopingListViewModel = ShoppingCartListViewModel(shoppingModel: self.shopingModel)
+        DispatchQueue.main.async {
+            self.table.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,12 +44,12 @@ class ShoppingCartController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return listArticleShopping.count
+        return self.shopingListViewModel.shopingViewModel.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ShoppingCartCell
-        let shopping = listArticleShopping[indexPath.row]
+        let shopping = self.shopingListViewModel.shopingViewModel[indexPath.row]
         cell.picture.image = UIImage(named: shopping.picture)
         cell.txtName.text = shopping.name
         //cell.txtNumPieces.text = shopping.pieces

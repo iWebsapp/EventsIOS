@@ -21,8 +21,6 @@ class LayoutPlacesController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        //listenerNew.setImage(UIImage(named: "icon-add"), for: .normal)
-        //listenerList.setImage(UIImage(named: "icon-list"), for: .normal)
         mapView.alpha = 1
         newView.alpha = 0
         listView.alpha = 0

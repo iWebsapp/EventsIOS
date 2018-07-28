@@ -11,19 +11,19 @@ import UIKit
 class NewGuaranteedTableController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var table: UITableView!
-    private var listGuaranted: [GuaranteedTable] = [GuaranteedTable]()
+    private var newGuaranteedListViewModel: NewGuaranteedTableListViewModel!
+    private var newGuaranteedModel: NewGuaranteedTableModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         table.delegate = self
         table.dataSource = self
-        listGuaranted.append( GuaranteedTable(icon: "icon-coupons", title: "Area de fumadores"))
-        listGuaranted.append( GuaranteedTable(icon: "icon-coupons", title: "Barra"))
-        listGuaranted.append( GuaranteedTable(icon: "icon-coupons", title: "Mesa"))
-        listGuaranted.append( GuaranteedTable(icon: "icon-coupons", title: "Cerca de una ventana"))
-        listGuaranted.append( GuaranteedTable(icon: "icon-coupons", title: "Cerca de la cocina"))
-        listGuaranted.append( GuaranteedTable(icon: "icon-coupons", title: "Cerca de la salida"))
+        self.newGuaranteedModel = NewGuaranteedTableModel()
+        self.newGuaranteedListViewModel = NewGuaranteedTableListViewModel(newGuaranteedModel: self.newGuaranteedModel)
+        DispatchQueue.main.async {
+            self.table.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,12 +32,12 @@ class NewGuaranteedTableController: UIViewController, UITableViewDelegate, UITab
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return listGuaranted.count
+        return self.newGuaranteedListViewModel.newGuaranteedViewModel.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NewGuaranteedTableCell
-        let guadanted = listGuaranted[indexPath.row]
+        let guadanted = self.newGuaranteedListViewModel.newGuaranteedViewModel[indexPath.row]
         cell.txtIcon.image = UIImage(named: guadanted.icon)
         cell.txtTitle.text = guadanted.title
         cell.txtSelected.image = UIImage(named: "icon-check")

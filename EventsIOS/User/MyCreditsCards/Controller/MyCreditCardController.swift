@@ -11,22 +11,24 @@ import UIKit
 class MyCreditsCardsController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var collection: UICollectionView!
-    private var credit: [CreditCard] = [CreditCard]()
     @IBOutlet weak var header: UIImageView!
+    private var mycardListViewModel : MyCreditsCardsListViewModel!
+    private var mycardModel: MyCreditsCardsModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view.
         collection.delegate = self
         collection.dataSource = self
         if Themes.isNight() {
             header.image = Themes.headerGobalNight
             self.view.backgroundColor = Themes.backgroundNight
         }
-        credit.append( CreditCard(number: "1234 4321 1111 2715", mmaa: "27/21", fullname: "Luis Manuel Castillo Zamorano"))
-        credit.append( CreditCard(number: "1111 1234 4321 1527", mmaa: "27/21", fullname: "Ana Mireya Jimenez Perez"))
-        credit.append( CreditCard(number: "2222 1111 4444 6067", mmaa: "27/21", fullname: "Dolores Imelda Zamorano Lugo"))
-        credit.append( CreditCard(number: "4444 2222 1111 1270", mmaa: "27/21", fullname: "Yajaira Abigail Corriente Osorno"))
-        // Do any additional setup after loading the view.
+        self.mycardModel = MyCreditsCardsModel()
+        self.mycardListViewModel = MyCreditsCardsListViewModel(mycards: self.mycardModel)
+        DispatchQueue.main.async {
+            self.collection.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,12 +42,12 @@ class MyCreditsCardsController: UIViewController, UICollectionViewDelegate, UICo
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return credit.count
+        return self.mycardListViewModel.mycardViewModel.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collection.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MyCreditsCardsCell
-        let card = credit[indexPath.row]
+        let card = self.mycardListViewModel.mycardViewModel[indexPath.row]
         cell.txtFullName.text = card.fullname
         cell.txtMmaa.text = card.mmaa
         cell.txtLatest.text = lastNumber(numer: card.number)

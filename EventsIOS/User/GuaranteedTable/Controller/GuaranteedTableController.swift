@@ -12,7 +12,8 @@ class GuaranteedTableController: UIViewController, UITableViewDelegate, UITableV
 
     @IBOutlet weak var header: UIImageView!
     @IBOutlet weak var table: UITableView!
-    private var listGuaranted: [GuaranteedTable] = [GuaranteedTable]()
+    private var guarantedListViewModel: GuaranteedTableListViewModel!
+    private var guaranteedModel: GuaranteedTableModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,9 +24,11 @@ class GuaranteedTableController: UIViewController, UITableViewDelegate, UITableV
             header.image = Themes.headerEventNight
             self.view.backgroundColor = Themes.backgroundNight
         }
-        listGuaranted.append( GuaranteedTable(icon: "icon-coupons", title: "Area de fumadores"))
-        listGuaranted.append( GuaranteedTable(icon: "icon-coupons", title: "Barra"))
-        listGuaranted.append( GuaranteedTable(icon: "icon-coupons", title: "Mesa"))
+        self.guaranteedModel = GuaranteedTableModel()
+        self.guarantedListViewModel = GuaranteedTableListViewModel(guarantedModel: self.guaranteedModel)
+        DispatchQueue.main.async {
+            self.table.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,12 +37,12 @@ class GuaranteedTableController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return listGuaranted.count
+        return self.guarantedListViewModel.guarantedViewModel.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NewGuaranteedTableCell
-        let guadanted = listGuaranted[indexPath.row]
+        let guadanted = self.guarantedListViewModel.guarantedViewModel[indexPath.row]
         cell.txtIcon.image = UIImage(named: guadanted.icon)
         cell.txtTitle.text = guadanted.title
         return cell

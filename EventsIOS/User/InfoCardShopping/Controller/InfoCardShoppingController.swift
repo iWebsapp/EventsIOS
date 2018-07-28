@@ -12,7 +12,8 @@ class InfoCardShoppingController: UIViewController, UITableViewDelegate, UITable
 
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var header: UIImageView!
-    private var lisShoping: [InfoCardShopping] = [InfoCardShopping]()
+    private var infoCardListViewModel: InfoCardShoppingListViewModel!
+    private var infoCardModel: InfoCardShoppingModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,23 +24,11 @@ class InfoCardShoppingController: UIViewController, UITableViewDelegate, UITable
             header.image = Themes.headerGobalNight
             self.view.backgroundColor = Themes.backgroundNight
         }
-        lisShoping.append( InfoCardShopping(name: "Fecha 1", picture: "food-mole", open: false, total: "$127.00 mxn",
-        products: [Products(name: "Producto 1", picture: "food-mole", price: "120.00 mxn", description: "Descripcion 1"),
-                   Products(name: "Producto 2", picture: "food-mole", price: "120.00 mxn", description: "Descripcion 2"),
-                   Products(name: "Producto 3", picture: "food-mole", price: "120.00 mxn", description: "Descripcion 3"),
-                   Products(name: "Producto 4", picture: "food-mole", price: "120.00 mxn", description: "Descripcion 4")]))
-        
-        lisShoping.append( InfoCardShopping(name: "Fecha 2", picture: "food-mole", open: false, total: "$127.00 mxn",
-        products: [Products(name: "Producto 5", picture: "food-mole", price: "120.00 mxn", description: "Descripcion 5"),
-                   Products(name: "Producto 6", picture: "food-mole", price: "120.00 mxn", description: "Descripcion 6"),
-                   Products(name: "Producto 7", picture: "food-mole", price: "120.00 mxn", description: "Descripcion 7"),
-                   Products(name: "Producto 8", picture: "food-mole", price: "120.00 mxn", description: "Descripcion 8")]))
-        
-        lisShoping.append( InfoCardShopping(name: "Fecha 3", picture: "food-mole", open: false, total: "$127.00 mxn",
-        products: [Products(name: "Producto 9", picture: "food-mole", price: "120.00 mxn", description: "Descripcion 9"),
-                   Products(name: "Producto 10", picture: "food-mole", price: "120.00 mxn", description: "Descripcion 10"),
-                   Products(name: "Producto 11", picture: "food-mole", price: "120.00 mxn", description: "Descripcion 11"),
-                   Products(name: "Producto 12", picture: "food-mole", price: "120.00 mxn", description: "Descripcion 12")]))
+        self.infoCardModel = InfoCardShoppingModel()
+        self.infoCardListViewModel = InfoCardShoppingListViewModel(infoCardModel: self.infoCardModel)
+        DispatchQueue.main.async {
+            self.table.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,12 +38,12 @@ class InfoCardShoppingController: UIViewController, UITableViewDelegate, UITable
     
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return lisShoping.count
+        return self.infoCardListViewModel.infoCardViewModel.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if lisShoping[section].open == true {
-            return lisShoping[section].products.count + 1
+        if self.infoCardListViewModel.infoCardViewModel[section].open == true {
+            return self.infoCardListViewModel.infoCardViewModel[section].products.count + 1
         }else{
             return 1
         }
@@ -66,9 +55,9 @@ class InfoCardShoppingController: UIViewController, UITableViewDelegate, UITable
             cell.cardView.topColor = UIColor(red:0.90, green:0.90, blue:0.90, alpha:1.0)
             cell.cardView.bottomColor = UIColor(red:1.00, green:1.00, blue:1.00, alpha:1.0)
             
-            cell.txtName.text = lisShoping[indexPath.section].name
-            cell.avatar.image = UIImage(named: lisShoping[indexPath.section].picture)
-            cell.txtDate.text = lisShoping[indexPath.section].total
+            cell.txtName.text = self.infoCardListViewModel.infoCardViewModel[indexPath.section].name
+            cell.avatar.image = UIImage(named: self.infoCardListViewModel.infoCardViewModel[indexPath.section].picture)
+            cell.txtDate.text = self.infoCardListViewModel.infoCardViewModel[indexPath.section].total
             return cell
         }else{
             let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! EventCell
@@ -76,21 +65,21 @@ class InfoCardShoppingController: UIViewController, UITableViewDelegate, UITable
             cell.cardView.bottomColor = UIColor(red:1.00, green:1.00, blue:1.00, alpha:1.0)
             cell.cardView.shadowColor = UIColor(red:1.00, green:1.00, blue:1.00, alpha:1.0)
             
-            cell.txtName.text = lisShoping[indexPath.section].products[indexPath.row - 1].name
-            cell.avatar.image = UIImage(named: lisShoping[indexPath.section].products[indexPath.row - 1].picture)
-            cell.txtDate.text = lisShoping[indexPath.section].products[indexPath.row - 1].price
+            cell.txtName.text = self.infoCardListViewModel.infoCardViewModel[indexPath.section].products[indexPath.row - 1].name
+            cell.avatar.image = UIImage(named: self.infoCardListViewModel.infoCardViewModel[indexPath.section].products[indexPath.row - 1].picture)
+            cell.txtDate.text = self.infoCardListViewModel.infoCardViewModel[indexPath.section].products[indexPath.row - 1].price
             return cell
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0{
-            if lisShoping[indexPath.section].open == true {
-                lisShoping[indexPath.section].open = false
+            if self.infoCardListViewModel.infoCardViewModel[indexPath.section].open == true {
+                self.infoCardListViewModel.infoCardViewModel[indexPath.section].open = false
                 let secciones = IndexSet.init(integer: indexPath.section)
                 table.reloadSections(secciones, with: .fade)
             }else{
-                lisShoping[indexPath.section].open = true
+                self.infoCardListViewModel.infoCardViewModel[indexPath.section].open = true
                 let secciones = IndexSet.init(integer: indexPath.section)
                 table.reloadSections(secciones, with: .fade)
             }

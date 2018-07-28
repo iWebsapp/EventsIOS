@@ -25,10 +25,8 @@ class InfoCardController: UIViewController, UITableViewDelegate, UITableViewData
             header.image = Themes.headerGobalNight
             self.view.backgroundColor = Themes.backgroundNight
         }
-        
         cartView.topColor = self.randomColor()
         cartView.bottomColor = self.randomColor()
-        
         self.eventData = EventModel()
         self.eventListViewModel = EventListViewModel(eventModel: self.eventData)
         DispatchQueue.main.async {

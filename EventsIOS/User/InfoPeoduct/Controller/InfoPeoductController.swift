@@ -15,6 +15,8 @@ class InfoPeoductController: UIViewController, UICollectionViewDelegate, UIColle
     @IBOutlet weak var txtTitle: UILabel!
     @IBOutlet weak var header: UIImageView!
     private var listInfoProduct: InfoPeoduct!
+    private var infoProductListViewModel: InfoPeoductListViewModel!
+    private var infoProductModel: InfoPeoductModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,9 +27,13 @@ class InfoPeoductController: UIViewController, UICollectionViewDelegate, UIColle
             header.image = Themes.headerEventNight
             self.view.backgroundColor = Themes.backgroundNight
         }
-        listInfoProduct = InfoPeoduct(images: ["food-enchiladas", "food-huacamole", "food-manchamantel", "food-mole", "food-nuggets"], title: "Producto 1", description: "Este es el producto 1")
-        txtTitle.text = listInfoProduct.title
-        txtDescription.text = listInfoProduct.description
+        self.infoProductModel = InfoPeoductModel()
+        self.infoProductListViewModel = InfoPeoductListViewModel(producModel: self.infoProductModel)
+        DispatchQueue.main.async {
+            self.collection.reloadData()
+        }
+        txtTitle.text = self.infoProductListViewModel.infoProductViewModel[0].title
+        txtDescription.text = self.infoProductListViewModel.infoProductViewModel[0].description
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,12 +42,13 @@ class InfoPeoductController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return listInfoProduct.images.count
+        return self.infoProductListViewModel.infoProductViewModel[section].images.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collection.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! InfoPeoductCell
-        cell.picture.image = UIImage(named: listInfoProduct.images[indexPath.row])
+        let picture = self.infoProductListViewModel.infoProductViewModel[0].images[indexPath.row]
+        cell.picture.image = UIImage(named: picture)
         return cell
     }
     
