@@ -61,9 +61,8 @@ class InfoCardShoppingController: UIViewController, UITableViewDelegate, UITable
             return cell
         }else{
             let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! EventCell
-            cell.cardView.topColor = UIColor(red:1.00, green:1.00, blue:1.00, alpha:1.0)
-            cell.cardView.bottomColor = UIColor(red:1.00, green:1.00, blue:1.00, alpha:1.0)
-            cell.cardView.shadowColor = UIColor(red:1.00, green:1.00, blue:1.00, alpha:1.0)
+            cell.cardView.topColor = UIColor(red:1.04, green:0.25, blue:0.28, alpha:1.0)
+            cell.cardView.bottomColor = UIColor(red:0.90, green:0.37, blue:0.40, alpha:1.0)
             
             cell.txtName.text = self.infoCardListViewModel.infoCardViewModel[indexPath.section].products[indexPath.row - 1].name
             cell.avatar.image = UIImage(named: self.infoCardListViewModel.infoCardViewModel[indexPath.section].products[indexPath.row - 1].picture)

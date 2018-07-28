@@ -51,6 +51,12 @@ class CustomSegmentedControl: UIControl {
         }
     }
     
+    @IBInspectable var selectorNightColor: UIColor =  UIColor.clear {
+        didSet{
+            updateView()
+        }
+    }
+    
     @IBInspectable var selectorTextColor: UIColor =  UIColor.clear {
         didSet{
             updateView()
@@ -76,7 +82,11 @@ class CustomSegmentedControl: UIControl {
         let selectorWidth = frame.width / CGFloat(buttonTitles.count)
         selector = UIView(frame: CGRect(x: 0, y: 0, width: selectorWidth, height: frame.height))
         selector.layer.cornerRadius = frame.height/2
-        selector.backgroundColor = selectorColor
+        if Themes.isNight() {
+            selector.backgroundColor = selectorNightColor
+        } else {
+            selector.backgroundColor = selectorColor
+        }
         addSubview(selector)
         
         let sv = UIStackView(arrangedSubviews: buttons)

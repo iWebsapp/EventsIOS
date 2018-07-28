@@ -1,25 +1,25 @@
 //
-//  NewCommentController.swift
+//  EventInformationAddressController.swift
 //  EventsIOS
 //
-//  Created by Luis Castillo on 20/07/18.
+//  Created by Luis Castillo on 28/07/18.
 //  Copyright © 2018 Luis Castillo. All rights reserved.
 //
 
 import UIKit
 
-class NewCommentController: UIViewController {
-
-    @IBOutlet weak var txtLabel: UILabel!
-    @IBOutlet weak var header: UIImageView!
+class EventInformationAddressController: UIViewController {
+    
+    @IBOutlet weak var txtTitle: UILabel!
+    @IBOutlet weak var txtAddress: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        txtAddress.text = "Calle Antiguo Camino de F.F.C.C. 164, San Antonio, 42111 Pachuca de Soto, Hgo."
         if Themes.isNight() {
-            header.image = Themes.headerEventNight
-            txtLabel.textColor = Themes.unselectedColorNight
-            self.view.backgroundColor = Themes.backgroundNight
+            txtTitle.textColor = Themes.unselectedColorNight
+            txtAddress.textColor = Themes.unselectedColorNight
         }
     }
 
@@ -28,14 +28,7 @@ class NewCommentController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func behind(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil )
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    
+
     /*
     // MARK: - Navigation
 

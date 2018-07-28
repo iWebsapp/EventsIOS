@@ -25,6 +25,7 @@ class EventController: UIViewController, UITableViewDelegate, UITableViewDataSou
             header.image = Themes.headerGobalNight
             self.view.backgroundColor = Themes.backgroundNight
             listenerGeoLocalization.topColor = Themes.buttomLocalizationColorNight!
+            listenerGeoLocalization.bottomColor = Themes.buttomLocalizationColorNight!
         }
         self.eventData = EventModel()
         self.eventListViewModel = EventListViewModel(eventModel: self.eventData)

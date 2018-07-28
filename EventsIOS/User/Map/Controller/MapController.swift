@@ -29,6 +29,7 @@ class MapController: UIViewController {
             header.image = Themes.headerGobalNight
             self.view.backgroundColor = Themes.backgroundNight
             listenerGeoLocalization.topColor = Themes.buttomLocalizationColorNight!
+            listenerGeoLocalization.bottomColor = Themes.buttomLocalizationColorNight!
         }
     }
 

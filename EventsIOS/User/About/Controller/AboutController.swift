@@ -11,12 +11,14 @@ import UIKit
 class AboutController: UIViewController {
 
     @IBOutlet weak var header: UIImageView!
+    @IBOutlet weak var txtLabel: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         if Themes.isNight() {
             header.image = Themes.headerGobalNight
+            txtLabel.textColor = Themes.unselectedColorNight
             self.view.backgroundColor = Themes.backgroundNight
         }
     }

@@ -56,6 +56,10 @@ class ShoppingCartController: UIViewController, UITableViewDelegate, UITableView
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goPreviewProduct", sender: self)
+    }
+    
     /*
     // MARK: - Navigation
 

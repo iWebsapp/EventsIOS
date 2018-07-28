@@ -13,6 +13,7 @@ class InfoPeoductController: UIViewController, UICollectionViewDelegate, UIColle
     @IBOutlet weak var collection: UICollectionView!
     @IBOutlet weak var txtDescription: UILabel!
     @IBOutlet weak var txtTitle: UILabel!
+    @IBOutlet weak var labelDescription: UILabel!
     @IBOutlet weak var header: UIImageView!
     private var listInfoProduct: InfoPeoduct!
     private var infoProductListViewModel: InfoPeoductListViewModel!
@@ -25,6 +26,8 @@ class InfoPeoductController: UIViewController, UICollectionViewDelegate, UIColle
         collection.dataSource = self
         if Themes.isNight() {
             header.image = Themes.headerEventNight
+            //txtDescription.textColor = Themes.unselectedColorNight
+            //labelDescription.textColor = Themes.unselectedColorNight
             self.view.backgroundColor = Themes.backgroundNight
         }
         self.infoProductModel = InfoPeoductModel()
