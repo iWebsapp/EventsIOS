@@ -30,7 +30,6 @@ class Themes {
         
         if currentDate.count == 1 {
             
-            //print("24 horas")
             switch currentDate[0] {
                 case "1":
                     return true
@@ -52,7 +51,7 @@ class Themes {
                     return true
                 case "23":
                     return true
-                case "24":
+                case "0":
                     return true
                 default:
                     return false
@@ -60,33 +59,58 @@ class Themes {
 
         } else {
             
-            //print("12 horas")
-            switch currentDate[0] {
-            case "1":
-                return true
-            case "2":
-                return true
-            case "3":
-                return true
-            case "4":
-                return true
-            case "5":
-                return true
-            case "6":
-                return true
-            case "8":
-                return true
-            case "9":
-                return true
-            case "10":
-                return true
-            case "11":
-                return true
-            case "12":
-                return true
-            default:
-                return false
+            if currentDate[0] == "8" {
+                if currentDate[1] == "p." {
+                    return true
+                }
             }
+            if currentDate[0] == "9" {
+                if currentDate[1] == "p." {
+                    return true
+                }
+            }
+            if currentDate[0] == "10" {
+                if currentDate[1] == "p." {
+                    return true
+                }
+            }
+            if currentDate[0] == "11" {
+                if currentDate[1] == "p." {
+                    return true
+                }
+            }
+            if currentDate[0] == "12" {
+                if currentDate[1] == "a." {
+                    return true
+                }
+            }
+            if currentDate[0] == "1" {
+                if currentDate[1] == "a." {
+                    return true
+                }
+            }
+            if currentDate[0] == "2" {
+                if currentDate[1] == "a" {
+                    return true
+                }
+            }
+            if currentDate[0] == "3" {
+                if currentDate[1] == "a." {
+                    return true
+                }
+            }
+            if currentDate[0] == "4" {
+                if currentDate[1] == "a." {
+                    return true
+                }
+            }
+            if currentDate[0] == "5" {
+                if currentDate[1] == "a." {
+                    return true
+                }
+            }
+            
+            return false
 
         }
         

@@ -594,7 +594,6 @@
         <!--Privacy Controller-->
         <scene sceneID="15O-ZD-5R0">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5Qq-M3-GOI" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="1La-ln-Vlo" customClass="PrivacyController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J4v-zH-vW4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -655,6 +654,7 @@
                         <outlet property="txtLabel" destination="SAq-ZN-tle" id="eWT-BH-Fbg"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Qq-M3-GOI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-5238.75" y="1774.6478873239437"/>
         </scene>
