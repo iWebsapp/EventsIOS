@@ -10,6 +10,7 @@ import UIKit
 
 class LayoutPlacesController: UIViewController {
 
+    @IBOutlet weak var header: UIImageView!
     @IBOutlet weak var mapView: UIView!
     @IBOutlet weak var newView: UIView!
     @IBOutlet weak var listView: UIView!
@@ -24,13 +25,17 @@ class LayoutPlacesController: UIViewController {
         mapView.alpha = 1
         newView.alpha = 0
         listView.alpha = 0
+        header.alpha = 1
         listenerMapButton.isHidden = true
+        
         if Themes.isNight() {
+            header.image = Themes.headerGobalCutNight
             self.view.backgroundColor = Themes.backgroundNight
             self.tabBarController?.tabBar.barTintColor = Themes.backgroundNight
             self.tabBarController?.tabBar.tintColor = Themes.tintColorNight
             self.tabBarController?.tabBar.unselectedItemTintColor = Themes.unselectedColorNight
         }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,6 +50,7 @@ class LayoutPlacesController: UIViewController {
         mapView.alpha = 1
         newView.alpha = 0
         listView.alpha = 0
+        header.alpha = 1
     }
     
     @IBAction func newButton(_ sender: UIButton) {
@@ -54,6 +60,7 @@ class LayoutPlacesController: UIViewController {
             mapView.alpha = 0
             newView.alpha = 1
             listView.alpha = 0
+            header.alpha = 0
             conta = 1
         } else {
             listenerNewButton.setImage(UIImage(named: "icon-add"), for: .normal)
@@ -61,6 +68,7 @@ class LayoutPlacesController: UIViewController {
             mapView.alpha = 1
             newView.alpha = 0
             listView.alpha = 0
+            header.alpha = 1
             conta = 0
         }
     }
@@ -72,6 +80,7 @@ class LayoutPlacesController: UIViewController {
         mapView.alpha = 0
         newView.alpha = 0
         listView.alpha = 1
+        header.alpha = 0
     }
     
 }

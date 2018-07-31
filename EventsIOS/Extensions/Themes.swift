@@ -12,6 +12,7 @@ class Themes {
     
     static let headerGobalNight = UIImage(named: "headers-global-night")
     static let headerEventNight = UIImage(named: "headers-profile-night")
+    static let headerGobalCutNight = UIImage(named: "header-cut-night")
     static let backgroundLoginNight = UIImage(named: "wallpaper-night")
     static let backgroundRegister = UIImage(named: "fondo-create-user-night")
     

@@ -9,7 +9,7 @@
 import UIKit
 import Fabric
 import Crashlytics
-
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         Fabric.sharedSDK().debug = true
         Fabric.with([Crashlytics.self])
+        GMSServices.provideAPIKey("AIzaSyDczHm98ulvU9aSwa20288WAxeqAx1pm4A")
         return true
     }
 

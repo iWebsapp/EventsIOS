@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		75D0C115BA755D88F5C5F042 /* Pods_EventsIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5571407C61E5CD71AEF74A /* Pods_EventsIOS.framework */; };
+		DE025B23210FF199000C9AE3 /* mapDay.json in Resources */ = {isa = PBXBuildFile; fileRef = DE025B21210FF198000C9AE3 /* mapDay.json */; };
+		DE025B24210FF199000C9AE3 /* mapNight.json in Resources */ = {isa = PBXBuildFile; fileRef = DE025B22210FF198000C9AE3 /* mapNight.json */; };
 		DE0FBA1920F2DF2600921DEC /* ProfileEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0FBA1820F2DF2600921DEC /* ProfileEventController.swift */; };
 		DE1781002102FDCD005105F2 /* EventCommentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1780FF2102FDCD005105F2 /* EventCommentsCell.swift */; };
 		DE1781022102FDD9005105F2 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1781012102FDD9005105F2 /* Comments.swift */; };
@@ -134,8 +136,6 @@
 		DECD374420EEBBC70074AB19 /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD374320EEBBC70074AB19 /* EventController.swift */; };
 		DECD374720EEBBEA0074AB19 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD374620EEBBEA0074AB19 /* NotificationController.swift */; };
 		DECD374920EED2750074AB19 /* InvitationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD374820EED2750074AB19 /* InvitationCard.swift */; };
-		DECD374C20EED9320074AB19 /* MapControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD374B20EED9320074AB19 /* MapControllerExt.swift */; };
-		DECD374E20EEE0BE0074AB19 /* LocationManagerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD374D20EEE0BE0074AB19 /* LocationManagerExt.swift */; };
 		DECFD76320FEDC1B003812DD /* MyCouponsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECFD76220FEDC1B003812DD /* MyCouponsController.swift */; };
 		DECFD76620FEDEBC003812DD /* Coupons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECFD76520FEDEBC003812DD /* Coupons.swift */; };
 		DECFD76820FEDECD003812DD /* MyCouponsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECFD76720FEDECD003812DD /* MyCouponsCell.swift */; };
@@ -156,6 +156,8 @@
 		5E5571407C61E5CD71AEF74A /* Pods_EventsIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventsIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		761F37E3749DD414C245D3D8 /* Pods-EventsIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventsIOS/Pods-EventsIOS.release.xcconfig"; sourceTree = "<group>"; };
 		799E4A944D0D180A48E5833E /* Pods-EventsIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventsIOS/Pods-EventsIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		DE025B21210FF198000C9AE3 /* mapDay.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mapDay.json; sourceTree = "<group>"; };
+		DE025B22210FF198000C9AE3 /* mapNight.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mapNight.json; sourceTree = "<group>"; };
 		DE0FBA1820F2DF2600921DEC /* ProfileEventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEventController.swift; sourceTree = "<group>"; };
 		DE1780FF2102FDCD005105F2 /* EventCommentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCommentsCell.swift; sourceTree = "<group>"; };
 		DE1781012102FDD9005105F2 /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
@@ -284,8 +286,6 @@
 		DECD374320EEBBC70074AB19 /* EventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
 		DECD374620EEBBEA0074AB19 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		DECD374820EED2750074AB19 /* InvitationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationCard.swift; sourceTree = "<group>"; };
-		DECD374B20EED9320074AB19 /* MapControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapControllerExt.swift; sourceTree = "<group>"; };
-		DECD374D20EEE0BE0074AB19 /* LocationManagerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerExt.swift; sourceTree = "<group>"; };
 		DECFD76220FEDC1B003812DD /* MyCouponsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCouponsController.swift; sourceTree = "<group>"; };
 		DECFD76520FEDEBC003812DD /* Coupons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coupons.swift; sourceTree = "<group>"; };
 		DECFD76720FEDECD003812DD /* MyCouponsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCouponsCell.swift; sourceTree = "<group>"; };
@@ -1534,11 +1534,11 @@
 		DECD374A20EED9210074AB19 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				DECD374B20EED9320074AB19 /* MapControllerExt.swift */,
-				DECD374D20EEE0BE0074AB19 /* LocationManagerExt.swift */,
 				DEE8025520EEFB0200ABAFEF /* DesignableGradient.swift */,
 				DEE8025720EF012F00ABAFEF /* DesignableImage.swift */,
 				DE209CEB20F009210042AC87 /* DesignableButton.swift */,
+				DE025B21210FF198000C9AE3 /* mapDay.json */,
+				DE025B22210FF198000C9AE3 /* mapNight.json */,
 				DE209CED20F009F60042AC87 /* DesignableTextField.swift */,
 				DE3E0C3A2105817600F066F9 /* CustomSegmentedControl.swift */,
 				DE645CBF21097FB100999A95 /* UIViewControllerExt.swift */,
@@ -1682,6 +1682,7 @@
 				DE4403CC20E9FE61002606C4 /* Resources */,
 				59160935CBB2C722EBB11A69 /* [CP] Embed Pods Frameworks */,
 				DEFC9DE920EA01400000149A /* ShellScript */,
+				D81DF58DF36AC3388CFFC48F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1736,9 +1737,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE4403DC20E9FE65002606C4 /* LaunchScreen.storyboard in Resources */,
+				DE025B23210FF199000C9AE3 /* mapDay.json in Resources */,
 				DECD373520EDEFB40074AB19 /* User.storyboard in Resources */,
 				DE4403D920E9FE65002606C4 /* Assets.xcassets in Resources */,
 				DE7D329A210A7AC8001F7CD2 /* Colors.xcassets in Resources */,
+				DE025B24210FF199000C9AE3 /* mapNight.json in Resources */,
 				DE4403D720E9FE61002606C4 /* Main.storyboard in Resources */,
 				DECD373720EDF2E70074AB19 /* Employees.storyboard in Resources */,
 			);
@@ -1789,6 +1792,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventsIOS/Pods-EventsIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D81DF58DF36AC3388CFFC48F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EventsIOS/Pods-EventsIOS-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventsIOS/Pods-EventsIOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DEFC9DE920EA01400000149A /* ShellScript */ = {
@@ -1843,7 +1864,6 @@
 				DE9CC4D6210AF04E00F8FFEF /* EventPromotionsListViewModel.swift in Sources */,
 				DEAB3CAF20ED2A6C009D30E8 /* RegisterUserBuyController.swift in Sources */,
 				DEF926F920F5247900621ED0 /* ProfileEventCell.swift in Sources */,
-				DECD374E20EEE0BE0074AB19 /* LocationManagerExt.swift in Sources */,
 				DE9CC4E8210AF56F00F8FFEF /* HelpListViewModel.swift in Sources */,
 				DE9CC4DE210AF2F800F8FFEF /* EventProductsListViewModel.swift in Sources */,
 				DE9CC4D0210AED5E00F8FFEF /* EventCouponsListViewModel.swift in Sources */,
@@ -1854,7 +1874,6 @@
 				DEAB3CAD20ED2A53009D30E8 /* RegisterUserMenuController.swift in Sources */,
 				DECD374420EEBBC70074AB19 /* EventController.swift in Sources */,
 				DEF926F020F5242D00621ED0 /* ProfileEventModel.swift in Sources */,
-				DECD374C20EED9320074AB19 /* MapControllerExt.swift in Sources */,
 				DE9CC510210BC10600F8FFEF /* InfoPeoductModel.swift in Sources */,
 				DE724C8A20F18C4C002504C6 /* Event.swift in Sources */,
 				DECD374120EEBBA60074AB19 /* MapController.swift in Sources */,

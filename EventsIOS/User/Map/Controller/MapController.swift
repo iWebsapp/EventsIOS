@@ -7,55 +7,61 @@
 //
 
 import UIKit
-import MapKit
+import GoogleMaps
 
 class MapController: UIViewController {
 
-    @IBOutlet weak var map: MKMapView!
+    @IBOutlet weak var mapListener: UIView!
     @IBOutlet weak var header: UIImageView!
-    private let regionRadious: CLLocationDistance = 70
-    private let locationManager = CLLocationManager()
-    @IBOutlet weak var listenerGeoLocalization: DesignableGradient!
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let initialLocation = CLLocation(latitude: 20.030275968647413, longitude: -98.77558698690915)
-        zoomMapOn(location: initialLocation)
-        let samples = InvitationCard(title: "San Francisco", locationName: "Guerrero ST", coordinate: CLLocationCoordinate2D(latitude: 20.029438425927204, longitude: -98.77709448337555))
-        map.addAnnotation(samples)
-        map.delegate = self
+        let heighHeader = CGFloat(87)
+        let widthMap = self.view.frame.width
+        let heightMap = self.view.frame.height - heighHeader
+        let box = UIView(frame: CGRect(x: 0, y: heighHeader, width: widthMap, height: heightMap))
+        box.backgroundColor = UIColor.brown
+        view.addSubview(box)
+        let camera = GMSCameraPosition.camera(withLatitude: 19.441504, longitude: -99.155923, zoom: 17.0)
+        let mapView = GMSMapView.map(withFrame: box.frame, camera: camera)
+        self.view.addSubview(mapView)
+
+        do {
+            
+            if Themes.isNight() {
+                let styleURL = Bundle.main.url(forResource: "mapNight", withExtension: "json")
+                mapView.mapStyle = try GMSMapStyle(contentsOfFileURL: styleURL!)
+            } else {
+                let styleURL = Bundle.main.url(forResource: "mapDay", withExtension: "json")
+                mapView.mapStyle = try GMSMapStyle(contentsOfFileURL: styleURL!)
+            }
+            
+        } catch {
+            NSLog("One or more of the map styles failed to load. \(error)")
+        }
+        
+        self.view.addSubview(mapView)
+        
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: 19.441504, longitude: -99.155923)
+        marker.title = "Sydney"
+        marker.snippet = "CDMX"
+        marker.map = mapView
+        
         if Themes.isNight() {
             header.image = Themes.headerGobalNight
             self.view.backgroundColor = Themes.backgroundNight
-            listenerGeoLocalization.topColor = Themes.buttomLocalizationColorNight!
-            listenerGeoLocalization.bottomColor = Themes.buttomLocalizationColorNight!
         }
     }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
-        checkLocationServicesAuth()
-    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func checkLocationServicesAuth(){
-        locationManager.delegate = self
-        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
-            map.showsUserLocation = true
-            locationManager.stopUpdatingLocation()
-        } else {
-            locationManager.requestWhenInUseAuthorization()
-            locationManager.startUpdatingHeading()
-        }
-    }
-    
-    func zoomMapOn(location: CLLocation){
-        let coordinationRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadious * 2.0, regionRadious * 2.0)
-        map.setRegion(coordinationRegion, animated: true)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

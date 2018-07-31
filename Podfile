@@ -13,5 +13,6 @@ target 'EventsIOS' do
   pod 'RevealingSplashView'
   pod 'Fabric'
   pod 'Crashlytics'
+  pod 'GoogleMaps'
 
 end
