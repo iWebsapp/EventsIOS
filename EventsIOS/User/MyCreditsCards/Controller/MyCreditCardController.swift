@@ -20,14 +20,18 @@ class MyCreditsCardsController: UIViewController, UICollectionViewDelegate, UICo
         // Do any additional setup after loading the view.
         collection.delegate = self
         collection.dataSource = self
-        if Themes.isNight() {
-            header.image = Themes.headerGobalNight
-            self.view.backgroundColor = Themes.backgroundNight
-        }
         self.mycardModel = MyCreditsCardsModel()
         self.mycardListViewModel = MyCreditsCardsListViewModel(mycards: self.mycardModel)
         DispatchQueue.main.async {
             self.collection.reloadData()
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if Themes.isNight() {
+            header.image = Themes.headerGobalNight
+            self.view.backgroundColor = Themes.backgroundNight
         }
     }
 

@@ -20,14 +20,18 @@ class ProfileEventProductsController: UIViewController, UITableViewDelegate, UIT
         // Do any additional setup after loading the view.
         table.delegate = self
         table.dataSource = self
-        if Themes.isNight() {
-            header.image = Themes.headerEventNight
-            self.view.backgroundColor = Themes.backgroundNight
-        }
         self.eventProductModel = EventProductsModel()
         self.eventProductsListViewModel = EventProductsListViewModel(producModel: self.eventProductModel)
         DispatchQueue.main.async {
             self.table.reloadData()
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if Themes.isNight() {
+            header.image = Themes.headerEventNight
+            self.view.backgroundColor = Themes.backgroundNight
         }
     }
     

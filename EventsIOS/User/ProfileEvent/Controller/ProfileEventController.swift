@@ -20,14 +20,18 @@ class ProfileEventController: UIViewController, UITableViewDelegate, UITableView
         // Do any additional setup after loading the view.
         table.delegate = self
         table.dataSource = self
-        if Themes.isNight() {
-            header.image = Themes.headerEventNight
-            self.view.backgroundColor = Themes.backgroundNight
-        }
         self.notificationData = ProfileEventModel()
         self.notificationListViewModel = ProfileEventListViewModel(data: self.notificationData)
         DispatchQueue.main.async {
             self.table.reloadData()
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if Themes.isNight() {
+            header.image = Themes.headerEventNight
+            self.view.backgroundColor = Themes.backgroundNight
         }
     }
 

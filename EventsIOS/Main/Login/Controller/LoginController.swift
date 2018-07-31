@@ -19,10 +19,14 @@ class LoginController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         txtEmail.delegate = self
         txtPassword.delegate = self
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         if Themes.isNight() {
             background.image = Themes.backgroundLoginNight
-        } 
-        // Do any additional setup after loading the view, typically from a nib.
+        }
     }
 
     override func didReceiveMemoryWarning() {

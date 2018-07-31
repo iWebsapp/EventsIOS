@@ -21,16 +21,20 @@ class InfoCardController: UIViewController, UITableViewDelegate, UITableViewData
         // Do any additional setup after loading the view.
         table.delegate = self
         table.dataSource = self
-        if Themes.isNight() {
-            header.image = Themes.headerGobalNight
-            self.view.backgroundColor = Themes.backgroundNight
-        }
         cartView.topColor = self.randomColor()
         cartView.bottomColor = self.randomColor()
         self.eventData = EventModel()
         self.eventListViewModel = EventListViewModel(eventModel: self.eventData)
         DispatchQueue.main.async {
             self.table.reloadData()
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if Themes.isNight() {
+            header.image = Themes.headerGobalNight
+            self.view.backgroundColor = Themes.backgroundNight
         }
     }
 

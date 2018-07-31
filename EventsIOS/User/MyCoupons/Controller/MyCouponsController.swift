@@ -20,17 +20,21 @@ class MyCouponsController: UIViewController, UICollectionViewDelegate, UICollect
         // Do any additional setup after loading the view.
         collectionCoupons.delegate = self
         collectionCoupons.dataSource = self
+        self.mycouponsModel = MyCouponsModel()
+        self.mycouponsListViewModel = MyCouponsListViewModel(couponsModel: self.mycouponsModel)
+        DispatchQueue.main.async {
+            self.collectionCoupons.reloadData()
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         if Themes.isNight() {
             header.image = Themes.headerGobalNight
             self.view.backgroundColor = Themes.backgroundNight
             self.tabBarController?.tabBar.barTintColor = Themes.backgroundNight
             self.tabBarController?.tabBar.tintColor = Themes.tintColorNight
             self.tabBarController?.tabBar.unselectedItemTintColor = Themes.unselectedColorNight
-        }
-        self.mycouponsModel = MyCouponsModel()
-        self.mycouponsListViewModel = MyCouponsListViewModel(couponsModel: self.mycouponsModel)
-        DispatchQueue.main.async {
-            self.collectionCoupons.reloadData()
         }
     }
     

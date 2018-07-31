@@ -17,6 +17,10 @@ class EventInformationAddressController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         txtAddress.text = "Calle Antiguo Camino de F.F.C.C. 164, San Antonio, 42111 Pachuca de Soto, Hgo."
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         if Themes.isNight() {
             txtTitle.textColor = Themes.unselectedColorNight
             txtAddress.textColor = Themes.unselectedColorNight

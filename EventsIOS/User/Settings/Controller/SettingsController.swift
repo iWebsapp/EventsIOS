@@ -31,19 +31,20 @@ class SettingsController: UIViewController {
         changeEmail.isHidden = true
         changePassword.isHidden = true
         changeBirthday.isHidden = true
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         if Themes.isNight() {
             header.image = Themes.headerGobalNight
             self.view.backgroundColor = Themes.backgroundNight
         }
-        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
     @IBAction func hideInfo(_ sender: UIButton) {
         switch sender.tag {

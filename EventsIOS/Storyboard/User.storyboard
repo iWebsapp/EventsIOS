@@ -6923,10 +6923,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K4h-vL-m7N" userLabel="mapView">
-                                <rect key="frame" x="0.0" y="85" width="320" height="434"/>
-                                <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4FF-Vk-11T">
                                 <rect key="frame" x="265" y="32" width="40" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -6965,22 +6961,17 @@
                             <constraint firstItem="4FF-Vk-11T" firstAttribute="leading" secondItem="yqP-Me-SmD" secondAttribute="trailing" constant="10" id="B99-NR-zI6"/>
                             <constraint firstItem="Coo-ka-iqI" firstAttribute="top" secondItem="bS2-vA-10g" secondAttribute="top" constant="12" id="CxM-ze-5ig"/>
                             <constraint firstItem="4FF-Vk-11T" firstAttribute="top" secondItem="bS2-vA-10g" secondAttribute="top" constant="12" id="LBk-Ny-kLT"/>
-                            <constraint firstItem="K4h-vL-m7N" firstAttribute="bottom" secondItem="bS2-vA-10g" secondAttribute="bottom" id="PYQ-AS-wMV"/>
-                            <constraint firstItem="K4h-vL-m7N" firstAttribute="top" secondItem="QHM-bc-awe" secondAttribute="top" constant="85" id="Qzn-Mv-NfF"/>
                             <constraint firstItem="hdL-om-xNK" firstAttribute="leading" secondItem="bS2-vA-10g" secondAttribute="leading" id="SfS-mi-GcX"/>
                             <constraint firstAttribute="trailing" secondItem="hdL-om-xNK" secondAttribute="trailing" id="WnN-BK-QMm"/>
                             <constraint firstItem="Coo-ka-iqI" firstAttribute="leading" secondItem="bS2-vA-10g" secondAttribute="leading" constant="15" id="YS9-Kj-3hR"/>
                             <constraint firstItem="hdL-om-xNK" firstAttribute="top" secondItem="QHM-bc-awe" secondAttribute="top" id="ZoF-na-xMT"/>
                             <constraint firstItem="yqP-Me-SmD" firstAttribute="leading" secondItem="Coo-ka-iqI" secondAttribute="trailing" constant="10" id="byN-GQ-7W4"/>
-                            <constraint firstItem="K4h-vL-m7N" firstAttribute="trailing" secondItem="bS2-vA-10g" secondAttribute="trailing" id="k5D-bk-lgU"/>
                             <constraint firstItem="bS2-vA-10g" firstAttribute="trailing" secondItem="4FF-Vk-11T" secondAttribute="trailing" constant="15" id="prg-e6-un1"/>
-                            <constraint firstItem="K4h-vL-m7N" firstAttribute="leading" secondItem="bS2-vA-10g" secondAttribute="leading" id="uTv-NP-n0d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bS2-vA-10g"/>
                     </view>
                     <connections>
                         <outlet property="header" destination="hdL-om-xNK" id="gYL-tG-9DU"/>
-                        <outlet property="mapListener" destination="K4h-vL-m7N" id="eDF-mO-2wP"/>
                         <segue destination="73M-Ch-hoa" kind="presentation" identifier="goMoreInfoMap" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="VYb-v5-HOm"/>
                     </connections>
                 </viewController>

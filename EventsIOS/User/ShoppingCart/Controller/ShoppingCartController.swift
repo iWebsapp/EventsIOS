@@ -20,17 +20,21 @@ class ShoppingCartController: UIViewController, UITableViewDelegate, UITableView
         // Do any additional setup after loading the view.
         table.delegate = self
         table.dataSource = self
+        self.shopingModel = ShoppingCartModel()
+        self.shopingListViewModel = ShoppingCartListViewModel(shoppingModel: self.shopingModel)
+        DispatchQueue.main.async {
+            self.table.reloadData()
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         if Themes.isNight() {
             header.image = Themes.headerGobalNight
             self.view.backgroundColor = Themes.backgroundNight
             self.tabBarController?.tabBar.barTintColor = Themes.backgroundNight
             self.tabBarController?.tabBar.tintColor = Themes.tintColorNight
             self.tabBarController?.tabBar.unselectedItemTintColor = Themes.unselectedColorNight
-        }
-        self.shopingModel = ShoppingCartModel()
-        self.shopingListViewModel = ShoppingCartListViewModel(shoppingModel: self.shopingModel)
-        DispatchQueue.main.async {
-            self.table.reloadData()
         }
     }
 

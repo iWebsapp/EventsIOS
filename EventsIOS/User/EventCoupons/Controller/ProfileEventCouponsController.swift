@@ -20,14 +20,18 @@ class ProfileEventCouponsController: UIViewController, UICollectionViewDelegate,
         // Do any additional setup after loading the view.
         collectionCoupons.delegate = self
         collectionCoupons.dataSource = self
-        if Themes.isNight() {
-            header.image = Themes.headerEventNight
-            self.view.backgroundColor = Themes.backgroundNight
-        }
         self.eventCouponModel = EventCouponsModel()
         self.eventCouponListViewModel = EventCouponsListViewModel(eventCoupons: self.eventCouponModel)
         DispatchQueue.main.async {
             self.collectionCoupons.reloadData()
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if Themes.isNight() {
+            header.image = Themes.headerEventNight
+            self.view.backgroundColor = Themes.backgroundNight
         }
     }
 

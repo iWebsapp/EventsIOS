@@ -21,6 +21,10 @@ class ProfileEventInformationController: UIViewController {
         scheduleView.alpha = 1
         contactView.alpha = 0
         addressView.alpha = 0
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         if Themes.isNight() {
             header.image = Themes.headerEventNight
             self.view.backgroundColor = Themes.backgroundNight

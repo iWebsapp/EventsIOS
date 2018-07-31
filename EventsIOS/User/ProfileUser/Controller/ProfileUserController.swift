@@ -20,17 +20,21 @@ class ProfileUserController: UIViewController, UITableViewDataSource, UITableVie
         // Do any additional setup after loading the view.
         table.dataSource = self
         table.delegate = self
+        self.profileUserModel = ProfileUserModel()
+        self.profileUserListViewModel = ProfileUserListViewModel(profileUserModel: self.profileUserModel)
+        DispatchQueue.main.async {
+            self.table.reloadData()
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         if Themes.isNight() {
             header.image = Themes.headerGobalNight
             self.view.backgroundColor = Themes.backgroundNight
             self.tabBarController?.tabBar.barTintColor = Themes.backgroundNight
             self.tabBarController?.tabBar.tintColor = Themes.tintColorNight
             self.tabBarController?.tabBar.unselectedItemTintColor = Themes.unselectedColorNight
-        }
-        self.profileUserModel = ProfileUserModel()
-        self.profileUserListViewModel = ProfileUserListViewModel(profileUserModel: self.profileUserModel)
-        DispatchQueue.main.async {
-            self.table.reloadData()
         }
     }
     

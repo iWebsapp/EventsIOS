@@ -20,17 +20,21 @@ class GuaranteedTableController: UIViewController, UITableViewDelegate, UITableV
         // Do any additional setup after loading the view.
         table.delegate = self
         table.dataSource = self
-        if Themes.isNight() {
-            header.image = Themes.headerEventNight
-            self.view.backgroundColor = Themes.backgroundNight
-        }
         self.guaranteedModel = GuaranteedTableModel()
         self.guarantedListViewModel = GuaranteedTableListViewModel(guarantedModel: self.guaranteedModel)
         DispatchQueue.main.async {
             self.table.reloadData()
         }
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if Themes.isNight() {
+            header.image = Themes.headerEventNight
+            self.view.backgroundColor = Themes.backgroundNight
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

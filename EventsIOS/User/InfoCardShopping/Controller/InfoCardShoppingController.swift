@@ -20,14 +20,18 @@ class InfoCardShoppingController: UIViewController, UITableViewDelegate, UITable
         // Do any additional setup after loading the view.
         table.delegate = self
         table.dataSource = self
-        if Themes.isNight() {
-            header.image = Themes.headerGobalNight
-            self.view.backgroundColor = Themes.backgroundNight
-        }
         self.infoCardModel = InfoCardShoppingModel()
         self.infoCardListViewModel = InfoCardShoppingListViewModel(infoCardModel: self.infoCardModel)
         DispatchQueue.main.async {
             self.table.reloadData()
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if Themes.isNight() {
+            header.image = Themes.headerGobalNight
+            self.view.backgroundColor = Themes.backgroundNight
         }
     }
 

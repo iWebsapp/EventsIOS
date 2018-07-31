@@ -11,9 +11,14 @@ import UIKit
 class EventInformationContactController: UIViewController {
 
     @IBOutlet weak var txtTitle: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         if Themes.isNight() {
             txtTitle.textColor = Themes.unselectedColorNight
         }

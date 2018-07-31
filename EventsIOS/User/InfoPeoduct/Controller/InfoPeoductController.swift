@@ -24,12 +24,6 @@ class InfoPeoductController: UIViewController, UICollectionViewDelegate, UIColle
         // Do any additional setup after loading the view.
         collection.delegate = self
         collection.dataSource = self
-        if Themes.isNight() {
-            header.image = Themes.headerEventNight
-            //txtDescription.textColor = Themes.unselectedColorNight
-            //labelDescription.textColor = Themes.unselectedColorNight
-            self.view.backgroundColor = Themes.backgroundNight
-        }
         self.infoProductModel = InfoPeoductModel()
         self.infoProductListViewModel = InfoPeoductListViewModel(producModel: self.infoProductModel)
         DispatchQueue.main.async {
@@ -39,6 +33,16 @@ class InfoPeoductController: UIViewController, UICollectionViewDelegate, UIColle
         txtDescription.text = self.infoProductListViewModel.infoProductViewModel[0].description
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if Themes.isNight() {
+            header.image = Themes.headerEventNight
+            //txtDescription.textColor = Themes.unselectedColorNight
+            //labelDescription.textColor = Themes.unselectedColorNight
+            self.view.backgroundColor = Themes.backgroundNight
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

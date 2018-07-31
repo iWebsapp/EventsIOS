@@ -21,14 +21,18 @@ class ProfileEventPromotionsController: UIViewController, UITableViewDataSource,
         // Do any additional setup after loading the view.
         table.delegate = self
         table.dataSource = self
-        if Themes.isNight() {
-            header.image = Themes.headerEventNight
-            self.view.backgroundColor = Themes.backgroundNight
-        }
         self.eventPromotionsModel = EventPromotionsModel()
         self.eventPromotionsListViewModel = EventPromotionsListViewModel(eventPromotions: self.eventPromotionsModel)
         DispatchQueue.main.async {
             self.table.reloadData()
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if Themes.isNight() {
+            header.image = Themes.headerEventNight
+            self.view.backgroundColor = Themes.backgroundNight
         }
     }
 

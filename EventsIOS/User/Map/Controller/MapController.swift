@@ -11,15 +11,14 @@ import GoogleMaps
 
 class MapController: UIViewController {
 
-    @IBOutlet weak var mapListener: UIView!
     @IBOutlet weak var header: UIImageView!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         // Do any additional setup after loading the view.
         let heighHeader = CGFloat(87)
         let widthMap = self.view.frame.width

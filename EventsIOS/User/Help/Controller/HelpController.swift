@@ -20,14 +20,18 @@ class HelpController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view.
         table.delegate = self
         table.dataSource = self
-        if Themes.isNight() {
-            header.image = Themes.headerGobalNight
-            self.view.backgroundColor = Themes.backgroundNight
-        }
         self.helpModel = HelpModel()
         self.helpListViewModel = HelpListViewModel(helpModel: self.helpModel)
         DispatchQueue.main.async {
             self.table.reloadData()
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if Themes.isNight() {
+            header.image = Themes.headerGobalNight
+            self.view.backgroundColor = Themes.backgroundNight
         }
     }
 
