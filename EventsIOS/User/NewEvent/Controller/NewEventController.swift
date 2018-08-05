@@ -11,14 +11,19 @@ import UIKit
 class NewEventController: UIViewController {
 
     @IBOutlet weak var header: UIImageView!
+    @IBOutlet weak var map: MapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        DispatchQueue.main.async {
+            self.getMap()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.getMap()
         if Themes.isNight() {
             header.image = Themes.headerGobalNight
             self.view.backgroundColor = Themes.backgroundNight
@@ -35,6 +40,13 @@ class NewEventController: UIViewController {
     
     @IBAction func behind(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    func getMap(){
+        let mapView = map.showMap(lat: 19.441504, lon: -99.155923)
+        self.view.addSubview(mapView)
+        let marker = map.addMarker(lat: 19.441504, lon: -99.155923, title: "Sydney", snippet: "CDMX")
+        marker.map = mapView
     }
     
     /*

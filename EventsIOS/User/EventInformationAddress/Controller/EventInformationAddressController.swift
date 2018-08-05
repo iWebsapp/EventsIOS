@@ -12,6 +12,7 @@ class EventInformationAddressController: UIViewController {
     
     @IBOutlet weak var txtTitle: UILabel!
     @IBOutlet weak var txtAddress: UILabel!
+    @IBOutlet weak var map: MapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,7 @@ class EventInformationAddressController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.getMap()
         if Themes.isNight() {
             txtTitle.textColor = Themes.unselectedColorNight
             txtAddress.textColor = Themes.unselectedColorNight
@@ -30,6 +32,13 @@ class EventInformationAddressController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func getMap(){
+        let mapView = map.showMap(lat: 19.441504, lon: -99.155923)
+        self.view.addSubview(mapView)
+        let marker = map.addMarker(lat: 19.441504, lon: -99.155923, title: "Sydney", snippet: "CDMX")
+        marker.map = mapView
     }
     
 

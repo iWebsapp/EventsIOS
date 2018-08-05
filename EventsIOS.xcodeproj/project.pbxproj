@@ -76,6 +76,7 @@
 		DE8C8910210C266E00696239 /* SelectMyCouponModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C890F210C266E00696239 /* SelectMyCouponModel.swift */; };
 		DE8C8912210C267A00696239 /* SelectMyCouponListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C8911210C267A00696239 /* SelectMyCouponListViewModel.swift */; };
 		DE8C8914210C268500696239 /* SelectMyCouponViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C8913210C268500696239 /* SelectMyCouponViewModel.swift */; };
+		DE9284682117A3A20037D1DC /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9284672117A3A20037D1DC /* MapView.swift */; };
 		DE9A20572104610F00372BFA /* InfoCouponsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9A20562104610F00372BFA /* InfoCouponsController.swift */; };
 		DE9CC4BC210AD8BD00F8FFEF /* ProfileUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4BB210AD8BD00F8FFEF /* ProfileUserModel.swift */; };
 		DE9CC4BE210AD99F00F8FFEF /* ProfileUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4BD210AD99F00F8FFEF /* ProfileUserViewModel.swift */; };
@@ -226,6 +227,7 @@
 		DE8C890F210C266E00696239 /* SelectMyCouponModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMyCouponModel.swift; sourceTree = "<group>"; };
 		DE8C8911210C267A00696239 /* SelectMyCouponListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMyCouponListViewModel.swift; sourceTree = "<group>"; };
 		DE8C8913210C268500696239 /* SelectMyCouponViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMyCouponViewModel.swift; sourceTree = "<group>"; };
+		DE9284672117A3A20037D1DC /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		DE9A20562104610F00372BFA /* InfoCouponsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCouponsController.swift; sourceTree = "<group>"; };
 		DE9CC4BB210AD8BD00F8FFEF /* ProfileUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserModel.swift; sourceTree = "<group>"; };
 		DE9CC4BD210AD99F00F8FFEF /* ProfileUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserViewModel.swift; sourceTree = "<group>"; };
@@ -1543,6 +1545,7 @@
 				DE3E0C3A2105817600F066F9 /* CustomSegmentedControl.swift */,
 				DE645CBF21097FB100999A95 /* UIViewControllerExt.swift */,
 				DE7D3297210A77C4001F7CD2 /* Themes.swift */,
+				DE9284672117A3A20037D1DC /* MapView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1959,6 +1962,7 @@
 				DECFD76820FEDECD003812DD /* MyCouponsCell.swift in Sources */,
 				DE724C9020F18CA8002504C6 /* EventModel.swift in Sources */,
 				DE8C8904210C19CC00696239 /* GuaranteedTableViewModel.swift in Sources */,
+				DE9284682117A3A20037D1DC /* MapView.swift in Sources */,
 				DE8C8914210C268500696239 /* SelectMyCouponViewModel.swift in Sources */,
 				DE8C890A210C223100696239 /* NewGuaranteedTableModel.swift in Sources */,
 				DEBF06E321016DE900ABC3C2 /* NewCreditCardController.swift in Sources */,
