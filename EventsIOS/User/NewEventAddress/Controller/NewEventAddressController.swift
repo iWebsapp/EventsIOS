@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NewEventController: UIViewController {
+class NewEventAddressController: UIViewController {
 
     @IBOutlet weak var header: UIImageView!
     @IBOutlet weak var map: MapView!
@@ -27,9 +27,6 @@ class NewEventController: UIViewController {
         if Themes.isNight() {
             header.image = Themes.headerGobalNight
             self.view.backgroundColor = Themes.backgroundNight
-            self.tabBarController?.tabBar.barTintColor = Themes.backgroundNight
-            self.tabBarController?.tabBar.tintColor = Themes.tintColorNight
-            self.tabBarController?.tabBar.unselectedItemTintColor = Themes.unselectedColorNight
         }
     }
 
