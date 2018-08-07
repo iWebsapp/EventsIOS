@@ -16,9 +16,7 @@ class NewEventAddressController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        DispatchQueue.main.async {
-            self.getMap()
-        }
+        self.getMap()
     }
     
     override func viewWillAppear(_ animated: Bool) {
