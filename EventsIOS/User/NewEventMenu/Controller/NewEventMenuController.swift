@@ -22,6 +22,8 @@ class NewEventMenuController: UIViewController, UITableViewDataSource, UITableVi
         menuItemsProfile.append( ProfileEvent(icon: "menu-map", title: "Agregar su ubicación") )
         menuItemsProfile.append( ProfileEvent(icon: "icon-settings", title: "Agrega tus servicios") )
         menuItemsProfile.append( ProfileEvent(icon: "icon-categories", title: "Agrega su Categoría") )
+        menuItemsProfile.append( ProfileEvent(icon: "icon-contact", title: "Agrega su Contacto") )
+        menuItemsProfile.append( ProfileEvent(icon: "icon-hours", title: "Agrega su Horario") )
         DispatchQueue.main.async {
             self.table.reloadData()
         }
@@ -65,6 +67,10 @@ class NewEventMenuController: UIViewController, UITableViewDataSource, UITableVi
                 performSegue(withIdentifier: "goNewEventAddress", sender: self )
             case "icon-categories":
                 performSegue(withIdentifier: "goNewEventCategories", sender: self )
+            case "icon-contact":
+                performSegue(withIdentifier: "goNewEventContact", sender: self )
+            case "icon-hours":
+                performSegue(withIdentifier: "goNewEventHours", sender: self )
             default:
                 performSegue(withIdentifier: "goNewEventServices", sender: self )
         }

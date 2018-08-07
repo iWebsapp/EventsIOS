@@ -42,6 +42,8 @@
 		DE5B5E272119410E00886E0F /* NewEventMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B5E262119410E00886E0F /* NewEventMenuController.swift */; };
 		DE5B5E2B21194FD000886E0F /* NewEventCategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B5E2A21194FD000886E0F /* NewEventCategoriesController.swift */; };
 		DE5B5E2F2119509000886E0F /* NewEventServicesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B5E2E2119509000886E0F /* NewEventServicesController.swift */; };
+		DE5B5E352119606200886E0F /* NewEventContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B5E342119606200886E0F /* NewEventContactController.swift */; };
+		DE5B5E372119607200886E0F /* NewEventHoursController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B5E362119607200886E0F /* NewEventHoursController.swift */; };
 		DE5EFF1120FDC66700C9B7C8 /* PrivacyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFF1020FDC66700C9B7C8 /* PrivacyController.swift */; };
 		DE5EFF1520FDC6AD00C9B7C8 /* ReportProblemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFF1420FDC6AD00C9B7C8 /* ReportProblemsController.swift */; };
 		DE5EFF1920FDC6EB00C9B7C8 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFF1820FDC6EB00C9B7C8 /* AboutController.swift */; };
@@ -196,6 +198,8 @@
 		DE5B5E262119410E00886E0F /* NewEventMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventMenuController.swift; sourceTree = "<group>"; };
 		DE5B5E2A21194FD000886E0F /* NewEventCategoriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventCategoriesController.swift; sourceTree = "<group>"; };
 		DE5B5E2E2119509000886E0F /* NewEventServicesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventServicesController.swift; sourceTree = "<group>"; };
+		DE5B5E342119606200886E0F /* NewEventContactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventContactController.swift; sourceTree = "<group>"; };
+		DE5B5E362119607200886E0F /* NewEventHoursController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventHoursController.swift; sourceTree = "<group>"; };
 		DE5EFF1020FDC66700C9B7C8 /* PrivacyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyController.swift; sourceTree = "<group>"; };
 		DE5EFF1420FDC6AD00C9B7C8 /* ReportProblemsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportProblemsController.swift; sourceTree = "<group>"; };
 		DE5EFF1820FDC6EB00C9B7C8 /* AboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
@@ -827,6 +831,39 @@
 				DE5B5E2E2119509000886E0F /* NewEventServicesController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE5B5E302119602100886E0F /* NewEventHours */ = {
+			isa = PBXGroup;
+			children = (
+				DE5B5E332119604A00886E0F /* Controller */,
+			);
+			path = NewEventHours;
+			sourceTree = "<group>";
+		};
+		DE5B5E312119602D00886E0F /* NewEventContact */ = {
+			isa = PBXGroup;
+			children = (
+				DE5B5E322119603C00886E0F /* Controller */,
+			);
+			path = NewEventContact;
+			sourceTree = "<group>";
+		};
+		DE5B5E322119603C00886E0F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE5B5E342119606200886E0F /* NewEventContactController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE5B5E332119604A00886E0F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE5B5E362119607200886E0F /* NewEventHoursController.swift */,
+			);
+			name = Controller;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		DE5EFF0E20FDC64500C9B7C8 /* Privacy */ = {
@@ -1489,6 +1526,8 @@
 		DECD373920EEB9EE0074AB19 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				DE5B5E312119602D00886E0F /* NewEventContact */,
+				DE5B5E302119602100886E0F /* NewEventHours */,
 				DE5B5E2C2119507200886E0F /* NewEventServices */,
 				DE5B5E2821194FB100886E0F /* NewEventCategories */,
 				DEDB8E3120FC7B02001E90EA /* NewEventAddress */,
@@ -1912,6 +1951,7 @@
 				DE9CC4F6210BA99000F8FFEF /* ShoppingCartViewModel.swift in Sources */,
 				DE9CC4C8210AE84D00F8FFEF /* EventCommentsModel.swift in Sources */,
 				DE8255622102BFE300582D20 /* InfoCardShoppingController.swift in Sources */,
+				DE5B5E352119606200886E0F /* NewEventContactController.swift in Sources */,
 				DE8C49F820F70B89009C5F39 /* ProcutsEventCollection.swift in Sources */,
 				DEF926F320F5244500621ED0 /* ProfileEventViewModel.swift in Sources */,
 				DE7D3298210A77C4001F7CD2 /* Themes.swift in Sources */,
@@ -1928,6 +1968,7 @@
 				DE9CC4E8210AF56F00F8FFEF /* HelpListViewModel.swift in Sources */,
 				DE9CC4DE210AF2F800F8FFEF /* EventProductsListViewModel.swift in Sources */,
 				DE9CC4D0210AED5E00F8FFEF /* EventCouponsListViewModel.swift in Sources */,
+				DE5B5E372119607200886E0F /* NewEventHoursController.swift in Sources */,
 				DE5EFF2120FDC76600C9B7C8 /* SettingsController.swift in Sources */,
 				DE9CC4F0210BA5ED00F8FFEF /* MyCouponsViewModel.swift in Sources */,
 				DECFD76620FEDEBC003812DD /* Coupons.swift in Sources */,
