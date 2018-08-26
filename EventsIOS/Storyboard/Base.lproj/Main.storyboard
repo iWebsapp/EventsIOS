@@ -97,31 +97,13 @@
                                     <constraint firstAttribute="height" constant="127" id="o5Y-iR-TCr"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNb-iu-BAe" customClass="DesignableButton" customModule="EventsIOS" customModuleProvider="target">
-                                <rect key="frame" x="27" y="353" width="266" height="40"/>
-                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="FHs-nA-m5q"/>
-                                </constraints>
-                                <state key="normal" title="Random"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="getRandom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tkD-H9-7BN"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="KX4-QA-qRZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="27T-kS-h3J"/>
-                            <constraint firstItem="wNb-iu-BAe" firstAttribute="top" secondItem="QPo-3W-cBV" secondAttribute="bottom" constant="8" id="3U5-yJ-OXg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iGc-47-a5A" secondAttribute="trailing" id="3dY-GL-hkQ"/>
                             <constraint firstItem="iGc-47-a5A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DMg-qM-HXz"/>
                             <constraint firstItem="nAh-IT-eSf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DXw-Og-OLh"/>
-                            <constraint firstItem="wNb-iu-BAe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="QdE-79-GgT"/>
                             <constraint firstItem="QPo-3W-cBV" firstAttribute="top" secondItem="KX4-QA-qRZ" secondAttribute="bottom" constant="8" id="SS4-n5-JJP"/>
                             <constraint firstItem="iGc-47-a5A" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="TZD-4c-O3S">
                                 <variation key="heightClass=regular-widthClass=regular" constant="72"/>
@@ -130,7 +112,6 @@
                             <constraint firstItem="KX4-QA-qRZ" firstAttribute="top" secondItem="iGc-47-a5A" secondAttribute="bottom" constant="27" id="hNf-D8-Mr3"/>
                             <constraint firstItem="QPo-3W-cBV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lSp-n6-f3g"/>
                             <constraint firstItem="nAh-IT-eSf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lbR-jq-GvU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wNb-iu-BAe" secondAttribute="trailing" constant="27" id="ror-YS-sB9"/>
                             <constraint firstItem="nAh-IT-eSf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vsn-iM-IiP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
