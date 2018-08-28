@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "74E848D55D7B17C164E911446365BD54"
+               BlueprintIdentifier = "68533D0888802519BBC5403BFFBD92D8"
                BuildableName = "RevealingSplashView.framework"
                BlueprintName = "RevealingSplashView"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "74E848D55D7B17C164E911446365BD54"
+            BlueprintIdentifier = "68533D0888802519BBC5403BFFBD92D8"
             BuildableName = "RevealingSplashView.framework"
             BlueprintName = "RevealingSplashView"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -185,7 +185,7 @@
 		DE39EC2D21084B6B00670676 /* ShoppingCartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartCell.swift; sourceTree = "<group>"; };
 		DE39EC2F21084C6D00670676 /* Shopping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping.swift; sourceTree = "<group>"; };
 		DE3E0C3A2105817600F066F9 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
-		DE4403CE20E9FE61002606C4 /* EventsIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventsIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE4403CE20E9FE61002606C4 /* EventsIOS-Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EventsIOS-Debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE4403D120E9FE61002606C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE4403D320E9FE61002606C4 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		DE4403D620E9FE61002606C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -717,7 +717,7 @@
 		DE4403CF20E9FE61002606C4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DE4403CE20E9FE61002606C4 /* EventsIOS.app */,
+				DE4403CE20E9FE61002606C4 /* EventsIOS-Debug.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1771,9 +1771,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DE4403CD20E9FE61002606C4 /* EventsIOS */ = {
+		DE4403CD20E9FE61002606C4 /* EventsIOS-Debug */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE4403E020E9FE65002606C4 /* Build configuration list for PBXNativeTarget "EventsIOS" */;
+			buildConfigurationList = DE4403E020E9FE65002606C4 /* Build configuration list for PBXNativeTarget "EventsIOS-Debug" */;
 			buildPhases = (
 				0F064FE903F21EF503089EF3 /* [CP] Check Pods Manifest.lock */,
 				DE4403CA20E9FE61002606C4 /* Sources */,
@@ -1787,9 +1787,9 @@
 			);
 			dependencies = (
 			);
-			name = EventsIOS;
+			name = "EventsIOS-Debug";
 			productName = EventsIOS;
-			productReference = DE4403CE20E9FE61002606C4 /* EventsIOS.app */;
+			productReference = DE4403CE20E9FE61002606C4 /* EventsIOS-Debug.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1825,7 +1825,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DE4403CD20E9FE61002606C4 /* EventsIOS */,
+				DE4403CD20E9FE61002606C4 /* EventsIOS-Debug */,
 			);
 		};
 /* End PBXProject section */
@@ -1877,6 +1877,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
@@ -1885,6 +1886,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
@@ -2213,7 +2215,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 799E4A944D0D180A48E5833E /* Pods-EventsIOS.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Debug";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = Y99AD5GLT5;
@@ -2234,7 +2236,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 761F37E3749DD414C245D3D8 /* Pods-EventsIOS.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Debug";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y99AD5GLT5;
 				INFOPLIST_FILE = EventsIOS/Info.plist;
@@ -2262,7 +2264,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE4403E020E9FE65002606C4 /* Build configuration list for PBXNativeTarget "EventsIOS" */ = {
+		DE4403E020E9FE65002606C4 /* Build configuration list for PBXNativeTarget "EventsIOS-Debug" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE4403E120E9FE65002606C4 /* Debug */,

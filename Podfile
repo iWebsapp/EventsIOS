@@ -14,5 +14,6 @@ target 'EventsIOS' do
   pod 'Fabric'
   pod 'Crashlytics'
   pod 'GoogleMaps'
+  pod 'SwiftKeychainWrapper'
 
 end

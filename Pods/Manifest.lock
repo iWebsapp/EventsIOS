@@ -13,6 +13,7 @@ PODS:
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
+  - SwiftKeychainWrapper (3.0.1)
   - SwiftyJSON (4.1.0)
 
 DEPENDENCIES:
@@ -23,6 +24,7 @@ DEPENDENCIES:
   - lottie-ios
   - RevealingSplashView
   - SDWebImage
+  - SwiftKeychainWrapper
   - SwiftyJSON
 
 SPEC REPOS:
@@ -34,6 +36,7 @@ SPEC REPOS:
     - lottie-ios
     - RevealingSplashView
     - SDWebImage
+    - SwiftKeychainWrapper
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -44,8 +47,9 @@ SPEC CHECKSUMS:
   lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
   RevealingSplashView: 0794eecad3a8983ac11a1fe474e9a9b51b926780
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: 03f1f93ced2c1ff6625f7d674aceb0aa4fe0d752
+PODFILE CHECKSUM: 05d454439c1840fa82237c4692bc5a24ff2e284c
 
 COCOAPODS: 1.5.3
