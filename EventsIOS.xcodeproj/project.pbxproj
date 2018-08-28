@@ -116,6 +116,155 @@
 		DE9CC50C210BC0F100F8FFEF /* InfoPeoductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC50B210BC0F100F8FFEF /* InfoPeoductListViewModel.swift */; };
 		DE9CC50E210BC0FB00F8FFEF /* InfoPeoductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC50D210BC0FB00F8FFEF /* InfoPeoductViewModel.swift */; };
 		DE9CC510210BC10600F8FFEF /* InfoPeoductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC50F210BC10600F8FFEF /* InfoPeoductModel.swift */; };
+		DEA2DB8B2135E33A00050E20 /* DesignableGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8025520EEFB0200ABAFEF /* DesignableGradient.swift */; };
+		DEA2DB8C2135E33A00050E20 /* DesignableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8025720EF012F00ABAFEF /* DesignableImage.swift */; };
+		DEA2DB8D2135E33A00050E20 /* ProfileUserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4BF210AD9AB00F8FFEF /* ProfileUserListViewModel.swift */; };
+		DEA2DB8E2135E33A00050E20 /* ProfileEventPromotionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F1D2A20F5EC2100503134 /* ProfileEventPromotionsController.swift */; };
+		DEA2DB8F2135E33A00050E20 /* InfoCardShoppingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC507210BB20B00F8FFEF /* InfoCardShoppingViewModel.swift */; };
+		DEA2DB902135E33A00050E20 /* ProfileUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4BB210AD8BD00F8FFEF /* ProfileUserModel.swift */; };
+		DEA2DB912135E33A00050E20 /* ShoppingCartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE39EC2D21084B6B00670676 /* ShoppingCartCell.swift */; };
+		DEA2DB922135E33A00050E20 /* MyCouponsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4EB210BA5C800F8FFEF /* MyCouponsModel.swift */; };
+		DEA2DB932135E33A00050E20 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE724C9120F18CBA002504C6 /* EventViewModel.swift */; };
+		DEA2DB942135E33A00050E20 /* EventProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4DB210AF2EB00F8FFEF /* EventProductsViewModel.swift */; };
+		DEA2DB952135E33A00050E20 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE209CEB20F009210042AC87 /* DesignableButton.swift */; };
+		DEA2DB962135E33A00050E20 /* RegistrerUserEmailAndPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CB720ED4EE4009D30E8 /* RegistrerUserEmailAndPasswordController.swift */; };
+		DEA2DB972135E33A00050E20 /* NewGuaranteedTableListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C8907210C21E800696239 /* NewGuaranteedTableListViewModel.swift */; };
+		DEA2DB982135E33A00050E20 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B13DE20F163DA00870BE9 /* NotificationCell.swift */; };
+		DEA2DB992135E33A00050E20 /* InfoCardShopping.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8255682102C82A00582D20 /* InfoCardShopping.swift */; };
+		DEA2DB9A2135E33A00050E20 /* SelectMyCouponListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C8911210C267A00696239 /* SelectMyCouponListViewModel.swift */; };
+		DEA2DB9B2135E33A00050E20 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBF06E72101941800ABC3C2 /* CreditCard.swift */; };
+		DEA2DB9C2135E33A00050E20 /* ShoppingCartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4F5210BA99000F8FFEF /* ShoppingCartViewModel.swift */; };
+		DEA2DB9D2135E33A00050E20 /* EventCommentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4C7210AE84D00F8FFEF /* EventCommentsModel.swift */; };
+		DEA2DB9E2135E33A00050E20 /* InfoCardShoppingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8255612102BFE200582D20 /* InfoCardShoppingController.swift */; };
+		DEA2DB9F2135E33A00050E20 /* NewEventContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B5E342119606200886E0F /* NewEventContactController.swift */; };
+		DEA2DBA02135E33A00050E20 /* ProcutsEventCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C49F720F70B89009C5F39 /* ProcutsEventCollection.swift */; };
+		DEA2DBA12135E33A00050E20 /* ProfileEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF926F220F5244500621ED0 /* ProfileEventViewModel.swift */; };
+		DEA2DBA22135E33A00050E20 /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D3297210A77C4001F7CD2 /* Themes.swift */; };
+		DEA2DBA32135E33A00050E20 /* HelpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4E3210AF55700F8FFEF /* HelpModel.swift */; };
+		DEA2DBA42135E33A00050E20 /* LayoutPlacesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE39885D2106E62900590BF1 /* LayoutPlacesController.swift */; };
+		DEA2DBA52135E33A00050E20 /* InfoEvenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8025320EEF41900ABAFEF /* InfoEvenController.swift */; };
+		DEA2DBA62135E33A00050E20 /* InfoPeoductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC50B210BC0F100F8FFEF /* InfoPeoductListViewModel.swift */; };
+		DEA2DBA72135E33A00050E20 /* NewEventServicesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B5E2E2119509000886E0F /* NewEventServicesController.swift */; };
+		DEA2DBA82135E33A00050E20 /* ProfileUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4BD210AD99F00F8FFEF /* ProfileUserViewModel.swift */; };
+		DEA2DBA92135E33A00050E20 /* ProfileUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD373D20EEBB770074AB19 /* ProfileUserController.swift */; };
+		DEA2DBAA2135E33A00050E20 /* EventPromotionsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4D5210AF04E00F8FFEF /* EventPromotionsListViewModel.swift */; };
+		DEA2DBAB2135E33A00050E20 /* RegisterUserBuyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CAE20ED2A6C009D30E8 /* RegisterUserBuyController.swift */; };
+		DEA2DBAC2135E33A00050E20 /* ProfileEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF926F820F5247900621ED0 /* ProfileEventCell.swift */; };
+		DEA2DBAD2135E33A00050E20 /* HelpListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4E7210AF56F00F8FFEF /* HelpListViewModel.swift */; };
+		DEA2DBAE2135E33A00050E20 /* EventProductsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4DD210AF2F800F8FFEF /* EventProductsListViewModel.swift */; };
+		DEA2DBAF2135E33A00050E20 /* EventCouponsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4CF210AED5E00F8FFEF /* EventCouponsListViewModel.swift */; };
+		DEA2DBB02135E33A00050E20 /* NewEventHoursController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B5E362119607200886E0F /* NewEventHoursController.swift */; };
+		DEA2DBB12135E33A00050E20 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFF2020FDC76600C9B7C8 /* SettingsController.swift */; };
+		DEA2DBB22135E33A00050E20 /* MyCouponsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4EF210BA5ED00F8FFEF /* MyCouponsViewModel.swift */; };
+		DEA2DBB32135E33A00050E20 /* Coupons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECFD76520FEDEBC003812DD /* Coupons.swift */; };
+		DEA2DBB42135E33A00050E20 /* EventCommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4C5210AE84400F8FFEF /* EventCommentsViewModel.swift */; };
+		DEA2DBB52135E33A00050E20 /* RegisterUserMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CAC20ED2A53009D30E8 /* RegisterUserMenuController.swift */; };
+		DEA2DBB62135E33A00050E20 /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD374320EEBBC70074AB19 /* EventController.swift */; };
+		DEA2DBB72135E33A00050E20 /* ProfileEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF926EF20F5242D00621ED0 /* ProfileEventModel.swift */; };
+		DEA2DBB82135E33A00050E20 /* InfoPeoductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC50F210BC10600F8FFEF /* InfoPeoductModel.swift */; };
+		DEA2DBB92135E33A00050E20 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE724C8920F18C4C002504C6 /* Event.swift */; };
+		DEA2DBBA2135E33A00050E20 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD374020EEBBA60074AB19 /* MapController.swift */; };
+		DEA2DBBB2135E33A00050E20 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4403D320E9FE61002606C4 /* LoginController.swift */; };
+		DEA2DBBC2135E33A00050E20 /* RegisterUserNumberPlacesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CA820ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift */; };
+		DEA2DBBD2135E33A00050E20 /* NewGuaranteedTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C890B210C229B00696239 /* NewGuaranteedTableViewModel.swift */; };
+		DEA2DBBE2135E33A00050E20 /* GuaranteedTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F6853210564A200898DF0 /* GuaranteedTableController.swift */; };
+		DEA2DBBF2135E33A00050E20 /* InfoCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE82555A2102AD7600582D20 /* InfoCardController.swift */; };
+		DEA2DBC02135E33A00050E20 /* SelectMyCouponController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDD3E8321096AFE00C10EFA /* SelectMyCouponController.swift */; };
+		DEA2DBC12135E33A00050E20 /* PromotionsEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C49FA20F724CD009C5F39 /* PromotionsEventCell.swift */; };
+		DEA2DBC22135E33A00050E20 /* NewEventMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B5E262119410E00886E0F /* NewEventMenuController.swift */; };
+		DEA2DBC32135E33A00050E20 /* ProfileEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF926F620F5246200621ED0 /* ProfileEvent.swift */; };
+		DEA2DBC42135E33A00050E20 /* HelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFF1C20FDC72400C9B7C8 /* HelpController.swift */; };
+		DEA2DBC52135E33A00050E20 /* NewEventCategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B5E2A21194FD000886E0F /* NewEventCategoriesController.swift */; };
+		DEA2DBC62135E33A00050E20 /* ProfileEventInformationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F1D2120F5EBB100503134 /* ProfileEventInformationController.swift */; };
+		DEA2DBC72135E33A00050E20 /* EventCouponsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4CB210AED4800F8FFEF /* EventCouponsModel.swift */; };
+		DEA2DBC82135E33A00050E20 /* EventInformationContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53B01B210C3E98004B3383 /* EventInformationContactController.swift */; };
+		DEA2DBC92135E33A00050E20 /* GuaranteedTableListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C8901210C19B900696239 /* GuaranteedTableListViewModel.swift */; };
+		DEA2DBCA2135E33A00050E20 /* RegisterUserAnswersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CB020ED2A91009D30E8 /* RegisterUserAnswersController.swift */; };
+		DEA2DBCB2135E33A00050E20 /* HelpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4E5210AF56200F8FFEF /* HelpViewModel.swift */; };
+		DEA2DBCC2135E33A00050E20 /* NewGuaranteedTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1B50321067E5C003F5523 /* NewGuaranteedTableCell.swift */; };
+		DEA2DBCD2135E33A00050E20 /* MyCreditsCardsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4FD210BAD9E00F8FFEF /* MyCreditsCardsListViewModel.swift */; };
+		DEA2DBCE2135E33A00050E20 /* ProfileEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0FBA1820F2DF2600921DEC /* ProfileEventController.swift */; };
+		DEA2DBCF2135E33A00050E20 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B13D720F1627D00870BE9 /* NotificationModel.swift */; };
+		DEA2DBD02135E33A00050E20 /* ProfileEventCouponsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F1D2C20F5EC2E00503134 /* ProfileEventCouponsController.swift */; };
+		DEA2DBD12135E33A00050E20 /* MyCreditsCardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4FF210BADB700F8FFEF /* MyCreditsCardsViewModel.swift */; };
+		DEA2DBD22135E33A00050E20 /* NewGuaranteedTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1B50021067CD4003F5523 /* NewGuaranteedTableController.swift */; };
+		DEA2DBD32135E33A00050E20 /* MyEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDB8E2F20FC79FC001E90EA /* MyEventController.swift */; };
+		DEA2DBD42135E33A00050E20 /* MyCouponsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4ED210BA5DC00F8FFEF /* MyCouponsListViewModel.swift */; };
+		DEA2DBD52135E33A00050E20 /* NewEventAddressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDB8E3320FC7B2B001E90EA /* NewEventAddressController.swift */; };
+		DEA2DBD62135E33A00050E20 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B13DC20F1630B00870BE9 /* Notification.swift */; };
+		DEA2DBD72135E33A00050E20 /* ProfileEventProductsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F1D2820F5EC1400503134 /* ProfileEventProductsController.swift */; };
+		DEA2DBD82135E33A00050E20 /* HelpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE664AF2210011080011E949 /* HelpCell.swift */; };
+		DEA2DBD92135E33A00050E20 /* ShoppingCartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB1CF920FF01AD00436CC1 /* ShoppingCartController.swift */; };
+		DEA2DBDA2135E33A00050E20 /* EventInformationAddressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53B019210C3E76004B3383 /* EventInformationAddressController.swift */; };
+		DEA2DBDB2135E33A00050E20 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE209CED20F009F60042AC87 /* DesignableTextField.swift */; };
+		DEA2DBDC2135E33A00050E20 /* ProfileEventProductsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C49F520F6FC42009C5F39 /* ProfileEventProductsCell.swift */; };
+		DEA2DBDD2135E33A00050E20 /* InfoPeoduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4E87E2103EFD000B67A00 /* InfoPeoduct.swift */; };
+		DEA2DBDE2135E33A00050E20 /* GuaranteedTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C88FF210C198F00696239 /* GuaranteedTableModel.swift */; };
+		DEA2DBDF2135E33A00050E20 /* NumOfPersonTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1B4FC21067C80003F5523 /* NumOfPersonTableController.swift */; };
+		DEA2DBE02135E33A00050E20 /* SelectMyCouponModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C890F210C266E00696239 /* SelectMyCouponModel.swift */; };
+		DEA2DBE12135E33A00050E20 /* EventCommentsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4C3210AE83900F8FFEF /* EventCommentsListViewModel.swift */; };
+		DEA2DBE22135E33A00050E20 /* MyCouponsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECFD76220FEDC1B003812DD /* MyCouponsController.swift */; };
+		DEA2DBE32135E33A00050E20 /* EventPromotionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4D3210AF03700F8FFEF /* EventPromotionsModel.swift */; };
+		DEA2DBE42135E33A00050E20 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B13D920F1629800870BE9 /* NotificationViewModel.swift */; };
+		DEA2DBE52135E33A00050E20 /* EventPromotionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4D7210AF06A00F8FFEF /* EventPromotionsViewModel.swift */; };
+		DEA2DBE62135E33A00050E20 /* PromotionsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C49FC20F724DB009C5F39 /* PromotionsEvent.swift */; };
+		DEA2DBE72135E33A00050E20 /* ProfileEventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF926F420F5244C00621ED0 /* ProfileEventListViewModel.swift */; };
+		DEA2DBE82135E33A00050E20 /* Shopping.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE39EC2F21084C6D00670676 /* Shopping.swift */; };
+		DEA2DBE92135E33A00050E20 /* InvitationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD374820EED2750074AB19 /* InvitationCard.swift */; };
+		DEA2DBEA2135E33A00050E20 /* ProductsEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C49FE20F724F1009C5F39 /* ProductsEventModel.swift */; };
+		DEA2DBEB2135E33A00050E20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4403D120E9FE61002606C4 /* AppDelegate.swift */; };
+		DEA2DBEC2135E33A00050E20 /* GuaranteedTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1B50521067E71003F5523 /* GuaranteedTable.swift */; };
+		DEA2DBED2135E33A00050E20 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE724C8B20F18C5B002504C6 /* EventCell.swift */; };
+		DEA2DBEE2135E33A00050E20 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8255652102C7FD00582D20 /* Products.swift */; };
+		DEA2DBEF2135E33A00050E20 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD374620EEBBEA0074AB19 /* NotificationController.swift */; };
+		DEA2DBF02135E33A00050E20 /* MyCreditsCardsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4FB210BAD9000F8FFEF /* MyCreditsCardsModel.swift */; };
+		DEA2DBF12135E33A00050E20 /* EventCommentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1780FF2102FDCD005105F2 /* EventCommentsCell.swift */; };
+		DEA2DBF22135E33A00050E20 /* InfoCardShoppingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC503210BB1F200F8FFEF /* InfoCardShoppingModel.swift */; };
+		DEA2DBF32135E33A00050E20 /* PrivacyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFF1020FDC66700C9B7C8 /* PrivacyController.swift */; };
+		DEA2DBF42135E33A00050E20 /* InfoPeoductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4E87B2103EF5100B67A00 /* InfoPeoductController.swift */; };
+		DEA2DBF52135E33A00050E20 /* EventCouponsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4CD210AED5300F8FFEF /* EventCouponsViewModel.swift */; };
+		DEA2DBF62135E33A00050E20 /* ProfileEventCommentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F1D2E20F5EC3A00503134 /* ProfileEventCommentsController.swift */; };
+		DEA2DBF72135E33A00050E20 /* NotificationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B13E020F1666400870BE9 /* NotificationListViewModel.swift */; };
+		DEA2DBF82135E33A00050E20 /* MyCreditsCardsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBF06E42101803900ABC3C2 /* MyCreditsCardsCell.swift */; };
+		DEA2DBF92135E33A00050E20 /* InfoCouponsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9A20562104610F00372BFA /* InfoCouponsController.swift */; };
+		DEA2DBFA2135E33A00050E20 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3E0C3A2105817600F066F9 /* CustomSegmentedControl.swift */; };
+		DEA2DBFB2135E33A00050E20 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFF1820FDC6EB00C9B7C8 /* AboutController.swift */; };
+		DEA2DBFC2135E33A00050E20 /* ProductsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F1D3820F6DE1F00503134 /* ProductsEvent.swift */; };
+		DEA2DBFD2135E33A00050E20 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1781012102FDD9005105F2 /* Comments.swift */; };
+		DEA2DBFE2135E33A00050E20 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645CBF21097FB100999A95 /* UIViewControllerExt.swift */; };
+		DEA2DBFF2135E33A00050E20 /* InfoCardShoppingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC505210BB20100F8FFEF /* InfoCardShoppingListViewModel.swift */; };
+		DEA2DC002135E33A00050E20 /* MyCreditCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE664AF821004A460011E949 /* MyCreditCardController.swift */; };
+		DEA2DC012135E33A00050E20 /* EventInformationScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53B01D210C3EC1004B3383 /* EventInformationScheduleController.swift */; };
+		DEA2DC022135E33A00050E20 /* ProfileEventCouponsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C4A0120F72EB1009C5F39 /* ProfileEventCouponsCell.swift */; };
+		DEA2DC032135E33A00050E20 /* NewCommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE82555621028D2800582D20 /* NewCommentController.swift */; };
+		DEA2DC042135E33A00050E20 /* RegisterUserGuaranteedTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CB220ED2AD6009D30E8 /* RegisterUserGuaranteedTableController.swift */; };
+		DEA2DC052135E33A00050E20 /* ShoppingCartListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4F7210BA99C00F8FFEF /* ShoppingCartListViewModel.swift */; };
+		DEA2DC062135E33A00050E20 /* ShoppingCartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4F3210BA98400F8FFEF /* ShoppingCartModel.swift */; };
+		DEA2DC072135E33A00050E20 /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE664AF4210011180011E949 /* Help.swift */; };
+		DEA2DC082135E33A00050E20 /* RegisterUserAskDrinkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CB520ED2B08009D30E8 /* RegisterUserAskDrinkController.swift */; };
+		DEA2DC092135E33A00050E20 /* InfoPeoductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC50D210BC0FB00F8FFEF /* InfoPeoductViewModel.swift */; };
+		DEA2DC0A2135E33A00050E20 /* EventProductsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4DF210AF30100F8FFEF /* EventProductsModel.swift */; };
+		DEA2DC0B2135E33A00050E20 /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE724C9320F18CCA002504C6 /* EventListViewModel.swift */; };
+		DEA2DC0C2135E33A00050E20 /* MyCouponsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECFD76720FEDECD003812DD /* MyCouponsCell.swift */; };
+		DEA2DC0D2135E33A00050E20 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE724C8F20F18CA8002504C6 /* EventModel.swift */; };
+		DEA2DC0E2135E33A00050E20 /* GuaranteedTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C8903210C19CC00696239 /* GuaranteedTableViewModel.swift */; };
+		DEA2DC0F2135E33A00050E20 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9284672117A3A20037D1DC /* MapView.swift */; };
+		DEA2DC102135E33A00050E20 /* SelectMyCouponViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C8913210C268500696239 /* SelectMyCouponViewModel.swift */; };
+		DEA2DC112135E33A00050E20 /* NewGuaranteedTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C8909210C223100696239 /* NewGuaranteedTableModel.swift */; };
+		DEA2DC122135E33A00050E20 /* NewCreditCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBF06E221016DE900ABC3C2 /* NewCreditCardController.swift */; };
+		DEA2DC132135E33A00050E20 /* InfoPeoductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4E8802103F11B00B67A00 /* InfoPeoductCell.swift */; };
+		DEA2DC142135E33A00050E20 /* ReportProblemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFF1420FDC6AD00C9B7C8 /* ReportProblemsController.swift */; };
+		DEA2DC152135E33A00050E20 /* RegisterUserPromotionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CAA20ED2A45009D30E8 /* RegisterUserPromotionsController.swift */; };
+		DEA2DC172135E33A00050E20 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5EFF2220FDCBA900C9B7C8 /* MapKit.framework */; };
+		DEA2DC182135E33A00050E20 /* Pods_EventsIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5571407C61E5CD71AEF74A /* Pods_EventsIOS.framework */; };
+		DEA2DC1A2135E33A00050E20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4403DA20E9FE65002606C4 /* LaunchScreen.storyboard */; };
+		DEA2DC1B2135E33A00050E20 /* mapDay.json in Resources */ = {isa = PBXBuildFile; fileRef = DE025B21210FF198000C9AE3 /* mapDay.json */; };
+		DEA2DC1C2135E33A00050E20 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DECD373420EDEFB40074AB19 /* User.storyboard */; };
+		DEA2DC1D2135E33A00050E20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4403D820E9FE65002606C4 /* Assets.xcassets */; };
+		DEA2DC1E2135E33A00050E20 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE7D3299210A7AC8001F7CD2 /* Colors.xcassets */; };
+		DEA2DC1F2135E33A00050E20 /* mapNight.json in Resources */ = {isa = PBXBuildFile; fileRef = DE025B22210FF198000C9AE3 /* mapNight.json */; };
+		DEA2DC202135E33A00050E20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4403D520E9FE61002606C4 /* Main.storyboard */; };
+		DEA2DC212135E33A00050E20 /* Employees.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DECD373620EDF2E70074AB19 /* Employees.storyboard */; };
 		DEAB1CFA20FF01AD00436CC1 /* ShoppingCartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB1CF920FF01AD00436CC1 /* ShoppingCartController.swift */; };
 		DEAB3CA920ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CA820ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift */; };
 		DEAB3CAB20ED2A45009D30E8 /* RegisterUserPromotionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CAA20ED2A45009D30E8 /* RegisterUserPromotionsController.swift */; };
@@ -272,6 +421,8 @@
 		DE9CC50B210BC0F100F8FFEF /* InfoPeoductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPeoductListViewModel.swift; sourceTree = "<group>"; };
 		DE9CC50D210BC0FB00F8FFEF /* InfoPeoductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPeoductViewModel.swift; sourceTree = "<group>"; };
 		DE9CC50F210BC10600F8FFEF /* InfoPeoductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPeoductModel.swift; sourceTree = "<group>"; };
+		DEA2DC282135E33A00050E20 /* EventsIOS-Release.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EventsIOS-Release.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA2DC292135E33A00050E20 /* EventsIOS-Release-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EventsIOS-Release-Info.plist"; path = "/Users/luiscastillo/Apps/nativas/EventsIOS/EventsIOS-Release-Info.plist"; sourceTree = "<absolute>"; };
 		DEAB1CF920FF01AD00436CC1 /* ShoppingCartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartController.swift; sourceTree = "<group>"; };
 		DEAB3CA820ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserNumberPlacesController.swift; sourceTree = "<group>"; };
 		DEAB3CAA20ED2A45009D30E8 /* RegisterUserPromotionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserPromotionsController.swift; sourceTree = "<group>"; };
@@ -321,6 +472,15 @@
 			files = (
 				DE5EFF2320FDCBA900C9B7C8 /* MapKit.framework in Frameworks */,
 				75D0C115BA755D88F5C5F042 /* Pods_EventsIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA2DC162135E33A00050E20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA2DC172135E33A00050E20 /* MapKit.framework in Frameworks */,
+				DEA2DC182135E33A00050E20 /* Pods_EventsIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,6 +871,7 @@
 				DE4403CF20E9FE61002606C4 /* Products */,
 				E076AE8F5DB7C8CAED16B2CA /* Pods */,
 				78AF4017A18CD5F2F48BAA3E /* Frameworks */,
+				DEA2DC292135E33A00050E20 /* EventsIOS-Release-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -718,6 +879,7 @@
 			isa = PBXGroup;
 			children = (
 				DE4403CE20E9FE61002606C4 /* EventsIOS-Debug.app */,
+				DEA2DC282135E33A00050E20 /* EventsIOS-Release.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1792,6 +1954,27 @@
 			productReference = DE4403CE20E9FE61002606C4 /* EventsIOS-Debug.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DEA2DB882135E33A00050E20 /* EventsIOS-Release */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEA2DC252135E33A00050E20 /* Build configuration list for PBXNativeTarget "EventsIOS-Release" */;
+			buildPhases = (
+				DEA2DB892135E33A00050E20 /* [CP] Check Pods Manifest.lock */,
+				DEA2DB8A2135E33A00050E20 /* Sources */,
+				DEA2DC162135E33A00050E20 /* Frameworks */,
+				DEA2DC192135E33A00050E20 /* Resources */,
+				DEA2DC222135E33A00050E20 /* [CP] Embed Pods Frameworks */,
+				DEA2DC232135E33A00050E20 /* ShellScript */,
+				DEA2DC242135E33A00050E20 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EventsIOS-Release";
+			productName = EventsIOS;
+			productReference = DEA2DC282135E33A00050E20 /* EventsIOS-Release.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1826,6 +2009,7 @@
 			projectRoot = "";
 			targets = (
 				DE4403CD20E9FE61002606C4 /* EventsIOS-Debug */,
+				DEA2DB882135E33A00050E20 /* EventsIOS-Release */,
 			);
 		};
 /* End PBXProject section */
@@ -1843,6 +2027,21 @@
 				DE025B24210FF199000C9AE3 /* mapNight.json in Resources */,
 				DE4403D720E9FE61002606C4 /* Main.storyboard in Resources */,
 				DECD373720EDF2E70074AB19 /* Employees.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA2DC192135E33A00050E20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA2DC1A2135E33A00050E20 /* LaunchScreen.storyboard in Resources */,
+				DEA2DC1B2135E33A00050E20 /* mapDay.json in Resources */,
+				DEA2DC1C2135E33A00050E20 /* User.storyboard in Resources */,
+				DEA2DC1D2135E33A00050E20 /* Assets.xcassets in Resources */,
+				DEA2DC1E2135E33A00050E20 /* Colors.xcassets in Resources */,
+				DEA2DC1F2135E33A00050E20 /* mapNight.json in Resources */,
+				DEA2DC202135E33A00050E20 /* Main.storyboard in Resources */,
+				DEA2DC212135E33A00050E20 /* Employees.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1896,6 +2095,83 @@
 			showEnvVarsInLog = 0;
 		};
 		D81DF58DF36AC3388CFFC48F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EventsIOS/Pods-EventsIOS-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventsIOS/Pods-EventsIOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEA2DB892135E33A00050E20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EventsIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEA2DC222135E33A00050E20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EventsIOS/Pods-EventsIOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventsIOS/Pods-EventsIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEA2DC232135E33A00050E20 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 3f4041f8d213c2111e4fbaf426aad1a46f4953a5 1a1ef0818b6768980c9200d9c6262a365833e9aa604faa25fb676502c8f1daad";
+		};
+		DEA2DC242135E33A00050E20 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2072,6 +2348,152 @@
 				DEB4E8812103F11C00B67A00 /* InfoPeoductCell.swift in Sources */,
 				DE5EFF1520FDC6AD00C9B7C8 /* ReportProblemsController.swift in Sources */,
 				DEAB3CAB20ED2A45009D30E8 /* RegisterUserPromotionsController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA2DB8A2135E33A00050E20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA2DB8B2135E33A00050E20 /* DesignableGradient.swift in Sources */,
+				DEA2DB8C2135E33A00050E20 /* DesignableImage.swift in Sources */,
+				DEA2DB8D2135E33A00050E20 /* ProfileUserListViewModel.swift in Sources */,
+				DEA2DB8E2135E33A00050E20 /* ProfileEventPromotionsController.swift in Sources */,
+				DEA2DB8F2135E33A00050E20 /* InfoCardShoppingViewModel.swift in Sources */,
+				DEA2DB902135E33A00050E20 /* ProfileUserModel.swift in Sources */,
+				DEA2DB912135E33A00050E20 /* ShoppingCartCell.swift in Sources */,
+				DEA2DB922135E33A00050E20 /* MyCouponsModel.swift in Sources */,
+				DEA2DB932135E33A00050E20 /* EventViewModel.swift in Sources */,
+				DEA2DB942135E33A00050E20 /* EventProductsViewModel.swift in Sources */,
+				DEA2DB952135E33A00050E20 /* DesignableButton.swift in Sources */,
+				DEA2DB962135E33A00050E20 /* RegistrerUserEmailAndPasswordController.swift in Sources */,
+				DEA2DB972135E33A00050E20 /* NewGuaranteedTableListViewModel.swift in Sources */,
+				DEA2DB982135E33A00050E20 /* NotificationCell.swift in Sources */,
+				DEA2DB992135E33A00050E20 /* InfoCardShopping.swift in Sources */,
+				DEA2DB9A2135E33A00050E20 /* SelectMyCouponListViewModel.swift in Sources */,
+				DEA2DB9B2135E33A00050E20 /* CreditCard.swift in Sources */,
+				DEA2DB9C2135E33A00050E20 /* ShoppingCartViewModel.swift in Sources */,
+				DEA2DB9D2135E33A00050E20 /* EventCommentsModel.swift in Sources */,
+				DEA2DB9E2135E33A00050E20 /* InfoCardShoppingController.swift in Sources */,
+				DEA2DB9F2135E33A00050E20 /* NewEventContactController.swift in Sources */,
+				DEA2DBA02135E33A00050E20 /* ProcutsEventCollection.swift in Sources */,
+				DEA2DBA12135E33A00050E20 /* ProfileEventViewModel.swift in Sources */,
+				DEA2DBA22135E33A00050E20 /* Themes.swift in Sources */,
+				DEA2DBA32135E33A00050E20 /* HelpModel.swift in Sources */,
+				DEA2DBA42135E33A00050E20 /* LayoutPlacesController.swift in Sources */,
+				DEA2DBA52135E33A00050E20 /* InfoEvenController.swift in Sources */,
+				DEA2DBA62135E33A00050E20 /* InfoPeoductListViewModel.swift in Sources */,
+				DEA2DBA72135E33A00050E20 /* NewEventServicesController.swift in Sources */,
+				DEA2DBA82135E33A00050E20 /* ProfileUserViewModel.swift in Sources */,
+				DEA2DBA92135E33A00050E20 /* ProfileUserController.swift in Sources */,
+				DEA2DBAA2135E33A00050E20 /* EventPromotionsListViewModel.swift in Sources */,
+				DEA2DBAB2135E33A00050E20 /* RegisterUserBuyController.swift in Sources */,
+				DEA2DBAC2135E33A00050E20 /* ProfileEventCell.swift in Sources */,
+				DEA2DBAD2135E33A00050E20 /* HelpListViewModel.swift in Sources */,
+				DEA2DBAE2135E33A00050E20 /* EventProductsListViewModel.swift in Sources */,
+				DEA2DBAF2135E33A00050E20 /* EventCouponsListViewModel.swift in Sources */,
+				DEA2DBB02135E33A00050E20 /* NewEventHoursController.swift in Sources */,
+				DEA2DBB12135E33A00050E20 /* SettingsController.swift in Sources */,
+				DEA2DBB22135E33A00050E20 /* MyCouponsViewModel.swift in Sources */,
+				DEA2DBB32135E33A00050E20 /* Coupons.swift in Sources */,
+				DEA2DBB42135E33A00050E20 /* EventCommentsViewModel.swift in Sources */,
+				DEA2DBB52135E33A00050E20 /* RegisterUserMenuController.swift in Sources */,
+				DEA2DBB62135E33A00050E20 /* EventController.swift in Sources */,
+				DEA2DBB72135E33A00050E20 /* ProfileEventModel.swift in Sources */,
+				DEA2DBB82135E33A00050E20 /* InfoPeoductModel.swift in Sources */,
+				DEA2DBB92135E33A00050E20 /* Event.swift in Sources */,
+				DEA2DBBA2135E33A00050E20 /* MapController.swift in Sources */,
+				DEA2DBBB2135E33A00050E20 /* LoginController.swift in Sources */,
+				DEA2DBBC2135E33A00050E20 /* RegisterUserNumberPlacesController.swift in Sources */,
+				DEA2DBBD2135E33A00050E20 /* NewGuaranteedTableViewModel.swift in Sources */,
+				DEA2DBBE2135E33A00050E20 /* GuaranteedTableController.swift in Sources */,
+				DEA2DBBF2135E33A00050E20 /* InfoCardController.swift in Sources */,
+				DEA2DBC02135E33A00050E20 /* SelectMyCouponController.swift in Sources */,
+				DEA2DBC12135E33A00050E20 /* PromotionsEventCell.swift in Sources */,
+				DEA2DBC22135E33A00050E20 /* NewEventMenuController.swift in Sources */,
+				DEA2DBC32135E33A00050E20 /* ProfileEvent.swift in Sources */,
+				DEA2DBC42135E33A00050E20 /* HelpController.swift in Sources */,
+				DEA2DBC52135E33A00050E20 /* NewEventCategoriesController.swift in Sources */,
+				DEA2DBC62135E33A00050E20 /* ProfileEventInformationController.swift in Sources */,
+				DEA2DBC72135E33A00050E20 /* EventCouponsModel.swift in Sources */,
+				DEA2DBC82135E33A00050E20 /* EventInformationContactController.swift in Sources */,
+				DEA2DBC92135E33A00050E20 /* GuaranteedTableListViewModel.swift in Sources */,
+				DEA2DBCA2135E33A00050E20 /* RegisterUserAnswersController.swift in Sources */,
+				DEA2DBCB2135E33A00050E20 /* HelpViewModel.swift in Sources */,
+				DEA2DBCC2135E33A00050E20 /* NewGuaranteedTableCell.swift in Sources */,
+				DEA2DBCD2135E33A00050E20 /* MyCreditsCardsListViewModel.swift in Sources */,
+				DEA2DBCE2135E33A00050E20 /* ProfileEventController.swift in Sources */,
+				DEA2DBCF2135E33A00050E20 /* NotificationModel.swift in Sources */,
+				DEA2DBD02135E33A00050E20 /* ProfileEventCouponsController.swift in Sources */,
+				DEA2DBD12135E33A00050E20 /* MyCreditsCardsViewModel.swift in Sources */,
+				DEA2DBD22135E33A00050E20 /* NewGuaranteedTableController.swift in Sources */,
+				DEA2DBD32135E33A00050E20 /* MyEventController.swift in Sources */,
+				DEA2DBD42135E33A00050E20 /* MyCouponsListViewModel.swift in Sources */,
+				DEA2DBD52135E33A00050E20 /* NewEventAddressController.swift in Sources */,
+				DEA2DBD62135E33A00050E20 /* Notification.swift in Sources */,
+				DEA2DBD72135E33A00050E20 /* ProfileEventProductsController.swift in Sources */,
+				DEA2DBD82135E33A00050E20 /* HelpCell.swift in Sources */,
+				DEA2DBD92135E33A00050E20 /* ShoppingCartController.swift in Sources */,
+				DEA2DBDA2135E33A00050E20 /* EventInformationAddressController.swift in Sources */,
+				DEA2DBDB2135E33A00050E20 /* DesignableTextField.swift in Sources */,
+				DEA2DBDC2135E33A00050E20 /* ProfileEventProductsCell.swift in Sources */,
+				DEA2DBDD2135E33A00050E20 /* InfoPeoduct.swift in Sources */,
+				DEA2DBDE2135E33A00050E20 /* GuaranteedTableModel.swift in Sources */,
+				DEA2DBDF2135E33A00050E20 /* NumOfPersonTableController.swift in Sources */,
+				DEA2DBE02135E33A00050E20 /* SelectMyCouponModel.swift in Sources */,
+				DEA2DBE12135E33A00050E20 /* EventCommentsListViewModel.swift in Sources */,
+				DEA2DBE22135E33A00050E20 /* MyCouponsController.swift in Sources */,
+				DEA2DBE32135E33A00050E20 /* EventPromotionsModel.swift in Sources */,
+				DEA2DBE42135E33A00050E20 /* NotificationViewModel.swift in Sources */,
+				DEA2DBE52135E33A00050E20 /* EventPromotionsViewModel.swift in Sources */,
+				DEA2DBE62135E33A00050E20 /* PromotionsEvent.swift in Sources */,
+				DEA2DBE72135E33A00050E20 /* ProfileEventListViewModel.swift in Sources */,
+				DEA2DBE82135E33A00050E20 /* Shopping.swift in Sources */,
+				DEA2DBE92135E33A00050E20 /* InvitationCard.swift in Sources */,
+				DEA2DBEA2135E33A00050E20 /* ProductsEventModel.swift in Sources */,
+				DEA2DBEB2135E33A00050E20 /* AppDelegate.swift in Sources */,
+				DEA2DBEC2135E33A00050E20 /* GuaranteedTable.swift in Sources */,
+				DEA2DBED2135E33A00050E20 /* EventCell.swift in Sources */,
+				DEA2DBEE2135E33A00050E20 /* Products.swift in Sources */,
+				DEA2DBEF2135E33A00050E20 /* NotificationController.swift in Sources */,
+				DEA2DBF02135E33A00050E20 /* MyCreditsCardsModel.swift in Sources */,
+				DEA2DBF12135E33A00050E20 /* EventCommentsCell.swift in Sources */,
+				DEA2DBF22135E33A00050E20 /* InfoCardShoppingModel.swift in Sources */,
+				DEA2DBF32135E33A00050E20 /* PrivacyController.swift in Sources */,
+				DEA2DBF42135E33A00050E20 /* InfoPeoductController.swift in Sources */,
+				DEA2DBF52135E33A00050E20 /* EventCouponsViewModel.swift in Sources */,
+				DEA2DBF62135E33A00050E20 /* ProfileEventCommentsController.swift in Sources */,
+				DEA2DBF72135E33A00050E20 /* NotificationListViewModel.swift in Sources */,
+				DEA2DBF82135E33A00050E20 /* MyCreditsCardsCell.swift in Sources */,
+				DEA2DBF92135E33A00050E20 /* InfoCouponsController.swift in Sources */,
+				DEA2DBFA2135E33A00050E20 /* CustomSegmentedControl.swift in Sources */,
+				DEA2DBFB2135E33A00050E20 /* AboutController.swift in Sources */,
+				DEA2DBFC2135E33A00050E20 /* ProductsEvent.swift in Sources */,
+				DEA2DBFD2135E33A00050E20 /* Comments.swift in Sources */,
+				DEA2DBFE2135E33A00050E20 /* UIViewControllerExt.swift in Sources */,
+				DEA2DBFF2135E33A00050E20 /* InfoCardShoppingListViewModel.swift in Sources */,
+				DEA2DC002135E33A00050E20 /* MyCreditCardController.swift in Sources */,
+				DEA2DC012135E33A00050E20 /* EventInformationScheduleController.swift in Sources */,
+				DEA2DC022135E33A00050E20 /* ProfileEventCouponsCell.swift in Sources */,
+				DEA2DC032135E33A00050E20 /* NewCommentController.swift in Sources */,
+				DEA2DC042135E33A00050E20 /* RegisterUserGuaranteedTableController.swift in Sources */,
+				DEA2DC052135E33A00050E20 /* ShoppingCartListViewModel.swift in Sources */,
+				DEA2DC062135E33A00050E20 /* ShoppingCartModel.swift in Sources */,
+				DEA2DC072135E33A00050E20 /* Help.swift in Sources */,
+				DEA2DC082135E33A00050E20 /* RegisterUserAskDrinkController.swift in Sources */,
+				DEA2DC092135E33A00050E20 /* InfoPeoductViewModel.swift in Sources */,
+				DEA2DC0A2135E33A00050E20 /* EventProductsModel.swift in Sources */,
+				DEA2DC0B2135E33A00050E20 /* EventListViewModel.swift in Sources */,
+				DEA2DC0C2135E33A00050E20 /* MyCouponsCell.swift in Sources */,
+				DEA2DC0D2135E33A00050E20 /* EventModel.swift in Sources */,
+				DEA2DC0E2135E33A00050E20 /* GuaranteedTableViewModel.swift in Sources */,
+				DEA2DC0F2135E33A00050E20 /* MapView.swift in Sources */,
+				DEA2DC102135E33A00050E20 /* SelectMyCouponViewModel.swift in Sources */,
+				DEA2DC112135E33A00050E20 /* NewGuaranteedTableModel.swift in Sources */,
+				DEA2DC122135E33A00050E20 /* NewCreditCardController.swift in Sources */,
+				DEA2DC132135E33A00050E20 /* InfoPeoductCell.swift in Sources */,
+				DEA2DC142135E33A00050E20 /* ReportProblemsController.swift in Sources */,
+				DEA2DC152135E33A00050E20 /* RegisterUserPromotionsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2252,6 +2674,47 @@
 			};
 			name = Release;
 		};
+		DEA2DC262135E33A00050E20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 799E4A944D0D180A48E5833E /* Pods-EventsIOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Release";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Y99AD5GLT5;
+				INFOPLIST_FILE = "$(SRCROOT)/EventsIOS-Release-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mx.com.iwebsapp.EventIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DEA2DC272135E33A00050E20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 761F37E3749DD414C245D3D8 /* Pods-EventsIOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Release";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y99AD5GLT5;
+				INFOPLIST_FILE = "$(SRCROOT)/EventsIOS-Release-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mx.com.iwebsapp.EventIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2269,6 +2732,15 @@
 			buildConfigurations = (
 				DE4403E120E9FE65002606C4 /* Debug */,
 				DE4403E220E9FE65002606C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEA2DC252135E33A00050E20 /* Build configuration list for PBXNativeTarget "EventsIOS-Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEA2DC262135E33A00050E20 /* Debug */,
+				DEA2DC272135E33A00050E20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
