@@ -21,6 +21,11 @@
 		DE1F1D3920F6DE1F00503134 /* ProductsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F1D3820F6DE1F00503134 /* ProductsEvent.swift */; };
 		DE209CEC20F009210042AC87 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE209CEB20F009210042AC87 /* DesignableButton.swift */; };
 		DE209CEE20F009F60042AC87 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE209CED20F009F60042AC87 /* DesignableTextField.swift */; };
+		DE20A7982136773900B2B4DA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE20A7972136773900B2B4DA /* LoginViewModel.swift */; };
+		DE20A79B213677D700B2B4DA /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE20A79A213677D700B2B4DA /* BindingTextField.swift */; };
+		DE20A79E21367E4D00B2B4DA /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE20A79D21367E4D00B2B4DA /* LoginModel.swift */; };
+		DE20A7A0213743F700B2B4DA /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE20A79F213743F700B2B4DA /* Alerts.swift */; };
+		DE20A7A22137440A00B2B4DA /* webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE20A7A12137440A00B2B4DA /* webservice.swift */; };
 		DE2B13D820F1627D00870BE9 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B13D720F1627D00870BE9 /* NotificationModel.swift */; };
 		DE2B13DA20F1629800870BE9 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B13D920F1629800870BE9 /* NotificationViewModel.swift */; };
 		DE2B13DD20F1630B00870BE9 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B13DC20F1630B00870BE9 /* Notification.swift */; };
@@ -324,6 +329,11 @@
 		DE1F1D3820F6DE1F00503134 /* ProductsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsEvent.swift; sourceTree = "<group>"; };
 		DE209CEB20F009210042AC87 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 		DE209CED20F009F60042AC87 /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		DE20A7972136773900B2B4DA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		DE20A79A213677D700B2B4DA /* BindingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTextField.swift; sourceTree = "<group>"; };
+		DE20A79D21367E4D00B2B4DA /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		DE20A79F213743F700B2B4DA /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		DE20A7A12137440A00B2B4DA /* webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webservice.swift; sourceTree = "<group>"; };
 		DE2B13D720F1627D00870BE9 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
 		DE2B13D920F1629800870BE9 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 		DE2B13DC20F1630B00870BE9 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
@@ -673,6 +683,30 @@
 				DECD373D20EEBB770074AB19 /* ProfileUserController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE20A796213676FD00B2B4DA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE20A7972136773900B2B4DA /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE20A799213677BC00B2B4DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE20A79A213677D700B2B4DA /* BindingTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE20A79C21367B4700B2B4DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE20A79D21367E4D00B2B4DA /* LoginModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DE2B13C620F1617400870BE9 /* UserPromotions */ = {
@@ -1560,6 +1594,9 @@
 		DEAB3CA720ED29C1009D30E8 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				DE20A79C21367B4700B2B4DA /* Model */,
+				DE20A799213677BC00B2B4DA /* View */,
+				DE20A796213676FD00B2B4DA /* ViewModel */,
 				DECD373A20EEBA070074AB19 /* Controller */,
 			);
 			path = Login;
@@ -1804,6 +1841,8 @@
 				DE645CBF21097FB100999A95 /* UIViewControllerExt.swift */,
 				DE7D3297210A77C4001F7CD2 /* Themes.swift */,
 				DE9284672117A3A20037D1DC /* MapView.swift */,
+				DE20A79F213743F700B2B4DA /* Alerts.swift */,
+				DE20A7A12137440A00B2B4DA /* webservice.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -2257,6 +2296,7 @@
 				DE9CC510210BC10600F8FFEF /* InfoPeoductModel.swift in Sources */,
 				DE724C8A20F18C4C002504C6 /* Event.swift in Sources */,
 				DECD374120EEBBA60074AB19 /* MapController.swift in Sources */,
+				DE20A7982136773900B2B4DA /* LoginViewModel.swift in Sources */,
 				DE4403D420E9FE61002606C4 /* LoginController.swift in Sources */,
 				DEAB3CA920ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift in Sources */,
 				DE8C890C210C229B00696239 /* NewGuaranteedTableViewModel.swift in Sources */,
@@ -2294,7 +2334,9 @@
 				DEB4E87F2103EFD000B67A00 /* InfoPeoduct.swift in Sources */,
 				DE8C8900210C198F00696239 /* GuaranteedTableModel.swift in Sources */,
 				DEC1B4FD21067C80003F5523 /* NumOfPersonTableController.swift in Sources */,
+				DE20A7A0213743F700B2B4DA /* Alerts.swift in Sources */,
 				DE8C8910210C266E00696239 /* SelectMyCouponModel.swift in Sources */,
+				DE20A79E21367E4D00B2B4DA /* LoginModel.swift in Sources */,
 				DE9CC4C4210AE83900F8FFEF /* EventCommentsListViewModel.swift in Sources */,
 				DECFD76320FEDC1B003812DD /* MyCouponsController.swift in Sources */,
 				DE9CC4D4210AF03700F8FFEF /* EventPromotionsModel.swift in Sources */,
@@ -2339,10 +2381,12 @@
 				DE9CC4E0210AF30100F8FFEF /* EventProductsModel.swift in Sources */,
 				DE724C9420F18CCA002504C6 /* EventListViewModel.swift in Sources */,
 				DECFD76820FEDECD003812DD /* MyCouponsCell.swift in Sources */,
+				DE20A79B213677D700B2B4DA /* BindingTextField.swift in Sources */,
 				DE724C9020F18CA8002504C6 /* EventModel.swift in Sources */,
 				DE8C8904210C19CC00696239 /* GuaranteedTableViewModel.swift in Sources */,
 				DE9284682117A3A20037D1DC /* MapView.swift in Sources */,
 				DE8C8914210C268500696239 /* SelectMyCouponViewModel.swift in Sources */,
+				DE20A7A22137440A00B2B4DA /* webservice.swift in Sources */,
 				DE8C890A210C223100696239 /* NewGuaranteedTableModel.swift in Sources */,
 				DEBF06E321016DE900ABC3C2 /* NewCreditCardController.swift in Sources */,
 				DEB4E8812103F11C00B67A00 /* InfoPeoductCell.swift in Sources */,

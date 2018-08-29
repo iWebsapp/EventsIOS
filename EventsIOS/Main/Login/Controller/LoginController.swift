@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SwiftyJSON
+import SwiftKeychainWrapper
 
 class Caracteres {
     
@@ -112,14 +114,32 @@ class CaracteresModel {
 
 class LoginController: UIViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var txtEmail: UITextField!
-    @IBOutlet weak var txtPassword: UITextField!
+    private var loginViewModel: LoginViewModel!
+    private var loginModel: Webservice!
+    
+    @IBOutlet weak var txtEmail: BindingTextField! {
+        didSet {
+            txtEmail.bind {
+                self.loginViewModel.email = $0
+            }
+        }
+    }
+    @IBOutlet weak var txtPassword: BindingTextField! {
+        didSet {
+            txtPassword.bind {
+                self.loginViewModel.password = $0
+            }
+        }
+    }
+    
     @IBOutlet weak var listenerLogin: UIButton!
     @IBOutlet weak var background: UIImageView!
     private var caracteresModel: CaracteresModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginViewModel = LoginViewModel()
+        loginModel = Webservice()
         txtEmail.delegate = self
         txtPassword.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
@@ -141,6 +161,25 @@ class LoginController: UIViewController, UITextFieldDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func btnLogin(_ sender: DesignableButton) {
+        
+        let params = [
+            "email": "luis@mail.com",
+            "password": "jimyluis"
+        ]
+        self.loginModel.restApi(params: params, method: .POST, action: .login, complete: { resp in
+            let data = JSON(resp)
+            print( data )
+            if data["status"] == 200 {
+                let token = "\(data["token"])"
+                let setToken: Bool = KeychainWrapper.standard.set(token, forKey: "token")
+                if setToken {
+                    self.performSegue(withIdentifier: "goMainFromLogin", sender: self)
+                }
+            }
+        })
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

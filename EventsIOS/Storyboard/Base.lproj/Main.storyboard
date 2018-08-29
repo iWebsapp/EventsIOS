@@ -13,7 +13,7 @@
         <!--Login Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KX4-QA-qRZ">
                                 <rect key="frame" x="27" y="201" width="266" height="96"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WRH-u9-GeF" customClass="DesignableTextField" customModule="EventsIOS" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WRH-u9-GeF" customClass="BindingTextField" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="266" height="44"/>
                                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
@@ -36,7 +36,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Zu-bW-ndV" customClass="DesignableTextField" customModule="EventsIOS" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Zu-bW-ndV" customClass="BindingTextField" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="52" width="266" height="44"/>
                                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
@@ -58,7 +58,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QPo-3W-cBV">
                                 <rect key="frame" x="27" y="305" width="266" height="40"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hf-gA-7Ci" customClass="DesignableButton" customModule="EventsIOS" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hf-gA-7Ci" customClass="DesignableButton" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="40"/>
                                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Entrar"/>
@@ -68,10 +68,10 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="WK3-bg-a3c" kind="show" id="0IA-1f-3Le"/>
+                                            <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E9E-LF-nYc"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6s-cZ-64l" customClass="DesignableButton" customModule="EventsIOS" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6s-cZ-64l" customClass="DesignableButton" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="138" y="0.0" width="128" height="40"/>
                                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Crear cuenta"/>
@@ -97,7 +97,7 @@
                                     <constraint firstAttribute="height" constant="127" id="o5Y-iR-TCr"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNb-iu-BAe" customClass="DesignableButton" customModule="EventsIOS" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNb-iu-BAe" customClass="DesignableButton" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="27" y="353" width="266" height="40"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -143,6 +143,7 @@
                         <outlet property="listenerLogin" destination="3hf-gA-7Ci" id="xrg-Ex-3iw"/>
                         <outlet property="txtEmail" destination="WRH-u9-GeF" id="x4Z-NZ-3PV"/>
                         <outlet property="txtPassword" destination="5Zu-bW-ndV" id="jmJ-aD-BgI"/>
+                        <segue destination="WK3-bg-a3c" kind="show" identifier="goMainFromLogin" id="bQU-dC-muh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -160,7 +161,7 @@
         <!--Register User Number Places Controller-->
         <scene sceneID="YEy-yE-HCG">
             <objects>
-                <viewController id="VBC-2s-Sr5" customClass="RegisterUserNumberPlacesController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VBC-2s-Sr5" customClass="RegisterUserNumberPlacesController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cnx-4u-k54">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -196,7 +197,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Numero de locales" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qxB-rg-1Sz" customClass="DesignableTextField" customModule="EventsIOS" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Numero de locales" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qxB-rg-1Sz" customClass="DesignableTextField" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="27" y="248.5" width="266" height="44"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -212,7 +213,7 @@
                                     <constraint firstAttribute="height" constant="127" id="IRe-r1-RWg"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZC-OC-Yhf" customClass="DesignableButton" customModule="EventsIOS" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZC-OC-Yhf" customClass="DesignableButton" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="27" y="300" width="130" height="46"/>
                                 <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -275,7 +276,7 @@
         <!--Register User Promotions Controller-->
         <scene sceneID="WlA-FP-rHA">
             <objects>
-                <viewController id="nre-1w-rhx" customClass="RegisterUserPromotionsController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nre-1w-rhx" customClass="RegisterUserPromotionsController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6JA-b3-s9L">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -340,7 +341,7 @@
                                     <constraint firstAttribute="width" constant="190" id="i6w-uH-KJr"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnD-QR-FHr" customClass="DesignableButton" customModule="EventsIOS" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnD-QR-FHr" customClass="DesignableButton" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="97" y="502" width="126" height="46"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -403,7 +404,7 @@
         <!--Register User Menu Controller-->
         <scene sceneID="YSM-fX-hJQ">
             <objects>
-                <viewController id="Wbn-Tg-Nv8" customClass="RegisterUserMenuController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Wbn-Tg-Nv8" customClass="RegisterUserMenuController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eIY-mQ-eL7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -467,7 +468,7 @@
                                     <constraint firstAttribute="height" constant="70" id="da1-FS-KZa"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MP5-pT-0RG" customClass="DesignableButton" customModule="EventsIOS" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MP5-pT-0RG" customClass="DesignableButton" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="97" y="502" width="126" height="46"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -533,7 +534,7 @@
         <!--Register User Buy Controller-->
         <scene sceneID="pQM-sp-i4n">
             <objects>
-                <viewController id="vcW-1S-PlH" customClass="RegisterUserBuyController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vcW-1S-PlH" customClass="RegisterUserBuyController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="38e-jf-3Ns">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -597,7 +598,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1H-cf-68j" customClass="DesignableButton" customModule="EventsIOS" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1H-cf-68j" customClass="DesignableButton" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="97" y="502" width="126" height="46"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -665,7 +666,7 @@
         <!--Register User Answers Controller-->
         <scene sceneID="61q-Gi-W1m">
             <objects>
-                <viewController storyboardIdentifier="RegisterUserAnswers" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lCV-c2-QmF" customClass="RegisterUserAnswersController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterUserAnswers" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lCV-c2-QmF" customClass="RegisterUserAnswersController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GCz-Y6-DoQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -674,7 +675,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dwu-eu-8VS" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dwu-eu-8VS" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="50" y="70" width="220" height="218"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xul-AN-Gh9">
@@ -767,7 +768,7 @@
         <!--Registrer User Email And Password Controller-->
         <scene sceneID="tgj-Nn-BNO">
             <objects>
-                <viewController id="CQH-DN-hcE" customClass="RegistrerUserEmailAndPasswordController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CQH-DN-hcE" customClass="RegistrerUserEmailAndPasswordController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Zv-iH-RgK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -778,7 +779,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2cK-L4-Omo">
                                 <rect key="frame" x="27" y="201" width="266" height="96"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pSM-62-KQj" customClass="DesignableTextField" customModule="EventsIOS" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pSM-62-KQj" customClass="DesignableTextField" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="266" height="44"/>
                                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
@@ -790,7 +791,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ACA-4u-ggn" customClass="DesignableTextField" customModule="EventsIOS" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ACA-4u-ggn" customClass="DesignableTextField" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="52" width="266" height="44"/>
                                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
@@ -829,7 +830,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5LT-cQ-Bkw">
                                 <rect key="frame" x="27" y="305" width="266" height="40"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHi-cC-sx7" customClass="DesignableButton" customModule="EventsIOS" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHi-cC-sx7" customClass="DesignableButton" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Crear cuenta"/>
@@ -887,7 +888,7 @@
         <!--Register User Guaranteed Table Controller-->
         <scene sceneID="jHE-IK-wKN">
             <objects>
-                <viewController id="nrX-cC-t8f" customClass="RegisterUserGuaranteedTableController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nrX-cC-t8f" customClass="RegisterUserGuaranteedTableController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nPL-54-5fC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -945,7 +946,7 @@
                                     <constraint firstAttribute="height" constant="70" id="Stg-Hx-jiW"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCG-22-f0j" customClass="DesignableButton" customModule="EventsIOS" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCG-22-f0j" customClass="DesignableButton" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="97" y="502" width="126" height="46"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -1019,7 +1020,7 @@
         <!--Register User Ask Drink Controller-->
         <scene sceneID="3wP-ge-lnz">
             <objects>
-                <viewController id="ozZ-iR-7zK" customClass="RegisterUserAskDrinkController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ozZ-iR-7zK" customClass="RegisterUserAskDrinkController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p2A-57-iZO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1083,7 +1084,7 @@
                                     <constraint firstAttribute="height" constant="70" id="fr8-d3-rCD"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CR-rn-1kj" customClass="DesignableButton" customModule="EventsIOS" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CR-rn-1kj" customClass="DesignableButton" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="97" y="502" width="126" height="46"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
