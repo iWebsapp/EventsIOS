@@ -166,12 +166,12 @@ class LoginController: UIViewController, UITextFieldDelegate {
     @IBAction func btnLogin(_ sender: DesignableButton) {
         
         let params = [
-            "email": "luis@mail.com",
-            "password": "jimyluis"
+            "email": self.loginViewModel.email!,
+            "password": self.loginViewModel.password!
         ]
         self.loginModel.restApi(params: params, method: .POST, action: .login, complete: { resp in
             let data = JSON(resp)
-            print( data )
+
             if data["status"] == 200 {
                 let token = "\(data["token"])"
                 let setToken: Bool = KeychainWrapper.standard.set(token, forKey: "token")
@@ -179,7 +179,28 @@ class LoginController: UIViewController, UITextFieldDelegate {
                     self.performSegue(withIdentifier: "goMainFromLogin", sender: self)
                 }
             }
+            else if data["status"] == 404 {
+                self.alertSimple(this: self, titileAlert: "Usuario no encontrado", bodyAlert: "Este usuario no existe en el sistema, intentalo con otro o crea tu cuenta", complete: { (resp) in
+                    //empty textfilds
+                })
+            }
+            else if data["status"] == 404 {
+                self.alertSimple(this: self, titileAlert: "Usuario inexistente", bodyAlert: "Este usuario no existe en el sistema", complete: { (resp) in
+                    //empty textfilds
+                })
+            }
+            else if data["status"] == 400 {
+                self.alertSimple(this: self, titileAlert: "Contraseña incorrecta", bodyAlert: "Este la contraseña no coincide con este usuario", complete: { (resp) in
+                    //empty textfilds
+                })
+            } else {
+                self.alertSimple(this: self, titileAlert: "Se ha producido un error", bodyAlert: "Intentalo mas tarde", complete: { (resp) in
+                    //empty textfilds
+                })
+            }
+
         })
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

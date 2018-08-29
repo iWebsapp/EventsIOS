@@ -10,12 +10,7 @@ import Foundation
 import SwiftyJSON
 import Alamofire
 
-enum Method {
-    case GET
-    case POST
-    case PUT
-    case DELETE
-}
+
 
 enum Path {
     case login
