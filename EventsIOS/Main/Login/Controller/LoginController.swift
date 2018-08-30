@@ -8,7 +8,6 @@
 
 import UIKit
 import SwiftyJSON
-import SwiftKeychainWrapper
 
 class Caracteres {
     
@@ -174,7 +173,7 @@ class LoginController: UIViewController, UITextFieldDelegate {
 
             if data["status"] == 200 {
                 let token = "\(data["token"])"
-                let setToken: Bool = KeychainWrapper.standard.set(token, forKey: "token")
+                let setToken: Bool = self.setToken(data: token)
                 if setToken {
                     self.performSegue(withIdentifier: "goMainFromLogin", sender: self)
                 }

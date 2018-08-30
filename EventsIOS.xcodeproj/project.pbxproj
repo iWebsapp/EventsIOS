@@ -290,6 +290,7 @@
 		DEC1B50121067CD4003F5523 /* NewGuaranteedTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1B50021067CD4003F5523 /* NewGuaranteedTableController.swift */; };
 		DEC1B50421067E5C003F5523 /* NewGuaranteedTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1B50321067E5C003F5523 /* NewGuaranteedTableCell.swift */; };
 		DEC1B50621067E71003F5523 /* GuaranteedTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1B50521067E71003F5523 /* GuaranteedTable.swift */; };
+		DEC463352137A467000B6D16 /* token.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC463342137A467000B6D16 /* token.swift */; };
 		DECD373520EDEFB40074AB19 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DECD373420EDEFB40074AB19 /* User.storyboard */; };
 		DECD373720EDF2E70074AB19 /* Employees.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DECD373620EDF2E70074AB19 /* Employees.storyboard */; };
 		DECD373E20EEBB770074AB19 /* ProfileUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD373D20EEBB770074AB19 /* ProfileUserController.swift */; };
@@ -454,6 +455,7 @@
 		DEC1B50021067CD4003F5523 /* NewGuaranteedTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGuaranteedTableController.swift; sourceTree = "<group>"; };
 		DEC1B50321067E5C003F5523 /* NewGuaranteedTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGuaranteedTableCell.swift; sourceTree = "<group>"; };
 		DEC1B50521067E71003F5523 /* GuaranteedTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuaranteedTable.swift; sourceTree = "<group>"; };
+		DEC463342137A467000B6D16 /* token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = token.swift; sourceTree = "<group>"; };
 		DECD373420EDEFB40074AB19 /* User.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
 		DECD373620EDF2E70074AB19 /* Employees.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Employees.storyboard; sourceTree = "<group>"; };
 		DECD373D20EEBB770074AB19 /* ProfileUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserController.swift; sourceTree = "<group>"; };
@@ -701,13 +703,6 @@
 				DE20A79A213677D700B2B4DA /* BindingTextField.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		DE20A79C21367B4700B2B4DA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		DE2B13C620F1617400870BE9 /* UserPromotions */ = {
@@ -1595,7 +1590,6 @@
 		DEAB3CA720ED29C1009D30E8 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				DE20A79C21367B4700B2B4DA /* Model */,
 				DE20A799213677BC00B2B4DA /* View */,
 				DE20A796213676FD00B2B4DA /* ViewModel */,
 				DECD373A20EEBA070074AB19 /* Controller */,
@@ -1846,6 +1840,7 @@
 				DE20A7A12137440A00B2B4DA /* Webservice.swift */,
 				DE20A7A321375B9200B2B4DA /* Method.swift */,
 				DE20A7A521375BB900B2B4DA /* Path.swift */,
+				DEC463342137A467000B6D16 /* token.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -2342,6 +2337,7 @@
 				DE8C8910210C266E00696239 /* SelectMyCouponModel.swift in Sources */,
 				DE9CC4C4210AE83900F8FFEF /* EventCommentsListViewModel.swift in Sources */,
 				DECFD76320FEDC1B003812DD /* MyCouponsController.swift in Sources */,
+				DEC463352137A467000B6D16 /* token.swift in Sources */,
 				DE9CC4D4210AF03700F8FFEF /* EventPromotionsModel.swift in Sources */,
 				DE2B13DA20F1629800870BE9 /* NotificationViewModel.swift in Sources */,
 				DE9CC4D8210AF06A00F8FFEF /* EventPromotionsViewModel.swift in Sources */,
