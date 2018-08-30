@@ -12,6 +12,7 @@ import SwiftKeychainWrapper
 extension UIViewController {
     
     func setToken( data:String ) ->Bool {
+        KeychainWrapper.standard.removeObject(forKey: "token")
         let token: Bool = KeychainWrapper.standard.set(data, forKey: "token")
         return token
     }

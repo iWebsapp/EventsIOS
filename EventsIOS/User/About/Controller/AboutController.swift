@@ -7,15 +7,20 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class AboutController: UIViewController {
 
     @IBOutlet weak var header: UIImageView!
     @IBOutlet weak var txtLabel: UITextView!
+    private var aboutModel: Webservice!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.aboutModel = Webservice()
+        DispatchQueue.main.async {
+            self.getAbout()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,6 +41,17 @@ class AboutController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
+    func getAbout(){
+        self.aboutModel.restApi(method: .GET, action: .abouts) { resp in
+            let data = JSON(resp)
+            if data["status"] == 200 {
+                let content:String = "\(data["data"][0]["content"])"
+                self.txtLabel.text = content
+            } else {
+                self.txtLabel.text = "No se ha encontrado información"
+            }
+        }
+    }
     /*
     // MARK: - Navigation
 

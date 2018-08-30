@@ -23,7 +23,7 @@
         <!--Carrito-->
         <scene sceneID="DyT-dt-4mF">
             <objects>
-                <viewController id="qnR-rv-hYN" customClass="ShoppingCartController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qnR-rv-hYN" customClass="ShoppingCartController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r6m-PN-bYp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,17 +85,17 @@
                                 <rect key="frame" x="0.0" y="92.5" width="320" height="386.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="93" id="Nf5-jS-I8v" customClass="ShoppingCartCell" customModule="EventsIOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="93" id="Nf5-jS-I8v" customClass="ShoppingCartCell" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="93"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nf5-jS-I8v" id="TVz-gF-8ZN">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nrb-fl-Yxx" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nrb-fl-Yxx" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                     <rect key="frame" x="26" y="10" width="268" height="73"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food-enchiladas" translatesAutoresizingMaskIntoConstraints="NO" id="qoT-tU-YG9" customClass="DesignableImage" customModule="EventsIOS" customModuleProvider="target">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food-enchiladas" translatesAutoresizingMaskIntoConstraints="NO" id="qoT-tU-YG9" customClass="DesignableImage" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                             <rect key="frame" x="8" y="7.5" width="54" height="54"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="54" id="2pe-0g-hd7"/>
@@ -248,7 +248,7 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HLU-W7-HYv" userLabel="add" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HLU-W7-HYv" userLabel="add" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="243" y="419" width="50" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYB-7s-XGD">
@@ -328,7 +328,7 @@
         <!--Select My Coupon Controller-->
         <scene sceneID="JQx-gk-zgd">
             <objects>
-                <viewController id="6ha-xd-g3V" customClass="SelectMyCouponController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6ha-xd-g3V" customClass="SelectMyCouponController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ybo-2W-bIG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -370,14 +370,14 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="29T-s6-Nz3" customClass="MyCouponsCell" customModule="EventsIOS" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="29T-s6-Nz3" customClass="MyCouponsCell" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="21.5" width="300" height="417"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="417"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ple-hF-iGk" userLabel="card" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ple-hF-iGk" userLabel="card" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                     <rect key="frame" x="15" y="200" width="270" height="61"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="j1x-UB-S24">
@@ -441,10 +441,10 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJ4-FP-KK8" userLabel="credit" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJ4-FP-KK8" userLabel="credit" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                     <rect key="frame" x="15" y="29" width="270" height="150"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-bank" translatesAutoresizingMaskIntoConstraints="NO" id="mcW-Aa-Q2A" customClass="DesignableImage" customModule="EventsIOS" customModuleProvider="target">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-bank" translatesAutoresizingMaskIntoConstraints="NO" id="mcW-Aa-Q2A" customClass="DesignableImage" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                             <rect key="frame" x="15" y="15" width="40" height="40"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="40" id="8VC-ht-7HB"/>
@@ -595,7 +595,7 @@
         <!--Privacy Controller-->
         <scene sceneID="15O-ZD-5R0">
             <objects>
-                <viewController id="1La-ln-Vlo" customClass="PrivacyController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1La-ln-Vlo" customClass="PrivacyController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J4v-zH-vW4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -662,7 +662,7 @@
         <!--Report Problems Controller-->
         <scene sceneID="GlI-pi-SpU">
             <objects>
-                <viewController id="BZX-hE-Vgw" customClass="ReportProblemsController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BZX-hE-Vgw" customClass="ReportProblemsController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="reS-qn-WE1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -671,7 +671,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnx-rB-QU7" userLabel="secundary" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnx-rB-QU7" userLabel="secundary" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="25" y="84" width="270" height="400"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reportar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZH-ky-swG">
@@ -780,7 +780,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T7L-vH-wEE" userLabel="principal" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T7L-vH-wEE" userLabel="principal" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="25" y="214" width="270" height="140"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reportar un problema" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8MQ-GP-ntn">
@@ -910,7 +910,7 @@
         <!--About Controller-->
         <scene sceneID="8Yn-fi-SdR">
             <objects>
-                <viewController id="XWe-F8-ifQ" customClass="AboutController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XWe-F8-ifQ" customClass="AboutController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Zi-Mw-tP1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -977,7 +977,7 @@
         <!--Help Controller-->
         <scene sceneID="7hU-ZJ-9j2">
             <objects>
-                <viewController id="CNe-SO-xfU" customClass="HelpController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CNe-SO-xfU" customClass="HelpController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SV7-vW-VaM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1009,14 +1009,14 @@
                                 <rect key="frame" x="0.0" y="195" width="320" height="373"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="79" id="YpR-y0-7Q0" customClass="HelpCell" customModule="EventsIOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="79" id="YpR-y0-7Q0" customClass="HelpCell" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="79"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YpR-y0-7Q0" id="CIX-4t-SPz">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aea-gw-fE6" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aea-gw-fE6" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                     <rect key="frame" x="27" y="10" width="266" height="59"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0N-zF-0OE">
@@ -1136,7 +1136,7 @@
         <!--Settings Controller-->
         <scene sceneID="sbF-KR-khi">
             <objects>
-                <viewController id="BoO-Ru-Ken" customClass="SettingsController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BoO-Ru-Ken" customClass="SettingsController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P8Q-OS-oKK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1164,7 +1164,7 @@
                                     <action selector="behind:" destination="BoO-Ru-Ken" eventType="touchUpInside" id="9nH-op-7ao"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0K4-VZ-akF" userLabel="cardEmail" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0K4-VZ-akF" userLabel="cardEmail" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="27" y="100" width="266" height="85"/>
                                 <subviews>
                                     <stackView opaque="NO" tag="5" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="K85-VU-k2Q" userLabel="email">
@@ -1281,7 +1281,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7S0-9T-y0U" userLabel="cardPassword" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7S0-9T-y0U" userLabel="cardPassword" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="27" y="205" width="266" height="115"/>
                                 <subviews>
                                     <stackView opaque="NO" tag="6" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="lUi-sA-rr5" userLabel="password">
@@ -1414,7 +1414,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h0d-2k-z0e" userLabel="cardBirthday" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h0d-2k-z0e" userLabel="cardBirthday" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="27" y="340" width="266" height="110"/>
                                 <subviews>
                                     <stackView opaque="NO" tag="7" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qaT-JD-GeY" userLabel="birthday">
@@ -1532,7 +1532,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="grq-ev-4HG" userLabel="cardPayment" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="grq-ev-4HG" userLabel="cardPayment" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="27" y="470" width="266" height="75"/>
                                 <subviews>
                                     <stackView opaque="NO" tag="9" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SGH-Sh-oiL" userLabel="payment">
@@ -1665,7 +1665,7 @@
         <!--My Credits Cards Controller-->
         <scene sceneID="r0y-RW-LPN">
             <objects>
-                <viewController id="OFR-uh-IMB" customClass="MyCreditsCardsController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OFR-uh-IMB" customClass="MyCreditsCardsController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hyR-FK-20f">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1721,14 +1721,14 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="VVi-1c-jQ5" customClass="MyCreditsCardsCell" customModule="EventsIOS" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="VVi-1c-jQ5" customClass="MyCreditsCardsCell" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sRb-C9-WVJ" userLabel="credit" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sRb-C9-WVJ" userLabel="credit" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                     <rect key="frame" x="25" y="10" width="270" height="150"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-bank" translatesAutoresizingMaskIntoConstraints="NO" id="pTR-bB-D8S">
@@ -1878,7 +1878,7 @@
         <!--New Credit Card Controller-->
         <scene sceneID="P3w-Ib-Qr6">
             <objects>
-                <viewController id="mpE-9u-2Q7" customClass="NewCreditCardController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mpE-9u-2Q7" customClass="NewCreditCardController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L4k-RN-lrF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1886,10 +1886,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpeper" translatesAutoresizingMaskIntoConstraints="NO" id="meG-Vb-DgK">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QX1-my-nXL" userLabel="background" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QX1-my-nXL" userLabel="background" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2DY-xE-7GH" userLabel="credit" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2DY-xE-7GH" userLabel="credit" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="25" y="85" width="270" height="150"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-bank" translatesAutoresizingMaskIntoConstraints="NO" id="rKa-9Z-mSP">
@@ -2033,7 +2033,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ban-tC-N9t" userLabel="form">
                                 <rect key="frame" x="25" y="262.5" width="270" height="160"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Número de tarjeta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ya-dA-o8E" customClass="DesignableTextField" customModule="EventsIOS" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Número de tarjeta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ya-dA-o8E" customClass="DesignableTextField" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="270" height="46.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2055,7 +2055,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vigencia" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="13K-9w-LuE" customClass="DesignableTextField" customModule="EventsIOS" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vigencia" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="13K-9w-LuE" customClass="DesignableTextField" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="56.5" width="270" height="47"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2077,7 +2077,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre del titular" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H9Z-fz-ITb" customClass="DesignableTextField" customModule="EventsIOS" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre del titular" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H9Z-fz-ITb" customClass="DesignableTextField" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="113.5" width="270" height="46.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2105,7 +2105,7 @@
                                     <constraint firstAttribute="height" constant="160" id="ANc-nl-zcq"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HqI-9j-Ybt" customClass="DesignableButton" customModule="EventsIOS" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HqI-9j-Ybt" customClass="DesignableButton" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="230" y="488" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="0aE-n7-JcW"/>
@@ -2155,7 +2155,7 @@
         <!--Info Card Controller-->
         <scene sceneID="W5S-FI-HSB">
             <objects>
-                <viewController id="Fb5-xw-xG7" customClass="InfoCardController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Fb5-xw-xG7" customClass="InfoCardController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PQ6-Sm-Q3o">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2166,7 +2166,7 @@
                                     <constraint firstAttribute="height" constant="400" id="r3r-25-r4j"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EKO-rU-Vxs" userLabel="credit" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EKO-rU-Vxs" userLabel="credit" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="25" y="82.5" width="270" height="150"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-bank" translatesAutoresizingMaskIntoConstraints="NO" id="tHE-5i-0BM">
@@ -2292,17 +2292,17 @@
                                 <rect key="frame" x="0.0" y="252.5" width="320" height="315.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="90" id="Xdc-PG-G0d" customClass="EventCell" customModule="EventsIOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="90" id="Xdc-PG-G0d" customClass="EventCell" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xdc-PG-G0d" id="JI7-au-Q3H">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QBm-Hr-dgw" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QBm-Hr-dgw" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                     <rect key="frame" x="27" y="10" width="266" height="69.5"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="CDc-i1-3r6" customClass="DesignableImage" customModule="EventsIOS" customModuleProvider="target">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="CDc-i1-3r6" customClass="DesignableImage" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                             <rect key="frame" x="8" y="8" width="54" height="54"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="54" id="ZoO-aD-sLC"/>
@@ -2432,7 +2432,7 @@
         <!--Info Card Shopping Controller-->
         <scene sceneID="plh-ZY-XCN">
             <objects>
-                <viewController id="xUO-fC-rSI" customClass="InfoCardShoppingController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xUO-fC-rSI" customClass="InfoCardShoppingController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LYi-FK-eMo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2464,17 +2464,17 @@
                                 <rect key="frame" x="0.0" y="92.5" width="320" height="475.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="90" id="5d4-Rb-krU" customClass="EventCell" customModule="EventsIOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="90" id="5d4-Rb-krU" customClass="EventCell" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5d4-Rb-krU" id="qqk-Qv-uIa">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eLR-lB-gqX" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eLR-lB-gqX" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                     <rect key="frame" x="27" y="10" width="266" height="69.5"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="K1g-Cz-mfe" customClass="DesignableImage" customModule="EventsIOS" customModuleProvider="target">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="K1g-Cz-mfe" customClass="DesignableImage" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                             <rect key="frame" x="8" y="8" width="54" height="54"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="54" id="4JF-cc-jPX"/>
@@ -2598,7 +2598,7 @@
         <!--Info Even Controller-->
         <scene sceneID="BnX-xp-Agh">
             <objects>
-                <viewController id="73M-Ch-hoa" customClass="InfoEvenController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="73M-Ch-hoa" customClass="InfoEvenController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GSZ-P4-lYf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2607,7 +2607,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0BL-Me-1eo" userLabel="card" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0BL-Me-1eo" userLabel="card" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="40" y="91" width="240" height="337"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdw-h7-LOe">
@@ -2667,7 +2667,7 @@
                                             <constraint firstAttribute="height" constant="32" id="xgK-cW-tJM"/>
                                         </constraints>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Zl-lx-RCv" customClass="DesignableButton" customModule="EventsIOS" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Zl-lx-RCv" customClass="DesignableButton" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="52" y="277" width="136" height="40"/>
                                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Enviar solicitud">
@@ -2679,10 +2679,10 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ffb-UE-jYz" userLabel="card-avatar" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ffb-UE-jYz" userLabel="card-avatar" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="84" y="-36" width="72" height="72"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="XPx-bA-QiZ" customClass="DesignableImage" customModule="EventsIOS" customModuleProvider="target">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="XPx-bA-QiZ" customClass="DesignableImage" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                 <rect key="frame" x="10" y="10" width="52" height="52"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <userDefinedRuntimeAttributes>
@@ -2866,7 +2866,7 @@
         <!--Lugares-->
         <scene sceneID="PbW-eo-pgl">
             <objects>
-                <viewController id="ENx-Gy-Hap" customClass="LayoutPlacesController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ENx-Gy-Hap" customClass="LayoutPlacesController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1CK-vX-D14">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2977,7 +2977,7 @@
         <!--Mis Eventos-->
         <scene sceneID="TeE-Ia-Dxm">
             <objects>
-                <viewController id="SWp-37-w0V" customClass="MyEventController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SWp-37-w0V" customClass="MyEventController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7nB-Vt-bb9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2998,17 +2998,17 @@
                                 <rect key="frame" x="0.0" y="94" width="320" height="475"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="90" id="Yir-cm-GNC" customClass="EventCell" customModule="EventsIOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="90" id="Yir-cm-GNC" customClass="EventCell" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yir-cm-GNC" id="XHQ-rg-DkU">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="guS-6q-dQE" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="guS-6q-dQE" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                     <rect key="frame" x="27" y="10" width="266" height="70"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="MKd-JQ-Pm9" customClass="DesignableImage" customModule="EventsIOS" customModuleProvider="target">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="MKd-JQ-Pm9" customClass="DesignableImage" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                             <rect key="frame" x="8" y="8" width="54" height="54"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="54" id="GsK-bY-2J6"/>
@@ -3145,7 +3145,7 @@
         <!--Profile Event Controller-->
         <scene sceneID="ARY-Xy-bWa">
             <objects>
-                <viewController id="h7c-pb-09f" customClass="ProfileEventController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="h7c-pb-09f" customClass="ProfileEventController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pHT-ah-9Bo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3191,7 +3191,7 @@
                                                     <constraint firstItem="RPp-UC-cak" firstAttribute="leading" secondItem="cg9-QI-HXF" secondAttribute="leading" constant="10" id="ziY-yU-a2v"/>
                                                 </constraints>
                                             </view>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="p6N-q2-gw6" customClass="DesignableImage" customModule="EventsIOS" customModuleProvider="target">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="p6N-q2-gw6" customClass="DesignableImage" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="i2F-eu-OD9"/>
@@ -3235,14 +3235,14 @@
                                 <rect key="frame" x="0.0" y="119" width="320" height="400"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="yeA-C5-ExF" customClass="ProfileEventCell" customModule="EventsIOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="yeA-C5-ExF" customClass="ProfileEventCell" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yeA-C5-ExF" id="qs5-7z-9NR">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hu6-5R-zwK" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hu6-5R-zwK" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                     <rect key="frame" x="27" y="10" width="266" height="60"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tga-Tx-UKh">
@@ -3359,7 +3359,7 @@
         <!--Guaranteed Table Controller-->
         <scene sceneID="RJM-iA-npl">
             <objects>
-                <viewController id="8O7-Jp-RVK" customClass="GuaranteedTableController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8O7-Jp-RVK" customClass="GuaranteedTableController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M07-HU-OmJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3402,14 +3402,14 @@
                                 <rect key="frame" x="0.0" y="97" width="320" height="422"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="90" id="eaU-kn-Xwv" customClass="NewGuaranteedTableCell" customModule="EventsIOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="90" id="eaU-kn-Xwv" customClass="NewGuaranteedTableCell" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eaU-kn-Xwv" id="O6u-el-LHb">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ux7-ul-xWl" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ux7-ul-xWl" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                     <rect key="frame" x="27" y="10" width="266" height="69"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-about" translatesAutoresizingMaskIntoConstraints="NO" id="DVe-dM-a4V">
@@ -3524,7 +3524,7 @@
         <!--Profile Event Information Controller-->
         <scene sceneID="dfk-xJ-NWK">
             <objects>
-                <viewController id="yUD-SW-Hmq" customClass="ProfileEventInformationController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yUD-SW-Hmq" customClass="ProfileEventInformationController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dod-Ss-DU9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3582,7 +3582,7 @@
                                     <action selector="behind:" destination="yUD-SW-Hmq" eventType="touchUpInside" id="CwE-or-yPI"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1S-Eo-5yc" userLabel="menuCard" customClass="CustomSegmentedControl" customModule="EventsIOS" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1S-Eo-5yc" userLabel="menuCard" customClass="CustomSegmentedControl" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="25" y="91" width="270" height="40"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -3656,7 +3656,7 @@
         <!--Profile Event Products Controller-->
         <scene sceneID="822-cN-IZn">
             <objects>
-                <viewController id="mWh-gb-UrW" customClass="ProfileEventProductsController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mWh-gb-UrW" customClass="ProfileEventProductsController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="icC-cB-hUI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3671,14 +3671,14 @@
                                 <rect key="frame" x="0.0" y="98" width="320" height="421"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="120" id="zD5-ho-kax" customClass="ProfileEventProductsCell" customModule="EventsIOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="120" id="zD5-ho-kax" customClass="ProfileEventProductsCell" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zD5-ho-kax" id="eSC-st-vBr">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2XO-jr-dCA" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2XO-jr-dCA" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                     <rect key="frame" x="27" y="10" width="266" height="100"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title product" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8b2-o4-HND">
@@ -3687,7 +3687,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="cbi-fZ-jaT" customClass="DesignableImage" customModule="EventsIOS" customModuleProvider="target">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="cbi-fZ-jaT" customClass="DesignableImage" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                             <rect key="frame" x="10" y="10" width="81" height="81"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="81" id="FAc-tm-S5q"/>
@@ -3822,7 +3822,7 @@
         <!--Info Peoduct Controller-->
         <scene sceneID="i6a-i8-vRx">
             <objects>
-                <viewController id="m3N-Eb-Fas" customClass="InfoPeoductController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="m3N-Eb-Fas" customClass="InfoPeoductController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nhq-IR-dfc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3864,14 +3864,14 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="KM3-jm-eBv" customClass="InfoPeoductCell" customModule="EventsIOS" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="KM3-jm-eBv" customClass="InfoPeoductCell" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="190"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="314" height="190"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food-enchiladas" translatesAutoresizingMaskIntoConstraints="NO" id="l54-yx-bNU" customClass="DesignableImage" customModule="EventsIOS" customModuleProvider="target">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food-enchiladas" translatesAutoresizingMaskIntoConstraints="NO" id="l54-yx-bNU" customClass="DesignableImage" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                     <rect key="frame" x="10" y="10" width="294" height="170"/>
                                                     <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <userDefinedRuntimeAttributes>
@@ -3903,7 +3903,7 @@
                                 </constraints>
                                 <state key="normal" image="icon-shopping-white"/>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tHV-kf-dAX" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tHV-kf-dAX" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="13" y="283.5" width="294" height="71"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Huv-6d-Lrn">
@@ -4003,7 +4003,7 @@
         <!--Profile Event Promotions Controller-->
         <scene sceneID="30y-kB-ScD">
             <objects>
-                <viewController id="kT3-xA-9xm" customClass="ProfileEventPromotionsController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kT3-xA-9xm" customClass="ProfileEventPromotionsController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HgY-dp-N1m">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4025,17 +4025,17 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="120" id="wv6-IJ-7n0" customClass="PromotionsEventCell" customModule="EventsIOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="120" id="wv6-IJ-7n0" customClass="PromotionsEventCell" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wv6-IJ-7n0" id="6ue-kA-Y6O">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A58-9G-aa2" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A58-9G-aa2" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                     <rect key="frame" x="27" y="10" width="266" height="100"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Plp-Go-64j" customClass="DesignableImage" customModule="EventsIOS" customModuleProvider="target">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Plp-Go-64j" customClass="DesignableImage" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                             <rect key="frame" x="10" y="10" width="79" height="79"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="79" id="Jhk-GL-DEy"/>
@@ -4172,7 +4172,7 @@
         <!--Profile Event Comments Controller-->
         <scene sceneID="USo-UR-UAK">
             <objects>
-                <viewController id="k5M-el-kwS" customClass="ProfileEventCommentsController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="k5M-el-kwS" customClass="ProfileEventCommentsController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EYe-qX-Nl1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4203,7 +4203,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="goy-qs-hvs" userLabel="content">
                                 <rect key="frame" x="25" y="90" width="270" height="80"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="CD8-1X-RE9" customClass="DesignableImage" customModule="EventsIOS" customModuleProvider="target">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="CD8-1X-RE9" customClass="DesignableImage" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="20" y="15" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="32Q-Ge-ugi"/>
@@ -4250,14 +4250,14 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="96" id="2ZZ-Lq-9Nc" customClass="EventCommentsCell" customModule="EventsIOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="96" id="2ZZ-Lq-9Nc" customClass="EventCommentsCell" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2ZZ-Lq-9Nc" id="Hnr-Uf-E0s">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QpT-tP-9nR" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QpT-tP-9nR" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                     <rect key="frame" x="27" y="10" width="266" height="75.5"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9Yt-Qk-4Lr">
@@ -4283,7 +4283,7 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="XEn-uI-aoS" customClass="DesignableImage" customModule="EventsIOS" customModuleProvider="target">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="XEn-uI-aoS" customClass="DesignableImage" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                             <rect key="frame" x="8" y="11" width="54" height="54"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="54" id="NBX-zT-66e"/>
@@ -4397,7 +4397,7 @@
         <!--New Comment Controller-->
         <scene sceneID="MNt-7r-dWc">
             <objects>
-                <viewController id="rCc-Kp-NC0" customClass="NewCommentController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rCc-Kp-NC0" customClass="NewCommentController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CNo-Kx-88a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4426,7 +4426,7 @@
                                     <action selector="behind:" destination="rCc-Kp-NC0" eventType="touchUpInside" id="J2p-gZ-z7V"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAe-Y1-ndS" customClass="DesignableButton" customModule="EventsIOS" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAe-Y1-ndS" customClass="DesignableButton" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="243" y="442" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="hT0-MM-pQ9"/>
@@ -4453,7 +4453,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1f-eB-lpt" userLabel="infoUserCard">
                                 <rect key="frame" x="25" y="162.5" width="270" height="60"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="BPx-PL-h5K" customClass="DesignableImage" customModule="EventsIOS" customModuleProvider="target">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="BPx-PL-h5K" customClass="DesignableImage" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="5" y="5" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="5gj-Ko-6nu"/>
@@ -4531,7 +4531,7 @@
         <!--Info Coupons Controller-->
         <scene sceneID="CTt-LG-JjQ">
             <objects>
-                <viewController id="Pk8-NS-HoV" customClass="InfoCouponsController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Pk8-NS-HoV" customClass="InfoCouponsController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Wd-KV-gAU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4539,7 +4539,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mvd-aq-HuW" userLabel="background">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bam-Qt-DdH" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bam-Qt-DdH" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="40.5" y="194.5" width="240" height="130"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tb3-3I-dXk" userLabel="contentButtons">
@@ -4642,7 +4642,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P0F-hQ-mNb" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P0F-hQ-mNb" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="40.5" y="195.5" width="240" height="128"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Qué quieres hacer con este cupon?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbA-Qn-EFv">
@@ -4769,7 +4769,7 @@
         <!--Profile Event Coupons Controller-->
         <scene sceneID="lTY-5T-Lti">
             <objects>
-                <viewController id="0ZT-R7-4Ti" customClass="ProfileEventCouponsController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0ZT-R7-4Ti" customClass="ProfileEventCouponsController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zq1-TB-VIq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4802,14 +4802,14 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Yzz-he-fPb" customClass="MyCouponsCell" customModule="EventsIOS" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Yzz-he-fPb" customClass="MyCouponsCell" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="53" width="310" height="394"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="310" height="394"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HtA-8U-b9i" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HtA-8U-b9i" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                     <rect key="frame" x="20" y="185" width="270" height="67.5"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="y8K-UB-ENv">
@@ -4873,10 +4873,10 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kxc-YB-G0K" userLabel="credit" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kxc-YB-G0K" userLabel="credit" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                     <rect key="frame" x="20" y="20" width="270" height="150"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-bank" translatesAutoresizingMaskIntoConstraints="NO" id="QeN-17-Yr8" customClass="DesignableImage" customModule="EventsIOS" customModuleProvider="target">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-bank" translatesAutoresizingMaskIntoConstraints="NO" id="QeN-17-Yr8" customClass="DesignableImage" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                             <rect key="frame" x="15" y="15" width="40" height="40"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="40" id="M3S-wH-3cC"/>
@@ -5044,7 +5044,7 @@
         <!--Alertas-->
         <scene sceneID="GMb-Lo-mL0">
             <objects>
-                <viewController id="xVi-Mf-M7O" customClass="NotificationController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xVi-Mf-M7O" customClass="NotificationController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y3h-fT-4gE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -5065,17 +5065,17 @@
                                 <rect key="frame" x="0.0" y="93" width="320" height="426"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="101" id="9aG-Hk-4vB" customClass="NotificationCell" customModule="EventsIOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="101" id="9aG-Hk-4vB" customClass="NotificationCell" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9aG-Hk-4vB" id="7Dm-ye-QZ2">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4rD-Po-JH7" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4rD-Po-JH7" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                     <rect key="frame" x="27" y="10" width="266" height="81"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="ZHd-1P-SLz" customClass="DesignableImage" customModule="EventsIOS" customModuleProvider="target">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="ZHd-1P-SLz" customClass="DesignableImage" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                             <rect key="frame" x="8" y="8" width="64" height="64"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="64" id="Neo-fK-wgu"/>
@@ -5198,7 +5198,7 @@
         <!--Mis Cupones-->
         <scene sceneID="rkd-Uu-Xd3">
             <objects>
-                <viewController id="xGG-Pd-h1S" customClass="MyCouponsController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xGG-Pd-h1S" customClass="MyCouponsController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BjF-8O-wge">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -5233,14 +5233,14 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="dj5-vx-ASq" customClass="MyCouponsCell" customModule="EventsIOS" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="dj5-vx-ASq" customClass="MyCouponsCell" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="21.5" width="300" height="417"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="417"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R1w-d3-1w3" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R1w-d3-1w3" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                     <rect key="frame" x="15" y="189" width="270" height="71"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1Uk-aR-aqf">
@@ -5303,10 +5303,10 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Knh-jL-db6" userLabel="credit" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Knh-jL-db6" userLabel="credit" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                     <rect key="frame" x="15" y="29" width="270" height="150"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-bank" translatesAutoresizingMaskIntoConstraints="NO" id="BAD-t7-gfN" customClass="DesignableImage" customModule="EventsIOS" customModuleProvider="target">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-bank" translatesAutoresizingMaskIntoConstraints="NO" id="BAD-t7-gfN" customClass="DesignableImage" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                             <rect key="frame" x="15" y="15" width="40" height="40"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="40" id="858-lu-ZnL"/>
@@ -5462,7 +5462,7 @@
         <!--Perfil-->
         <scene sceneID="3o1-DC-U6P">
             <objects>
-                <viewController id="wTW-7v-QUU" customClass="ProfileUserController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wTW-7v-QUU" customClass="ProfileUserController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="azi-1v-Lxg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -5481,7 +5481,7 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="cWa-SO-3gI" customClass="DesignableImage" customModule="EventsIOS" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="cWa-SO-3gI" customClass="DesignableImage" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="27" y="32" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="JGc-dc-ltE"/>
@@ -5497,14 +5497,14 @@
                                 <rect key="frame" x="0.0" y="109" width="320" height="410"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="H34-NH-QSe" customClass="ProfileEventCell" customModule="EventsIOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="H34-NH-QSe" customClass="ProfileEventCell" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H34-NH-QSe" id="KXH-EH-ktN">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsZ-jd-XzA" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsZ-jd-XzA" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                     <rect key="frame" x="27" y="10" width="266" height="59.5"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hSY-ZX-B1C">
@@ -5659,7 +5659,7 @@
         <!--Event Information Contact Controller-->
         <scene sceneID="WEs-ig-p9n">
             <objects>
-                <viewController id="TFc-Fg-ujR" customClass="EventInformationContactController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TFc-Fg-ujR" customClass="EventInformationContactController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="shI-2h-rYm">
                         <rect key="frame" x="0.0" y="0.0" width="270" height="334"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -5670,7 +5670,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3HS-Y4-kbw" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3HS-Y4-kbw" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="35.5" width="270" height="50"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="TKX-SW-L3J">
@@ -5735,7 +5735,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ug-bH-xnj" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ug-bH-xnj" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="112.5" width="270" height="50"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="4OX-MQ-Zis">
@@ -5800,7 +5800,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rEK-oj-cD6" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rEK-oj-cD6" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="189.5" width="270" height="50"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="kTg-DU-rh3">
@@ -5923,7 +5923,7 @@
         <!--Event Information Address Controller-->
         <scene sceneID="Umr-TG-bbU">
             <objects>
-                <viewController id="wQ5-oD-8SB" customClass="EventInformationAddressController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wQ5-oD-8SB" customClass="EventInformationAddressController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qQy-p0-KCr">
                         <rect key="frame" x="0.0" y="0.0" width="270" height="334"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -5940,7 +5940,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJS-sn-3b4" customClass="MapView" customModule="EventsIOS" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJS-sn-3b4" customClass="MapView" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="102" width="270" height="232"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -5971,7 +5971,7 @@
         <!--Num Of Person Table Controller-->
         <scene sceneID="FPJ-Cr-16H">
             <objects>
-                <viewController id="Zug-Iv-QVL" customClass="NumOfPersonTableController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Zug-Iv-QVL" customClass="NumOfPersonTableController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5RH-wB-cSa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -5979,7 +5979,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bwP-3n-iUU" userLabel="background">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b2y-0n-EFr" userLabel="card" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b2y-0n-EFr" userLabel="card" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="25" y="194.5" width="270" height="130"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apartar nueva mesa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dm7-aI-swz">
@@ -6107,12 +6107,12 @@
         <!--New Guaranteed Table Controller-->
         <scene sceneID="Uuj-Gr-kGj">
             <objects>
-                <viewController id="1Uh-Ut-J2v" customClass="NewGuaranteedTableController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1Uh-Ut-J2v" customClass="NewGuaranteedTableController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cgM-8g-xfS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Svi-eZ-bWY" userLabel="background" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Svi-eZ-bWY" userLabel="background" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xq4-a6-bZ4">
@@ -6130,14 +6130,14 @@
                                         <rect key="frame" x="0.0" y="87" width="320" height="432"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="90" id="ZNX-Q6-tcs" customClass="NewGuaranteedTableCell" customModule="EventsIOS" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="90" id="ZNX-Q6-tcs" customClass="NewGuaranteedTableCell" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="320" height="90"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZNX-Q6-tcs" id="K78-IN-h6x">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AeP-uk-ZRS" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AeP-uk-ZRS" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                             <rect key="frame" x="27" y="10" width="266" height="70"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-about" translatesAutoresizingMaskIntoConstraints="NO" id="ZU3-g3-Dba">
@@ -6302,7 +6302,7 @@
         <!--Event Information Schedule Controller-->
         <scene sceneID="srH-9s-yiT">
             <objects>
-                <viewController id="AHq-wj-Lzr" customClass="EventInformationScheduleController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AHq-wj-Lzr" customClass="EventInformationScheduleController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="caZ-yi-bnM">
                         <rect key="frame" x="0.0" y="0.0" width="270" height="334"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -6310,7 +6310,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BCa-PP-kbs" userLabel="firstContent">
                                 <rect key="frame" x="0.0" y="0.0" width="270" height="50"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="37h-hI-36I" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="37h-hI-36I" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="127" height="50"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eQ6-rS-oxw">
@@ -6378,7 +6378,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DKx-KK-fGw" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DKx-KK-fGw" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="143" y="0.0" width="127" height="50"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="V5U-jz-BTi">
@@ -6460,7 +6460,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XUn-5J-PTy" userLabel="secondContent">
                                 <rect key="frame" x="0.0" y="65" width="270" height="50"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ozj-Ej-2rj" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ozj-Ej-2rj" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="127" height="50"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="244-Tp-2Ym">
@@ -6526,7 +6526,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uLq-41-0Cx" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uLq-41-0Cx" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="143" y="0.0" width="127" height="50"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1r1-V7-YMs">
@@ -6608,7 +6608,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BoQ-Fc-zo0" userLabel="thirdContent">
                                 <rect key="frame" x="0.0" y="130" width="270" height="50"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yvu-pR-L50" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yvu-pR-L50" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="127" height="50"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="oGo-0H-U3r">
@@ -6674,7 +6674,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11s-FQ-HnT" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11s-FQ-HnT" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="143" y="0.0" width="127" height="50"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cg8-cV-vCB">
@@ -6756,7 +6756,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GiX-za-IWG" userLabel="fourthContent">
                                 <rect key="frame" x="0.0" y="195" width="270" height="50"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cda-Ej-sJR" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cda-Ej-sJR" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="127" height="50"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bBB-vI-cMA">
@@ -6822,7 +6822,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="der-WT-vdc" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="der-WT-vdc" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="143" y="0.0" width="127" height="50"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Blq-ts-9dY">
@@ -6913,12 +6913,12 @@
         <!--Map Controller-->
         <scene sceneID="6g0-ig-p3K">
             <objects>
-                <viewController id="pZJ-NM-70P" customClass="MapController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pZJ-NM-70P" customClass="MapController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QHM-bc-awe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7e-hi-rzH" customClass="MapView" customModule="EventsIOS" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7e-hi-rzH" customClass="MapView" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="88" width="320" height="431"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -6986,7 +6986,7 @@
         <!--New Event Menu Controller-->
         <scene sceneID="FYg-q9-ONF">
             <objects>
-                <viewController id="UrC-qO-C8q" customClass="NewEventMenuController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UrC-qO-C8q" customClass="NewEventMenuController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sw4-1s-ZcR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -7016,14 +7016,14 @@
                                 <rect key="frame" x="0.0" y="141" width="320" height="378"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="OVx-G3-VDT" customClass="ProfileEventCell" customModule="EventsIOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="OVx-G3-VDT" customClass="ProfileEventCell" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OVx-G3-VDT" id="X4A-Zb-QZQ">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2cy-90-jxq" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2cy-90-jxq" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                     <rect key="frame" x="27" y="10" width="266" height="60"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tbD-60-q4q">
@@ -7110,7 +7110,7 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLh-Sh-2g5" userLabel="add" customClass="DesignableButton" customModule="EventsIOS" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLh-Sh-2g5" userLabel="add" customClass="DesignableButton" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="243" y="442" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="5Lg-p8-txw"/>
@@ -7170,7 +7170,7 @@
         <!--New Event Categories Controller-->
         <scene sceneID="GMa-q0-39l">
             <objects>
-                <viewController id="BCd-8M-xpc" customClass="NewEventCategoriesController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BCd-8M-xpc" customClass="NewEventCategoriesController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="khe-tq-DS9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -7210,14 +7210,14 @@
                                 <rect key="frame" x="0.0" y="142" width="320" height="377"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="jkG-6N-Wyk" customClass="NewGuaranteedTableCell" customModule="EventsIOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="jkG-6N-Wyk" customClass="NewGuaranteedTableCell" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jkG-6N-Wyk" id="9lA-O5-v8h">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBI-IY-hos" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBI-IY-hos" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                     <rect key="frame" x="27" y="10" width="266" height="60"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="huC-ch-NF7">
@@ -7338,7 +7338,7 @@
         <!--New Event Services Controller-->
         <scene sceneID="dmb-XW-cFw">
             <objects>
-                <viewController id="fFw-Kr-fx1" customClass="NewEventServicesController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fFw-Kr-fx1" customClass="NewEventServicesController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SeV-LT-APC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -7378,14 +7378,14 @@
                                 <rect key="frame" x="0.0" y="142" width="320" height="377"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="Hlx-fm-ISS" customClass="NewGuaranteedTableCell" customModule="EventsIOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="Hlx-fm-ISS" customClass="NewGuaranteedTableCell" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hlx-fm-ISS" id="Fzg-B1-a3E">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BeY-4B-32R" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BeY-4B-32R" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                     <rect key="frame" x="27" y="10" width="266" height="60"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SPY-Ne-QYW">
@@ -7506,7 +7506,7 @@
         <!--New Event Hours Controller-->
         <scene sceneID="ODX-fc-uWg">
             <objects>
-                <viewController id="ohS-p6-EdK" customClass="NewEventHoursController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ohS-p6-EdK" customClass="NewEventHoursController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qgt-9z-FED">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -7549,14 +7549,14 @@
                                     <constraint firstAttribute="height" constant="306" id="JNB-Cl-rBr"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="jNZ-BO-7pU" customClass="NewGuaranteedTableCell" customModule="EventsIOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="jNZ-BO-7pU" customClass="NewGuaranteedTableCell" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jNZ-BO-7pU" id="Wer-pR-M6c">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v80-Je-cNk" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v80-Je-cNk" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                     <rect key="frame" x="27" y="10" width="266" height="60"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lunes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YfH-nk-y8y">
@@ -7635,7 +7635,7 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZRr-Nz-1VH" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZRr-Nz-1VH" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="27" y="102" width="266" height="95"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="De: 9" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r6X-bI-CV6">
@@ -7817,7 +7817,7 @@
         <!--New Event Contact Controller-->
         <scene sceneID="s2d-7p-n7E">
             <objects>
-                <viewController id="hDE-44-G1P" customClass="NewEventContactController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hDE-44-G1P" customClass="NewEventContactController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LT6-Kl-oVa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -7856,7 +7856,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="txc-70-Lni">
                                 <rect key="frame" x="27" y="77" width="266" height="440"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NpV-iX-Bax" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NpV-iX-Bax" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="266" height="61"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telefono:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e1X-rX-NEI">
@@ -7909,7 +7909,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJL-He-Zr1" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJL-He-Zr1" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="76" width="266" height="60.5"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sitio web:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="duL-kU-gGa">
@@ -7962,7 +7962,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zsp-XW-kEG" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zsp-XW-kEG" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="151.5" width="266" height="61"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electronico:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vfi-zt-6tA">
@@ -8015,7 +8015,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CtI-EW-Mi9" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CtI-EW-Mi9" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="227.5" width="266" height="61"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL Facebook:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DRT-Pt-EkY">
@@ -8068,7 +8068,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QBl-q7-4ys" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QBl-q7-4ys" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="303.5" width="266" height="60.5"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL Twitter:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zo2-sW-BWQ">
@@ -8121,7 +8121,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3fv-tw-6F7" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3fv-tw-6F7" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="379" width="266" height="61"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL Instagram:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZcY-oc-dgP">
@@ -8209,7 +8209,7 @@
         <!--New Event Address Controller-->
         <scene sceneID="VWG-lT-Chp">
             <objects>
-                <viewController id="D7J-9H-G1B" customClass="NewEventAddressController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="D7J-9H-G1B" customClass="NewEventAddressController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TzQ-sY-P6R">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -8236,7 +8236,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jb4-JB-aI9" customClass="MapView" customModule="EventsIOS" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jb4-JB-aI9" customClass="MapView" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="27" y="185.5" width="266" height="306.5"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -8295,7 +8295,7 @@
         <!--Event Controller-->
         <scene sceneID="12c-ls-JTG">
             <objects>
-                <viewController id="bQP-gm-4MW" customClass="EventController" customModule="EventsIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bQP-gm-4MW" customClass="EventController" customModule="EventsIOS_Debug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PXc-FX-wR6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -8311,17 +8311,17 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="90" id="yGZ-zN-1Lf" customClass="EventCell" customModule="EventsIOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="90" id="yGZ-zN-1Lf" customClass="EventCell" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yGZ-zN-1Lf" id="CBE-hy-KGp">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="waP-3Z-xnO" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="waP-3Z-xnO" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                     <rect key="frame" x="27" y="10" width="266" height="69.5"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Yi8-wJ-Go3" customClass="DesignableImage" customModule="EventsIOS" customModuleProvider="target">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Yi8-wJ-Go3" customClass="DesignableImage" customModule="EventsIOS_Debug" customModuleProvider="target">
                                                             <rect key="frame" x="8" y="8" width="54" height="54"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="54" id="GYq-ar-eoM"/>
@@ -8440,7 +8440,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9gR-sS-zXG" customClass="DesignableGradient" customModule="EventsIOS" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9gR-sS-zXG" customClass="DesignableGradient" customModule="EventsIOS_Debug" customModuleProvider="target">
                                 <rect key="frame" x="243" y="442" width="50" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYc-Mq-fuP" userLabel="localization">

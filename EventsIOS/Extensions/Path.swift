@@ -10,4 +10,6 @@ import Foundation
 
 enum Path {
     case login
+    case privacy
+    case abouts
 }

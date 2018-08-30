@@ -7,15 +7,20 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class PrivacyController: UIViewController {
 
     @IBOutlet weak var header: UIImageView!
     @IBOutlet weak var txtLabel: UITextView!
+    private var privacyModel: Webservice!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.privacyModel = Webservice()
+        DispatchQueue.main.async {
+            self.getPrivacy()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,6 +41,18 @@ class PrivacyController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
 
+    func getPrivacy(){
+        self.privacyModel.restApi(method: .GET, action: .privacy) { resp in
+            let data = JSON(resp)
+            if data["status"] == 200 {
+                let content:String = "\(data["data"][0]["content"])"
+                self.txtLabel.text = content
+            } else {
+                self.txtLabel.text = "No se ha encontrado información"
+            }
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

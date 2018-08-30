@@ -31,6 +31,10 @@ class Webservice {
         switch p {
         case .login:
             return "users/login"
+        case .privacy:
+            return "privacy/all"
+        case .abouts:
+            return "abouts/all"
         }
     }
     
@@ -42,9 +46,22 @@ class Webservice {
                 let data = JSON(value)
                 complete(data)
             case .failure(let error):
-                let err = "\(error)"
+                let err = "\(error.localizedDescription)"
                 complete(err)
-                print("error: ", error.localizedDescription)
+            }
+        }
+    }
+    
+    func restApi( method:Method, action:Path, complete: @escaping ((Any) -> Void)) {
+        let URL = self.url + self.path(p: action)
+        Alamofire.request(URL, method: self.methods(m: method) ).responseJSON { (resp) in
+            switch resp.result {
+            case .success(let value):
+                let data = JSON(value)
+                complete(data)
+            case .failure(let error):
+                let err = "\(error.localizedDescription)"
+                complete(err)
             }
         }
     }
