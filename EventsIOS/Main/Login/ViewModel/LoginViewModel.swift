@@ -8,7 +8,16 @@
 
 import Foundation
 
-class LoginViewModel {
+class LoginViewModel: ViewModel {
+    
+    var brokenRules: [BrokenRule] = [BrokenRule]()
     var email: String!
     var password: String!
+    var isValid: Bool {
+        get {
+            self.brokenRules = [BrokenRule]()
+            self.validate()
+            return self.brokenRules.count == 0 ? true : false        }
+    }
+    
 }
