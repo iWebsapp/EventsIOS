@@ -37,6 +37,8 @@
 		DE39EC2E21084B6B00670676 /* ShoppingCartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE39EC2D21084B6B00670676 /* ShoppingCartCell.swift */; };
 		DE39EC3021084C6D00670676 /* Shopping.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE39EC2F21084C6D00670676 /* Shopping.swift */; };
 		DE3E0C3B2105817600F066F9 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3E0C3A2105817600F066F9 /* CustomSegmentedControl.swift */; };
+		DE4047C7213CDB2E00FD86D2 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4047C6213CDB2E00FD86D2 /* SettingsViewModel.swift */; };
+		DE4047C9213CDB3B00FD86D2 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4047C8213CDB3B00FD86D2 /* SettingsModel.swift */; };
 		DE4403D220E9FE61002606C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4403D120E9FE61002606C4 /* AppDelegate.swift */; };
 		DE4403D420E9FE61002606C4 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4403D320E9FE61002606C4 /* LoginController.swift */; };
 		DE4403D720E9FE61002606C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4403D520E9FE61002606C4 /* Main.storyboard */; };
@@ -348,6 +350,8 @@
 		DE39EC2D21084B6B00670676 /* ShoppingCartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartCell.swift; sourceTree = "<group>"; };
 		DE39EC2F21084C6D00670676 /* Shopping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping.swift; sourceTree = "<group>"; };
 		DE3E0C3A2105817600F066F9 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		DE4047C6213CDB2E00FD86D2 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		DE4047C8213CDB3B00FD86D2 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		DE4403CE20E9FE61002606C4 /* EventsIOS-Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EventsIOS-Debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE4403D120E9FE61002606C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE4403D320E9FE61002606C4 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -897,6 +901,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DE4047C4213CDAE900FD86D2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE4047C6213CDB2E00FD86D2 /* SettingsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE4047C5213CDAFC00FD86D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE4047C8213CDB3B00FD86D2 /* SettingsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DE4403C520E9FE61002606C4 = {
 			isa = PBXGroup;
 			children = (
@@ -1131,6 +1151,8 @@
 		DE5EFF1E20FDC73B00C9B7C8 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				DE4047C5213CDAFC00FD86D2 /* Model */,
+				DE4047C4213CDAE900FD86D2 /* ViewModel */,
 				DE5EFF1F20FDC74E00C9B7C8 /* Controller */,
 			);
 			path = Settings;
@@ -2328,6 +2350,7 @@
 				DEB4E87F2103EFD000B67A00 /* InfoPeoduct.swift in Sources */,
 				DE8C8900210C198F00696239 /* GuaranteedTableModel.swift in Sources */,
 				DEC1B4FD21067C80003F5523 /* NumOfPersonTableController.swift in Sources */,
+				DE4047C7213CDB2E00FD86D2 /* SettingsViewModel.swift in Sources */,
 				DE20A7A0213743F700B2B4DA /* Alerts.swift in Sources */,
 				DE8C8910210C266E00696239 /* SelectMyCouponModel.swift in Sources */,
 				DE9CC4C4210AE83900F8FFEF /* EventCommentsListViewModel.swift in Sources */,
@@ -2358,6 +2381,7 @@
 				DEBF06E52101803900ABC3C2 /* MyCreditsCardsCell.swift in Sources */,
 				DE9A20572104610F00372BFA /* InfoCouponsController.swift in Sources */,
 				DE3E0C3B2105817600F066F9 /* CustomSegmentedControl.swift in Sources */,
+				DE4047C9213CDB3B00FD86D2 /* SettingsModel.swift in Sources */,
 				DE5EFF1920FDC6EB00C9B7C8 /* AboutController.swift in Sources */,
 				DE1F1D3920F6DE1F00503134 /* ProductsEvent.swift in Sources */,
 				DE1781022102FDD9005105F2 /* Comments.swift in Sources */,

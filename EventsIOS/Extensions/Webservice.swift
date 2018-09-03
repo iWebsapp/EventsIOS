@@ -35,6 +35,8 @@ class Webservice {
             return "privacy/all"
         case .abouts:
             return "abouts/all"
+        case .changeEmail:
+            return "change/email"
         }
     }
     
