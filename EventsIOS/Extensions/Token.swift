@@ -26,4 +26,16 @@ extension UIViewController {
         return remove
     }
     
+    public func envWhatModeIs() ->String {
+        return ProcessInfo.processInfo.environment["env_mode"]!
+    }
+    
+    public func envWhatAccsTokenIs() ->String {
+        return ProcessInfo.processInfo.environment["access_token"]!
+    }
+    
+    public func envWhatApiIs() ->String {
+        return ProcessInfo.processInfo.environment["web_service"]!
+    }
+    
 }

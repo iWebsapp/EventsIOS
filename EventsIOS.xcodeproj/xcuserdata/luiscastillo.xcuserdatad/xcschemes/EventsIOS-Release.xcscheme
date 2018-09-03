@@ -74,7 +74,12 @@
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "web_service"
-            value = "http://localhost:2715/api/v1/"
+            value = "http://192.168.0.9:2715/api/v1/"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "env_mode"
+            value = "release"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>

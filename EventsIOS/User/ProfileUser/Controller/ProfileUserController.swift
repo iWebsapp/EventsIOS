@@ -74,10 +74,24 @@ class ProfileUserController: UIViewController, UITableViewDataSource, UITableVie
             case "Privacidad y condiciones":
                 performSegue(withIdentifier: "goPrivacy", sender: self )
             default:
-                performSegue(withIdentifier: "goLogout", sender: self )
+                self.logout()
         }
     }
     
+    private func logout(){
+        self.alertAvanced(this: self, titileAlert: "Cerrar sesión", bodyAlert: "¿Estas seguro de cerrar tu sesión?") { resp in
+            if resp == "acept" {
+                let remove:Bool = self.deleteToken()
+                if remove {
+                    self.performSegue(withIdentifier: "goLogout", sender: self )
+                } else {
+                    self.hendlerError(this: self, complete: { data in
+                        print(data)
+                    })
+                }
+            } 
+        }
+    }
     /*
      // MARK: - Navigation
      

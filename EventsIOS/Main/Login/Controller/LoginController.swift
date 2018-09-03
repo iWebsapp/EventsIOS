@@ -53,59 +53,64 @@ class LoginController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    private func loginData(email: String, password: String){
+        let params = [
+            "email": email,
+            "password": password
+        ]
+        self.loginModel.restApi(params: params, method: .POST, action: .login, complete: { resp in
+                    let data = JSON(resp)
+        
+                if data["status"] == 200 {
+                    let token = "\(data["token"])"
+                    let setToken: Bool = self.setToken(data: token)
+                    if setToken {
+                        self.performSegue(withIdentifier: "goMainFromLogin", sender: self)
+                    }
+                } else if data["status"] == 404 {
+                    self.alertSimple(this: self, titileAlert: "Usuario no encontrado", bodyAlert: "Este usuario no existe en el sistema, intentalo con otro o crea tu cuenta", complete: { (resp) in
+                            //empty textfilds
+                    })
+                } else if data["status"] == 404 {
+                    self.alertSimple(this: self, titileAlert: "Usuario inexistente", bodyAlert: "Este usuario no existe en el sistema", complete: { (resp) in
+                            //empty textfilds
+                    })
+                } else if data["status"] == 400 {
+                    self.alertSimple(this: self, titileAlert: "Contraseña incorrecta", bodyAlert: "Este la contraseña no coincide con este usuario", complete: { (resp) in
+                            //empty textfilds
+                    })
+                } else {
+                    self.alertSimple(this: self, titileAlert: "Se ha producido un error", bodyAlert: "Intentalo mas tarde", complete: { (resp) in
+                            //empty textfilds
+                    })
+                }
+        
+         })
+        
+    }
+    
     @IBAction func btnLogin(_ sender: DesignableButton) {
+        
         self.loginViewModel.email = self.txtEmail.text!
         self.loginViewModel.password = self.txtPassword.text!
-        if (self.loginViewModel.isValid) {
-            
+        if self.envWhatModeIs() == "debug" {
+            self.loginData(email: "luis@mail.com", password: "jimyluis")
         } else {
-            let messege = self.loginViewModel.brokenRules[0].messege
-            if messege == "email is not valid" {
-                self.alertSimple(this: self, titileAlert: "Correo no valido", bodyAlert: "Este no es un correo", complete: { data in })
-            }
-            if messege == "this password requires at least 8 characters" {
-                self.alertSimple(this: self, titileAlert: "Advertencia¡", bodyAlert: "La contraseña requiere 8 digitos como minimo", complete: { data in })
+            if (self.loginViewModel.isValid) {
+                self.loginData( email: self.loginViewModel.email!, password: self.loginViewModel.password! )
             } else {
-                self.alertSimple(this: self, titileAlert: "Campos obligatorios", bodyAlert: "Todos los campos son obligatorios", complete: { data in })
+                let messege = self.loginViewModel.brokenRules[0].messege
+                if messege == "email is not valid" {
+                    self.alertSimple(this: self, titileAlert: "Correo no valido", bodyAlert: "Este no es un correo", complete: { data in })
+                }
+                if messege == "this password requires at least 8 characters" {
+                    self.alertSimple(this: self, titileAlert: "Advertencia¡", bodyAlert: "La contraseña requiere 8 digitos como minimo", complete: { data in })
+                } else {
+                    self.alertSimple(this: self, titileAlert: "Campos obligatorios", bodyAlert: "Todos los campos son obligatorios", complete: { data in })
+                }
             }
-            
         }
-//        let params = [
-//            "email": self.loginViewModel.email!,
-//            "password": self.loginViewModel.password!
-//        ]
-//        self.loginModel.restApi(params: params, method: .POST, action: .login, complete: { resp in
-//            let data = JSON(resp)
-//
-//            if data["status"] == 200 {
-//                let token = "\(data["token"])"
-//                let setToken: Bool = self.setToken(data: token)
-//                if setToken {
-//                    self.performSegue(withIdentifier: "goMainFromLogin", sender: self)
-//                }
-//            }
-//            else if data["status"] == 404 {
-//                self.alertSimple(this: self, titileAlert: "Usuario no encontrado", bodyAlert: "Este usuario no existe en el sistema, intentalo con otro o crea tu cuenta", complete: { (resp) in
-//                    //empty textfilds
-//                })
-//            }
-//            else if data["status"] == 404 {
-//                self.alertSimple(this: self, titileAlert: "Usuario inexistente", bodyAlert: "Este usuario no existe en el sistema", complete: { (resp) in
-//                    //empty textfilds
-//                })
-//            }
-//            else if data["status"] == 400 {
-//                self.alertSimple(this: self, titileAlert: "Contraseña incorrecta", bodyAlert: "Este la contraseña no coincide con este usuario", complete: { (resp) in
-//                    //empty textfilds
-//                })
-//            } else {
-//                self.alertSimple(this: self, titileAlert: "Se ha producido un error", bodyAlert: "Intentalo mas tarde", complete: { (resp) in
-//                    //empty textfilds
-//                })
-//            }
-//
-//        })
-        
+
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
