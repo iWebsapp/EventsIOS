@@ -57,6 +57,7 @@
 		DE5EFF1D20FDC72400C9B7C8 /* HelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFF1C20FDC72400C9B7C8 /* HelpController.swift */; };
 		DE5EFF2120FDC76600C9B7C8 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFF2020FDC76600C9B7C8 /* SettingsController.swift */; };
 		DE5EFF2320FDCBA900C9B7C8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5EFF2220FDCBA900C9B7C8 /* MapKit.framework */; };
+		DE60D534213F902600C9CF07 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE60D533213F902600C9CF07 /* EditProfileController.swift */; };
 		DE645CC021097FB100999A95 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645CBF21097FB100999A95 /* UIViewControllerExt.swift */; };
 		DE664AF3210011080011E949 /* HelpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE664AF2210011080011E949 /* HelpCell.swift */; };
 		DE664AF5210011180011E949 /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE664AF4210011180011E949 /* Help.swift */; };
@@ -371,6 +372,7 @@
 		DE5EFF1C20FDC72400C9B7C8 /* HelpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpController.swift; sourceTree = "<group>"; };
 		DE5EFF2020FDC76600C9B7C8 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		DE5EFF2220FDCBA900C9B7C8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DE60D533213F902600C9CF07 /* EditProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
 		DE645CBF21097FB100999A95 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		DE664AF2210011080011E949 /* HelpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCell.swift; sourceTree = "<group>"; };
 		DE664AF4210011180011E949 /* Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
@@ -1155,6 +1157,22 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		DE60D531213F8FF800C9CF07 /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				DE60D532213F900400C9CF07 /* Controller */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		DE60D532213F900400C9CF07 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE60D533213F902600C9CF07 /* EditProfileController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		DE664AF1210010EA0011E949 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1727,6 +1745,7 @@
 		DECD373920EEB9EE0074AB19 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				DE60D531213F8FF800C9CF07 /* EditProfile */,
 				DE5B5E312119602D00886E0F /* NewEventContact */,
 				DE5B5E302119602100886E0F /* NewEventHours */,
 				DE5B5E2C2119507200886E0F /* NewEventServices */,
@@ -2359,6 +2378,7 @@
 				DE8255662102C7FD00582D20 /* Products.swift in Sources */,
 				DECD374720EEBBEA0074AB19 /* NotificationController.swift in Sources */,
 				DE9CC4FC210BAD9000F8FFEF /* MyCreditsCardsModel.swift in Sources */,
+				DE60D534213F902600C9CF07 /* EditProfileController.swift in Sources */,
 				DE1781002102FDCD005105F2 /* EventCommentsCell.swift in Sources */,
 				DE9CC504210BB1F200F8FFEF /* InfoCardShoppingModel.swift in Sources */,
 				DE20A7A621375BB900B2B4DA /* Path.swift in Sources */,

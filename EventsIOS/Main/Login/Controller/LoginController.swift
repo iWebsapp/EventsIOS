@@ -48,7 +48,6 @@ class LoginController: UIViewController, UITextFieldDelegate {
         ]
         self.loginModel.restApi(params: params, method: .POST, action: .login, complete: { resp in
             let data = JSON(resp)
-        
             if data["status"] == 200 {
                 let token = "\(data["token"])"
                 let setToken: Bool = self.setToken(data: token)
@@ -99,7 +98,7 @@ class LoginController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func changeTxtPassword(_ sender: DesignableTextField) {
-        if ( txtPassword.text?.count )! > 8 {
+        if ( txtPassword.text?.count )! > 7 {
             valid()
         } else {
             listenerLogin.isEnabled = false
@@ -108,7 +107,7 @@ class LoginController: UIViewController, UITextFieldDelegate {
     
     private func valid(){
         if isValidEmailAddress(email: txtEmail.text!) {
-            if ( txtPassword.text?.count )! > 8 {
+            if ( txtPassword.text?.count )! > 7 {
                 listenerLogin.isEnabled = true
             }
         } else {

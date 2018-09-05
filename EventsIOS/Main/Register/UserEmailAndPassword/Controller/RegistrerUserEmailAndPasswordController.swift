@@ -51,6 +51,7 @@ class RegistrerUserEmailAndPasswordController: UIViewController {
         ]
         self.createModel.restApi(params: params, method: .POST, action: .create) { resp in
             let data = JSON(resp)
+            print(data)
             if data["status"] == 202 {
                 self.alertSimple(this: self, titileAlert: "Alerta", bodyAlert: "Este corre ya esta asociado a una cuenta, intentalo con otra.", complete: { result in
                     self.txtEmail.text = ""
@@ -64,7 +65,7 @@ class RegistrerUserEmailAndPasswordController: UIViewController {
                     self.navigationController?.popViewController(animated: true)
                 })
             }
-            
+
             if data["status"] == 500 {
                 self.alertSimple(this: self, titileAlert: "Alerta", bodyAlert: "Se ha producido un error, intentalo más tarde", complete: { result in
                     self.txtEmail.text = ""
@@ -83,7 +84,7 @@ class RegistrerUserEmailAndPasswordController: UIViewController {
     }
     
     @IBAction func changeTxtPassword(_ sender: DesignableTextField) {
-        if ( txtPassword.text?.count )! > 8 {
+        if ( txtPassword.text?.count )! > 7 {
             valid()
         } else {
             listenerNext.isEnabled = false
@@ -92,7 +93,7 @@ class RegistrerUserEmailAndPasswordController: UIViewController {
     
     private func valid(){
         if isValidEmailAddress(email: txtEmail.text!) {
-            if ( txtPassword.text?.count )! > 8 {
+            if ( txtPassword.text?.count )! > 7 {
                 listenerNext.isEnabled = true
             }
         } else {
