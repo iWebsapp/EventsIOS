@@ -12,5 +12,8 @@ enum Path {
     case login
     case privacy
     case abouts
+    case create
     case changeEmail
+    case changePassword
+    case changeBirthday
 }

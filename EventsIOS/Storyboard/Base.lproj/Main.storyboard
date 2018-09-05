@@ -24,7 +24,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KX4-QA-qRZ">
                                 <rect key="frame" x="27" y="201" width="266" height="96"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WRH-u9-GeF" customClass="BindingTextField" customModule="EventsIOS_Debug" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WRH-u9-GeF">
                                         <rect key="frame" x="0.0" y="0.0" width="266" height="44"/>
                                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
@@ -35,8 +35,11 @@
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeTxtEmail:" destination="BYZ-38-t0r" eventType="editingChanged" id="YYb-I2-QRj"/>
+                                        </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Zu-bW-ndV" customClass="BindingTextField" customModule="EventsIOS_Debug" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Zu-bW-ndV">
                                         <rect key="frame" x="0.0" y="52" width="266" height="44"/>
                                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
@@ -47,6 +50,9 @@
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeTxtPassword:" destination="BYZ-38-t0r" eventType="editingChanged" id="yML-Oh-axE"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -771,6 +777,9 @@
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeTxtEmail:" destination="CQH-DN-hcE" eventType="editingChanged" id="Jzo-e3-BqQ"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ACA-4u-ggn" customClass="DesignableTextField" customModule="EventsIOS_Debug" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="52" width="266" height="44"/>
@@ -783,11 +792,13 @@
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeTxtPassword:" destination="CQH-DN-hcE" eventType="editingChanged" id="eOX-pn-WhI"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="96" id="qBM-xz-wcc"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="96" id="skg-2K-HBb"/>
                                     <constraint firstAttribute="width" constant="266" id="xWx-Vv-8Tc"/>
                                 </constraints>
                             </stackView>
@@ -821,7 +832,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="VBC-2s-Sr5" kind="show" id="YKk-sp-W1o"/>
+                                            <action selector="btnCreate:" destination="CQH-DN-hcE" eventType="touchUpInside" id="prL-fJ-WhH"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dlG-bi-FvA">

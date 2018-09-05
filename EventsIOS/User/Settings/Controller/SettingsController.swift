@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import SwiftyJSON
+import Alamofire
 
 class SettingsController: UIViewController {
 
-    private var settingsViewModel: SettingsViewModel!
-    private var settingsModel: SettingsModel!
+    //private var settingsViewModel: SettingsViewModel!
+    private var settingsModel: Webservice!
     
     @IBOutlet weak var cardEmail: UIStackView!
     @IBOutlet weak var cardPassword: UIStackView!
@@ -124,15 +126,48 @@ class SettingsController: UIViewController {
     }
     
     @IBAction func btnSaveEmail(_ sender: UIButton) {
-        print("email...")
+        self.alertAvanced(this: self, titileAlert: "¿Esta seguro?", bodyAlert: "Se cambiará tu correo electronico") { resp in
+            if resp == "acept" {
+                let email:String = self.txtNewEmail.text!
+                let param = [
+                    "email": email
+                ]
+                print("email: ", param)
+                self.settingsModel.restApi(params: param, method: .POST, action: .changeEmail, complete: { result in
+                    let data = JSON(result)
+                    print(data)
+                })
+
+                
+                
+            }
+        }
     }
     
     @IBAction func btnSavePassword(_ sender: UIButton) {
-        print("password...")
+        self.alertAvanced(this: self, titileAlert: "¿Esta seguro?", bodyAlert: "Se cambiará tu contraseña actual") { resp in
+            if resp == "acept" {
+                let passNew:String = self.txtPassNew.text!
+                let passOld:String = self.txtPassOld.text!
+                let params = [
+                    "newpass": passNew,
+                    "password": passOld,
+                ]
+                print("password: ", params)
+            }
+        }
     }
     
     @IBAction func btnSaveBirthday(_ sender: UIButton) {
-        print("birthday...")
+        self.alertAvanced(this: self, titileAlert: "¿Esta seguro?", bodyAlert: "Se cambiará tu fecha de nacimiento") { resp in
+            if resp == "acept" {
+                let birthday:String = "" //self.txtChangeBirthday
+                let params = [
+                    "birthday": birthday,
+                ]
+                print("birthday: ", params)
+            }
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -153,15 +188,6 @@ class SettingsController: UIViewController {
         listenerSavePassword.isHidden = true
         listenerSaveBirthday.isHidden = true
     }
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

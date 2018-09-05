@@ -10,10 +10,10 @@ import Foundation
 
 class SettingsViewModel {
     
-    var email: String!
-    var passOld: String!
-    var passNew: String!
-    var birthday: String!
-    var avatar: String!
+    var email: String?
+    var passOld: String?
+    var passNew: String?
+    var birthday: String?
+    var avatar: String?
     
 }

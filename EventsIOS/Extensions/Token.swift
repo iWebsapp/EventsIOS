@@ -26,6 +26,14 @@ extension UIViewController {
         return remove
     }
     
+    func isLoginToken() ->Bool {
+        if KeychainWrapper.standard.string(forKey: "token") == nil {
+            return false
+        } else {
+            return true
+        }
+    }
+    
     public func envWhatModeIs() ->String {
         return ProcessInfo.processInfo.environment["env_mode"]!
     }
