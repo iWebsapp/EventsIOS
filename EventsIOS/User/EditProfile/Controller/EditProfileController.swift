@@ -24,18 +24,32 @@ class EditProfileController: UIViewController {
     @IBOutlet weak var btnEmail: UIButton!
     @IBOutlet weak var btnBirthday: UIButton!
     
+    public var paramsSegue: String = ""
+    
     private var editModel: Webservice!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.editModel = Webservice()
+        self.paramsSegue = UserDefaults.standard.object(forKey: "setting") as! String
+        
         cardEmail.isHidden = true
         cardPassword.isHidden = true
-        cardBirthday.isHidden = false
+        cardBirthday.isHidden = true
+        
+        if self.paramsSegue == "email" {
+            cardEmail.isHidden = false
+        }
+        if self.paramsSegue == "password" {
+            cardPassword.isHidden = false
+        }
+        if self.paramsSegue == "birthday" {
+            cardBirthday.isHidden = false
+        }
         
         btnPassword.isEnabled = false
         btnEmail.isEnabled = false
-        btnBirthday.isEnabled = true
+        btnBirthday.isEnabled = false
     }
     
     @IBAction func behind(_ sender: UIButton) {
@@ -133,7 +147,11 @@ class EditProfileController: UIViewController {
         }
     }
     
+
     
+    @IBAction func listenerBirthday(_ sender: UIDatePicker) {
+        btnBirthday.isEnabled = true
+    }
     
     @IBAction func changeBirthday(_ sender: UIButton) {
         self.alertAvanced(this: self, titileAlert: "¿Esta seguro?", bodyAlert: "Se cambiará la fecha de nacimiento actual") { result in

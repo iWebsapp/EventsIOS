@@ -30,25 +30,35 @@ class SettingsController: UIViewController {
     }
 
     @IBAction func editEmail(_ sender: UIButton) {
+        self.deleteParams()
+        UserDefaults.standard.set("email", forKey: "setting")
         self.performSegue(withIdentifier: "goEditSettings", sender: self )
     }
     
     @IBAction func editPassword(_ sender: UIButton) {
+        self.deleteParams()
+        UserDefaults.standard.set("password", forKey: "setting")
         self.performSegue(withIdentifier: "goEditSettings", sender: self )
     }
     
     @IBAction func editBirthday(_ sender: UIButton) {
+        self.deleteParams()
+        UserDefaults.standard.set("birthday", forKey: "setting")
         self.performSegue(withIdentifier: "goEditSettings", sender: self )
     }
     
     @IBAction func editCredit(_ sender: UIButton) {
+        self.deleteParams()
         self.performSegue(withIdentifier: "goPayment", sender: self )
     }
     
     @IBAction func behind(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
-    
+
+    func deleteParams(){
+        UserDefaults.standard.removeObject(forKey: "setting")
+    }
    
 
 }

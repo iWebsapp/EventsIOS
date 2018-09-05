@@ -243,6 +243,9 @@
                                         <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
                                             <!--2037-12-31 11:00:00 a. m. +0000-->
                                         </date>
+                                        <connections>
+                                            <action selector="listenerBirthday:" destination="UNg-NU-BFB" eventType="valueChanged" id="bdq-w4-PSk"/>
+                                        </connections>
                                     </datePicker>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lpe-N1-xFO">
                                         <rect key="frame" x="223" y="184" width="33" height="33"/>
