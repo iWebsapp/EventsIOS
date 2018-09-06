@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07D87FBFFCC4A572A5F6A5C2 /* Pods_EventsIOS_Debug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B49481B403EC362CA271BC3C /* Pods_EventsIOS_Debug.framework */; };
 		75D0C115BA755D88F5C5F042 /* Pods_EventsIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5571407C61E5CD71AEF74A /* Pods_EventsIOS.framework */; };
 		DE025B23210FF199000C9AE3 /* mapDay.json in Resources */ = {isa = PBXBuildFile; fileRef = DE025B21210FF198000C9AE3 /* mapDay.json */; };
 		DE025B24210FF199000C9AE3 /* mapNight.json in Resources */ = {isa = PBXBuildFile; fileRef = DE025B22210FF198000C9AE3 /* mapNight.json */; };
@@ -43,6 +44,7 @@
 		DE4403D720E9FE61002606C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4403D520E9FE61002606C4 /* Main.storyboard */; };
 		DE4403D920E9FE65002606C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4403D820E9FE65002606C4 /* Assets.xcassets */; };
 		DE4403DC20E9FE65002606C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4403DA20E9FE65002606C4 /* LaunchScreen.storyboard */; };
+		DE445A1D2140E9A40016FA94 /* Navegation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE445A1C2140E9A40016FA94 /* Navegation.swift */; };
 		DE53B01A210C3E76004B3383 /* EventInformationAddressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53B019210C3E76004B3383 /* EventInformationAddressController.swift */; };
 		DE53B01C210C3E98004B3383 /* EventInformationContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53B01B210C3E98004B3383 /* EventInformationContactController.swift */; };
 		DE53B01E210C3EC2004B3383 /* EventInformationScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53B01D210C3EC1004B3383 /* EventInformationScheduleController.swift */; };
@@ -265,7 +267,6 @@
 		DEA2DC142135E33A00050E20 /* ReportProblemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFF1420FDC6AD00C9B7C8 /* ReportProblemsController.swift */; };
 		DEA2DC152135E33A00050E20 /* RegisterUserPromotionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CAA20ED2A45009D30E8 /* RegisterUserPromotionsController.swift */; };
 		DEA2DC172135E33A00050E20 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5EFF2220FDCBA900C9B7C8 /* MapKit.framework */; };
-		DEA2DC182135E33A00050E20 /* Pods_EventsIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5571407C61E5CD71AEF74A /* Pods_EventsIOS.framework */; };
 		DEA2DC1A2135E33A00050E20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4403DA20E9FE65002606C4 /* LaunchScreen.storyboard */; };
 		DEA2DC1B2135E33A00050E20 /* mapDay.json in Resources */ = {isa = PBXBuildFile; fileRef = DE025B21210FF198000C9AE3 /* mapDay.json */; };
 		DEA2DC1C2135E33A00050E20 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DECD373420EDEFB40074AB19 /* User.storyboard */; };
@@ -318,9 +319,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D7C69E1FF13C5B710BDD288 /* Pods-EventsIOS-Debug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsIOS-Debug.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventsIOS-Debug/Pods-EventsIOS-Debug.debug.xcconfig"; sourceTree = "<group>"; };
 		5E5571407C61E5CD71AEF74A /* Pods_EventsIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventsIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		761F37E3749DD414C245D3D8 /* Pods-EventsIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventsIOS/Pods-EventsIOS.release.xcconfig"; sourceTree = "<group>"; };
-		799E4A944D0D180A48E5833E /* Pods-EventsIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventsIOS/Pods-EventsIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B0889469CBC048AF91EAD96F /* Pods-EventsIOS-Debug.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsIOS-Debug.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventsIOS-Debug/Pods-EventsIOS-Debug.release.xcconfig"; sourceTree = "<group>"; };
+		B49481B403EC362CA271BC3C /* Pods_EventsIOS_Debug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventsIOS_Debug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE025B21210FF198000C9AE3 /* mapDay.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mapDay.json; sourceTree = "<group>"; };
 		DE025B22210FF198000C9AE3 /* mapNight.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mapNight.json; sourceTree = "<group>"; };
 		DE0FBA1820F2DF2600921DEC /* ProfileEventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEventController.swift; sourceTree = "<group>"; };
@@ -358,6 +360,7 @@
 		DE4403D820E9FE65002606C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE4403DB20E9FE65002606C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE4403DD20E9FE65002606C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE445A1C2140E9A40016FA94 /* Navegation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navegation.swift; sourceTree = "<group>"; };
 		DE53B019210C3E76004B3383 /* EventInformationAddressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInformationAddressController.swift; sourceTree = "<group>"; };
 		DE53B01B210C3E98004B3383 /* EventInformationContactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInformationContactController.swift; sourceTree = "<group>"; };
 		DE53B01D210C3EC1004B3383 /* EventInformationScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInformationScheduleController.swift; sourceTree = "<group>"; };
@@ -492,6 +495,7 @@
 			files = (
 				DE5EFF2320FDCBA900C9B7C8 /* MapKit.framework in Frameworks */,
 				75D0C115BA755D88F5C5F042 /* Pods_EventsIOS.framework in Frameworks */,
+				07D87FBFFCC4A572A5F6A5C2 /* Pods_EventsIOS_Debug.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,7 +504,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEA2DC172135E33A00050E20 /* MapKit.framework in Frameworks */,
-				DEA2DC182135E33A00050E20 /* Pods_EventsIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +515,7 @@
 			children = (
 				DE5EFF2220FDCBA900C9B7C8 /* MapKit.framework */,
 				5E5571407C61E5CD71AEF74A /* Pods_EventsIOS.framework */,
+				B49481B403EC362CA271BC3C /* Pods_EventsIOS_Debug.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1866,6 +1870,7 @@
 				DE20A7A321375B9200B2B4DA /* Method.swift */,
 				DE20A7A521375BB900B2B4DA /* Path.swift */,
 				DEC463342137A467000B6D16 /* Token.swift */,
+				DE445A1C2140E9A40016FA94 /* Navegation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1986,8 +1991,8 @@
 		E076AE8F5DB7C8CAED16B2CA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				799E4A944D0D180A48E5833E /* Pods-EventsIOS.debug.xcconfig */,
-				761F37E3749DD414C245D3D8 /* Pods-EventsIOS.release.xcconfig */,
+				3D7C69E1FF13C5B710BDD288 /* Pods-EventsIOS-Debug.debug.xcconfig */,
+				B0889469CBC048AF91EAD96F /* Pods-EventsIOS-Debug.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -2020,13 +2025,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEA2DC252135E33A00050E20 /* Build configuration list for PBXNativeTarget "EventsIOS-Release" */;
 			buildPhases = (
-				DEA2DB892135E33A00050E20 /* [CP] Check Pods Manifest.lock */,
 				DEA2DB8A2135E33A00050E20 /* Sources */,
 				DEA2DC162135E33A00050E20 /* Frameworks */,
 				DEA2DC192135E33A00050E20 /* Resources */,
-				DEA2DC222135E33A00050E20 /* [CP] Embed Pods Frameworks */,
 				DEA2DC232135E33A00050E20 /* ShellScript */,
-				DEA2DC242135E33A00050E20 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2121,7 +2123,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EventsIOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-EventsIOS-Debug-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2134,7 +2136,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-EventsIOS/Pods-EventsIOS-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-EventsIOS-Debug/Pods-EventsIOS-Debug-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
@@ -2153,7 +2155,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventsIOS/Pods-EventsIOS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EventsIOS-Debug/Pods-EventsIOS-Debug-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D81DF58DF36AC3388CFFC48F /* [CP] Copy Pods Resources */ = {
@@ -2162,7 +2164,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-EventsIOS/Pods-EventsIOS-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-EventsIOS-Debug/Pods-EventsIOS-Debug-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -2171,53 +2173,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventsIOS/Pods-EventsIOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DEA2DB892135E33A00050E20 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EventsIOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DEA2DC222135E33A00050E20 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-EventsIOS/Pods-EventsIOS-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventsIOS/Pods-EventsIOS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EventsIOS-Debug/Pods-EventsIOS-Debug-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DEA2DC232135E33A00050E20 /* ShellScript */ = {
@@ -2232,24 +2188,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" 3f4041f8d213c2111e4fbaf426aad1a46f4953a5 1a1ef0818b6768980c9200d9c6262a365833e9aa604faa25fb676502c8f1daad";
-		};
-		DEA2DC242135E33A00050E20 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-EventsIOS/Pods-EventsIOS-resources.sh",
-				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventsIOS/Pods-EventsIOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		DEFC9DE920EA01400000149A /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2322,6 +2260,7 @@
 				DE20A7982136773900B2B4DA /* LoginViewModel.swift in Sources */,
 				DE4403D420E9FE61002606C4 /* LoginController.swift in Sources */,
 				DEAB3CA920ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift in Sources */,
+				DE445A1D2140E9A40016FA94 /* Navegation.swift in Sources */,
 				DE8C890C210C229B00696239 /* NewGuaranteedTableViewModel.swift in Sources */,
 				DE2F6854210564A200898DF0 /* GuaranteedTableController.swift in Sources */,
 				DE82555B2102AD7600582D20 /* InfoCardController.swift in Sources */,
@@ -2707,7 +2646,7 @@
 		};
 		DE4403E120E9FE65002606C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 799E4A944D0D180A48E5833E /* Pods-EventsIOS.debug.xcconfig */;
+			baseConfigurationReference = 3D7C69E1FF13C5B710BDD288 /* Pods-EventsIOS-Debug.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Debug";
 				CODE_SIGN_STYLE = Automatic;
@@ -2728,7 +2667,7 @@
 		};
 		DE4403E220E9FE65002606C4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 761F37E3749DD414C245D3D8 /* Pods-EventsIOS.release.xcconfig */;
+			baseConfigurationReference = B0889469CBC048AF91EAD96F /* Pods-EventsIOS-Debug.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Debug";
 				CODE_SIGN_STYLE = Automatic;
@@ -2748,7 +2687,6 @@
 		};
 		DEA2DC262135E33A00050E20 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 799E4A944D0D180A48E5833E /* Pods-EventsIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Release";
 				CODE_SIGN_STYLE = Automatic;
@@ -2769,7 +2707,6 @@
 		};
 		DEA2DC272135E33A00050E20 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 761F37E3749DD414C245D3D8 /* Pods-EventsIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Release";
 				CODE_SIGN_STYLE = Automatic;

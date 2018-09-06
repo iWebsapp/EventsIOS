@@ -10,16 +10,31 @@ import UIKit
 import Fabric
 import Crashlytics
 import GoogleMaps
+import SwiftKeychainWrapper
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         Fabric.sharedSDK().debug = true
         Fabric.with([Crashlytics.self])
         GMSServices.provideAPIKey("AIzaSyDczHm98ulvU9aSwa20288WAxeqAx1pm4A")
+        
+        if KeychainWrapper.standard.string(forKey: "token") == nil {
+            let mainStoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil )
+            let mainViewController = mainStoryboard.instantiateViewController(withIdentifier: "loginFalse")
+            self.window?.rootViewController = mainViewController
+            self.window?.makeKeyAndVisible()
+        } else {
+            let mainStoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil )
+            let mainViewController = mainStoryboard.instantiateViewController(withIdentifier: "loginTrue")
+            self.window?.rootViewController = mainViewController
+            self.window?.makeKeyAndVisible()
+        }
+        
         return true
     }
 
@@ -47,4 +62,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-

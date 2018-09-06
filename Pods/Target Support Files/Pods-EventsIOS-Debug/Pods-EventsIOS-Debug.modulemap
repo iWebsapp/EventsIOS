@@ -1,0 +1,6 @@
+framework module Pods_EventsIOS_Debug {
+  umbrella header "Pods-EventsIOS-Debug-umbrella.h"
+
+  export *
+  module * { export * }
+}
