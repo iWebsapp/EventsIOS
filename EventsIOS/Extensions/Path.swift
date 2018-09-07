@@ -16,4 +16,5 @@ enum Path {
     case changeEmail
     case changePassword
     case changeBirthday
+    case help
 }

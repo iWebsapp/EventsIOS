@@ -12,7 +12,7 @@ import Alamofire
 
 class Webservice: UIViewController {
     
-    public let url: String = "\(ProcessInfo.processInfo.environment["web_service"]!)"
+    private let url: String = "\(ProcessInfo.processInfo.environment["web_service"]!)"
     private var header = ["Authorization": ""]
     
     func methods( m: Method ) -> HTTPMethod {
@@ -44,6 +44,8 @@ class Webservice: UIViewController {
                 return "users/change/password"
             case .changeBirthday:
                 return "users/change/birthday"
+            case .help:
+                return "help/all"
         }
     }
     

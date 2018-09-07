@@ -1330,7 +1330,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mgK-wX-Ef7">
-                                <rect key="frame" x="0.0" y="195" width="320" height="373"/>
+                                <rect key="frame" x="0.0" y="160" width="320" height="408"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="79" id="YpR-y0-7Q0" customClass="HelpCell" customModule="EventsIOS_Debug" customModuleProvider="target">
@@ -1414,20 +1414,23 @@
                                 </prototypes>
                             </tableView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Haz tu pregunta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lSg-Z0-LU5">
-                                <rect key="frame" x="27" y="135" width="266" height="40"/>
-                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="27" y="90" width="266" height="50"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="IEM-XS-lTM"/>
+                                    <constraint firstAttribute="height" constant="50" id="IEM-XS-lTM"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="search:" destination="CNe-SO-xfU" eventType="editingChanged" id="qh4-gc-wJo"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="mgK-wX-Ef7" firstAttribute="bottom" secondItem="8oh-hK-QCA" secondAttribute="bottom" id="2Mr-s6-Mja"/>
-                            <constraint firstItem="lSg-Z0-LU5" firstAttribute="top" secondItem="UdJ-I5-v9G" secondAttribute="bottom" constant="-265" id="2xy-ZH-d3Q"/>
+                            <constraint firstItem="lSg-Z0-LU5" firstAttribute="top" secondItem="UdJ-I5-v9G" secondAttribute="bottom" constant="-310" id="2xy-ZH-d3Q"/>
                             <constraint firstItem="UdJ-I5-v9G" firstAttribute="leading" secondItem="8oh-hK-QCA" secondAttribute="leading" id="3iX-Ds-Qjr"/>
                             <constraint firstItem="E2I-k4-iwA" firstAttribute="leading" secondItem="8oh-hK-QCA" secondAttribute="leading" constant="50" id="Fwv-0C-ZcM"/>
                             <constraint firstItem="UdJ-I5-v9G" firstAttribute="top" secondItem="SV7-vW-VaM" secondAttribute="top" id="LOz-PE-C6f"/>
@@ -1451,6 +1454,7 @@
                     <connections>
                         <outlet property="header" destination="UdJ-I5-v9G" id="wFo-W2-KJX"/>
                         <outlet property="table" destination="mgK-wX-Ef7" id="wZS-f4-cHZ"/>
+                        <outlet property="txtSearch" destination="lSg-Z0-LU5" id="9wV-Dg-TtW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WRj-ei-13N" userLabel="First Responder" sceneMemberID="firstResponder"/>

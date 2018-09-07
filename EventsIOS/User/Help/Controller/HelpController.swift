@@ -12,17 +12,25 @@ class HelpController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var header: UIImageView!
-    private var helpListViewModel: HelpListViewModel!
-    private var helpModel: HelpModel!
+    @IBOutlet weak var txtSearch: UITextField!
+    
+    private var helpListViewModel: HelpListViewModel = HelpListViewModel()
+    private var listHelps: [Help] = []
+    private var listHelpsSearch: [Help] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         table.delegate = self
         table.dataSource = self
-        self.helpModel = HelpModel()
-        self.helpListViewModel = HelpListViewModel(helpModel: self.helpModel)
-        DispatchQueue.main.async {
+        getAllHelps()
+    }
+    
+    private func getAllHelps(){
+        self.helpListViewModel.getHelps { response in
+            self.listHelps = response
+            self.listHelpsSearch = self.listHelps
             self.table.reloadData()
         }
     }
@@ -35,18 +43,13 @@ class HelpController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     func numberOfSections(in tableView: UITableView) -> Int {
-        return self.helpListViewModel.helpViewModel.count
+        return self.listHelpsSearch.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if self.helpListViewModel.helpViewModel[section].open == true {
-            return self.helpListViewModel.helpViewModel[section].answer.count + 1
+        if self.listHelps[section].open == true {
+            return self.listHelpsSearch[section].answer.count + 1
         }else{
             return 1
         }
@@ -57,25 +60,25 @@ class HelpController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HelpCell
             cell.listenerView.topColor = UIColor(red:0.90, green:0.90, blue:0.90, alpha:1.0)
             cell.listenerView.bottomColor = UIColor(red:1.00, green:1.00, blue:1.00, alpha:1.0)
-            cell.txtQuestion?.text = self.helpListViewModel.helpViewModel[indexPath.section].question
+            cell.txtQuestion?.text = self.listHelpsSearch[indexPath.section].question
             return cell
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HelpCell
-            cell.listenerView.topColor = UIColor(red:0.90, green:0.37, blue:0.40, alpha:1.0)
-            cell.listenerView.bottomColor = UIColor(red:1.04, green:0.25, blue:0.28, alpha:1.0)
-            cell.txtQuestion?.text = self.helpListViewModel.helpViewModel[indexPath.section].answer[indexPath.row - 1]
+            cell.listenerView.topColor = UIColor(red:1.04, green:0.25, blue:0.28, alpha:1.0)
+            cell.listenerView.bottomColor = UIColor(red:0.90, green:0.37, blue:0.40, alpha:1.0)
+            cell.txtQuestion?.text = self.listHelpsSearch[indexPath.section].answer[indexPath.row - 1]
             return cell
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0{
-            if self.helpListViewModel.helpViewModel[indexPath.section].open == true {
-                self.helpListViewModel.helpViewModel[indexPath.section].open = false
+            if self.listHelpsSearch[indexPath.section].open == true {
+                self.listHelpsSearch[indexPath.section].open = false
                 let secciones = IndexSet.init(integer: indexPath.section)
                 table.reloadSections(secciones, with: .fade)
             }else{
-                self.helpListViewModel.helpViewModel[indexPath.section].open = true
+                self.listHelpsSearch[indexPath.section].open = true
                 let secciones = IndexSet.init(integer: indexPath.section)
                 table.reloadSections(secciones, with: .fade)
             }
@@ -86,18 +89,25 @@ class HelpController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func search(_ sender: UITextField) {
+        if txtSearch.text!.isEmpty {
+            listHelpsSearch = listHelps
+            DispatchQueue.main.async {
+                self.table.reloadData()
+            }
+        } else {
+            listHelpsSearch = listHelps.filter({ ( help ) -> Bool in
+                help.question.lowercased().contains(txtSearch.text!.lowercased())
+            })
+            DispatchQueue.main.async {
+                self.table.reloadData()
+            }
+        }
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }

@@ -10,19 +10,12 @@ import Foundation
 
 class HelpListViewModel {
     
-    public var helpViewModel: [HelpViewModel] = [HelpViewModel]()
-    private var helpModel: HelpModel
+    private var helpModel: HelpModel = HelpModel()
     
-    init(helpModel: HelpModel){
-        self.helpModel = helpModel
-        getHelps()
-    }
-    
-    private func getHelps(){
-        let help = self.helpModel.getAllHelps()
-        self.helpViewModel = help.map{ item in
-            return HelpViewModel(help: item)
-        }
+    func getHelps( onSuccess: @escaping( [Help] ) -> Void){
+        self.helpModel.getAllHelps(complete: { help in
+            onSuccess(help)
+        })
     }
     
 }
