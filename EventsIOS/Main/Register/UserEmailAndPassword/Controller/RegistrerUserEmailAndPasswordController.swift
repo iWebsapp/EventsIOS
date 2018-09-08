@@ -23,12 +23,16 @@ class RegistrerUserEmailAndPasswordController: UIViewController {
         createModel = Webservice()
         listenerNext.isEnabled = false
         // Do any additional setup after loading the view.
+    
         
         if self.envWhatModeIs() == "debug" {
-            txtMode.isHidden = false
+            txtMode.text = "Debug mode"
+        } else if self.envWhatModeIs() == "test" {
+            txtMode.text = "Test mode"
         } else {
             txtMode.isHidden = true
         }
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -48,7 +52,8 @@ class RegistrerUserEmailAndPasswordController: UIViewController {
     }
 
     @IBAction func behind(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil )
+        //self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func btnCreate(_ sender: DesignableButton) {

@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>EventsIOS-Test.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>DEA2DB882135E33A00050E20</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DEDF3A1C2143A97100AE99F7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

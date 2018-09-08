@@ -36,7 +36,7 @@ extension UIViewController {
     
     public func envWhatModeIs() ->String {
         return ProcessInfo.processInfo.environment["env_mode"]!
-    }
+    } 
     
     public func envWhatAccsTokenIs() ->String {
         return ProcessInfo.processInfo.environment["access_token"]!

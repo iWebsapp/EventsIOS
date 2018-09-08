@@ -28,10 +28,13 @@ class LoginController: UIViewController, UITextFieldDelegate {
         
         if self.envWhatModeIs() == "debug" {
             listenerLogin.isEnabled = true
-            txtMode.isHidden = false
-        } else {
+            txtMode.text = "Debug mode"
+        } else if self.envWhatModeIs() == "test" {
             listenerLogin.isEnabled = false
+            txtMode.text = "Test mode"
+        } else {
             txtMode.isHidden = true
+            listenerLogin.isEnabled = false
         }
         
         // Do any additional setup after loading the view, typically from a nib.

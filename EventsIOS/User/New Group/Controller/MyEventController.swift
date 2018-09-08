@@ -23,7 +23,9 @@ class MyEventController: UIViewController, UITableViewDelegate, UITableViewDataS
         table.dataSource = self
         
         if self.envWhatModeIs() == "debug" {
-            txtMode.isHidden = false
+            txtMode.text = "Debug mode"
+        } else if self.envWhatModeIs() == "test" {
+            txtMode.text = "Test mode"
         } else {
             txtMode.isHidden = true
         }

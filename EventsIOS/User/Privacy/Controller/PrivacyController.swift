@@ -19,7 +19,9 @@ class PrivacyController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if self.envWhatModeIs() == "debug" {
-            txtMode.isHidden = false
+            txtMode.text = "Debug mode"
+        } else if self.envWhatModeIs() == "test" {
+            txtMode.text = "Test mode"
         } else {
             txtMode.isHidden = true
         }

@@ -25,7 +25,9 @@ class ProfileUserController: UIViewController, UITableViewDataSource, UITableVie
         self.profileUserListViewModel = ProfileUserListViewModel(profileUserModel: self.profileUserModel)
         
         if self.envWhatModeIs() == "debug" {
-            txtMode.isHidden = false
+            txtMode.text = "Debug mode"
+        } else if self.envWhatModeIs() == "test" {
+            txtMode.text = "Test mode"
         } else {
             txtMode.isHidden = true
         }
