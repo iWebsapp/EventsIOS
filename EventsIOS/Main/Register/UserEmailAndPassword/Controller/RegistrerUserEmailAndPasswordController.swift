@@ -15,6 +15,7 @@ class RegistrerUserEmailAndPasswordController: UIViewController {
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var listenerNext: UIButton!
     @IBOutlet weak var header: UIImageView!
+    @IBOutlet weak var txtMode: UILabel!
     private var createModel: Webservice!
     
     override func viewDidLoad() {
@@ -22,6 +23,12 @@ class RegistrerUserEmailAndPasswordController: UIViewController {
         createModel = Webservice()
         listenerNext.isEnabled = false
         // Do any additional setup after loading the view.
+        
+        if self.envWhatModeIs() == "debug" {
+            txtMode.isHidden = false
+        } else {
+            txtMode.isHidden = true
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {

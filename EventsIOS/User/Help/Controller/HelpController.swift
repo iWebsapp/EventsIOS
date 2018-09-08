@@ -13,6 +13,7 @@ class HelpController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var header: UIImageView!
     @IBOutlet weak var txtSearch: UITextField!
+    @IBOutlet weak var txtMode: UILabel!
     
     private var helpListViewModel: HelpListViewModel = HelpListViewModel()
     private var listHelps: [Help] = []
@@ -22,6 +23,11 @@ class HelpController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        if self.envWhatModeIs() == "debug" {
+            txtMode.isHidden = false
+        } else {
+            txtMode.isHidden = true
+        }
         table.delegate = self
         table.dataSource = self
         getAllHelps()

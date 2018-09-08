@@ -12,6 +12,7 @@ class ProfileUserController: UIViewController, UITableViewDataSource, UITableVie
     
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var header: UIImageView!
+    @IBOutlet weak var txtMode: UILabel!
     private var profileUserListViewModel: ProfileUserListViewModel!
     private var profileUserModel: ProfileUserModel!
     
@@ -22,6 +23,13 @@ class ProfileUserController: UIViewController, UITableViewDataSource, UITableVie
         table.delegate = self
         self.profileUserModel = ProfileUserModel()
         self.profileUserListViewModel = ProfileUserListViewModel(profileUserModel: self.profileUserModel)
+        
+        if self.envWhatModeIs() == "debug" {
+            txtMode.isHidden = false
+        } else {
+            txtMode.isHidden = true
+        }
+        
         DispatchQueue.main.async {
             self.table.reloadData()
         }

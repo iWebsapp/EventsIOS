@@ -12,6 +12,7 @@ class MyEventController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var header: UIImageView!
+    @IBOutlet weak var txtMode: UILabel!
     private var eventListViewModel: EventListViewModel!
     private var eventData: EventModel!
     
@@ -20,6 +21,13 @@ class MyEventController: UIViewController, UITableViewDelegate, UITableViewDataS
          // Do any additional setup after loading the view.
         table.delegate = self
         table.dataSource = self
+        
+        if self.envWhatModeIs() == "debug" {
+            txtMode.isHidden = false
+        } else {
+            txtMode.isHidden = true
+        }
+        
         self.eventData = EventModel()
         self.eventListViewModel = EventListViewModel(eventModel: self.eventData)
         DispatchQueue.main.async {

@@ -13,10 +13,17 @@ class PrivacyController: UIViewController {
 
     @IBOutlet weak var header: UIImageView!
     @IBOutlet weak var txtLabel: UITextView!
+    @IBOutlet weak var txtMode: UILabel!
     private var privacyModel: Webservice!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if self.envWhatModeIs() == "debug" {
+            txtMode.isHidden = false
+        } else {
+            txtMode.isHidden = true
+        }
+        
         self.privacyModel = Webservice()
         DispatchQueue.main.async {
             self.getPrivacy()

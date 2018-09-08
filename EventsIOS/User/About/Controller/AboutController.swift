@@ -11,12 +11,18 @@ import SwiftyJSON
 
 class AboutController: UIViewController {
 
+    @IBOutlet weak var txtMode: UILabel!
     @IBOutlet weak var header: UIImageView!
     @IBOutlet weak var txtLabel: UITextView!
     private var aboutModel: Webservice!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if self.envWhatModeIs() == "debug" {
+            txtMode.isHidden = false
+        } else {
+            txtMode.isHidden = true
+        }
         self.aboutModel = Webservice()
         DispatchQueue.main.async {
             self.getAbout()

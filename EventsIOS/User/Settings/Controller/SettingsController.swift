@@ -15,10 +15,16 @@ class SettingsController: UIViewController {
     //private var settingsViewModel: SettingsViewModel!
     private var settingsModel: Webservice!
     @IBOutlet weak var header: UIImageView!
+    @IBOutlet weak var txtMode: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //Do any additional setup after loading the view.
+        if self.envWhatModeIs() == "debug" {
+            txtMode.isHidden = false
+        } else {
+            txtMode.isHidden = true
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

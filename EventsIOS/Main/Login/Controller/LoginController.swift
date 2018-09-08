@@ -18,6 +18,7 @@ class LoginController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var listenerLogin: UIButton!
     @IBOutlet weak var background: UIImageView!
+    @IBOutlet weak var txtMode: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +28,10 @@ class LoginController: UIViewController, UITextFieldDelegate {
         
         if self.envWhatModeIs() == "debug" {
             listenerLogin.isEnabled = true
+            txtMode.isHidden = false
         } else {
             listenerLogin.isEnabled = false
+            txtMode.isHidden = true
         }
         
         // Do any additional setup after loading the view, typically from a nib.
