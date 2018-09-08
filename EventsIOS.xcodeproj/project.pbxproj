@@ -163,6 +163,167 @@
 		DEE8025420EEF41900ABAFEF /* InfoEvenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8025320EEF41900ABAFEF /* InfoEvenController.swift */; };
 		DEE8025620EEFB0200ABAFEF /* DesignableGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8025520EEFB0200ABAFEF /* DesignableGradient.swift */; };
 		DEE8025820EF012F00ABAFEF /* DesignableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8025720EF012F00ABAFEF /* DesignableImage.swift */; };
+		DEF110502143A54700D81656 /* DesignableGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8025520EEFB0200ABAFEF /* DesignableGradient.swift */; };
+		DEF110512143A54700D81656 /* DesignableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8025720EF012F00ABAFEF /* DesignableImage.swift */; };
+		DEF110522143A54700D81656 /* ProfileUserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4BF210AD9AB00F8FFEF /* ProfileUserListViewModel.swift */; };
+		DEF110532143A54700D81656 /* ProfileEventPromotionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F1D2A20F5EC2100503134 /* ProfileEventPromotionsController.swift */; };
+		DEF110542143A54700D81656 /* InfoCardShoppingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC507210BB20B00F8FFEF /* InfoCardShoppingViewModel.swift */; };
+		DEF110552143A54700D81656 /* ProfileUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4BB210AD8BD00F8FFEF /* ProfileUserModel.swift */; };
+		DEF110562143A54700D81656 /* ShoppingCartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE39EC2D21084B6B00670676 /* ShoppingCartCell.swift */; };
+		DEF110572143A54700D81656 /* MyCouponsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4EB210BA5C800F8FFEF /* MyCouponsModel.swift */; };
+		DEF110582143A54700D81656 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE724C9120F18CBA002504C6 /* EventViewModel.swift */; };
+		DEF110592143A54700D81656 /* EventProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4DB210AF2EB00F8FFEF /* EventProductsViewModel.swift */; };
+		DEF1105A2143A54700D81656 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE209CEB20F009210042AC87 /* DesignableButton.swift */; };
+		DEF1105B2143A54700D81656 /* RegistrerUserEmailAndPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CB720ED4EE4009D30E8 /* RegistrerUserEmailAndPasswordController.swift */; };
+		DEF1105C2143A54700D81656 /* NewGuaranteedTableListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C8907210C21E800696239 /* NewGuaranteedTableListViewModel.swift */; };
+		DEF1105D2143A54700D81656 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B13DE20F163DA00870BE9 /* NotificationCell.swift */; };
+		DEF1105E2143A54700D81656 /* InfoCardShopping.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8255682102C82A00582D20 /* InfoCardShopping.swift */; };
+		DEF1105F2143A54700D81656 /* SelectMyCouponListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C8911210C267A00696239 /* SelectMyCouponListViewModel.swift */; };
+		DEF110602143A54700D81656 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBF06E72101941800ABC3C2 /* CreditCard.swift */; };
+		DEF110612143A54700D81656 /* ShoppingCartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4F5210BA99000F8FFEF /* ShoppingCartViewModel.swift */; };
+		DEF110622143A54700D81656 /* EventCommentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4C7210AE84D00F8FFEF /* EventCommentsModel.swift */; };
+		DEF110632143A54700D81656 /* InfoCardShoppingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8255612102BFE200582D20 /* InfoCardShoppingController.swift */; };
+		DEF110642143A54700D81656 /* NewEventContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B5E342119606200886E0F /* NewEventContactController.swift */; };
+		DEF110652143A54700D81656 /* ProcutsEventCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C49F720F70B89009C5F39 /* ProcutsEventCollection.swift */; };
+		DEF110662143A54700D81656 /* ProfileEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF926F220F5244500621ED0 /* ProfileEventViewModel.swift */; };
+		DEF110672143A54700D81656 /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D3297210A77C4001F7CD2 /* Themes.swift */; };
+		DEF110682143A54700D81656 /* HelpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4E3210AF55700F8FFEF /* HelpModel.swift */; };
+		DEF110692143A54700D81656 /* LayoutPlacesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE39885D2106E62900590BF1 /* LayoutPlacesController.swift */; };
+		DEF1106A2143A54700D81656 /* InfoEvenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE8025320EEF41900ABAFEF /* InfoEvenController.swift */; };
+		DEF1106B2143A54700D81656 /* InfoPeoductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC50B210BC0F100F8FFEF /* InfoPeoductListViewModel.swift */; };
+		DEF1106C2143A54700D81656 /* NewEventServicesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B5E2E2119509000886E0F /* NewEventServicesController.swift */; };
+		DEF1106D2143A54700D81656 /* ProfileUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4BD210AD99F00F8FFEF /* ProfileUserViewModel.swift */; };
+		DEF1106E2143A54700D81656 /* ProfileUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD373D20EEBB770074AB19 /* ProfileUserController.swift */; };
+		DEF1106F2143A54700D81656 /* EventPromotionsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4D5210AF04E00F8FFEF /* EventPromotionsListViewModel.swift */; };
+		DEF110702143A54700D81656 /* RegisterUserBuyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CAE20ED2A6C009D30E8 /* RegisterUserBuyController.swift */; };
+		DEF110712143A54700D81656 /* ProfileEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF926F820F5247900621ED0 /* ProfileEventCell.swift */; };
+		DEF110722143A54700D81656 /* HelpListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4E7210AF56F00F8FFEF /* HelpListViewModel.swift */; };
+		DEF110732143A54700D81656 /* EventProductsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4DD210AF2F800F8FFEF /* EventProductsListViewModel.swift */; };
+		DEF110742143A54700D81656 /* EventCouponsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4CF210AED5E00F8FFEF /* EventCouponsListViewModel.swift */; };
+		DEF110752143A54700D81656 /* NewEventHoursController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B5E362119607200886E0F /* NewEventHoursController.swift */; };
+		DEF110762143A54700D81656 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFF2020FDC76600C9B7C8 /* SettingsController.swift */; };
+		DEF110772143A54700D81656 /* MyCouponsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4EF210BA5ED00F8FFEF /* MyCouponsViewModel.swift */; };
+		DEF110782143A54700D81656 /* Coupons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECFD76520FEDEBC003812DD /* Coupons.swift */; };
+		DEF110792143A54700D81656 /* EventCommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4C5210AE84400F8FFEF /* EventCommentsViewModel.swift */; };
+		DEF1107A2143A54700D81656 /* RegisterUserMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CAC20ED2A53009D30E8 /* RegisterUserMenuController.swift */; };
+		DEF1107B2143A54700D81656 /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD374320EEBBC70074AB19 /* EventController.swift */; };
+		DEF1107C2143A54700D81656 /* ProfileEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF926EF20F5242D00621ED0 /* ProfileEventModel.swift */; };
+		DEF1107D2143A54700D81656 /* InfoPeoductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC50F210BC10600F8FFEF /* InfoPeoductModel.swift */; };
+		DEF1107E2143A54700D81656 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE724C8920F18C4C002504C6 /* Event.swift */; };
+		DEF1107F2143A54700D81656 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD374020EEBBA60074AB19 /* MapController.swift */; };
+		DEF110802143A54700D81656 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE20A7972136773900B2B4DA /* LoginViewModel.swift */; };
+		DEF110812143A54700D81656 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4403D320E9FE61002606C4 /* LoginController.swift */; };
+		DEF110822143A54700D81656 /* RegisterUserNumberPlacesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CA820ED2A1A009D30E8 /* RegisterUserNumberPlacesController.swift */; };
+		DEF110832143A54700D81656 /* Navegation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE445A1C2140E9A40016FA94 /* Navegation.swift */; };
+		DEF110842143A54700D81656 /* NewGuaranteedTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C890B210C229B00696239 /* NewGuaranteedTableViewModel.swift */; };
+		DEF110852143A54700D81656 /* GuaranteedTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F6853210564A200898DF0 /* GuaranteedTableController.swift */; };
+		DEF110862143A54700D81656 /* InfoCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE82555A2102AD7600582D20 /* InfoCardController.swift */; };
+		DEF110872143A54700D81656 /* SelectMyCouponController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDD3E8321096AFE00C10EFA /* SelectMyCouponController.swift */; };
+		DEF110882143A54700D81656 /* PromotionsEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C49FA20F724CD009C5F39 /* PromotionsEventCell.swift */; };
+		DEF110892143A54700D81656 /* NewEventMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B5E262119410E00886E0F /* NewEventMenuController.swift */; };
+		DEF1108A2143A54700D81656 /* ProfileEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF926F620F5246200621ED0 /* ProfileEvent.swift */; };
+		DEF1108B2143A54700D81656 /* HelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFF1C20FDC72400C9B7C8 /* HelpController.swift */; };
+		DEF1108C2143A54700D81656 /* NewEventCategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B5E2A21194FD000886E0F /* NewEventCategoriesController.swift */; };
+		DEF1108D2143A54700D81656 /* ProfileEventInformationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F1D2120F5EBB100503134 /* ProfileEventInformationController.swift */; };
+		DEF1108E2143A54700D81656 /* EventCouponsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4CB210AED4800F8FFEF /* EventCouponsModel.swift */; };
+		DEF1108F2143A54700D81656 /* EventInformationContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53B01B210C3E98004B3383 /* EventInformationContactController.swift */; };
+		DEF110902143A54700D81656 /* GuaranteedTableListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C8901210C19B900696239 /* GuaranteedTableListViewModel.swift */; };
+		DEF110912143A54700D81656 /* RegisterUserAnswersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CB020ED2A91009D30E8 /* RegisterUserAnswersController.swift */; };
+		DEF110922143A54700D81656 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE20A7A321375B9200B2B4DA /* Method.swift */; };
+		DEF110932143A54700D81656 /* HelpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4E5210AF56200F8FFEF /* HelpViewModel.swift */; };
+		DEF110942143A54700D81656 /* NewGuaranteedTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1B50321067E5C003F5523 /* NewGuaranteedTableCell.swift */; };
+		DEF110952143A54700D81656 /* MyCreditsCardsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4FD210BAD9E00F8FFEF /* MyCreditsCardsListViewModel.swift */; };
+		DEF110962143A54700D81656 /* ProfileEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0FBA1820F2DF2600921DEC /* ProfileEventController.swift */; };
+		DEF110972143A54700D81656 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B13D720F1627D00870BE9 /* NotificationModel.swift */; };
+		DEF110982143A54700D81656 /* ProfileEventCouponsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F1D2C20F5EC2E00503134 /* ProfileEventCouponsController.swift */; };
+		DEF110992143A54700D81656 /* MyCreditsCardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4FF210BADB700F8FFEF /* MyCreditsCardsViewModel.swift */; };
+		DEF1109A2143A54700D81656 /* NewGuaranteedTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1B50021067CD4003F5523 /* NewGuaranteedTableController.swift */; };
+		DEF1109B2143A54700D81656 /* MyEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDB8E2F20FC79FC001E90EA /* MyEventController.swift */; };
+		DEF1109C2143A54700D81656 /* MyCouponsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4ED210BA5DC00F8FFEF /* MyCouponsListViewModel.swift */; };
+		DEF1109D2143A54700D81656 /* NewEventAddressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDB8E3320FC7B2B001E90EA /* NewEventAddressController.swift */; };
+		DEF1109E2143A54700D81656 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B13DC20F1630B00870BE9 /* Notification.swift */; };
+		DEF1109F2143A54700D81656 /* ProfileEventProductsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F1D2820F5EC1400503134 /* ProfileEventProductsController.swift */; };
+		DEF110A02143A54700D81656 /* HelpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE664AF2210011080011E949 /* HelpCell.swift */; };
+		DEF110A12143A54700D81656 /* ShoppingCartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB1CF920FF01AD00436CC1 /* ShoppingCartController.swift */; };
+		DEF110A22143A54700D81656 /* EventInformationAddressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53B019210C3E76004B3383 /* EventInformationAddressController.swift */; };
+		DEF110A32143A54700D81656 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE209CED20F009F60042AC87 /* DesignableTextField.swift */; };
+		DEF110A42143A54700D81656 /* ProfileEventProductsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C49F520F6FC42009C5F39 /* ProfileEventProductsCell.swift */; };
+		DEF110A52143A54700D81656 /* InfoPeoduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4E87E2103EFD000B67A00 /* InfoPeoduct.swift */; };
+		DEF110A62143A54700D81656 /* GuaranteedTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C88FF210C198F00696239 /* GuaranteedTableModel.swift */; };
+		DEF110A72143A54700D81656 /* NumOfPersonTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1B4FC21067C80003F5523 /* NumOfPersonTableController.swift */; };
+		DEF110A82143A54700D81656 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4047C6213CDB2E00FD86D2 /* SettingsViewModel.swift */; };
+		DEF110A92143A54700D81656 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE20A79F213743F700B2B4DA /* Alerts.swift */; };
+		DEF110AA2143A54700D81656 /* SelectMyCouponModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C890F210C266E00696239 /* SelectMyCouponModel.swift */; };
+		DEF110AB2143A54700D81656 /* EventCommentsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4C3210AE83900F8FFEF /* EventCommentsListViewModel.swift */; };
+		DEF110AC2143A54700D81656 /* MyCouponsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECFD76220FEDC1B003812DD /* MyCouponsController.swift */; };
+		DEF110AD2143A54700D81656 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC463342137A467000B6D16 /* Token.swift */; };
+		DEF110AE2143A54700D81656 /* EventPromotionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4D3210AF03700F8FFEF /* EventPromotionsModel.swift */; };
+		DEF110AF2143A54700D81656 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B13D920F1629800870BE9 /* NotificationViewModel.swift */; };
+		DEF110B02143A54700D81656 /* EventPromotionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4D7210AF06A00F8FFEF /* EventPromotionsViewModel.swift */; };
+		DEF110B12143A54700D81656 /* PromotionsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C49FC20F724DB009C5F39 /* PromotionsEvent.swift */; };
+		DEF110B22143A54700D81656 /* ProfileEventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF926F420F5244C00621ED0 /* ProfileEventListViewModel.swift */; };
+		DEF110B32143A54700D81656 /* Shopping.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE39EC2F21084C6D00670676 /* Shopping.swift */; };
+		DEF110B42143A54700D81656 /* InvitationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD374820EED2750074AB19 /* InvitationCard.swift */; };
+		DEF110B52143A54700D81656 /* ProductsEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C49FE20F724F1009C5F39 /* ProductsEventModel.swift */; };
+		DEF110B62143A54700D81656 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4403D120E9FE61002606C4 /* AppDelegate.swift */; };
+		DEF110B72143A54700D81656 /* GuaranteedTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1B50521067E71003F5523 /* GuaranteedTable.swift */; };
+		DEF110B82143A54700D81656 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE724C8B20F18C5B002504C6 /* EventCell.swift */; };
+		DEF110B92143A54700D81656 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8255652102C7FD00582D20 /* Products.swift */; };
+		DEF110BA2143A54700D81656 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD374620EEBBEA0074AB19 /* NotificationController.swift */; };
+		DEF110BB2143A54700D81656 /* MyCreditsCardsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4FB210BAD9000F8FFEF /* MyCreditsCardsModel.swift */; };
+		DEF110BC2143A54700D81656 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE60D533213F902600C9CF07 /* EditProfileController.swift */; };
+		DEF110BD2143A54700D81656 /* EventCommentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1780FF2102FDCD005105F2 /* EventCommentsCell.swift */; };
+		DEF110BE2143A54700D81656 /* InfoCardShoppingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC503210BB1F200F8FFEF /* InfoCardShoppingModel.swift */; };
+		DEF110BF2143A54700D81656 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE20A7A521375BB900B2B4DA /* Path.swift */; };
+		DEF110C02143A54700D81656 /* PrivacyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFF1020FDC66700C9B7C8 /* PrivacyController.swift */; };
+		DEF110C12143A54700D81656 /* InfoPeoductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4E87B2103EF5100B67A00 /* InfoPeoductController.swift */; };
+		DEF110C22143A54700D81656 /* EventCouponsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4CD210AED5300F8FFEF /* EventCouponsViewModel.swift */; };
+		DEF110C32143A54700D81656 /* ProfileEventCommentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F1D2E20F5EC3A00503134 /* ProfileEventCommentsController.swift */; };
+		DEF110C42143A54700D81656 /* NotificationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B13E020F1666400870BE9 /* NotificationListViewModel.swift */; };
+		DEF110C52143A54700D81656 /* MyCreditsCardsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBF06E42101803900ABC3C2 /* MyCreditsCardsCell.swift */; };
+		DEF110C62143A54700D81656 /* InfoCouponsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9A20562104610F00372BFA /* InfoCouponsController.swift */; };
+		DEF110C72143A54700D81656 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3E0C3A2105817600F066F9 /* CustomSegmentedControl.swift */; };
+		DEF110C82143A54700D81656 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFF1820FDC6EB00C9B7C8 /* AboutController.swift */; };
+		DEF110C92143A54700D81656 /* ProductsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F1D3820F6DE1F00503134 /* ProductsEvent.swift */; };
+		DEF110CA2143A54700D81656 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1781012102FDD9005105F2 /* Comments.swift */; };
+		DEF110CB2143A54700D81656 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645CBF21097FB100999A95 /* UIViewControllerExt.swift */; };
+		DEF110CC2143A54700D81656 /* InfoCardShoppingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC505210BB20100F8FFEF /* InfoCardShoppingListViewModel.swift */; };
+		DEF110CD2143A54700D81656 /* MyCreditCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE664AF821004A460011E949 /* MyCreditCardController.swift */; };
+		DEF110CE2143A54700D81656 /* EventInformationScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53B01D210C3EC1004B3383 /* EventInformationScheduleController.swift */; };
+		DEF110CF2143A54700D81656 /* ProfileEventCouponsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C4A0120F72EB1009C5F39 /* ProfileEventCouponsCell.swift */; };
+		DEF110D02143A54700D81656 /* NewCommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE82555621028D2800582D20 /* NewCommentController.swift */; };
+		DEF110D12143A54700D81656 /* RegisterUserGuaranteedTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CB220ED2AD6009D30E8 /* RegisterUserGuaranteedTableController.swift */; };
+		DEF110D22143A54700D81656 /* ShoppingCartListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4F7210BA99C00F8FFEF /* ShoppingCartListViewModel.swift */; };
+		DEF110D32143A54700D81656 /* ShoppingCartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4F3210BA98400F8FFEF /* ShoppingCartModel.swift */; };
+		DEF110D42143A54700D81656 /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE664AF4210011180011E949 /* Help.swift */; };
+		DEF110D52143A54700D81656 /* RegisterUserAskDrinkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CB520ED2B08009D30E8 /* RegisterUserAskDrinkController.swift */; };
+		DEF110D62143A54700D81656 /* LoginValidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73B40A2138F8600042C07F /* LoginValidate.swift */; };
+		DEF110D72143A54700D81656 /* InfoPeoductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC50D210BC0FB00F8FFEF /* InfoPeoductViewModel.swift */; };
+		DEF110D82143A54700D81656 /* EventProductsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CC4DF210AF30100F8FFEF /* EventProductsModel.swift */; };
+		DEF110D92143A54700D81656 /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE724C9320F18CCA002504C6 /* EventListViewModel.swift */; };
+		DEF110DA2143A54700D81656 /* MyCouponsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECFD76720FEDECD003812DD /* MyCouponsCell.swift */; };
+		DEF110DB2143A54700D81656 /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE20A79A213677D700B2B4DA /* BindingTextField.swift */; };
+		DEF110DC2143A54700D81656 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE724C8F20F18CA8002504C6 /* EventModel.swift */; };
+		DEF110DD2143A54700D81656 /* GuaranteedTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C8903210C19CC00696239 /* GuaranteedTableViewModel.swift */; };
+		DEF110DE2143A54700D81656 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9284672117A3A20037D1DC /* MapView.swift */; };
+		DEF110DF2143A54700D81656 /* SelectMyCouponViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C8913210C268500696239 /* SelectMyCouponViewModel.swift */; };
+		DEF110E02143A54700D81656 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE20A7A12137440A00B2B4DA /* Webservice.swift */; };
+		DEF110E12143A54700D81656 /* NewGuaranteedTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C8909210C223100696239 /* NewGuaranteedTableModel.swift */; };
+		DEF110E22143A54700D81656 /* NewCreditCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBF06E221016DE900ABC3C2 /* NewCreditCardController.swift */; };
+		DEF110E32143A54700D81656 /* InfoPeoductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4E8802103F11B00B67A00 /* InfoPeoductCell.swift */; };
+		DEF110E42143A54700D81656 /* ReportProblemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5EFF1420FDC6AD00C9B7C8 /* ReportProblemsController.swift */; };
+		DEF110E52143A54700D81656 /* RegisterUserPromotionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3CAA20ED2A45009D30E8 /* RegisterUserPromotionsController.swift */; };
+		DEF110E72143A54700D81656 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5EFF2220FDCBA900C9B7C8 /* MapKit.framework */; };
+		DEF110E82143A54700D81656 /* Pods_EventsIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5571407C61E5CD71AEF74A /* Pods_EventsIOS.framework */; };
+		DEF110E92143A54700D81656 /* Pods_EventsIOS_Debug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B49481B403EC362CA271BC3C /* Pods_EventsIOS_Debug.framework */; };
+		DEF110EB2143A54700D81656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4403DA20E9FE65002606C4 /* LaunchScreen.storyboard */; };
+		DEF110EC2143A54700D81656 /* mapDay.json in Resources */ = {isa = PBXBuildFile; fileRef = DE025B21210FF198000C9AE3 /* mapDay.json */; };
+		DEF110ED2143A54700D81656 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DECD373420EDEFB40074AB19 /* User.storyboard */; };
+		DEF110EE2143A54700D81656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4403D820E9FE65002606C4 /* Assets.xcassets */; };
+		DEF110EF2143A54700D81656 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE7D3299210A7AC8001F7CD2 /* Colors.xcassets */; };
+		DEF110F02143A54700D81656 /* mapNight.json in Resources */ = {isa = PBXBuildFile; fileRef = DE025B22210FF198000C9AE3 /* mapNight.json */; };
+		DEF110F12143A54700D81656 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4403D520E9FE61002606C4 /* Main.storyboard */; };
+		DEF110F22143A54700D81656 /* Employees.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DECD373620EDF2E70074AB19 /* Employees.storyboard */; };
 		DEF926F020F5242D00621ED0 /* ProfileEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF926EF20F5242D00621ED0 /* ProfileEventModel.swift */; };
 		DEF926F320F5244500621ED0 /* ProfileEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF926F220F5244500621ED0 /* ProfileEventViewModel.swift */; };
 		DEF926F520F5244C00621ED0 /* ProfileEventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF926F420F5244C00621ED0 /* ProfileEventListViewModel.swift */; };
@@ -331,6 +492,8 @@
 		DEE8025320EEF41900ABAFEF /* InfoEvenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoEvenController.swift; sourceTree = "<group>"; };
 		DEE8025520EEFB0200ABAFEF /* DesignableGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableGradient.swift; sourceTree = "<group>"; };
 		DEE8025720EF012F00ABAFEF /* DesignableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableImage.swift; sourceTree = "<group>"; };
+		DEF110F82143A54700D81656 /* EventsIOS-Release.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EventsIOS-Release.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF110F92143A54800D81656 /* EventsIOS-Release-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EventsIOS-Release-Info.plist"; path = "/Users/luiscastillo/Apps/nativas/EventsIOS/EventsIOS-Release-Info.plist"; sourceTree = "<absolute>"; };
 		DEF926EF20F5242D00621ED0 /* ProfileEventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEventModel.swift; sourceTree = "<group>"; };
 		DEF926F220F5244500621ED0 /* ProfileEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEventViewModel.swift; sourceTree = "<group>"; };
 		DEF926F420F5244C00621ED0 /* ProfileEventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEventListViewModel.swift; sourceTree = "<group>"; };
@@ -346,6 +509,16 @@
 				DE5EFF2320FDCBA900C9B7C8 /* MapKit.framework in Frameworks */,
 				75D0C115BA755D88F5C5F042 /* Pods_EventsIOS.framework in Frameworks */,
 				07D87FBFFCC4A572A5F6A5C2 /* Pods_EventsIOS_Debug.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF110E62143A54700D81656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF110E72143A54700D81656 /* MapKit.framework in Frameworks */,
+				DEF110E82143A54700D81656 /* Pods_EventsIOS.framework in Frameworks */,
+				DEF110E92143A54700D81656 /* Pods_EventsIOS_Debug.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -762,6 +935,7 @@
 				DE4403CF20E9FE61002606C4 /* Products */,
 				E076AE8F5DB7C8CAED16B2CA /* Pods */,
 				78AF4017A18CD5F2F48BAA3E /* Frameworks */,
+				DEF110F92143A54800D81656 /* EventsIOS-Release-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -769,6 +943,7 @@
 			isa = PBXGroup;
 			children = (
 				DE4403CE20E9FE61002606C4 /* EventsIOS-Debug.app */,
+				DEF110F82143A54700D81656 /* EventsIOS-Release.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1861,6 +2036,27 @@
 			productReference = DE4403CE20E9FE61002606C4 /* EventsIOS-Debug.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DEF1104D2143A54700D81656 /* EventsIOS-Release */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEF110F62143A54700D81656 /* Build configuration list for PBXNativeTarget "EventsIOS-Release" */;
+			buildPhases = (
+				DEF1104E2143A54700D81656 /* [CP] Check Pods Manifest.lock */,
+				DEF1104F2143A54700D81656 /* Sources */,
+				DEF110E62143A54700D81656 /* Frameworks */,
+				DEF110EA2143A54700D81656 /* Resources */,
+				DEF110F32143A54700D81656 /* [CP] Embed Pods Frameworks */,
+				DEF110F42143A54700D81656 /* ShellScript */,
+				DEF110F52143A54700D81656 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EventsIOS-Release";
+			productName = EventsIOS;
+			productReference = DEF110F82143A54700D81656 /* EventsIOS-Release.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1895,6 +2091,7 @@
 			projectRoot = "";
 			targets = (
 				DE4403CD20E9FE61002606C4 /* EventsIOS-Debug */,
+				DEF1104D2143A54700D81656 /* EventsIOS-Release */,
 			);
 		};
 /* End PBXProject section */
@@ -1912,6 +2109,21 @@
 				DE025B24210FF199000C9AE3 /* mapNight.json in Resources */,
 				DE4403D720E9FE61002606C4 /* Main.storyboard in Resources */,
 				DECD373720EDF2E70074AB19 /* Employees.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF110EA2143A54700D81656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF110EB2143A54700D81656 /* LaunchScreen.storyboard in Resources */,
+				DEF110EC2143A54700D81656 /* mapDay.json in Resources */,
+				DEF110ED2143A54700D81656 /* User.storyboard in Resources */,
+				DEF110EE2143A54700D81656 /* Assets.xcassets in Resources */,
+				DEF110EF2143A54700D81656 /* Colors.xcassets in Resources */,
+				DEF110F02143A54700D81656 /* mapNight.json in Resources */,
+				DEF110F12143A54700D81656 /* Main.storyboard in Resources */,
+				DEF110F22143A54700D81656 /* Employees.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1965,6 +2177,83 @@
 			showEnvVarsInLog = 0;
 		};
 		D81DF58DF36AC3388CFFC48F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EventsIOS-Debug/Pods-EventsIOS-Debug-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EventsIOS-Debug/Pods-EventsIOS-Debug-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEF1104E2143A54700D81656 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EventsIOS-Debug-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEF110F32143A54700D81656 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EventsIOS-Debug/Pods-EventsIOS-Debug-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EventsIOS-Debug/Pods-EventsIOS-Debug-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEF110F42143A54700D81656 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 3f4041f8d213c2111e4fbaf426aad1a46f4953a5 1a1ef0818b6768980c9200d9c6262a365833e9aa604faa25fb676502c8f1daad";
+		};
+		DEF110F52143A54700D81656 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2155,6 +2444,163 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DEF1104F2143A54700D81656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF110502143A54700D81656 /* DesignableGradient.swift in Sources */,
+				DEF110512143A54700D81656 /* DesignableImage.swift in Sources */,
+				DEF110522143A54700D81656 /* ProfileUserListViewModel.swift in Sources */,
+				DEF110532143A54700D81656 /* ProfileEventPromotionsController.swift in Sources */,
+				DEF110542143A54700D81656 /* InfoCardShoppingViewModel.swift in Sources */,
+				DEF110552143A54700D81656 /* ProfileUserModel.swift in Sources */,
+				DEF110562143A54700D81656 /* ShoppingCartCell.swift in Sources */,
+				DEF110572143A54700D81656 /* MyCouponsModel.swift in Sources */,
+				DEF110582143A54700D81656 /* EventViewModel.swift in Sources */,
+				DEF110592143A54700D81656 /* EventProductsViewModel.swift in Sources */,
+				DEF1105A2143A54700D81656 /* DesignableButton.swift in Sources */,
+				DEF1105B2143A54700D81656 /* RegistrerUserEmailAndPasswordController.swift in Sources */,
+				DEF1105C2143A54700D81656 /* NewGuaranteedTableListViewModel.swift in Sources */,
+				DEF1105D2143A54700D81656 /* NotificationCell.swift in Sources */,
+				DEF1105E2143A54700D81656 /* InfoCardShopping.swift in Sources */,
+				DEF1105F2143A54700D81656 /* SelectMyCouponListViewModel.swift in Sources */,
+				DEF110602143A54700D81656 /* CreditCard.swift in Sources */,
+				DEF110612143A54700D81656 /* ShoppingCartViewModel.swift in Sources */,
+				DEF110622143A54700D81656 /* EventCommentsModel.swift in Sources */,
+				DEF110632143A54700D81656 /* InfoCardShoppingController.swift in Sources */,
+				DEF110642143A54700D81656 /* NewEventContactController.swift in Sources */,
+				DEF110652143A54700D81656 /* ProcutsEventCollection.swift in Sources */,
+				DEF110662143A54700D81656 /* ProfileEventViewModel.swift in Sources */,
+				DEF110672143A54700D81656 /* Themes.swift in Sources */,
+				DEF110682143A54700D81656 /* HelpModel.swift in Sources */,
+				DEF110692143A54700D81656 /* LayoutPlacesController.swift in Sources */,
+				DEF1106A2143A54700D81656 /* InfoEvenController.swift in Sources */,
+				DEF1106B2143A54700D81656 /* InfoPeoductListViewModel.swift in Sources */,
+				DEF1106C2143A54700D81656 /* NewEventServicesController.swift in Sources */,
+				DEF1106D2143A54700D81656 /* ProfileUserViewModel.swift in Sources */,
+				DEF1106E2143A54700D81656 /* ProfileUserController.swift in Sources */,
+				DEF1106F2143A54700D81656 /* EventPromotionsListViewModel.swift in Sources */,
+				DEF110702143A54700D81656 /* RegisterUserBuyController.swift in Sources */,
+				DEF110712143A54700D81656 /* ProfileEventCell.swift in Sources */,
+				DEF110722143A54700D81656 /* HelpListViewModel.swift in Sources */,
+				DEF110732143A54700D81656 /* EventProductsListViewModel.swift in Sources */,
+				DEF110742143A54700D81656 /* EventCouponsListViewModel.swift in Sources */,
+				DEF110752143A54700D81656 /* NewEventHoursController.swift in Sources */,
+				DEF110762143A54700D81656 /* SettingsController.swift in Sources */,
+				DEF110772143A54700D81656 /* MyCouponsViewModel.swift in Sources */,
+				DEF110782143A54700D81656 /* Coupons.swift in Sources */,
+				DEF110792143A54700D81656 /* EventCommentsViewModel.swift in Sources */,
+				DEF1107A2143A54700D81656 /* RegisterUserMenuController.swift in Sources */,
+				DEF1107B2143A54700D81656 /* EventController.swift in Sources */,
+				DEF1107C2143A54700D81656 /* ProfileEventModel.swift in Sources */,
+				DEF1107D2143A54700D81656 /* InfoPeoductModel.swift in Sources */,
+				DEF1107E2143A54700D81656 /* Event.swift in Sources */,
+				DEF1107F2143A54700D81656 /* MapController.swift in Sources */,
+				DEF110802143A54700D81656 /* LoginViewModel.swift in Sources */,
+				DEF110812143A54700D81656 /* LoginController.swift in Sources */,
+				DEF110822143A54700D81656 /* RegisterUserNumberPlacesController.swift in Sources */,
+				DEF110832143A54700D81656 /* Navegation.swift in Sources */,
+				DEF110842143A54700D81656 /* NewGuaranteedTableViewModel.swift in Sources */,
+				DEF110852143A54700D81656 /* GuaranteedTableController.swift in Sources */,
+				DEF110862143A54700D81656 /* InfoCardController.swift in Sources */,
+				DEF110872143A54700D81656 /* SelectMyCouponController.swift in Sources */,
+				DEF110882143A54700D81656 /* PromotionsEventCell.swift in Sources */,
+				DEF110892143A54700D81656 /* NewEventMenuController.swift in Sources */,
+				DEF1108A2143A54700D81656 /* ProfileEvent.swift in Sources */,
+				DEF1108B2143A54700D81656 /* HelpController.swift in Sources */,
+				DEF1108C2143A54700D81656 /* NewEventCategoriesController.swift in Sources */,
+				DEF1108D2143A54700D81656 /* ProfileEventInformationController.swift in Sources */,
+				DEF1108E2143A54700D81656 /* EventCouponsModel.swift in Sources */,
+				DEF1108F2143A54700D81656 /* EventInformationContactController.swift in Sources */,
+				DEF110902143A54700D81656 /* GuaranteedTableListViewModel.swift in Sources */,
+				DEF110912143A54700D81656 /* RegisterUserAnswersController.swift in Sources */,
+				DEF110922143A54700D81656 /* Method.swift in Sources */,
+				DEF110932143A54700D81656 /* HelpViewModel.swift in Sources */,
+				DEF110942143A54700D81656 /* NewGuaranteedTableCell.swift in Sources */,
+				DEF110952143A54700D81656 /* MyCreditsCardsListViewModel.swift in Sources */,
+				DEF110962143A54700D81656 /* ProfileEventController.swift in Sources */,
+				DEF110972143A54700D81656 /* NotificationModel.swift in Sources */,
+				DEF110982143A54700D81656 /* ProfileEventCouponsController.swift in Sources */,
+				DEF110992143A54700D81656 /* MyCreditsCardsViewModel.swift in Sources */,
+				DEF1109A2143A54700D81656 /* NewGuaranteedTableController.swift in Sources */,
+				DEF1109B2143A54700D81656 /* MyEventController.swift in Sources */,
+				DEF1109C2143A54700D81656 /* MyCouponsListViewModel.swift in Sources */,
+				DEF1109D2143A54700D81656 /* NewEventAddressController.swift in Sources */,
+				DEF1109E2143A54700D81656 /* Notification.swift in Sources */,
+				DEF1109F2143A54700D81656 /* ProfileEventProductsController.swift in Sources */,
+				DEF110A02143A54700D81656 /* HelpCell.swift in Sources */,
+				DEF110A12143A54700D81656 /* ShoppingCartController.swift in Sources */,
+				DEF110A22143A54700D81656 /* EventInformationAddressController.swift in Sources */,
+				DEF110A32143A54700D81656 /* DesignableTextField.swift in Sources */,
+				DEF110A42143A54700D81656 /* ProfileEventProductsCell.swift in Sources */,
+				DEF110A52143A54700D81656 /* InfoPeoduct.swift in Sources */,
+				DEF110A62143A54700D81656 /* GuaranteedTableModel.swift in Sources */,
+				DEF110A72143A54700D81656 /* NumOfPersonTableController.swift in Sources */,
+				DEF110A82143A54700D81656 /* SettingsViewModel.swift in Sources */,
+				DEF110A92143A54700D81656 /* Alerts.swift in Sources */,
+				DEF110AA2143A54700D81656 /* SelectMyCouponModel.swift in Sources */,
+				DEF110AB2143A54700D81656 /* EventCommentsListViewModel.swift in Sources */,
+				DEF110AC2143A54700D81656 /* MyCouponsController.swift in Sources */,
+				DEF110AD2143A54700D81656 /* Token.swift in Sources */,
+				DEF110AE2143A54700D81656 /* EventPromotionsModel.swift in Sources */,
+				DEF110AF2143A54700D81656 /* NotificationViewModel.swift in Sources */,
+				DEF110B02143A54700D81656 /* EventPromotionsViewModel.swift in Sources */,
+				DEF110B12143A54700D81656 /* PromotionsEvent.swift in Sources */,
+				DEF110B22143A54700D81656 /* ProfileEventListViewModel.swift in Sources */,
+				DEF110B32143A54700D81656 /* Shopping.swift in Sources */,
+				DEF110B42143A54700D81656 /* InvitationCard.swift in Sources */,
+				DEF110B52143A54700D81656 /* ProductsEventModel.swift in Sources */,
+				DEF110B62143A54700D81656 /* AppDelegate.swift in Sources */,
+				DEF110B72143A54700D81656 /* GuaranteedTable.swift in Sources */,
+				DEF110B82143A54700D81656 /* EventCell.swift in Sources */,
+				DEF110B92143A54700D81656 /* Products.swift in Sources */,
+				DEF110BA2143A54700D81656 /* NotificationController.swift in Sources */,
+				DEF110BB2143A54700D81656 /* MyCreditsCardsModel.swift in Sources */,
+				DEF110BC2143A54700D81656 /* EditProfileController.swift in Sources */,
+				DEF110BD2143A54700D81656 /* EventCommentsCell.swift in Sources */,
+				DEF110BE2143A54700D81656 /* InfoCardShoppingModel.swift in Sources */,
+				DEF110BF2143A54700D81656 /* Path.swift in Sources */,
+				DEF110C02143A54700D81656 /* PrivacyController.swift in Sources */,
+				DEF110C12143A54700D81656 /* InfoPeoductController.swift in Sources */,
+				DEF110C22143A54700D81656 /* EventCouponsViewModel.swift in Sources */,
+				DEF110C32143A54700D81656 /* ProfileEventCommentsController.swift in Sources */,
+				DEF110C42143A54700D81656 /* NotificationListViewModel.swift in Sources */,
+				DEF110C52143A54700D81656 /* MyCreditsCardsCell.swift in Sources */,
+				DEF110C62143A54700D81656 /* InfoCouponsController.swift in Sources */,
+				DEF110C72143A54700D81656 /* CustomSegmentedControl.swift in Sources */,
+				DEF110C82143A54700D81656 /* AboutController.swift in Sources */,
+				DEF110C92143A54700D81656 /* ProductsEvent.swift in Sources */,
+				DEF110CA2143A54700D81656 /* Comments.swift in Sources */,
+				DEF110CB2143A54700D81656 /* UIViewControllerExt.swift in Sources */,
+				DEF110CC2143A54700D81656 /* InfoCardShoppingListViewModel.swift in Sources */,
+				DEF110CD2143A54700D81656 /* MyCreditCardController.swift in Sources */,
+				DEF110CE2143A54700D81656 /* EventInformationScheduleController.swift in Sources */,
+				DEF110CF2143A54700D81656 /* ProfileEventCouponsCell.swift in Sources */,
+				DEF110D02143A54700D81656 /* NewCommentController.swift in Sources */,
+				DEF110D12143A54700D81656 /* RegisterUserGuaranteedTableController.swift in Sources */,
+				DEF110D22143A54700D81656 /* ShoppingCartListViewModel.swift in Sources */,
+				DEF110D32143A54700D81656 /* ShoppingCartModel.swift in Sources */,
+				DEF110D42143A54700D81656 /* Help.swift in Sources */,
+				DEF110D52143A54700D81656 /* RegisterUserAskDrinkController.swift in Sources */,
+				DEF110D62143A54700D81656 /* LoginValidate.swift in Sources */,
+				DEF110D72143A54700D81656 /* InfoPeoductViewModel.swift in Sources */,
+				DEF110D82143A54700D81656 /* EventProductsModel.swift in Sources */,
+				DEF110D92143A54700D81656 /* EventListViewModel.swift in Sources */,
+				DEF110DA2143A54700D81656 /* MyCouponsCell.swift in Sources */,
+				DEF110DB2143A54700D81656 /* BindingTextField.swift in Sources */,
+				DEF110DC2143A54700D81656 /* EventModel.swift in Sources */,
+				DEF110DD2143A54700D81656 /* GuaranteedTableViewModel.swift in Sources */,
+				DEF110DE2143A54700D81656 /* MapView.swift in Sources */,
+				DEF110DF2143A54700D81656 /* SelectMyCouponViewModel.swift in Sources */,
+				DEF110E02143A54700D81656 /* Webservice.swift in Sources */,
+				DEF110E12143A54700D81656 /* NewGuaranteedTableModel.swift in Sources */,
+				DEF110E22143A54700D81656 /* NewCreditCardController.swift in Sources */,
+				DEF110E32143A54700D81656 /* InfoPeoductCell.swift in Sources */,
+				DEF110E42143A54700D81656 /* ReportProblemsController.swift in Sources */,
+				DEF110E52143A54700D81656 /* RegisterUserPromotionsController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -2258,6 +2704,27 @@
 			};
 			name = Debug;
 		};
+		DEF110F72143A54700D81656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D7C69E1FF13C5B710BDD288 /* Pods-EventsIOS-Debug.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Release";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Y99AD5GLT5;
+				INFOPLIST_FILE = "$(SRCROOT)/EventsIOS-Release-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mx.com.iwebsapp.EventIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2273,6 +2740,14 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE4403E120E9FE65002606C4 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DEF110F62143A54700D81656 /* Build configuration list for PBXNativeTarget "EventsIOS-Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF110F72143A54700D81656 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

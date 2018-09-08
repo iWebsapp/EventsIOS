@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>EventsIOS-Release.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>DEA2DB882135E33A00050E20</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DEF1104D2143A54700D81656</key>
 		<dict>
 			<key>primary</key>
 			<true/>
