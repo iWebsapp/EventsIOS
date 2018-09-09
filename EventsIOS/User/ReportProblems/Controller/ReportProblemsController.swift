@@ -66,7 +66,7 @@ class ReportProblemsController: UIViewController {
         primaryView.isHidden = false
         secundaryView.isHidden = true
     }
-
+ 
     
     /*
     // MARK: - Navigation
